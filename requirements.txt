@@ -1,0 +1,14 @@
+# Core analysis (everything under analysis_results/ can be re-derived with these)
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+pandas>=2.0
+matplotlib>=3.7
+
+# Only needed to regenerate traces or re-run encoder/judge scoring
+torch>=2.0
+transformers>=4.40
+sentence-transformers>=2.6
+datasets>=2.18
+openai>=1.30
+anthropic>=0.25
