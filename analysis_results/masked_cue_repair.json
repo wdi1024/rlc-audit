@@ -1,0 +1,9 @@
+{
+  "auc_sideA": 0.9824606341673857,
+  "auc_sideB": 0.986674251582166,
+  "composite_masked_routed": 34,
+  "composite_marker_routed": 28,
+  "final_only_routed": 20,
+  "cue_alone_routed": 40,
+  "corr_masked_marker": 0.45619179682711397
+}

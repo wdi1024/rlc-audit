@@ -1,0 +1,20 @@
+{
+  "judge_aucs_per_seed": [
+    0.7692513487093667,
+    0.7387079120292831,
+    0.645706121828422
+  ],
+  "keyword_aucs_per_seed": [
+    0.9667260439831502,
+    1.0,
+    0.989695349593515
+  ],
+  "judge_mean": 0.7178884608556907,
+  "judge_std": 0.05254168460465923,
+  "judge_disagreement_counts": [
+    12,
+    12,
+    10
+  ],
+  "note": "XSTest 100 first prompts, 80-token, sentence \u00d7 judge"
+}

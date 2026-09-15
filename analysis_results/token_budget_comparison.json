@@ -1,0 +1,16 @@
+{
+  "auc_80_token_n100": 0.5391143782847935,
+  "ci_80_token": [
+    0.35888405797101447,
+    0.7109311046153622
+  ],
+  "n_disagree_80": 10,
+  "auc_512_token_n100": 0.664817380293829,
+  "ci_512_token": [
+    0.4521798245614035,
+    0.8711418439716311
+  ],
+  "n_disagree_512": 9,
+  "delta": 0.1257030020090355,
+  "note": "XSTest first 100 prompts; sentence-emb cosine; judge labels"
+}

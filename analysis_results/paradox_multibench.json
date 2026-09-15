@@ -1,0 +1,222 @@
+[
+  {
+    "benchmark": "XSTest 450 (Phase 3)",
+    "phase": "phase3_xstest_full",
+    "n": 450,
+    "primary_judge": "anthropic_claude-haiku-4-5-20251001",
+    "judge_common_n": {
+      "anthropic_claude-haiku-4-5-20251001": 450
+    },
+    "rows": [
+      {
+        "k": 50,
+        "auc_kw": 0.9851258581235698,
+        "n_dis_kw": 13,
+        "auc_judge_ku-4-5-20251001": 0.5920953508394318,
+        "n_dis_judge_ku-4-5-20251001": 46,
+        "n_judge_ku-4-5-20251001": 450
+      },
+      {
+        "k": 100,
+        "auc_kw": 0.893649193548387,
+        "n_dis_kw": 16,
+        "auc_judge_ku-4-5-20251001": 0.5475408953938873,
+        "n_dis_judge_ku-4-5-20251001": 46,
+        "n_judge_ku-4-5-20251001": 450
+      },
+      {
+        "k": null,
+        "auc_kw": 0.7874823529411764,
+        "n_dis_kw": 25,
+        "auc_judge_ku-4-5-20251001": 0.4817585019371502,
+        "n_dis_judge_ku-4-5-20251001": 46,
+        "n_judge_ku-4-5-20251001": 450
+      }
+    ]
+  },
+  {
+    "benchmark": "AdvBench 520 (Phase 4)",
+    "phase": "phase4_advbench",
+    "n": 520,
+    "primary_judge": "anthropic_claude-haiku-4-5-20251001",
+    "judge_common_n": {
+      "anthropic_claude-haiku-4-5-20251001": 520
+    },
+    "rows": [
+      {
+        "k": 50,
+        "auc_kw": 0.7566760790641387,
+        "n_dis_kw": 185,
+        "auc_judge_ku-4-5-20251001": 0.2901353965183752,
+        "n_dis_judge_ku-4-5-20251001": 3,
+        "n_judge_ku-4-5-20251001": 520
+      },
+      {
+        "k": 100,
+        "auc_kw": 0.9003927628613739,
+        "n_dis_kw": 186,
+        "auc_judge_ku-4-5-20251001": 0.24661508704061896,
+        "n_dis_judge_ku-4-5-20251001": 3,
+        "n_judge_ku-4-5-20251001": 520
+      },
+      {
+        "k": null,
+        "auc_kw": 0.7679310730670247,
+        "n_dis_kw": 189,
+        "auc_judge_ku-4-5-20251001": 0.3803997421018698,
+        "n_dis_judge_ku-4-5-20251001": 3,
+        "n_judge_ku-4-5-20251001": 520
+      }
+    ]
+  },
+  {
+    "benchmark": "SimpleSafety (Phase 4)",
+    "phase": "phase4_simplesafety",
+    "n": 100,
+    "primary_judge": "anthropic_claude-haiku-4-5-20251001",
+    "judge_common_n": {
+      "anthropic_claude-haiku-4-5-20251001": 100
+    },
+    "rows": [
+      {
+        "k": 50,
+        "auc_kw": 0.9340892983699504,
+        "n_dis_kw": 17,
+        "auc_judge_ku-4-5-20251001": 0.5006793478260869,
+        "n_dis_judge_ku-4-5-20251001": 8,
+        "n_judge_ku-4-5-20251001": 100
+      },
+      {
+        "k": 100,
+        "auc_kw": 0.9390503189227498,
+        "n_dis_kw": 17,
+        "auc_judge_ku-4-5-20251001": 0.5421195652173914,
+        "n_dis_judge_ku-4-5-20251001": 8,
+        "n_judge_ku-4-5-20251001": 100
+      },
+      {
+        "k": null,
+        "auc_kw": 0.9044834307992203,
+        "n_dis_kw": 19,
+        "auc_judge_ku-4-5-20251001": 0.3097826086956522,
+        "n_dis_judge_ku-4-5-20251001": 8,
+        "n_judge_ku-4-5-20251001": 100
+      }
+    ]
+  },
+  {
+    "benchmark": "XSTest 100 512tok (Phase 5)",
+    "phase": "phase5_xstest100_512tok",
+    "n": 100,
+    "primary_judge": "anthropic_claude-haiku-4-5-20251001",
+    "judge_common_n": {
+      "anthropic_claude-haiku-4-5-20251001": 100
+    },
+    "rows": [
+      {
+        "k": 50,
+        "auc_kw": 0.9852631578947368,
+        "n_dis_kw": 5,
+        "auc_judge_ku-4-5-20251001": 0.6166056166056166,
+        "n_dis_judge_ku-4-5-20251001": 9,
+        "n_judge_ku-4-5-20251001": 100
+      },
+      {
+        "k": 100,
+        "auc_kw": 0.9556737588652483,
+        "n_dis_kw": 6,
+        "auc_judge_ku-4-5-20251001": 0.6398046398046399,
+        "n_dis_judge_ku-4-5-20251001": 9,
+        "n_judge_ku-4-5-20251001": 100
+      },
+      {
+        "k": null,
+        "auc_kw": 0.47148503670242803,
+        "n_dis_kw": 23,
+        "auc_judge_ku-4-5-20251001": 0.7411477411477411,
+        "n_dis_judge_ku-4-5-20251001": 9,
+        "n_judge_ku-4-5-20251001": 100
+      }
+    ]
+  },
+  {
+    "benchmark": "AdvBench 100 512tok (Phase 5)",
+    "phase": "phase5_advbench100_512tok",
+    "n": 100,
+    "primary_judge": "anthropic_claude-haiku-4-5-20251001",
+    "judge_common_n": {
+      "anthropic_claude-haiku-4-5-20251001": 100
+    },
+    "rows": [
+      {
+        "k": 50,
+        "auc_kw": 0.7495833333333333,
+        "n_dis_kw": 40,
+        "auc_judge_ku-4-5-20251001": 0.29553264604811,
+        "n_dis_judge_ku-4-5-20251001": 3,
+        "n_judge_ku-4-5-20251001": 100
+      },
+      {
+        "k": 100,
+        "auc_kw": 0.915,
+        "n_dis_kw": 40,
+        "auc_judge_ku-4-5-20251001": 0.3161512027491409,
+        "n_dis_judge_ku-4-5-20251001": 3,
+        "n_judge_ku-4-5-20251001": 100
+      },
+      {
+        "k": null,
+        "auc_kw": 0.6484375,
+        "n_dis_kw": 4,
+        "auc_judge_ku-4-5-20251001": 0.5257731958762887,
+        "n_dis_judge_ku-4-5-20251001": 3,
+        "n_judge_ku-4-5-20251001": 100
+      }
+    ]
+  },
+  {
+    "benchmark": "OR-Bench hard 1k (Phase 8)",
+    "phase": "phase8_orbench_hard1k",
+    "n": 1319,
+    "primary_judge": "anthropic_claude-haiku-4-5-20251001",
+    "judge_common_n": {
+      "anthropic_claude-haiku-4-5-20251001": 1319,
+      "anthropic_claude-sonnet-4-6": 1303
+    },
+    "rows": [
+      {
+        "k": 50,
+        "auc_kw": 0.8655015197568389,
+        "n_dis_kw": 3,
+        "auc_judge_ku-4-5-20251001": 0.5172044542405749,
+        "n_dis_judge_ku-4-5-20251001": 473,
+        "n_judge_ku-4-5-20251001": 1319,
+        "auc_judge_aude-sonnet-4-6": 0.5666774524079167,
+        "n_dis_judge_aude-sonnet-4-6": 420,
+        "n_judge_aude-sonnet-4-6": 1303
+      },
+      {
+        "k": 100,
+        "auc_kw": 0.976823708206687,
+        "n_dis_kw": 3,
+        "auc_judge_ku-4-5-20251001": 0.5163098076259878,
+        "n_dis_judge_ku-4-5-20251001": 473,
+        "n_judge_ku-4-5-20251001": 1319,
+        "auc_judge_aude-sonnet-4-6": 0.5515437092164159,
+        "n_dis_judge_aude-sonnet-4-6": 420,
+        "n_judge_aude-sonnet-4-6": 1303
+      },
+      {
+        "k": null,
+        "auc_kw": 0.7776278618712316,
+        "n_dis_kw": 37,
+        "auc_judge_ku-4-5-20251001": 0.5433416300561278,
+        "n_dis_judge_ku-4-5-20251001": 473,
+        "n_judge_ku-4-5-20251001": 1319,
+        "auc_judge_aude-sonnet-4-6": 0.548596505419835,
+        "n_dis_judge_aude-sonnet-4-6": 420,
+        "n_judge_aude-sonnet-4-6": 1303
+      }
+    ]
+  }
+]

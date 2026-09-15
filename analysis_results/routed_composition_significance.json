@@ -1,0 +1,27 @@
+{
+  "n": 548,
+  "budget": 55,
+  "observed": {
+    "baseline": 11,
+    "final_span": 20,
+    "composite": 28
+  },
+  "tests": {
+    "final_span": {
+      "diff": 9,
+      "ci_lo": 0.0,
+      "ci_hi": 18.0,
+      "perm_p": 0.0179,
+      "n_boot": 10000,
+      "n_perm": 10000
+    },
+    "composite": {
+      "diff": 17,
+      "ci_lo": 7.0,
+      "ci_hi": 26.0,
+      "perm_p": 0.0,
+      "n_boot": 10000,
+      "n_perm": 10000
+    }
+  }
+}

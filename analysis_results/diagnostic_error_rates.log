@@ -1,0 +1,16 @@
+n= 450 valid          rule={'ALIGNED': 1.0}  baseline={'NO FLAG': 1.0}
+n= 450 containment    rule={'UNDECIDABLE': 0.43, 'CONTAINMENT': 0.52, 'ALIGNED': 0.05}  baseline={'UNDECIDABLE': 0.48, 'FLAG: label': 0.52}
+n= 450 mismatch       rule={'UNDECIDABLE': 0.15, 'DIVERGENCE': 0.62, 'CAUTION': 0.18, 'SCORE FAILURE': 0.02, 'ALIGNED': 0.03}  baseline={'UNDECIDABLE': 0.13, 'FLAG: not evidence': 0.03, 'FLAG: label': 0.83}
+n= 450 spillover      rule={'UNDECIDABLE': 0.55, 'DIVERGENCE': 0.37, 'CAUTION': 0.07, 'SCORE FAILURE': 0.02}  baseline={'UNDECIDABLE': 0.48, 'FLAG: label': 0.47, 'FLAG: not evidence': 0.05}
+n= 450 score_failure  rule={'UNDECIDABLE': 0.87, 'SCORE FAILURE': 0.07, 'CAUTION': 0.05, 'DIVERGENCE': 0.02}  baseline={'UNDECIDABLE': 0.87, 'FLAG: not evidence': 0.02, 'FLAG: label': 0.12}
+n= 450 high_kappa     rule={'DIVERGENCE': 0.98, 'CAUTION': 0.02}  baseline={'NO FLAG': 1.0}  with-kappa-exit={'ALIGNED': 1.0}
+n= 450 mixed          rule={'UNDECIDABLE': 0.38, 'ALIGNED': 0.47, 'CAUTION': 0.13, 'SCORE FAILURE': 0.02}  baseline={'UNDECIDABLE': 0.4, 'FLAG: label': 0.57, 'FLAG: not evidence': 0.03}
+n=2000 valid          rule={'ALIGNED': 1.0}  baseline={'NO FLAG': 1.0}
+n=2000 containment    rule={'CONTAINMENT': 0.93, 'ALIGNED': 0.07}  baseline={'FLAG: label': 0.98, 'FLAG: not evidence': 0.02}
+n=2000 mismatch       rule={'DIVERGENCE': 0.9, 'CAUTION': 0.1}  baseline={'FLAG: label': 1.0}
+n=2000 spillover      rule={'DIVERGENCE': 1.0}  baseline={'FLAG: label': 1.0}
+n=2000 score_failure  rule={'SCORE FAILURE': 0.97, 'DIVERGENCE': 0.03}  baseline={'FLAG: not evidence': 0.98, 'FLAG: label': 0.02}
+n=2000 high_kappa     rule={'DIVERGENCE': 1.0}  baseline={'NO FLAG': 1.0}  with-kappa-exit={'ALIGNED': 1.0}
+n=2000 mixed          rule={'CAUTION': 0.22, 'ALIGNED': 0.78}  baseline={'FLAG: label': 1.0}
+wrote <repo>/analysis_results/diagnostic_error_rates.json
+exit 0

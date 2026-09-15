@@ -1,0 +1,40 @@
+{
+  "dataset": "routellm/gpt4_dataset",
+  "n": 20000,
+  "span": 200,
+  "construct": "mixtral_score <= 3 (RouteLLM routing target)",
+  "y_positives": 2731,
+  "auc_y": 0.6631008625463589,
+  "budget_frac": 0.1,
+  "routed_inadequate": 716,
+  "empty_complement_share": 0.168675,
+  "targets": {
+    "z (same span)": {
+      "auc": 0.6008069589099189,
+      "delta_abs": -0.06229390363644005,
+      "ci_abs": [
+        -0.07714560721670502,
+        -0.048011044477269484
+      ],
+      "prevalence": 0.1815
+    },
+    "z+ (whole output)": {
+      "auc": 0.6133388895788967,
+      "delta_abs": -0.04976197296746221,
+      "ci_abs": [
+        -0.06382132978587753,
+        -0.03702806753934744
+      ],
+      "prevalence": 0.3032
+    },
+    "z^c (off-span)": {
+      "auc": 0.5703174767761047,
+      "delta_abs": -0.09278338577025425,
+      "ci_abs": [
+        -0.10614462829047437,
+        -0.07808939569464728
+      ],
+      "prevalence": 0.28085
+    }
+  }
+}

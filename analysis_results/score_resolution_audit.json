@@ -1,0 +1,473 @@
+{
+  "modal_mass_limit": 0.5,
+  "correctness": {
+    "GSM8K": {
+      "prefix-50": {
+        "n": 1319,
+        "distinct_scores": 12,
+        "modal_mass": 0.6338134950720242,
+        "proxy_positives": 8,
+        "distinct_scores_at_positives": 1,
+        "score_degenerate": true,
+        "distinct_prefixes_a": 5,
+        "distinct_prefixes_b": 6
+      },
+      "prefix-80": {
+        "proxy_positives": 0,
+        "verdict": "not instantiable (no proxy variation)"
+      },
+      "prefix-120": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 12,
+        "distinct_scores_at_positives": 12,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 64,
+        "distinct_prefixes_b": 1318
+      },
+      "prefix-160": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 49,
+        "distinct_scores_at_positives": 49,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 194,
+        "distinct_prefixes_b": 1318
+      },
+      "prefix-200": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 79,
+        "distinct_scores_at_positives": 79,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 307,
+        "distinct_prefixes_b": 1319
+      },
+      "prefix-250": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 91,
+        "distinct_scores_at_positives": 91,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1091,
+        "distinct_prefixes_b": 1319
+      },
+      "prefix-300": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 82,
+        "distinct_scores_at_positives": 82,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1284,
+        "distinct_prefixes_b": 1319
+      },
+      "prefix-400": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 77,
+        "distinct_scores_at_positives": 77,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1319,
+        "distinct_prefixes_b": 1319
+      },
+      "prefix-500": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 82,
+        "distinct_scores_at_positives": 82,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1319,
+        "distinct_prefixes_b": 1319
+      },
+      "prefix-600": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 132,
+        "distinct_scores_at_positives": 132,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1319,
+        "distinct_prefixes_b": 1319
+      },
+      "prefix-800": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 302,
+        "distinct_scores_at_positives": 302,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1319,
+        "distinct_prefixes_b": 1319
+      },
+      "prefix-1000": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 490,
+        "distinct_scores_at_positives": 490,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1319,
+        "distinct_prefixes_b": 1319
+      },
+      "prefix-1400": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 495,
+        "distinct_scores_at_positives": 495,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1319,
+        "distinct_prefixes_b": 1319
+      },
+      "full trace": {
+        "n": 1319,
+        "distinct_scores": 1319,
+        "modal_mass": 0.000758150113722517,
+        "proxy_positives": 237,
+        "distinct_scores_at_positives": 237,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1319,
+        "distinct_prefixes_b": 1319
+      }
+    },
+    "HotpotQA": {
+      "prefix-50": {
+        "n": 2000,
+        "distinct_scores": 1766,
+        "modal_mass": 0.1115,
+        "proxy_positives": 317,
+        "distinct_scores_at_positives": 199,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1439,
+        "distinct_prefixes_b": 1750
+      },
+      "prefix-80": {
+        "n": 2000,
+        "distinct_scores": 1850,
+        "modal_mass": 0.0755,
+        "proxy_positives": 446,
+        "distinct_scores_at_positives": 369,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1717,
+        "distinct_prefixes_b": 1929
+      },
+      "prefix-120": {
+        "n": 2000,
+        "distinct_scores": 1882,
+        "modal_mass": 0.0595,
+        "proxy_positives": 636,
+        "distinct_scores_at_positives": 577,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1979,
+        "distinct_prefixes_b": 1943
+      },
+      "prefix-160": {
+        "n": 2000,
+        "distinct_scores": 1892,
+        "modal_mass": 0.0545,
+        "proxy_positives": 761,
+        "distinct_scores_at_positives": 712,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 1999,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-200": {
+        "n": 2000,
+        "distinct_scores": 1900,
+        "modal_mass": 0.0505,
+        "proxy_positives": 840,
+        "distinct_scores_at_positives": 797,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-250": {
+        "n": 2000,
+        "distinct_scores": 1914,
+        "modal_mass": 0.0435,
+        "proxy_positives": 892,
+        "distinct_scores_at_positives": 860,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-300": {
+        "n": 2000,
+        "distinct_scores": 1926,
+        "modal_mass": 0.0375,
+        "proxy_positives": 937,
+        "distinct_scores_at_positives": 911,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-400": {
+        "n": 2000,
+        "distinct_scores": 1941,
+        "modal_mass": 0.03,
+        "proxy_positives": 957,
+        "distinct_scores_at_positives": 933,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-500": {
+        "n": 2000,
+        "distinct_scores": 1958,
+        "modal_mass": 0.0215,
+        "proxy_positives": 931,
+        "distinct_scores_at_positives": 914,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-600": {
+        "n": 2000,
+        "distinct_scores": 1969,
+        "modal_mass": 0.016,
+        "proxy_positives": 868,
+        "distinct_scores_at_positives": 855,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-800": {
+        "n": 2000,
+        "distinct_scores": 1980,
+        "modal_mass": 0.0105,
+        "proxy_positives": 708,
+        "distinct_scores_at_positives": 700,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-1000": {
+        "n": 2000,
+        "distinct_scores": 1984,
+        "modal_mass": 0.0085,
+        "proxy_positives": 627,
+        "distinct_scores_at_positives": 622,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "prefix-1400": {
+        "n": 2000,
+        "distinct_scores": 1989,
+        "modal_mass": 0.006,
+        "proxy_positives": 489,
+        "distinct_scores_at_positives": 485,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      },
+      "full trace": {
+        "n": 2000,
+        "distinct_scores": 1996,
+        "modal_mass": 0.0025,
+        "proxy_positives": 436,
+        "distinct_scores_at_positives": 433,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 2000,
+        "distinct_prefixes_b": 1944
+      }
+    }
+  },
+  "refusal": {
+    "qwen3.5-2b/gemma-4-e2b (phase13_clean_xstest450_advbench100)": {
+      "prefix-50": {
+        "n": 550,
+        "distinct_scores": 366,
+        "modal_mass": 0.18,
+        "proxy_positives": 6,
+        "distinct_scores_at_positives": 6,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 309,
+        "distinct_prefixes_b": 239
+      },
+      "full trace": {
+        "n": 550,
+        "distinct_scores": 550,
+        "modal_mass": 0.0018181818181818182,
+        "proxy_positives": 127,
+        "distinct_scores_at_positives": 127,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 550,
+        "distinct_prefixes_b": 550
+      }
+    },
+    "qwen3.5-9b/gemma-2-9b-it (phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy)": {
+      "prefix-50": {
+        "n": 450,
+        "distinct_scores": 360,
+        "modal_mass": 0.04666666666666667,
+        "proxy_positives": 19,
+        "distinct_scores_at_positives": 16,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 235,
+        "distinct_prefixes_b": 335
+      },
+      "full trace": {
+        "n": 450,
+        "distinct_scores": 450,
+        "modal_mass": 0.0022222222222222222,
+        "proxy_positives": 100,
+        "distinct_scores_at_positives": 100,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 450,
+        "distinct_prefixes_b": 450
+      }
+    },
+    "qwen3.5-9b/mistral-7b-instruct-v0.3 (phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy)": {
+      "prefix-50": {
+        "n": 450,
+        "distinct_scores": 381,
+        "modal_mass": 0.044444444444444446,
+        "proxy_positives": 29,
+        "distinct_scores_at_positives": 24,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 226,
+        "distinct_prefixes_b": 337
+      },
+      "full trace": {
+        "n": 450,
+        "distinct_scores": 450,
+        "modal_mass": 0.0022222222222222222,
+        "proxy_positives": 134,
+        "distinct_scores_at_positives": 134,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 449,
+        "distinct_prefixes_b": 450
+      }
+    },
+    "qwen3.5-9b/phi-3.5-mini-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "qwen3-8b/phi-3.5-mini-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "gemma-2-9b-it/mistral-7b-instruct-v0.3 (phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy)": {
+      "prefix-50": {
+        "n": 450,
+        "distinct_scores": 434,
+        "modal_mass": 0.006666666666666667,
+        "proxy_positives": 26,
+        "distinct_scores_at_positives": 24,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 335,
+        "distinct_prefixes_b": 337
+      },
+      "full trace": {
+        "n": 450,
+        "distinct_scores": 450,
+        "modal_mass": 0.0022222222222222222,
+        "proxy_positives": 141,
+        "distinct_scores_at_positives": 141,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 450,
+        "distinct_prefixes_b": 450
+      }
+    },
+    "gemma-2-9b-it/qwen3-8b (phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy)": {
+      "prefix-50": {
+        "n": 450,
+        "distinct_scores": 423,
+        "modal_mass": 0.02,
+        "proxy_positives": 75,
+        "distinct_scores_at_positives": 66,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 335,
+        "distinct_prefixes_b": 350
+      },
+      "full trace": {
+        "n": 450,
+        "distinct_scores": 450,
+        "modal_mass": 0.0022222222222222222,
+        "proxy_positives": 87,
+        "distinct_scores_at_positives": 87,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 450,
+        "distinct_prefixes_b": 450
+      }
+    },
+    "gemma-2-9b-it/phi-3.5-mini-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "mistral-7b-instruct-v0.3/qwen3-8b (phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy)": {
+      "prefix-50": {
+        "n": 450,
+        "distinct_scores": 422,
+        "modal_mass": 0.017777777777777778,
+        "proxy_positives": 75,
+        "distinct_scores_at_positives": 65,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 337,
+        "distinct_prefixes_b": 350
+      },
+      "full trace": {
+        "n": 450,
+        "distinct_scores": 450,
+        "modal_mass": 0.0022222222222222222,
+        "proxy_positives": 128,
+        "distinct_scores_at_positives": 128,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 450,
+        "distinct_prefixes_b": 450
+      }
+    },
+    "mistral-7b-instruct-v0.3/phi-3.5-mini-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "qwen3.5-9b/llama-3.1-8b-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "gemma-2-9b-it/llama-3.1-8b-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "mistral-7b-instruct-v0.3/llama-3.1-8b-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "qwen3-8b/llama-3.1-8b-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "llama-3.1-8b-instruct/phi-3.5-mini-instruct": {
+      "skipped": "[Errno 2] No such file or directory: '<workspace>/results/re"
+    },
+    "qwen3-8b/qwen3.5-9b (phase_colab_qwen_same_family_xstest450_tagged768_thinkingoff_greedy)": {
+      "prefix-50": {
+        "n": 450,
+        "distinct_scores": 392,
+        "modal_mass": 0.03333333333333333,
+        "proxy_positives": 82,
+        "distinct_scores_at_positives": 50,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 350,
+        "distinct_prefixes_b": 226
+      },
+      "full trace": {
+        "n": 450,
+        "distinct_scores": 450,
+        "modal_mass": 0.0022222222222222222,
+        "proxy_positives": 72,
+        "distinct_scores_at_positives": 72,
+        "score_degenerate": false,
+        "distinct_prefixes_a": 450,
+        "distinct_prefixes_b": 449
+      }
+    }
+  },
+  "flagged": [
+    {
+      "family": "correctness",
+      "contract": "GSM8K",
+      "span": "prefix-50"
+    }
+  ]
+}

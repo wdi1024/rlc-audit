@@ -1,0 +1,1334 @@
+{
+  "min_n": 400,
+  "budget": 0.1,
+  "n_pairs": 132,
+  "n_pairs_worse_than_base": 1,
+  "penetration_median": -0.13216338291193977,
+  "penetration_range": [
+    -0.22726030605871328,
+    0.009127292620425581
+  ],
+  "corr_asymmetry_penetration": 0.4067286712431192,
+  "pairs": [
+    {
+      "pair": "chatglm-6b vs flan-t5-xxl",
+      "n": 2043,
+      "base_disagreement": 0.20655898188937835,
+      "queue_disagreement": 0.21568627450980393,
+      "penetration": 0.009127292620425581,
+      "overlap_with_length_queue": 0.08333333333333333,
+      "auc_len_proxy": 0.7962004926382589,
+      "auc_len_construct": 0.6831628823696279
+    },
+    {
+      "pair": "flan-t5-xxl vs moss-moon-003-sft",
+      "n": 1889,
+      "base_disagreement": 0.1836950767601906,
+      "queue_disagreement": 0.15873015873015872,
+      "penetration": -0.02496491803003187,
+      "overlap_with_length_queue": 0.164021164021164,
+      "auc_len_proxy": 0.7450060830774579,
+      "auc_len_construct": 0.6417844988820295
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs dolly-v2-12b",
+      "n": 1948,
+      "base_disagreement": 0.25564681724845995,
+      "queue_disagreement": 0.22564102564102564,
+      "penetration": -0.0300057916074343,
+      "overlap_with_length_queue": 0.11282051282051282,
+      "auc_len_proxy": 0.6973349716440508,
+      "auc_len_construct": 0.6378267753792042
+    },
+    {
+      "pair": "moss-moon-003-sft vs mpt-7b",
+      "n": 1909,
+      "base_disagreement": 0.285489785227868,
+      "queue_disagreement": 0.24083769633507854,
+      "penetration": -0.04465208889278946,
+      "overlap_with_length_queue": 0.18848167539267016,
+      "auc_len_proxy": 0.5964156958755953,
+      "auc_len_construct": 0.5523434393638171
+    },
+    {
+      "pair": "flan-t5-xxl vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2067,
+      "base_disagreement": 0.09482341557813256,
+      "queue_disagreement": 0.04830917874396135,
+      "penetration": -0.04651423683417121,
+      "overlap_with_length_queue": 0.03864734299516908,
+      "auc_len_proxy": 0.8491730432164064,
+      "auc_len_construct": 0.7031118419743918
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs flan-t5-xxl",
+      "n": 1992,
+      "base_disagreement": 0.11495983935742972,
+      "queue_disagreement": 0.06532663316582915,
+      "penetration": -0.04963320619160057,
+      "overlap_with_length_queue": 0.035175879396984924,
+      "auc_len_proxy": 0.8282329748597431,
+      "auc_len_construct": 0.7393684842121053
+    },
+    {
+      "pair": "alpaca-native vs flan-t5-xxl",
+      "n": 1929,
+      "base_disagreement": 0.13893208916537067,
+      "queue_disagreement": 0.08808290155440414,
+      "penetration": -0.05084918761096653,
+      "overlap_with_length_queue": 0.06217616580310881,
+      "auc_len_proxy": 0.8130955549640672,
+      "auc_len_construct": 0.6794903263975429
+    },
+    {
+      "pair": "dolly-v2-12b vs alpaca-native",
+      "n": 2008,
+      "base_disagreement": 0.2903386454183267,
+      "queue_disagreement": 0.23880597014925373,
+      "penetration": -0.051532675269072986,
+      "overlap_with_length_queue": 0.15422885572139303,
+      "auc_len_proxy": 0.659951114159035,
+      "auc_len_construct": 0.5416611108107946
+    },
+    {
+      "pair": "moss-moon-003-sft vs mpt-7b-instruct",
+      "n": 1981,
+      "base_disagreement": 0.32407874810701665,
+      "queue_disagreement": 0.2676767676767677,
+      "penetration": -0.056401980430248966,
+      "overlap_with_length_queue": 0.2222222222222222,
+      "auc_len_proxy": 0.520497238280395,
+      "auc_len_construct": 0.5392042802079489
+    },
+    {
+      "pair": "mpt-7b-instruct vs flan-t5-xxl",
+      "n": 2027,
+      "base_disagreement": 0.27972372964972864,
+      "queue_disagreement": 0.22167487684729065,
+      "penetration": -0.05804885280243799,
+      "overlap_with_length_queue": 0.10837438423645321,
+      "auc_len_proxy": 0.6952702851238761,
+      "auc_len_construct": 0.6159498955237382
+    },
+    {
+      "pair": "moss-moon-003-sft vs dolly-v2-12b",
+      "n": 1898,
+      "base_disagreement": 0.2992623814541623,
+      "queue_disagreement": 0.23684210526315788,
+      "penetration": -0.062420276191004403,
+      "overlap_with_length_queue": 0.14736842105263157,
+      "auc_len_proxy": 0.6110003714170782,
+      "auc_len_construct": 0.5834207341670027
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs flan-t5-xxl",
+      "n": 1851,
+      "base_disagreement": 0.3684494867639114,
+      "queue_disagreement": 0.3027027027027027,
+      "penetration": -0.06574678406120871,
+      "overlap_with_length_queue": 0.12432432432432433,
+      "auc_len_proxy": 0.6780953895164303,
+      "auc_len_construct": 0.5909511152201548
+    },
+    {
+      "pair": "dolly-v2-12b vs vicuna-13b-1.1",
+      "n": 1980,
+      "base_disagreement": 0.25303030303030305,
+      "queue_disagreement": 0.18686868686868688,
+      "penetration": -0.06616161616161617,
+      "overlap_with_length_queue": 0.12121212121212122,
+      "auc_len_proxy": 0.6203940797108561,
+      "auc_len_construct": 0.5461542259693128
+    },
+    {
+      "pair": "dolly-v2-12b vs flan-t5-xxl",
+      "n": 1847,
+      "base_disagreement": 0.2631293990254467,
+      "queue_disagreement": 0.1945945945945946,
+      "penetration": -0.06853480443085208,
+      "overlap_with_length_queue": 0.12972972972972974,
+      "auc_len_proxy": 0.6775106815009095,
+      "auc_len_construct": 0.6362761471337314
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs flan-t5-xxl",
+      "n": 1956,
+      "base_disagreement": 0.147239263803681,
+      "queue_disagreement": 0.07653061224489796,
+      "penetration": -0.07070865155878303,
+      "overlap_with_length_queue": 0.1377551020408163,
+      "auc_len_proxy": 0.713097863993797,
+      "auc_len_construct": 0.5903012443096831
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs flan-t5-xxl",
+      "n": 1975,
+      "base_disagreement": 0.16253164556962024,
+      "queue_disagreement": 0.08585858585858586,
+      "penetration": -0.07667305971103439,
+      "overlap_with_length_queue": 0.06060606060606061,
+      "auc_len_proxy": 0.7347123657499329,
+      "auc_len_construct": 0.6423750964092896
+    },
+    {
+      "pair": "flan-t5-xxl vs llama-7b-hf-baize-lora-bf16",
+      "n": 1962,
+      "base_disagreement": 0.16462793068297654,
+      "queue_disagreement": 0.08673469387755102,
+      "penetration": -0.07789323680542552,
+      "overlap_with_length_queue": 0.11224489795918367,
+      "auc_len_proxy": 0.727827620388461,
+      "auc_len_construct": 0.6353610701515985
+    },
+    {
+      "pair": "alpaca-native vs dolly-v2-12b",
+      "n": 1916,
+      "base_disagreement": 0.2881002087682672,
+      "queue_disagreement": 0.20833333333333334,
+      "penetration": -0.07976687543493385,
+      "overlap_with_length_queue": 0.13541666666666666,
+      "auc_len_proxy": 0.6539499622501265,
+      "auc_len_construct": 0.6061999081433791
+    },
+    {
+      "pair": "flan-t5-xxl vs chatglm-6b",
+      "n": 2010,
+      "base_disagreement": 0.17960199004975125,
+      "queue_disagreement": 0.09950248756218906,
+      "penetration": -0.08009950248756219,
+      "overlap_with_length_queue": 0.08955223880597014,
+      "auc_len_proxy": 0.8122362736429402,
+      "auc_len_construct": 0.6635466457314362
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs dolly-v2-12b",
+      "n": 1945,
+      "base_disagreement": 0.25295629820051413,
+      "queue_disagreement": 0.17010309278350516,
+      "penetration": -0.08285320541700897,
+      "overlap_with_length_queue": 0.14948453608247422,
+      "auc_len_proxy": 0.6382885266413691,
+      "auc_len_construct": 0.5818908140814082
+    },
+    {
+      "pair": "mpt-7b-instruct vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2039,
+      "base_disagreement": 0.27170181461500736,
+      "queue_disagreement": 0.18627450980392157,
+      "penetration": -0.08542730481108579,
+      "overlap_with_length_queue": 0.13725490196078433,
+      "auc_len_proxy": 0.6360144135247299,
+      "auc_len_construct": 0.6119114982356868
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs mpt-7b-instruct",
+      "n": 2051,
+      "base_disagreement": 0.2905899561189664,
+      "queue_disagreement": 0.2048780487804878,
+      "penetration": -0.08571190733847858,
+      "overlap_with_length_queue": 0.1951219512195122,
+      "auc_len_proxy": 0.6118188350369701,
+      "auc_len_construct": 0.5571268762966277
+    },
+    {
+      "pair": "dolly-v2-12b vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2059,
+      "base_disagreement": 0.27634774162214665,
+      "queue_disagreement": 0.18932038834951456,
+      "penetration": -0.08702735327263209,
+      "overlap_with_length_queue": 0.15048543689320387,
+      "auc_len_proxy": 0.690364167995747,
+      "auc_len_construct": 0.6202756720487672
+    },
+    {
+      "pair": "moss-moon-003-sft vs vicuna-13b-1.1",
+      "n": 1779,
+      "base_disagreement": 0.3827993254637437,
+      "queue_disagreement": 0.29213483146067415,
+      "penetration": -0.09066449400306953,
+      "overlap_with_length_queue": 0.21910112359550563,
+      "auc_len_proxy": 0.511775352531201,
+      "auc_len_construct": 0.45346334250109466
+    },
+    {
+      "pair": "koala-7B-HF vs dolly-v2-12b",
+      "n": 1965,
+      "base_disagreement": 0.327735368956743,
+      "queue_disagreement": 0.23469387755102042,
+      "penetration": -0.09304149140572257,
+      "overlap_with_length_queue": 0.1683673469387755,
+      "auc_len_proxy": 0.625318829161617,
+      "auc_len_construct": 0.5765154634030715
+    },
+    {
+      "pair": "dolly-v2-12b vs chatglm-6b",
+      "n": 1969,
+      "base_disagreement": 0.3367191467750127,
+      "queue_disagreement": 0.2436548223350254,
+      "penetration": -0.0930643244399873,
+      "overlap_with_length_queue": 0.17258883248730963,
+      "auc_len_proxy": 0.7113307350395114,
+      "auc_len_construct": 0.5881581069638033
+    },
+    {
+      "pair": "mpt-7b-instruct vs koala-7B-HF",
+      "n": 1987,
+      "base_disagreement": 0.2949169602415702,
+      "queue_disagreement": 0.20100502512562815,
+      "penetration": -0.09391193511594206,
+      "overlap_with_length_queue": 0.20603015075376885,
+      "auc_len_proxy": 0.5986942593647571,
+      "auc_len_construct": 0.5711459086847368
+    },
+    {
+      "pair": "koala-7B-HF vs mpt-7b",
+      "n": 1957,
+      "base_disagreement": 0.29432805314256516,
+      "queue_disagreement": 0.1989795918367347,
+      "penetration": -0.09534846130583047,
+      "overlap_with_length_queue": 0.15306122448979592,
+      "auc_len_proxy": 0.6107923740300227,
+      "auc_len_construct": 0.5768742826763047
+    },
+    {
+      "pair": "mpt-7b vs chatglm-6b",
+      "n": 2207,
+      "base_disagreement": 0.26053466243769824,
+      "queue_disagreement": 0.16289592760180996,
+      "penetration": -0.09763873483588828,
+      "overlap_with_length_queue": 0.17194570135746606,
+      "auc_len_proxy": 0.643423472277191,
+      "auc_len_construct": 0.5831109980333641
+    },
+    {
+      "pair": "flan-t5-xxl vs alpaca-native",
+      "n": 2043,
+      "base_disagreement": 0.14733235438081252,
+      "queue_disagreement": 0.049019607843137254,
+      "penetration": -0.09831274653767527,
+      "overlap_with_length_queue": 0.08333333333333333,
+      "auc_len_proxy": 0.7983667517108726,
+      "auc_len_construct": 0.6198474245129675
+    },
+    {
+      "pair": "mpt-7b-instruct vs alpaca-native",
+      "n": 2060,
+      "base_disagreement": 0.3004854368932039,
+      "queue_disagreement": 0.19902912621359223,
+      "penetration": -0.10145631067961167,
+      "overlap_with_length_queue": 0.18446601941747573,
+      "auc_len_proxy": 0.6252381452037659,
+      "auc_len_construct": 0.5471063736792837
+    },
+    {
+      "pair": "flan-t5-xxl vs vicuna-13b-1.1",
+      "n": 2008,
+      "base_disagreement": 0.14143426294820718,
+      "queue_disagreement": 0.03980099502487562,
+      "penetration": -0.10163326792333156,
+      "overlap_with_length_queue": 0.07960199004975124,
+      "auc_len_proxy": 0.7222900319674512,
+      "auc_len_construct": 0.5606793618116315
+    },
+    {
+      "pair": "flan-t5-xxl vs mpt-7b-instruct",
+      "n": 1962,
+      "base_disagreement": 0.2711518858307849,
+      "queue_disagreement": 0.1683673469387755,
+      "penetration": -0.10278453889200942,
+      "overlap_with_length_queue": 0.10204081632653061,
+      "auc_len_proxy": 0.7141438099292505,
+      "auc_len_construct": 0.5616765227135697
+    },
+    {
+      "pair": "moss-moon-003-sft vs flan-t5-xxl",
+      "n": 1947,
+      "base_disagreement": 0.18541345659989728,
+      "queue_disagreement": 0.08205128205128205,
+      "penetration": -0.10336217454861522,
+      "overlap_with_length_queue": 0.15384615384615385,
+      "auc_len_proxy": 0.7419915042478761,
+      "auc_len_construct": 0.6461663813016162
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs stablelm-tuned-alpha-7b",
+      "n": 1965,
+      "base_disagreement": 0.20305343511450383,
+      "queue_disagreement": 0.09693877551020408,
+      "penetration": -0.10611465960429975,
+      "overlap_with_length_queue": 0.15306122448979592,
+      "auc_len_proxy": 0.6760588744170977,
+      "auc_len_construct": 0.5986153846153845
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs koala-7B-HF",
+      "n": 1844,
+      "base_disagreement": 0.2586767895878525,
+      "queue_disagreement": 0.15217391304347827,
+      "penetration": -0.10650287654437424,
+      "overlap_with_length_queue": 0.1793478260869565,
+      "auc_len_proxy": 0.6111619389262352,
+      "auc_len_construct": 0.5721831012697703
+    },
+    {
+      "pair": "moss-moon-003-sft vs koala-7B-HF",
+      "n": 1780,
+      "base_disagreement": 0.29269662921348316,
+      "queue_disagreement": 0.1853932584269663,
+      "penetration": -0.10730337078651686,
+      "overlap_with_length_queue": 0.1853932584269663,
+      "auc_len_proxy": 0.5852726438257422,
+      "auc_len_construct": 0.5408587453107008
+    },
+    {
+      "pair": "flan-t5-xxl vs stablelm-tuned-alpha-7b",
+      "n": 1727,
+      "base_disagreement": 0.3572669368847713,
+      "queue_disagreement": 0.24855491329479767,
+      "penetration": -0.10871202358997362,
+      "overlap_with_length_queue": 0.20809248554913296,
+      "auc_len_proxy": 0.6874205476884276,
+      "auc_len_construct": 0.5913098947142243
+    },
+    {
+      "pair": "chatglm-6b vs vicuna-13b-1.1",
+      "n": 1911,
+      "base_disagreement": 0.32967032967032966,
+      "queue_disagreement": 0.2198952879581152,
+      "penetration": -0.10977504171221447,
+      "overlap_with_length_queue": 0.1256544502617801,
+      "auc_len_proxy": 0.5533202649252433,
+      "auc_len_construct": 0.49519277313343013
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs mpt-7b-instruct",
+      "n": 2031,
+      "base_disagreement": 0.2845888724766125,
+      "queue_disagreement": 0.1724137931034483,
+      "penetration": -0.11217507937316423,
+      "overlap_with_length_queue": 0.15270935960591134,
+      "auc_len_proxy": 0.6164653664653664,
+      "auc_len_construct": 0.5988149550983776
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs mpt-7b",
+      "n": 2015,
+      "base_disagreement": 0.23622828784119107,
+      "queue_disagreement": 0.12376237623762376,
+      "penetration": -0.11246591160356731,
+      "overlap_with_length_queue": 0.19306930693069307,
+      "auc_len_proxy": 0.6445456451838389,
+      "auc_len_construct": 0.5930698272431352
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1716,
+      "base_disagreement": 0.40384615384615385,
+      "queue_disagreement": 0.29069767441860467,
+      "penetration": -0.11314847942754919,
+      "overlap_with_length_queue": 0.18023255813953487,
+      "auc_len_proxy": 0.5910878112712975,
+      "auc_len_construct": 0.6018615615462002
+    },
+    {
+      "pair": "chatglm-6b vs stablelm-tuned-alpha-7b",
+      "n": 1988,
+      "base_disagreement": 0.2590543259557344,
+      "queue_disagreement": 0.1457286432160804,
+      "penetration": -0.11332568273965402,
+      "overlap_with_length_queue": 0.18090452261306533,
+      "auc_len_proxy": 0.6845934600088379,
+      "auc_len_construct": 0.5876943966851988
+    },
+    {
+      "pair": "chatglm-6b vs moss-moon-003-sft",
+      "n": 1891,
+      "base_disagreement": 0.36329984135378107,
+      "queue_disagreement": 0.24867724867724866,
+      "penetration": -0.11462259267653241,
+      "overlap_with_length_queue": 0.21693121693121692,
+      "auc_len_proxy": 0.4465950206464282,
+      "auc_len_construct": 0.45036037276775465
+    },
+    {
+      "pair": "mpt-7b vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2116,
+      "base_disagreement": 0.22164461247637052,
+      "queue_disagreement": 0.10377358490566038,
+      "penetration": -0.11787102757071014,
+      "overlap_with_length_queue": 0.14622641509433962,
+      "auc_len_proxy": 0.6393074729738046,
+      "auc_len_construct": 0.5868731349469496
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs mpt-7b-instruct",
+      "n": 2030,
+      "base_disagreement": 0.31182266009852216,
+      "queue_disagreement": 0.1921182266009852,
+      "penetration": -0.11970443349753696,
+      "overlap_with_length_queue": 0.20689655172413793,
+      "auc_len_proxy": 0.5633820688255045,
+      "auc_len_construct": 0.5425404331140351
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs dolly-v2-12b",
+      "n": 1967,
+      "base_disagreement": 0.2923233350279614,
+      "queue_disagreement": 0.17258883248730963,
+      "penetration": -0.11973450254065174,
+      "overlap_with_length_queue": 0.16751269035532995,
+      "auc_len_proxy": 0.6383672062469343,
+      "auc_len_construct": 0.5890503155156797
+    },
+    {
+      "pair": "dolly-v2-12b vs mpt-7b-instruct",
+      "n": 1988,
+      "base_disagreement": 0.3777665995975855,
+      "queue_disagreement": 0.2562814070351759,
+      "penetration": -0.12148519256240964,
+      "overlap_with_length_queue": 0.15577889447236182,
+      "auc_len_proxy": 0.576859759072552,
+      "auc_len_construct": 0.5413943954968184
+    },
+    {
+      "pair": "flan-t5-xxl vs koala-7B-HF",
+      "n": 1783,
+      "base_disagreement": 0.27930454290521595,
+      "queue_disagreement": 0.15730337078651685,
+      "penetration": -0.1220011721186991,
+      "overlap_with_length_queue": 0.1404494382022472,
+      "auc_len_proxy": 0.6873095077545517,
+      "auc_len_construct": 0.5995986205297629
+    },
+    {
+      "pair": "mpt-7b-instruct vs vicuna-13b-1.1",
+      "n": 2065,
+      "base_disagreement": 0.2774818401937046,
+      "queue_disagreement": 0.1553398058252427,
+      "penetration": -0.12214203436846188,
+      "overlap_with_length_queue": 0.22330097087378642,
+      "auc_len_proxy": 0.5998705996906506,
+      "auc_len_construct": 0.5095863806772786
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2090,
+      "base_disagreement": 0.18564593301435406,
+      "queue_disagreement": 0.06220095693779904,
+      "penetration": -0.12344497607655502,
+      "overlap_with_length_queue": 0.17703349282296652,
+      "auc_len_proxy": 0.673213012364229,
+      "auc_len_construct": 0.5904091634374288
+    },
+    {
+      "pair": "chatglm-6b vs dolly-v2-12b",
+      "n": 2003,
+      "base_disagreement": 0.3534697953070394,
+      "queue_disagreement": 0.23,
+      "penetration": -0.12346979530703941,
+      "overlap_with_length_queue": 0.2,
+      "auc_len_proxy": 0.695982290786874,
+      "auc_len_construct": 0.6306544784208106
+    },
+    {
+      "pair": "chatglm-6b vs mpt-7b-instruct",
+      "n": 2051,
+      "base_disagreement": 0.3286201852754754,
+      "queue_disagreement": 0.2048780487804878,
+      "penetration": -0.12374213649498758,
+      "overlap_with_length_queue": 0.24390243902439024,
+      "auc_len_proxy": 0.6041260458572945,
+      "auc_len_construct": 0.5696108113509193
+    },
+    {
+      "pair": "dolly-v2-12b vs koala-7B-HF",
+      "n": 1772,
+      "base_disagreement": 0.29909706546275394,
+      "queue_disagreement": 0.1751412429378531,
+      "penetration": -0.12395582252490084,
+      "overlap_with_length_queue": 0.1807909604519774,
+      "auc_len_proxy": 0.6432182879119422,
+      "auc_len_construct": 0.5699392098813243
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs stablelm-tuned-alpha-7b",
+      "n": 1879,
+      "base_disagreement": 0.21447578499201703,
+      "queue_disagreement": 0.09042553191489362,
+      "penetration": -0.1240502530771234,
+      "overlap_with_length_queue": 0.20212765957446807,
+      "auc_len_proxy": 0.6433119857859809,
+      "auc_len_construct": 0.5891900339346312
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs chatglm-6b",
+      "n": 1919,
+      "base_disagreement": 0.3866597186034393,
+      "queue_disagreement": 0.2604166666666667,
+      "penetration": -0.1262430519367726,
+      "overlap_with_length_queue": 0.234375,
+      "auc_len_proxy": 0.583939176401488,
+      "auc_len_construct": 0.5367716473635232
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs koala-7B-HF",
+      "n": 1898,
+      "base_disagreement": 0.2581664910432034,
+      "queue_disagreement": 0.13157894736842105,
+      "penetration": -0.12658754367478234,
+      "overlap_with_length_queue": 0.18421052631578946,
+      "auc_len_proxy": 0.6627967993956434,
+      "auc_len_construct": 0.567973163841808
+    },
+    {
+      "pair": "chatglm-6b vs koala-7B-HF",
+      "n": 1919,
+      "base_disagreement": 0.28869202709744657,
+      "queue_disagreement": 0.16145833333333334,
+      "penetration": -0.12723369376411323,
+      "overlap_with_length_queue": 0.171875,
+      "auc_len_proxy": 0.6494962234988773,
+      "auc_len_construct": 0.6160792739238418
+    },
+    {
+      "pair": "flan-t5-xxl vs mpt-7b",
+      "n": 1859,
+      "base_disagreement": 0.3318988703604088,
+      "queue_disagreement": 0.20430107526881722,
+      "penetration": -0.1275977950915916,
+      "overlap_with_length_queue": 0.1774193548387097,
+      "auc_len_proxy": 0.7404422377897178,
+      "auc_len_construct": 0.6154953706649323
+    },
+    {
+      "pair": "alpaca-native vs koala-7B-HF",
+      "n": 1883,
+      "base_disagreement": 0.2665958576739246,
+      "queue_disagreement": 0.13829787234042554,
+      "penetration": -0.12829798533349904,
+      "overlap_with_length_queue": 0.17553191489361702,
+      "auc_len_proxy": 0.6647326608944034,
+      "auc_len_construct": 0.615484307617322
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs koala-7B-HF",
+      "n": 1881,
+      "base_disagreement": 0.27219564061669327,
+      "queue_disagreement": 0.14361702127659576,
+      "penetration": -0.1285786193400975,
+      "overlap_with_length_queue": 0.22872340425531915,
+      "auc_len_proxy": 0.5981047778578725,
+      "auc_len_construct": 0.5893172083648274
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs mpt-7b",
+      "n": 2023,
+      "base_disagreement": 0.22293623331685616,
+      "queue_disagreement": 0.09405940594059406,
+      "penetration": -0.1288768273762621,
+      "overlap_with_length_queue": 0.13861386138613863,
+      "auc_len_proxy": 0.6630169506902756,
+      "auc_len_construct": 0.5961907669993702
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs mpt-7b",
+      "n": 2064,
+      "base_disagreement": 0.22189922480620156,
+      "queue_disagreement": 0.09223300970873786,
+      "penetration": -0.12966621509746368,
+      "overlap_with_length_queue": 0.1796116504854369,
+      "auc_len_proxy": 0.6180383732646664,
+      "auc_len_construct": 0.5509106438182176
+    },
+    {
+      "pair": "mpt-7b vs moss-moon-003-sft",
+      "n": 2037,
+      "base_disagreement": 0.26264113892979873,
+      "queue_disagreement": 0.1323529411764706,
+      "penetration": -0.13028819775332814,
+      "overlap_with_length_queue": 0.21568627450980393,
+      "auc_len_proxy": 0.5927327709079702,
+      "auc_len_construct": 0.5627027787695027
+    },
+    {
+      "pair": "alpaca-native vs stablelm-tuned-alpha-7b",
+      "n": 1993,
+      "base_disagreement": 0.2107375815353738,
+      "queue_disagreement": 0.08040201005025126,
+      "penetration": -0.13033557148512254,
+      "overlap_with_length_queue": 0.11055276381909548,
+      "auc_len_proxy": 0.664192615530815,
+      "auc_len_construct": 0.5975387794977285
+    },
+    {
+      "pair": "dolly-v2-12b vs llama-7b-hf-baize-lora-bf16",
+      "n": 1961,
+      "base_disagreement": 0.3003569607343192,
+      "queue_disagreement": 0.1683673469387755,
+      "penetration": -0.13198961379554372,
+      "overlap_with_length_queue": 0.14795918367346939,
+      "auc_len_proxy": 0.6241755894552621,
+      "auc_len_construct": 0.5497393824232554
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs mpt-7b",
+      "n": 1902,
+      "base_disagreement": 0.2797055730809674,
+      "queue_disagreement": 0.14736842105263157,
+      "penetration": -0.13233715202833582,
+      "overlap_with_length_queue": 0.22105263157894736,
+      "auc_len_proxy": 0.6747386658175232,
+      "auc_len_construct": 0.5784910099705671
+    },
+    {
+      "pair": "koala-7B-HF vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1898,
+      "base_disagreement": 0.25869336143308747,
+      "queue_disagreement": 0.12631578947368421,
+      "penetration": -0.13237757195940325,
+      "overlap_with_length_queue": 0.18947368421052632,
+      "auc_len_proxy": 0.6550622317596567,
+      "auc_len_construct": 0.6092432588881139
+    },
+    {
+      "pair": "mpt-7b vs vicuna-13b-1.1",
+      "n": 2065,
+      "base_disagreement": 0.21016949152542372,
+      "queue_disagreement": 0.07766990291262135,
+      "penetration": -0.13249958861280237,
+      "overlap_with_length_queue": 0.18446601941747573,
+      "auc_len_proxy": 0.6158756387758071,
+      "auc_len_construct": 0.524315044156314
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs alpaca-native",
+      "n": 2054,
+      "base_disagreement": 0.21567672833495619,
+      "queue_disagreement": 0.08292682926829269,
+      "penetration": -0.1327498990666635,
+      "overlap_with_length_queue": 0.14146341463414633,
+      "auc_len_proxy": 0.6381585995325283,
+      "auc_len_construct": 0.5594276785607789
+    },
+    {
+      "pair": "mpt-7b vs alpaca-native",
+      "n": 2126,
+      "base_disagreement": 0.22671683913452492,
+      "queue_disagreement": 0.09389671361502347,
+      "penetration": -0.13282012551950145,
+      "overlap_with_length_queue": 0.14084507042253522,
+      "auc_len_proxy": 0.6356420689738622,
+      "auc_len_construct": 0.5980786057391833
+    },
+    {
+      "pair": "mpt-7b-instruct vs mpt-7b",
+      "n": 2017,
+      "base_disagreement": 0.31284085275161133,
+      "queue_disagreement": 0.1782178217821782,
+      "penetration": -0.13462303096943312,
+      "overlap_with_length_queue": 0.297029702970297,
+      "auc_len_proxy": 0.6185660699803035,
+      "auc_len_construct": 0.5825801952580196
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs vicuna-13b-1.1",
+      "n": 2113,
+      "base_disagreement": 0.2106010411736867,
+      "queue_disagreement": 0.07582938388625593,
+      "penetration": -0.13477165728743076,
+      "overlap_with_length_queue": 0.16113744075829384,
+      "auc_len_proxy": 0.6212962962962962,
+      "auc_len_construct": 0.5113422754946728
+    },
+    {
+      "pair": "mpt-7b-instruct vs stablelm-tuned-alpha-7b",
+      "n": 2007,
+      "base_disagreement": 0.27453911310413553,
+      "queue_disagreement": 0.13930348258706468,
+      "penetration": -0.13523563051707085,
+      "overlap_with_length_queue": 0.21393034825870647,
+      "auc_len_proxy": 0.6142745937530407,
+      "auc_len_construct": 0.5422357490166729
+    },
+    {
+      "pair": "alpaca-native vs mpt-7b-instruct",
+      "n": 2007,
+      "base_disagreement": 0.3064275037369208,
+      "queue_disagreement": 0.1691542288557214,
+      "penetration": -0.1372732748811994,
+      "overlap_with_length_queue": 0.23383084577114427,
+      "auc_len_proxy": 0.6202363273111893,
+      "auc_len_construct": 0.5815607504519209
+    },
+    {
+      "pair": "koala-7B-HF vs moss-moon-003-sft",
+      "n": 1918,
+      "base_disagreement": 0.3039624608967675,
+      "queue_disagreement": 0.16666666666666666,
+      "penetration": -0.13729579423010083,
+      "overlap_with_length_queue": 0.20833333333333334,
+      "auc_len_proxy": 0.5944094659140251,
+      "auc_len_construct": 0.5662441501027509
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1621,
+      "base_disagreement": 0.4028377544725478,
+      "queue_disagreement": 0.2654320987654321,
+      "penetration": -0.13740565570711571,
+      "overlap_with_length_queue": 0.1728395061728395,
+      "auc_len_proxy": 0.6008520865528519,
+      "auc_len_construct": 0.5681502870785677
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs vicuna-13b-1.1",
+      "n": 1636,
+      "base_disagreement": 0.38141809290953543,
+      "queue_disagreement": 0.24390243902439024,
+      "penetration": -0.1375156538851452,
+      "overlap_with_length_queue": 0.13414634146341464,
+      "auc_len_proxy": 0.5899618872191148,
+      "auc_len_construct": 0.5295889319834721
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs dolly-v2-12b",
+      "n": 1948,
+      "base_disagreement": 0.2915811088295688,
+      "queue_disagreement": 0.15384615384615385,
+      "penetration": -0.13773495498341493,
+      "overlap_with_length_queue": 0.1641025641025641,
+      "auc_len_proxy": 0.6583955469787657,
+      "auc_len_construct": 0.5488827332901676
+    },
+    {
+      "pair": "mpt-7b-instruct vs moss-moon-003-sft",
+      "n": 2036,
+      "base_disagreement": 0.29960707269155207,
+      "queue_disagreement": 0.16176470588235295,
+      "penetration": -0.13784236680919912,
+      "overlap_with_length_queue": 0.2107843137254902,
+      "auc_len_proxy": 0.5566048350715177,
+      "auc_len_construct": 0.5407380554946692
+    },
+    {
+      "pair": "chatglm-6b vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1774,
+      "base_disagreement": 0.342728297632469,
+      "queue_disagreement": 0.2033898305084746,
+      "penetration": -0.1393384671239944,
+      "overlap_with_length_queue": 0.062146892655367235,
+      "auc_len_proxy": 0.5753024820584163,
+      "auc_len_construct": 0.5322744522074434
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs koala-7B-HF",
+      "n": 1779,
+      "base_disagreement": 0.2799325463743676,
+      "queue_disagreement": 0.1404494382022472,
+      "penetration": -0.1394831081721204,
+      "overlap_with_length_queue": 0.14606741573033707,
+      "auc_len_proxy": 0.6385758562110149,
+      "auc_len_construct": 0.615964207427622
+    },
+    {
+      "pair": "dolly-v2-12b vs moss-moon-003-sft",
+      "n": 1931,
+      "base_disagreement": 0.30088037286380115,
+      "queue_disagreement": 0.16062176165803108,
+      "penetration": -0.14025861120577007,
+      "overlap_with_length_queue": 0.12435233160621761,
+      "auc_len_proxy": 0.6121942446043165,
+      "auc_len_construct": 0.5429261446485856
+    },
+    {
+      "pair": "alpaca-native vs moss-moon-003-sft",
+      "n": 1771,
+      "base_disagreement": 0.3551665725578769,
+      "queue_disagreement": 0.21468926553672316,
+      "penetration": -0.14047730702115377,
+      "overlap_with_length_queue": 0.23163841807909605,
+      "auc_len_proxy": 0.5357076225161331,
+      "auc_len_construct": 0.5285879496517795
+    },
+    {
+      "pair": "koala-7B-HF vs chatglm-6b",
+      "n": 2000,
+      "base_disagreement": 0.278,
+      "queue_disagreement": 0.135,
+      "penetration": -0.14300000000000002,
+      "overlap_with_length_queue": 0.185,
+      "auc_len_proxy": 0.6478065108563642,
+      "auc_len_construct": 0.5906843053426905
+    },
+    {
+      "pair": "mpt-7b vs flan-t5-xxl",
+      "n": 1929,
+      "base_disagreement": 0.3509590461378953,
+      "queue_disagreement": 0.20725388601036268,
+      "penetration": -0.14370516012753262,
+      "overlap_with_length_queue": 0.16580310880829016,
+      "auc_len_proxy": 0.7351062096122443,
+      "auc_len_construct": 0.6450040887532029
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs chatglm-6b",
+      "n": 1784,
+      "base_disagreement": 0.3576233183856502,
+      "queue_disagreement": 0.21348314606741572,
+      "penetration": -0.14414017231823448,
+      "overlap_with_length_queue": 0.09550561797752809,
+      "auc_len_proxy": 0.5853664070278792,
+      "auc_len_construct": 0.533412502267368
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs vicuna-13b-1.1",
+      "n": 1771,
+      "base_disagreement": 0.3760587238848108,
+      "queue_disagreement": 0.23163841807909605,
+      "penetration": -0.14442030580571477,
+      "overlap_with_length_queue": 0.15254237288135594,
+      "auc_len_proxy": 0.5866585672436191,
+      "auc_len_construct": 0.5211871193026675
+    },
+    {
+      "pair": "chatglm-6b vs mpt-7b",
+      "n": 1991,
+      "base_disagreement": 0.2923154193872426,
+      "queue_disagreement": 0.1457286432160804,
+      "penetration": -0.1465867761711622,
+      "overlap_with_length_queue": 0.16080402010050251,
+      "auc_len_proxy": 0.6226569745684115,
+      "auc_len_construct": 0.5747373880814978
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs chatglm-6b",
+      "n": 2071,
+      "base_disagreement": 0.20569773056494448,
+      "queue_disagreement": 0.057971014492753624,
+      "penetration": -0.14772671607219084,
+      "overlap_with_length_queue": 0.19806763285024154,
+      "auc_len_proxy": 0.6736812151430562,
+      "auc_len_construct": 0.5946247395043489
+    },
+    {
+      "pair": "moss-moon-003-sft vs stablelm-tuned-alpha-7b",
+      "n": 1840,
+      "base_disagreement": 0.24130434782608695,
+      "queue_disagreement": 0.09239130434782608,
+      "penetration": -0.14891304347826087,
+      "overlap_with_length_queue": 0.266304347826087,
+      "auc_len_proxy": 0.6286000150962547,
+      "auc_len_construct": 0.5685687712689798
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs stablelm-tuned-alpha-7b",
+      "n": 1913,
+      "base_disagreement": 0.2138003136434919,
+      "queue_disagreement": 0.06282722513089005,
+      "penetration": -0.15097308851260183,
+      "overlap_with_length_queue": 0.19895287958115182,
+      "auc_len_proxy": 0.6441624455700702,
+      "auc_len_construct": 0.5590053400378165
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs llama-7b-hf-baize-lora-bf16",
+      "n": 1757,
+      "base_disagreement": 0.3762094479225953,
+      "queue_disagreement": 0.2215909090909091,
+      "penetration": -0.15461853883168622,
+      "overlap_with_length_queue": 0.24431818181818182,
+      "auc_len_proxy": 0.5909089102930891,
+      "auc_len_construct": 0.5237161956852021
+    },
+    {
+      "pair": "mpt-7b vs mpt-7b-instruct",
+      "n": 2010,
+      "base_disagreement": 0.3189054726368159,
+      "queue_disagreement": 0.16417910447761194,
+      "penetration": -0.15472636815920396,
+      "overlap_with_length_queue": 0.23880597014925373,
+      "auc_len_proxy": 0.6010596523056271,
+      "auc_len_construct": 0.5933456975765805
+    },
+    {
+      "pair": "alpaca-native vs mpt-7b",
+      "n": 2023,
+      "base_disagreement": 0.2550667325753831,
+      "queue_disagreement": 0.09900990099009901,
+      "penetration": -0.15605683158528408,
+      "overlap_with_length_queue": 0.16336633663366337,
+      "auc_len_proxy": 0.6445407249215435,
+      "auc_len_construct": 0.5931920444210426
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs moss-moon-003-sft",
+      "n": 1606,
+      "base_disagreement": 0.37359900373599003,
+      "queue_disagreement": 0.21739130434782608,
+      "penetration": -0.15620769938816395,
+      "overlap_with_length_queue": 0.21739130434782608,
+      "auc_len_proxy": 0.5241486271698319,
+      "auc_len_construct": 0.5248296273032161
+    },
+    {
+      "pair": "alpaca-native vs chatglm-6b",
+      "n": 1838,
+      "base_disagreement": 0.3411316648531012,
+      "queue_disagreement": 0.18478260869565216,
+      "penetration": -0.15634905615744904,
+      "overlap_with_length_queue": 0.07065217391304347,
+      "auc_len_proxy": 0.6261770679741581,
+      "auc_len_construct": 0.590495701103744
+    },
+    {
+      "pair": "flan-t5-xxl vs dolly-v2-12b",
+      "n": 1767,
+      "base_disagreement": 0.2761743067345784,
+      "queue_disagreement": 0.11864406779661017,
+      "penetration": -0.1575302389379682,
+      "overlap_with_length_queue": 0.11864406779661017,
+      "auc_len_proxy": 0.653566392043346,
+      "auc_len_construct": 0.6265990724601593
+    },
+    {
+      "pair": "mpt-7b vs koala-7B-HF",
+      "n": 1923,
+      "base_disagreement": 0.2844513780551222,
+      "queue_disagreement": 0.125,
+      "penetration": -0.15945137805512222,
+      "overlap_with_length_queue": 0.14583333333333334,
+      "auc_len_proxy": 0.628452126732328,
+      "auc_len_construct": 0.5766421652079285
+    },
+    {
+      "pair": "mpt-7b vs dolly-v2-12b",
+      "n": 1999,
+      "base_disagreement": 0.3746873436718359,
+      "queue_disagreement": 0.215,
+      "penetration": -0.15968734367183593,
+      "overlap_with_length_queue": 0.13,
+      "auc_len_proxy": 0.6310645024490149,
+      "auc_len_construct": 0.5729693652662586
+    },
+    {
+      "pair": "moss-moon-003-sft vs chatglm-6b",
+      "n": 1825,
+      "base_disagreement": 0.3632876712328767,
+      "queue_disagreement": 0.2032967032967033,
+      "penetration": -0.1599909679361734,
+      "overlap_with_length_queue": 0.1978021978021978,
+      "auc_len_proxy": 0.45865730239889285,
+      "auc_len_construct": 0.45648543453141155
+    },
+    {
+      "pair": "dolly-v2-12b vs mpt-7b",
+      "n": 1941,
+      "base_disagreement": 0.3462132921174652,
+      "queue_disagreement": 0.18556701030927836,
+      "penetration": -0.16064628180818685,
+      "overlap_with_length_queue": 0.12371134020618557,
+      "auc_len_proxy": 0.6520699975945112,
+      "auc_len_construct": 0.5930189001099567
+    },
+    {
+      "pair": "moss-moon-003-sft vs alpaca-native",
+      "n": 1810,
+      "base_disagreement": 0.3541436464088398,
+      "queue_disagreement": 0.19337016574585636,
+      "penetration": -0.16077348066298341,
+      "overlap_with_length_queue": 0.18232044198895028,
+      "auc_len_proxy": 0.5032511033806826,
+      "auc_len_construct": 0.48487515299877604
+    },
+    {
+      "pair": "koala-7B-HF vs flan-t5-xxl",
+      "n": 1846,
+      "base_disagreement": 0.290899241603467,
+      "queue_disagreement": 0.12972972972972974,
+      "penetration": -0.16116951187373724,
+      "overlap_with_length_queue": 0.15135135135135136,
+      "auc_len_proxy": 0.6503864113739471,
+      "auc_len_construct": 0.5944973782653469
+    },
+    {
+      "pair": "mpt-7b-instruct vs dolly-v2-12b",
+      "n": 2037,
+      "base_disagreement": 0.37702503681885124,
+      "queue_disagreement": 0.21568627450980393,
+      "penetration": -0.1613387623090473,
+      "overlap_with_length_queue": 0.1323529411764706,
+      "auc_len_proxy": 0.6011693820152544,
+      "auc_len_construct": 0.5733939600862624
+    },
+    {
+      "pair": "koala-7B-HF vs llama-7b-hf-baize-lora-bf16",
+      "n": 1895,
+      "base_disagreement": 0.31029023746701845,
+      "queue_disagreement": 0.14736842105263157,
+      "penetration": -0.16292181641438688,
+      "overlap_with_length_queue": 0.23157894736842105,
+      "auc_len_proxy": 0.6355436867283446,
+      "auc_len_construct": 0.5977308544693425
+    },
+    {
+      "pair": "moss-moon-003-sft vs llama-7b-hf-baize-lora-bf16",
+      "n": 1857,
+      "base_disagreement": 0.40010770059235323,
+      "queue_disagreement": 0.23655913978494625,
+      "penetration": -0.16354856080740698,
+      "overlap_with_length_queue": 0.1989247311827957,
+      "auc_len_proxy": 0.5435300354845656,
+      "auc_len_construct": 0.5179148587362157
+    },
+    {
+      "pair": "alpaca-native vs vicuna-13b-1.1",
+      "n": 1678,
+      "base_disagreement": 0.3432657926102503,
+      "queue_disagreement": 0.17857142857142858,
+      "penetration": -0.16469436403882173,
+      "overlap_with_length_queue": 0.19642857142857142,
+      "auc_len_proxy": 0.5860759663504755,
+      "auc_len_construct": 0.5540777666999003
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs llama-7b-hf-baize-lora-bf16",
+      "n": 2123,
+      "base_disagreement": 0.2133772962788507,
+      "queue_disagreement": 0.04716981132075472,
+      "penetration": -0.16620748495809595,
+      "overlap_with_length_queue": 0.25471698113207547,
+      "auc_len_proxy": 0.6505228867824288,
+      "auc_len_construct": 0.6103176182264921
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs mpt-7b-instruct",
+      "n": 2051,
+      "base_disagreement": 0.2462213554363725,
+      "queue_disagreement": 0.07804878048780488,
+      "penetration": -0.16817257494856763,
+      "overlap_with_length_queue": 0.18048780487804877,
+      "auc_len_proxy": 0.6508149049841077,
+      "auc_len_construct": 0.5601194448151607
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs moss-moon-003-sft",
+      "n": 1974,
+      "base_disagreement": 0.23961499493414387,
+      "queue_disagreement": 0.07106598984771574,
+      "penetration": -0.16854900508642812,
+      "overlap_with_length_queue": 0.26903553299492383,
+      "auc_len_proxy": 0.6246786358838152,
+      "auc_len_construct": 0.5896918399634334
+    },
+    {
+      "pair": "koala-7B-HF vs mpt-7b-instruct",
+      "n": 2058,
+      "base_disagreement": 0.30952380952380953,
+      "queue_disagreement": 0.1407766990291262,
+      "penetration": -0.16874711049468333,
+      "overlap_with_length_queue": 0.18446601941747573,
+      "auc_len_proxy": 0.6082118324796902,
+      "auc_len_construct": 0.5802109918573208
+    },
+    {
+      "pair": "koala-7B-HF vs vicuna-13b-1.1",
+      "n": 1869,
+      "base_disagreement": 0.270733012306046,
+      "queue_disagreement": 0.10160427807486631,
+      "penetration": -0.1691287342311797,
+      "overlap_with_length_queue": 0.1925133689839572,
+      "auc_len_proxy": 0.6248367354275135,
+      "auc_len_construct": 0.5650606107104497
+    },
+    {
+      "pair": "moss-moon-003-sft vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1738,
+      "base_disagreement": 0.38204833141542005,
+      "queue_disagreement": 0.21264367816091953,
+      "penetration": -0.16940465325450052,
+      "overlap_with_length_queue": 0.14942528735632185,
+      "auc_len_proxy": 0.5485861597046213,
+      "auc_len_construct": 0.5296878234735617
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs moss-moon-003-sft",
+      "n": 1764,
+      "base_disagreement": 0.3713151927437642,
+      "queue_disagreement": 0.19886363636363635,
+      "penetration": -0.17245155638012782,
+      "overlap_with_length_queue": 0.17045454545454544,
+      "auc_len_proxy": 0.5531190332419638,
+      "auc_len_construct": 0.5451833028780265
+    },
+    {
+      "pair": "mpt-7b vs llama-7b-hf-baize-lora-bf16",
+      "n": 2036,
+      "base_disagreement": 0.25638506876227896,
+      "queue_disagreement": 0.08333333333333333,
+      "penetration": -0.17305173542894564,
+      "overlap_with_length_queue": 0.17647058823529413,
+      "auc_len_proxy": 0.5898719003777553,
+      "auc_len_construct": 0.5685674302328741
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs alpaca-native",
+      "n": 1803,
+      "base_disagreement": 0.3632834165280089,
+      "queue_disagreement": 0.18888888888888888,
+      "penetration": -0.17439452763912,
+      "overlap_with_length_queue": 0.2,
+      "auc_len_proxy": 0.5938431917005096,
+      "auc_len_construct": 0.5648128078817733
+    },
+    {
+      "pair": "dolly-v2-12b vs stablelm-tuned-alpha-7b",
+      "n": 1831,
+      "base_disagreement": 0.3118514472965593,
+      "queue_disagreement": 0.1366120218579235,
+      "penetration": -0.17523942543863577,
+      "overlap_with_length_queue": 0.14207650273224043,
+      "auc_len_proxy": 0.640865603475576,
+      "auc_len_construct": 0.5713880712252087
+    },
+    {
+      "pair": "koala-7B-HF vs alpaca-native",
+      "n": 1879,
+      "base_disagreement": 0.28898350186269295,
+      "queue_disagreement": 0.11170212765957446,
+      "penetration": -0.17728137420311849,
+      "overlap_with_length_queue": 0.13297872340425532,
+      "auc_len_proxy": 0.6456285098853758,
+      "auc_len_construct": 0.5843223953188721
+    },
+    {
+      "pair": "mpt-7b vs stablelm-tuned-alpha-7b",
+      "n": 1857,
+      "base_disagreement": 0.3031771674744211,
+      "queue_disagreement": 0.12365591397849462,
+      "penetration": -0.17952125349592646,
+      "overlap_with_length_queue": 0.21505376344086022,
+      "auc_len_proxy": 0.6365877665138748,
+      "auc_len_construct": 0.5359714093943926
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs chatglm-6b",
+      "n": 1907,
+      "base_disagreement": 0.3382275825904562,
+      "queue_disagreement": 0.15706806282722513,
+      "penetration": -0.18115951976323108,
+      "overlap_with_length_queue": 0.17801047120418848,
+      "auc_len_proxy": 0.562205184671642,
+      "auc_len_construct": 0.5228871865801327
+    },
+    {
+      "pair": "koala-7B-HF vs stablelm-tuned-alpha-7b",
+      "n": 1793,
+      "base_disagreement": 0.2682654768544339,
+      "queue_disagreement": 0.08379888268156424,
+      "penetration": -0.18446659417286967,
+      "overlap_with_length_queue": 0.25139664804469275,
+      "auc_len_proxy": 0.6713812886142982,
+      "auc_len_construct": 0.5620753908759906
+    },
+    {
+      "pair": "alpaca-native vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1537,
+      "base_disagreement": 0.328562134027326,
+      "queue_disagreement": 0.14285714285714285,
+      "penetration": -0.18570499117018313,
+      "overlap_with_length_queue": 0.11038961038961038,
+      "auc_len_proxy": 0.6306451320700026,
+      "auc_len_construct": 0.6298300641778902
+    },
+    {
+      "pair": "mpt-7b-instruct vs llama-7b-hf-baize-lora-bf16",
+      "n": 2038,
+      "base_disagreement": 0.3258096172718351,
+      "queue_disagreement": 0.13725490196078433,
+      "penetration": -0.18855471531105078,
+      "overlap_with_length_queue": 0.19117647058823528,
+      "auc_len_proxy": 0.5668659516830978,
+      "auc_len_construct": 0.5411972437553834
+    },
+    {
+      "pair": "chatglm-6b vs alpaca-native",
+      "n": 1945,
+      "base_disagreement": 0.35475578406169667,
+      "queue_disagreement": 0.16494845360824742,
+      "penetration": -0.18980733045344925,
+      "overlap_with_length_queue": 0.13402061855670103,
+      "auc_len_proxy": 0.6285901473602277,
+      "auc_len_construct": 0.577988792029888
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs moss-moon-003-sft",
+      "n": 1724,
+      "base_disagreement": 0.35962877030162416,
+      "queue_disagreement": 0.1686046511627907,
+      "penetration": -0.19102411913883346,
+      "overlap_with_length_queue": 0.23837209302325582,
+      "auc_len_proxy": 0.5422370358886908,
+      "auc_len_construct": 0.505341499395236
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs alpaca-native",
+      "n": 1540,
+      "base_disagreement": 0.35454545454545455,
+      "queue_disagreement": 0.16233766233766234,
+      "penetration": -0.19220779220779222,
+      "overlap_with_length_queue": 0.13636363636363635,
+      "auc_len_proxy": 0.6258581156618095,
+      "auc_len_construct": 0.6030293614513376
+    },
+    {
+      "pair": "mpt-7b-instruct vs chatglm-6b",
+      "n": 2188,
+      "base_disagreement": 0.3117001828153565,
+      "queue_disagreement": 0.1141552511415525,
+      "penetration": -0.197544931673804,
+      "overlap_with_length_queue": 0.1963470319634703,
+      "auc_len_proxy": 0.6019690793087658,
+      "auc_len_construct": 0.559084750207614
+    },
+    {
+      "pair": "chatglm-6b vs llama-7b-hf-baize-lora-bf16",
+      "n": 1944,
+      "base_disagreement": 0.3863168724279835,
+      "queue_disagreement": 0.18041237113402062,
+      "penetration": -0.2059045012939629,
+      "overlap_with_length_queue": 0.25257731958762886,
+      "auc_len_proxy": 0.5776154200090748,
+      "auc_len_construct": 0.5379895104895105
+    },
+    {
+      "pair": "alpaca-native vs llama-7b-hf-baize-lora-bf16",
+      "n": 1646,
+      "base_disagreement": 0.3894289185905225,
+      "queue_disagreement": 0.17575757575757575,
+      "penetration": -0.21367134283294673,
+      "overlap_with_length_queue": 0.2787878787878788,
+      "auc_len_proxy": 0.6021107413512476,
+      "auc_len_construct": 0.6103853861338756
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs alpaca-native",
+      "n": 1744,
+      "base_disagreement": 0.3761467889908257,
+      "queue_disagreement": 0.15517241379310345,
+      "penetration": -0.22097437519772226,
+      "overlap_with_length_queue": 0.19540229885057472,
+      "auc_len_proxy": 0.5897894468939806,
+      "auc_len_construct": 0.5339496706538726
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs llama-7b-hf-baize-lora-bf16",
+      "n": 1601,
+      "base_disagreement": 0.3835103060587133,
+      "queue_disagreement": 0.15625,
+      "penetration": -0.22726030605871328,
+      "overlap_with_length_queue": 0.1875,
+      "auc_len_proxy": 0.6190306033319041,
+      "auc_len_construct": 0.6284729221662266
+    }
+  ]
+}

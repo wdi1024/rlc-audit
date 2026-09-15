@@ -1,0 +1,41 @@
+{
+ "contract": {
+  "pair": "qwen3.5-9b/gemma-2-9b-it",
+  "phase": "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+  "judge": "anthropic_claude-haiku-4-5-20251001",
+  "span_chars": 50,
+  "n": 450,
+  "construct_positives": 79,
+  "z_positives": 19,
+  "z_c_positives": 109
+ },
+ "preconditions": {
+  "complement_nonempty_share": 1.0,
+  "modal_score_share": 0.04666666666666667,
+  "failed": []
+ },
+ "auc": {
+  "AUC_s_z": 0.7590670411527659,
+  "AUC_s_zc": 0.585178508972531
+ },
+ "continuous": {
+  "AUC_s_y": 0.5006482650380429,
+  "AUC_s_y_CI95": [
+   0.42652590612541186,
+   0.5755802207223644
+  ],
+  "AUC_s_y_CI90": [
+   0.4381276399108532,
+   0.5620333151051424
+  ],
+  "Delta_dis": 0.08453024393448805,
+  "Delta_dis_CI95": [
+   -0.027126191012188536,
+   0.1240772977539206
+  ],
+  "Delta_AUC": 0.25841877611472297,
+  "null_p95": 0.0588139211924179,
+  "permutation_p": 0.0045
+ },
+ "verdict": "UNDECIDABLE (equivalence)"
+}

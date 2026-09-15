@@ -1,0 +1,16 @@
+{
+  "method": "sentence-transformers/all-MiniLM-L6-v2",
+  "n": 450,
+  "sims_stats": {
+    "mean": 0.7963058352470398,
+    "std": 0.13287371397018433,
+    "min": 0.13552723824977875,
+    "max": 0.9591081738471985
+  },
+  "auc_keyword": 0.7821176470588236,
+  "auc_judge": 0.6494296168747309,
+  "judge_ci_lo": 0.5705520857186432,
+  "judge_ci_hi": 0.7249468178503936,
+  "mean_sim_disagree_judge": 0.7639753818511963,
+  "mean_sim_agree_judge": 0.7999871373176575
+}

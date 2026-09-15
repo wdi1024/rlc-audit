@@ -1,0 +1,102 @@
+{
+ "XSTest 450 (primary run)": {
+  "kappa_zy": 0.02382267097893737,
+  "baseline": "FLAG: label",
+  "audit": "CAUTION"
+ },
+ "AdvBench 520": {
+  "kappa_zy": -0.01148473874805975,
+  "baseline": "UNDECIDABLE (power)",
+  "audit": "UNDECIDABLE (power)"
+ },
+ "SimpleSafety 100": {
+  "kappa_zy": -0.12208258527827594,
+  "baseline": "UNDECIDABLE (power)",
+  "audit": "UNDECIDABLE (power)"
+ },
+ "XSTest 100 / 512tok": {
+  "kappa_zy": -0.06870229007633503,
+  "baseline": "UNDECIDABLE (power)",
+  "audit": "UNDECIDABLE (power)"
+ },
+ "AdvBench 100 / 512tok": {
+  "kappa_zy": -0.05911330049261088,
+  "baseline": "UNDECIDABLE (power)",
+  "audit": "UNDECIDABLE (power)"
+ },
+ "OR-Bench hard 1k": {
+  "kappa_zy": -0.00031999692802935954,
+  "baseline": "UNDECIDABLE (resolution)",
+  "audit": "UNDECIDABLE (resolution)"
+ },
+ "JailbreakBench": {
+  "kappa_zy": -0.10671936758893277,
+  "baseline": "UNDECIDABLE (equivalence)",
+  "audit": "UNDECIDABLE (equivalence)"
+ },
+ "GSM8K, 50-char span": {
+  "kappa_zy": 0.00036490203783792665,
+  "baseline": "UNDECIDABLE (resolution)",
+  "audit": "UNDECIDABLE (resolution)"
+ },
+ "GSM8K, 120-char span": {
+  "kappa_zy": 0.01280716271372379,
+  "baseline": "FLAG: label",
+  "audit": "ALIGNED"
+ },
+ "GSM8K, 160-char span": {
+  "kappa_zy": -0.0051432850701985606,
+  "baseline": "FLAG: label",
+  "audit": "ALIGNED"
+ },
+ "GSM8K, 200-char span": {
+  "kappa_zy": 0.0046245593530659145,
+  "baseline": "FLAG: label",
+  "audit": "ALIGNED"
+ },
+ "GSM8K, 300-char span": {
+  "kappa_zy": 0.0171509425273883,
+  "baseline": "FLAG: label",
+  "audit": "ALIGNED"
+ },
+ "GSM8K, 600-char span": {
+  "kappa_zy": 0.005030212543090917,
+  "baseline": "FLAG: label",
+  "audit": "ALIGNED"
+ },
+ "HotpotQA, 50-char span": {
+  "kappa_zy": -0.10119260623174195,
+  "baseline": "FLAG: not evidence",
+  "audit": "SCORE FAILURE"
+ },
+ "HotpotQA, 80-char span": {
+  "kappa_zy": -0.10538380089128853,
+  "baseline": "UNDECIDABLE (equivalence)",
+  "audit": "UNDECIDABLE (equivalence)"
+ },
+ "HotpotQA, 120-char span": {
+  "kappa_zy": -0.12998047071614094,
+  "baseline": "UNDECIDABLE (complement)",
+  "audit": "UNDECIDABLE (complement)"
+ },
+ "HotpotQA, 160-char span": {
+  "kappa_zy": -0.1477062057040883,
+  "baseline": "UNDECIDABLE (complement)",
+  "audit": "UNDECIDABLE (complement)"
+ },
+ "HotpotQA, 200-char span": {
+  "kappa_zy": -0.13656348927189604,
+  "baseline": "UNDECIDABLE (complement)",
+  "audit": "UNDECIDABLE (complement)"
+ },
+ "HotpotQA, 300-char span": {
+  "kappa_zy": -0.11460411335575658,
+  "baseline": "UNDECIDABLE (complement)",
+  "audit": "UNDECIDABLE (complement)"
+ },
+ "HotpotQA, 600-char span": {
+  "kappa_zy": -0.04802323370269855,
+  "baseline": "UNDECIDABLE (complement)",
+  "audit": "UNDECIDABLE (complement)"
+ }
+}

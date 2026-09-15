@@ -1,0 +1,109 @@
+{
+  "n_common": 250,
+  "qwen_kw_acc": 0.748,
+  "gemma_kw_acc": 0.888,
+  "qwen_judge_acc": 0.668,
+  "gemma_judge_acc": 0.796,
+  "kw_disagree": 51,
+  "judge_disagree": 60,
+  "cells": {
+    "TF-IDF_x_keyword": {
+      "auc": 0.6737609616711006,
+      "ci": [
+        0.5934916198501873,
+        0.75212084619071
+      ],
+      "ap": 0.3556500539602723,
+      "sep_d": 0.5206045181805607,
+      "n_disagree": 51
+    },
+    "TF-IDF_x_judge": {
+      "auc": 0.6699122807017543,
+      "ci": [
+        0.5899215367965368,
+        0.7453886645993478
+      ],
+      "ap": 0.3470898134704899,
+      "sep_d": 0.2573937108231648,
+      "n_disagree": 60
+    },
+    "Sentence-L12_x_keyword": {
+      "auc": 0.5581830722238644,
+      "ci": [
+        0.4685934364686469,
+        0.6516194696969697
+      ],
+      "ap": 0.2653880913152236,
+      "sep_d": 0.2415326314677578,
+      "n_disagree": 51
+    },
+    "Sentence-L12_x_judge": {
+      "auc": 0.503421052631579,
+      "ci": [
+        0.4176330096087852,
+        0.5888749086970613
+      ],
+      "ap": 0.24496403113159784,
+      "sep_d": -0.01912019597788379,
+      "n_disagree": 60
+    }
+  },
+  "rlc_audit": {
+    "task": "HotpotQA multi-hop correctness",
+    "score_span": "full generated trace",
+    "model_pair": "Qwen3.5-2B/Gemma-4-E2B-it",
+    "surface_proxy": "gold-answer-string-in-trace disagreement",
+    "semantic_construct": "LLM-judge correctness disagreement",
+    "route_budget": 50,
+    "label_kappa": 0.3874248728617661,
+    "scores": {
+      "TF-IDF": {
+        "status": "ALIGNED",
+        "surface_positive": 51,
+        "semantic_positive": 60,
+        "auc_surface": 0.6737609616711006,
+        "auc_semantic": 0.6699122807017543,
+        "ap_surface": 0.3556500539602723,
+        "ap_semantic": 0.3470898134704899,
+        "delta_auc": 0.0038486809693462076,
+        "delta_ap": 0.008560240489782434,
+        "kappa_surface_semantic": 0.3874248728617661,
+        "routed_composition": {
+          "budget": 50,
+          "proxy_routed": 20,
+          "semantic_routed": 20,
+          "semantic_agreement_routed": 30,
+          "both_proxy_and_semantic": 13,
+          "proxy_share": 0.4,
+          "semantic_share": 0.4
+        }
+      },
+      "Sentence-L12": {
+        "status": "ALIGNED",
+        "surface_positive": 51,
+        "semantic_positive": 60,
+        "auc_surface": 0.5581830722238644,
+        "auc_semantic": 0.503421052631579,
+        "ap_surface": 0.2653880913152236,
+        "ap_semantic": 0.24496403113159784,
+        "delta_auc": 0.05476201959228544,
+        "delta_ap": 0.020424060183625775,
+        "kappa_surface_semantic": 0.3874248728617661,
+        "routed_composition": {
+          "budget": 50,
+          "proxy_routed": 16,
+          "semantic_routed": 12,
+          "semantic_agreement_routed": 38,
+          "both_proxy_and_semantic": 9,
+          "proxy_share": 0.32,
+          "semantic_share": 0.24
+        }
+      }
+    }
+  },
+  "verdict": {
+    "headline_score": "TF-IDF",
+    "claim": "non-refusal portability",
+    "interpretation": "HotpotQA correctness supplies a non-refusal RLC-Audit contract: the TF-IDF full-trace score is not surface-over-semantic coupled under the default bins, while Sentence-L12 remains a weak-utility boundary rather than a deployment claim."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "n": 548,
+  "budget": 55,
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "hypothesis": "The assistant refused to help the user.",
+  "rows": {
+    "final TF-IDF only": {
+      "auc_semantic": 0.6746106717767402,
+      "auc_ci": [
+        0.6061258294572618,
+        0.7409427490486693
+      ],
+      "ap_semantic": 0.2992241186363638,
+      "routed_semantic": 20
+    },
+    "composite with marker cue (paper)": {
+      "auc_semantic": 0.7149874497314512,
+      "auc_ci": [
+        0.6438968148258153,
+        0.7788031151661702
+      ],
+      "ap_semantic": 0.4018238673648159,
+      "routed_semantic": 28
+    },
+    "composite with NLI cue": {
+      "auc_semantic": 0.6606029526868371,
+      "auc_ci": [
+        0.5934379051917591,
+        0.7277655037427984
+      ],
+      "ap_semantic": 0.2588112313582484,
+      "routed_semantic": 18
+    },
+    "NLI cue alone": {
+      "auc_semantic": 0.46071630995114843,
+      "auc_ci": [
+        0.3969675696298463,
+        0.5246296201582106
+      ],
+      "ap_semantic": 0.1274899953378641,
+      "routed_semantic": 3
+    },
+    "marker cue alone": {
+      "auc_semantic": 0.7279695554775849,
+      "auc_ci": [
+        0.6678882290095526,
+        0.78310279392958
+      ],
+      "ap_semantic": 0.29085632171531106,
+      "routed_semantic": 20
+    }
+  },
+  "corr_nli_marker": -0.03423091435007892
+}

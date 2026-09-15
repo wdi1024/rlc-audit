@@ -1,0 +1,190 @@
+{
+ "verdicts": {
+  "all rules": {
+   "XSTest 450 (primary run)": "CAUTION",
+   "AdvBench 520": "UNDECIDABLE (power)",
+   "SimpleSafety 100": "UNDECIDABLE (power)",
+   "XSTest 100 / 512tok": "UNDECIDABLE (power)",
+   "AdvBench 100 / 512tok": "UNDECIDABLE (power)",
+   "OR-Bench hard 1k": "UNDECIDABLE (resolution)",
+   "JailbreakBench": "UNDECIDABLE (equivalence)",
+   "GSM8K, 50-char span": "UNDECIDABLE (resolution)",
+   "GSM8K, 120-char span": "ALIGNED",
+   "GSM8K, 160-char span": "ALIGNED",
+   "GSM8K, 200-char span": "ALIGNED",
+   "GSM8K, 300-char span": "ALIGNED",
+   "GSM8K, 600-char span": "ALIGNED",
+   "HotpotQA, 50-char span": "SCORE FAILURE",
+   "HotpotQA, 80-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 120-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 160-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 200-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 300-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 600-char span": "UNDECIDABLE (complement)"
+  },
+  "no power": {
+   "XSTest 450 (primary run)": "CAUTION",
+   "AdvBench 520": "ALIGNED",
+   "SimpleSafety 100": "UNDECIDABLE (equivalence)",
+   "XSTest 100 / 512tok": "UNDECIDABLE (resolution)",
+   "AdvBench 100 / 512tok": "ALIGNED",
+   "OR-Bench hard 1k": "UNDECIDABLE (resolution)",
+   "JailbreakBench": "UNDECIDABLE (equivalence)",
+   "GSM8K, 50-char span": "UNDECIDABLE (resolution)",
+   "GSM8K, 120-char span": "ALIGNED",
+   "GSM8K, 160-char span": "ALIGNED",
+   "GSM8K, 200-char span": "ALIGNED",
+   "GSM8K, 300-char span": "ALIGNED",
+   "GSM8K, 600-char span": "ALIGNED",
+   "HotpotQA, 50-char span": "SCORE FAILURE",
+   "HotpotQA, 80-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 120-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 160-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 200-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 300-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 600-char span": "UNDECIDABLE (complement)"
+  },
+  "no complement": {
+   "XSTest 450 (primary run)": "CAUTION",
+   "AdvBench 520": "UNDECIDABLE (power)",
+   "SimpleSafety 100": "UNDECIDABLE (power)",
+   "XSTest 100 / 512tok": "UNDECIDABLE (power)",
+   "AdvBench 100 / 512tok": "UNDECIDABLE (power)",
+   "OR-Bench hard 1k": "UNDECIDABLE (resolution)",
+   "JailbreakBench": "UNDECIDABLE (equivalence)",
+   "GSM8K, 50-char span": "UNDECIDABLE (resolution)",
+   "GSM8K, 120-char span": "ALIGNED",
+   "GSM8K, 160-char span": "ALIGNED",
+   "GSM8K, 200-char span": "ALIGNED",
+   "GSM8K, 300-char span": "ALIGNED",
+   "GSM8K, 600-char span": "ALIGNED",
+   "HotpotQA, 50-char span": "SCORE FAILURE",
+   "HotpotQA, 80-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 120-char span": "ALIGNED",
+   "HotpotQA, 160-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 200-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 300-char span": "ALIGNED",
+   "HotpotQA, 600-char span": "ALIGNED"
+  },
+  "no resolution": {
+   "XSTest 450 (primary run)": "CAUTION",
+   "AdvBench 520": "UNDECIDABLE (power)",
+   "SimpleSafety 100": "UNDECIDABLE (power)",
+   "XSTest 100 / 512tok": "UNDECIDABLE (power)",
+   "AdvBench 100 / 512tok": "UNDECIDABLE (power)",
+   "OR-Bench hard 1k": "SCORE FAILURE",
+   "JailbreakBench": "UNDECIDABLE (equivalence)",
+   "GSM8K, 50-char span": "ALIGNED",
+   "GSM8K, 120-char span": "ALIGNED",
+   "GSM8K, 160-char span": "ALIGNED",
+   "GSM8K, 200-char span": "ALIGNED",
+   "GSM8K, 300-char span": "ALIGNED",
+   "GSM8K, 600-char span": "ALIGNED",
+   "HotpotQA, 50-char span": "SCORE FAILURE",
+   "HotpotQA, 80-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 120-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 160-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 200-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 300-char span": "UNDECIDABLE (complement)",
+   "HotpotQA, 600-char span": "UNDECIDABLE (complement)"
+  },
+  "none of the three": {
+   "XSTest 450 (primary run)": "CAUTION",
+   "AdvBench 520": "ALIGNED",
+   "SimpleSafety 100": "UNDECIDABLE (equivalence)",
+   "XSTest 100 / 512tok": "CONTAINMENT",
+   "AdvBench 100 / 512tok": "ALIGNED",
+   "OR-Bench hard 1k": "SCORE FAILURE",
+   "JailbreakBench": "UNDECIDABLE (equivalence)",
+   "GSM8K, 50-char span": "ALIGNED",
+   "GSM8K, 120-char span": "ALIGNED",
+   "GSM8K, 160-char span": "ALIGNED",
+   "GSM8K, 200-char span": "ALIGNED",
+   "GSM8K, 300-char span": "ALIGNED",
+   "GSM8K, 600-char span": "ALIGNED",
+   "HotpotQA, 50-char span": "SCORE FAILURE",
+   "HotpotQA, 80-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 120-char span": "ALIGNED",
+   "HotpotQA, 160-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 200-char span": "UNDECIDABLE (equivalence)",
+   "HotpotQA, 300-char span": "ALIGNED",
+   "HotpotQA, 600-char span": "ALIGNED"
+  }
+ },
+ "changed": {
+  "AdvBench 520": {
+   "no power": "ALIGNED",
+   "none of the three": "ALIGNED"
+  },
+  "SimpleSafety 100": {
+   "no power": "UNDECIDABLE (equivalence)",
+   "none of the three": "UNDECIDABLE (equivalence)"
+  },
+  "XSTest 100 / 512tok": {
+   "no power": "UNDECIDABLE (resolution)",
+   "none of the three": "CONTAINMENT"
+  },
+  "AdvBench 100 / 512tok": {
+   "no power": "ALIGNED",
+   "none of the three": "ALIGNED"
+  },
+  "OR-Bench hard 1k": {
+   "no resolution": "SCORE FAILURE",
+   "none of the three": "SCORE FAILURE"
+  },
+  "GSM8K, 50-char span": {
+   "no resolution": "ALIGNED",
+   "none of the three": "ALIGNED"
+  },
+  "HotpotQA, 120-char span": {
+   "no complement": "ALIGNED",
+   "none of the three": "ALIGNED"
+  },
+  "HotpotQA, 160-char span": {
+   "no complement": "UNDECIDABLE (equivalence)",
+   "none of the three": "UNDECIDABLE (equivalence)"
+  },
+  "HotpotQA, 200-char span": {
+   "no complement": "UNDECIDABLE (equivalence)",
+   "none of the three": "UNDECIDABLE (equivalence)"
+  },
+  "HotpotQA, 300-char span": {
+   "no complement": "ALIGNED",
+   "none of the three": "ALIGNED"
+  },
+  "HotpotQA, 600-char span": {
+   "no complement": "ALIGNED",
+   "none of the three": "ALIGNED"
+  }
+ },
+ "ranked_interval": {
+  "HotpotQA, 50-char span": {
+   "auc_zc": 0.6336561209677332,
+   "ci95": [
+    0.606557548373452,
+    0.6600815232620532
+   ]
+  },
+  "OR-Bench hard 1k": {
+   "auc_zc": 0.7649281198579717,
+   "ci95": [
+    0.6776149011041375,
+    0.8469088518435751
+   ]
+  },
+  "JailbreakBench": {
+   "auc_zc": 0.7525709584533113,
+   "ci95": [
+    0.5994989809782609,
+    0.890465174197558
+   ]
+  },
+  "HotpotQA, 80-char span": {
+   "auc_zc": 0.6007303743911838,
+   "ci95": [
+    0.5750621834329077,
+    0.6264274877625644
+   ]
+  }
+ }
+}

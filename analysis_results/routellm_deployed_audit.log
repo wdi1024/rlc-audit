@@ -1,0 +1,21 @@
+downloading https://huggingface.co/api/datasets/routellm/gpt4_dataset/parquet/default/train/0.parquet ...
+reading /tmp/routellm_gpt4_dataset.parquet (163 MB)
+rows with both responses and a judge score: 109101
+fixed-seed subsample: 20000
+
+n=20000   construct positives (mixtral judged inadequate) = 2731 (0.137)
+proxy positives: same-span 3630, extended 6064, disjoint 5617;  complement empty on 0.169 of sides
+
+AUC(s,y) against the deployed target = 0.663
+target                  AUC(s,.)    prev  delta_abs  95% CI
+z (same span)              0.601   0.181     -0.062  [-0.077,-0.048]
+z+ (whole output)          0.613   0.303     -0.050  [-0.064,-0.037]
+z^c (off-span)             0.570   0.281     -0.093  [-0.106,-0.078]
+
+at a 10% budget (2000 slots) the prefix score routes 716 genuinely inadequate responses (0.358 vs base rate 0.137)
+
+reading:
+  no same-span gap to explain: the prefix score tracks the deployed target about
+  as well as it tracks a same-span surface rule, and the contract clears.
+
+[wrote] <repo>/analysis_results/routellm_deployed_audit.json

@@ -1,0 +1,37 @@
+{
+  "n": 548,
+  "budget": 55,
+  "semantic_positives": 79,
+  "marker": {
+    "tied_at_top_value": 133,
+    "semantic_positives_among_tied": 50,
+    "hypergeometric_expectation": 20.67669172932331,
+    "expected": 20.66415,
+    "ci95": [
+      15,
+      26
+    ],
+    "range": [
+      9,
+      32
+    ],
+    "n_draws": 20000
+  },
+  "continuous_score_tie_exposure": {
+    "raw prefix TF-IDF": {
+      "distinct_values": 363,
+      "items_at_cut": 1,
+      "items_at_top_value": 1
+    },
+    "final TF-IDF": {
+      "distinct_values": 541,
+      "items_at_cut": 1,
+      "items_at_top_value": 8
+    },
+    "composite (lambda=0.7)": {
+      "distinct_values": 542,
+      "items_at_cut": 1,
+      "items_at_top_value": 5
+    }
+  }
+}

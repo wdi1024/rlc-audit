@@ -1,0 +1,32 @@
+{
+ "referee_check": {
+  "solutions": 127482,
+  "failed_solutions": 95694,
+  "nonfinal_steps_in_failed": 310097,
+  "positive_steps_in_failed": 120661,
+  "positive_rate_in_failed": 0.38910727933517575,
+  "all_positive_failed_solutions": 16697,
+  "all_positive_failed_rate": 0.17448324868852802
+ },
+ "coverage_kill_gate": 0.3,
+ "failed": {
+  "positive_steps": 120661,
+  "with_equations": 103339,
+  "arithmetically_false": 6228,
+  "false_rate_of_covered": 0.06026766274107549,
+  "false_rate_of_all_positive": 0.05161568360945127
+ },
+ "succeeded_control": {
+  "positive_steps": 86954,
+  "with_equations": 78319,
+  "arithmetically_false": 2232,
+  "false_rate_of_covered": 0.02849883170111978,
+  "false_rate_of_all_positive": 0.025668744393587413
+ },
+ "solution_level": {
+  "failing": 95694,
+  "failing_with_positive_false_step": 5582,
+  "all_positive_failing": 16697,
+  "all_positive_with_false_step": 1595
+ }
+}

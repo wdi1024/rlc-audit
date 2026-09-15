@@ -1,0 +1,528 @@
+{
+  "n_in_scope": 38,
+  "n_with_text": 38,
+  "n_r1": 0,
+  "n_r2": 17,
+  "n_permits": 0,
+  "rate_permits": 0.0,
+  "ci_permits": [
+    0.0,
+    0.09180986954097846
+  ],
+  "rows": [
+    {
+      "arxiv": "2404.10136",
+      "title": "Language Model Cascades: Token-level uncertainty and beyond",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2404.14618",
+      "title": "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2502.12464",
+      "title": "SafeRoute: Adaptive Model Selection for Efficient and Accurate Safety Guardrails in Large Language Models",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2504.07113",
+      "title": "How Robust Are Router-LLMs? Analysis of the Fragility of LLM Routing Capabilities",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "4 How Keywords Affect Routing Decision 6 Discussion 7 Conclusion References A Human Instruction Subset Details B PUPA Subset Results License: CC BY 4.",
+        "4 How Keywords Affect Routing Decision To assess the sensitivity and robustness of the routing techniques, we observed that categories like math and code tend to favor the stronger LLM.",
+        "However, adding math-related or coding keywords redirected them to the stronger LLM, with an average flipping rate of 98%, indicating high sensitivity to prompt modifications."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2506.11887",
+      "title": "Cascaded Language Models for Cost-effective Human-AI Decision-Making",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "com/fanconic/cascaded-llms Keywords: Machine Learning, ICML 1 Introduction Data-driven decision support has gained increasing traction in high-stakes fields such as healthcare ( Jin et al."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2509.02718",
+      "title": "Efficient Training-Free Online Routing for High-Volume Multi-LLM Serving",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "Algorithm 1 yields the a set of routing results x ^ \\hat{x} , from which we define the estimated cumulative performance score as C e \u200b s \u200b t := \u2211 j \u2211 i \u03b1 \u200b d ^ i \u200b j \u200b x ^ i \u200b j C_{est}:=\\sum_{j}\\sum_{i}\\alpha\\hat{d}_{ij}\\hat{x}_{ij} .",
+        "The adwords problem: online keyword matching with budgeted bidders under random permutations."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2509.09782",
+      "title": "One Head, Many Models: Cross-Attention Routing for Cost-Aware LLM Selection",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "For the datasets MMLU, HellaSwag, GSM8K, ARC Challenge, and Winogrande, responses are evaluated using exact match method, while for MBPP, MT-Bench, and RAG, GPT evaluates responses are further normalized to unit scale."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2509.19996",
+      "title": "Choosing to Be Green: Advancing Green AI via Dynamic Model Selection",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "keywords Green AI ,Green Model Selection ,Model Cascading ,Model Routing ,Energy Efficiency \u2020 \u2020 copyrightyear: 2022 \u2020 \u2020 copyright: Copyright for this paper by its authors."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2509.25535",
+      "title": "Meta-Router: Bridging Gold-standard and Preference-based Evaluations in Large Language Model Routing",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2510.07429",
+      "title": "Learning to Route LLMs from Bandit Feedback: One Policy, Many Trade-offs",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "2024 ) , we evaluate methods on two axes: \u2022 Performance score is a normalized value in [ 0 , 1 ] [0,1] that indicates task success, derived either from exact match accuracy or from GPT-4 ratings for more open-ended tasks."
+      ],
+      "promise_evidence": [
+        "ired to replicate our experiments, including scripts for training, evaluation, and all analyses presented in the paper, will be made publicly available upon publication in an open-source repository."
+      ]
+    },
+    {
+      "arxiv": "2510.19208",
+      "title": "DiSRouter: Distributed Self-Routing for LLM Selections",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "We define the score of model m i m_{i} on query x j x_{j} as A \u2061 ( m i , x j ) \u2208 { 0 , 1 } A(m_{i},x_{j})\\in\\{0,1\\} , where 1 denotes a correct solution and 0 otherwise."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2511.07396",
+      "title": "C3PO: Optimized Large Language Model Cascades with Probabilistic Cost Constraints for Reasoning",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": [
+        "nswer: [Yes] Justification: We make all experimental data and code available and commit to making it publicly available upon acceptance.",
+        "e the assets? Answer: [Yes] Justification: We do not introduce a new dataset, but our source code includes comments and will be released under a MIT license upon acceptance."
+      ]
+    },
+    {
+      "arxiv": "2511.16883",
+      "title": "PersonalizedRouter: Personalized LLM Routing via Graph-based User Preference Modeling",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2601.05903",
+      "title": "HAPS: Hierarchical LLM Routing with Joint Architecture and Parameter Search",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2601.06220",
+      "title": "Breaking Model Lock-in: Cost-Efficient Zero-Shot LLM Routing via a Universal Latent Space",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2601.17814",
+      "title": "MMR-Bench: A Comprehensive Benchmark for Multimodal LLM Routing",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": [
+        "The code will be available at: https://github."
+      ]
+    },
+    {
+      "arxiv": "2602.02386",
+      "title": "Trust by Design: Skill Profiles for Transparent, Cost-Aware LLM Routing",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2602.02711",
+      "title": "Dynamic Mixed-Precision Routing for Efficient Multi-step LLM Interaction",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2602.11931",
+      "title": "AdaptEvolve: Improving Efficiency of Evolutionary AI Agents through Adaptive Model Selection",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2603.11957",
+      "title": "CHiL(L)Grader: Calibrated Human-in-the-Loop Short-Answer Grading",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "Figure 3 illustrates Exact Match (EM) and Off-by-1 accuracy for Qwen-2.",
+        "Figure 3: Exact Match and Off-by-1 accuracy for Qwen-2."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2603.24704",
+      "title": "Conformal Selective Prediction with General Risk Control",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "Keywords: Selective prediction; Conformal inference; Hypothesis testing; Multiple testing; Trustworthy AI.",
+        "6 establishes a \u201cNeyman-Pearson lemma\u201d-like rule ( 52 ) for asymptotically optimal scoring functions that maximizes ( 4.",
+        "We then propose concrete constructions of the e-values for each metric and analyze the optimal choice of scoring functions in these e-values."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2603.28972",
+      "title": "Privacy Guard &amp; Token Parsimony by Prompt and Context Handling and LLM Routing",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "Keywords: Large Language Models, Privacy Guard, Zero-Trust Architecture, Token Parsimony, Emergent Leakage, Edge Computing.",
+        "Rather than relying solely on simple, easily bypassed regex patterns, it monitors the entire prompt history and actively rewrites and splits complex prompts into parallel or sequential sub-tasks.",
+        "isms: Proxies and SLMs To counter privacy risks without relinquishing the capabilities of foundation models, the industry has developed privacy firewalls like NeMo Guardrails [ 17 ] and deterministic regex-based libraries [ 15 ] , which offer programmable bounds on prompt safety."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2604.00660",
+      "title": "Streaming Model Cascades for Semantic SQL",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "FrugalGPT ( 2 ) learns a scoring function that predicts answer reliability and cascades queries through increasingly expensive API endpoints."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2604.09377",
+      "title": "Task-Aware LLM Routing with Multi-Level Task-Profile-Guided Data Synthesis for Cold-Start Scenarios",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [
+        "For the other models, we utilize third-party API providers to obtain model outputs.",
+        "Evaluate whether this candidate {node_name} set needs improvement by checking how well it adheres to the provided generation rules."
+      ],
+      "r2_evidence": [
+        "0 (exact match) or at least 0."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2604.15728",
+      "title": "Privacy-Preserving LLMs Routing",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2604.23530",
+      "title": "MTRouter: Cost-Aware Multi-Turn LLM Routing with History-Model Joint Embeddings",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "9 on OOD) indicate that the selected models frequently fail to make meaningful progress toward task completion, as judged by the environment\u2019s scoring function."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2604.25855",
+      "title": "SIEVES: Selective Prediction Generalizes through Visual Evidence Scoring",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "Since the questions in the training data are open-ended, when there is no string match between the ground truth and predicted answer, we prompt Qwen3-8B [ 48 ] using the ground truth and predicted answer to evaluate whether the predicted answer is correct.",
+        "f our other benchmarks, we follow the stricter \u201chard\u201d accuracy: we select the most frequent human answer per item and count a prediction correct only if it matches such ground truth answer, either by exact match or with the same LLM judge we use during training.",
+        "For open-ended questions, when normalized string match fails, we run the prompt in Fig."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2605.05007",
+      "title": "Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2605.12001",
+      "title": "CR^2: Cost-Aware Risk-Controlled Routing for Wireless Device-Edge LLM Inference",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "These components have distinct statistical roles: the teacher and margin gate are learned from finite training data and then treated as fixed scoring functions for calibration, whereas CRC calibrates the local acceptance threshold of that fixed score against the routing-specific risk defined below."
+      ],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2605.18015",
+      "title": "LogRouter: Adaptive Two-Level LLM Routing for Log Question Answering in Big Data Systems",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "A two-level cost-aware router dispatches each query along one of four execution paths\u2014direct response, Druid keyword search, template lookup with SQL generation, and pgvector semantic retrieval\u2014while a Level-2 router selects a 14B-class or 32B-class generator for the semantic path.",
+        "Cost-aware dispatching is therefore a practical mechanism for production log QA: routing recovers most of the quality of an always-32B configuration at less than half the latency, and the L1 keyword vocabulary makes that routing decision with high precision without a learned classifier.",
+        "requirement with a streaming pipeline spanning Grafana Loki, PySpark-based Drain3 template extraction [ 7 ] , GPU-accelerated embedding via Ollama, and dual-index storage in Apache Druid (structured/keyword) and PostgreSQL with pgvector (semantic)."
+      ],
+      "promise_evidence": [
+        "question set with gold routing labels, and the hyper-parameter configurations used to produce the results in this paper will be released under an open-source licence in a public repository upon acceptance."
+      ]
+    },
+    {
+      "arxiv": "2606.02581",
+      "title": "Cost-Aware Query Routing in RAG: Empirical Analysis of Retrieval Depth Tradeoffs",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2606.31163",
+      "title": "ComplianceGate: Classifier-Gated Multi-Tier LLM Routing for Inference in Regulated Industries",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2607.00053",
+      "title": "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2607.08665",
+      "title": "Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2607.18240",
+      "title": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2607.23765",
+      "title": "WISERouter: LLM Routing with Workload Budget Constraint",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2607.24875",
+      "title": "FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting",
+      "fetched": true,
+      "r1": false,
+      "r2": false,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [],
+      "promise_evidence": []
+    },
+    {
+      "arxiv": "2607.25018",
+      "title": "Conformal Cascade: Distribution-Free Accuracy Guarantees for Multi-Tier LLM Inference",
+      "fetched": true,
+      "r1": false,
+      "r2": true,
+      "permits": false,
+      "promise_only": false,
+      "r1_evidence": [],
+      "r2_evidence": [
+        "For multiple-choice benchmarks we extract the answer letter from the first token of the response, falling back to regex extraction on the body."
+      ],
+      "promise_evidence": []
+    }
+  ]
+}

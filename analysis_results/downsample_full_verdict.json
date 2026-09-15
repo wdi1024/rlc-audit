@@ -1,0 +1,13 @@
+{
+ "n_draws": 200,
+ "n_boot": 400,
+ "n_perm": 300,
+ "kept_positives": 13,
+ "referee_full_labels": "CAUTION",
+ "verdict_shares": {
+  "ALIGNED": 0.245,
+  "UNDECIDABLE (equivalence)": 0.75,
+  "CAUTION": 0.005
+ },
+ "frac_ddis_ge_0.10": 0.575
+}

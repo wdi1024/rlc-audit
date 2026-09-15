@@ -1,0 +1,316 @@
+{
+  "phase": "phase3_xstest_full",
+  "models": [
+    "qwen3.5-2b",
+    "gemma-4-e2b"
+  ],
+  "prefix_k": 50,
+  "strip_counts": {
+    "targeted_model_specific": {
+      "qwen3.5-2b": 408,
+      "gemma-4-e2b": 13
+    },
+    "thinking_only": {
+      "qwen3.5-2b": 419,
+      "gemma-4-e2b": 437
+    },
+    "refusal_only": {
+      "qwen3.5-2b": 0,
+      "gemma-4-e2b": 13
+    },
+    "all_templates": {
+      "qwen3.5-2b": 419,
+      "gemma-4-e2b": 450
+    }
+  },
+  "pattern_groups": {
+    "targeted_qwen": [
+      "^thinking process[:\\s]*",
+      "^here's a thinking process[^\\n]*\\n+",
+      "^here is a thinking process[^\\n]*\\n+",
+      "^let me think[^\\n]*\\n+",
+      "^\\d+\\.\\s*\\*\\*analyze the request[:\\*]*\\s*\\*\\*\\s*",
+      "^\\*\\*analyze the request[:\\*]*\\s*\\*\\*\\s*"
+    ],
+    "thinking_only": [
+      "^<think>\\s*",
+      "^thought\\s*\\n+",
+      "^thinking process[:\\s]*",
+      "^here's a thinking process[^\\n]*\\n+",
+      "^here is a thinking process[^\\n]*\\n+",
+      "^let me think[^\\n]*\\n+",
+      "^okay,?\\s+the user is asking[^\\n]*\\n+",
+      "^okay,?\\s+let'?s [^\\n]*\\n+",
+      "^the user is asking [^\\n]*\\n+",
+      "^\\d+\\.\\s*\\*\\*analyze the request[:\\*]*\\s*\\*\\*\\s*",
+      "^\\*\\*analyze the request[:\\*]*\\s*\\*\\*\\s*"
+    ],
+    "refusal_only": [
+      "^i cannot provide instructions or information on[^\\.]*\\.?\\s*",
+      "^i cannot provide instructions or advice on[^\\.]*\\.?\\s*",
+      "^i cannot provide instructions on[^\\.]*\\.?\\s*",
+      "^i cannot provide information or instructions on[^\\.]*\\.?\\s*",
+      "^i cannot provide information or assistance regarding[^\\.]*\\.?\\s*",
+      "^i cannot provide information on[^\\.]*\\.?\\s*",
+      "^i cannot provide assistance[^\\.]*\\.?\\s*",
+      "^i cannot provide advice[^\\.]*\\.?\\s*",
+      "^i cannot provide[^\\.]*\\.?\\s*",
+      "^i cannot fulfill this request\\.?\\s*",
+      "^i cannot fulfill[^\\.]*\\.?\\s*",
+      "^i cannot help with[^\\.]*\\.?\\s*",
+      "^i cannot answer[^\\.]*\\.?\\s*",
+      "^i cannot[^\\.]*\\.?\\s*",
+      "^i'm sorry,?\\s+but\\s+i cannot[^\\.]*\\.?\\s*",
+      "^i'm sorry,?\\s+i cannot[^\\.]*\\.?\\s*",
+      "^i'm sorry[^\\.]*\\.?\\s*",
+      "^i am sorry[^\\.]*\\.?\\s*",
+      "^sorry,?\\s+but\\s+[^\\.]*\\.?\\s*",
+      "^sorry,?\\s+[^\\.]*\\.?\\s*"
+    ],
+    "all_templates": [
+      "^<think>\\s*",
+      "^thought\\s*\\n+",
+      "^thinking process[:\\s]*",
+      "^here's a thinking process[^\\n]*\\n+",
+      "^here is a thinking process[^\\n]*\\n+",
+      "^let me think[^\\n]*\\n+",
+      "^okay,?\\s+the user is asking[^\\n]*\\n+",
+      "^okay,?\\s+let'?s [^\\n]*\\n+",
+      "^the user is asking [^\\n]*\\n+",
+      "^\\d+\\.\\s*\\*\\*analyze the request[:\\*]*\\s*\\*\\*\\s*",
+      "^\\*\\*analyze the request[:\\*]*\\s*\\*\\*\\s*",
+      "^i cannot provide instructions or information on[^\\.]*\\.?\\s*",
+      "^i cannot provide instructions or advice on[^\\.]*\\.?\\s*",
+      "^i cannot provide instructions on[^\\.]*\\.?\\s*",
+      "^i cannot provide information or instructions on[^\\.]*\\.?\\s*",
+      "^i cannot provide information or assistance regarding[^\\.]*\\.?\\s*",
+      "^i cannot provide information on[^\\.]*\\.?\\s*",
+      "^i cannot provide assistance[^\\.]*\\.?\\s*",
+      "^i cannot provide advice[^\\.]*\\.?\\s*",
+      "^i cannot provide[^\\.]*\\.?\\s*",
+      "^i cannot fulfill this request\\.?\\s*",
+      "^i cannot fulfill[^\\.]*\\.?\\s*",
+      "^i cannot help with[^\\.]*\\.?\\s*",
+      "^i cannot answer[^\\.]*\\.?\\s*",
+      "^i cannot[^\\.]*\\.?\\s*",
+      "^i'm sorry,?\\s+but\\s+i cannot[^\\.]*\\.?\\s*",
+      "^i'm sorry,?\\s+i cannot[^\\.]*\\.?\\s*",
+      "^i'm sorry[^\\.]*\\.?\\s*",
+      "^i am sorry[^\\.]*\\.?\\s*",
+      "^sorry,?\\s+but\\s+[^\\.]*\\.?\\s*",
+      "^sorry,?\\s+[^\\.]*\\.?\\s*"
+    ]
+  },
+  "results": [
+    {
+      "name": "original cosine",
+      "n": 450,
+      "kw_label_scope": "original_prefix50",
+      "n_dis_kw": 13,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.0,
+      "kw_rate_b": 0.028888888888888888,
+      "sim_mean": 0.25024535342299187,
+      "sim_median": 0.12712518500764725,
+      "auc_kw": 0.9851258581235698,
+      "auc_kw_ci": [
+        0.9759118565239551,
+        0.9920639409609998
+      ],
+      "auc_jd": 0.5920953508394318,
+      "auc_jd_ci": [
+        0.5216770766561588,
+        0.6563585916195736
+      ]
+    },
+    {
+      "name": "targeted model specific stripped cosine",
+      "n": 450,
+      "kw_label_scope": "original_prefix50",
+      "n_dis_kw": 13,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.0,
+      "kw_rate_b": 0.028888888888888888,
+      "sim_mean": 0.01173047674795499,
+      "sim_median": 0.0,
+      "auc_kw": 0.6453089244851259,
+      "auc_kw_ci": [
+        0.6247045200343831,
+        0.6663059769103334
+      ],
+      "auc_jd": 0.42848687042617317,
+      "auc_jd_ci": [
+        0.3469188781631157,
+        0.5018613711298555
+      ]
+    },
+    {
+      "name": "thinking only stripped cosine",
+      "n": 450,
+      "kw_label_scope": "original_prefix50",
+      "n_dis_kw": 13,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.0,
+      "kw_rate_b": 0.028888888888888888,
+      "sim_mean": 0.18040553417723648,
+      "sim_median": 0.01858520440734144,
+      "auc_kw": 0.774159478964971,
+      "auc_kw_ci": [
+        0.7120034541687764,
+        0.8156682027649769
+      ],
+      "auc_jd": 0.48878067154541543,
+      "auc_jd_ci": [
+        0.40253788368961496,
+        0.581179478643216
+      ]
+    },
+    {
+      "name": "refusal only stripped cosine",
+      "n": 450,
+      "kw_label_scope": "original_prefix50",
+      "n_dis_kw": 13,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.0,
+      "kw_rate_b": 0.028888888888888888,
+      "sim_mean": 0.250166689145139,
+      "sim_median": 0.12711236843983748,
+      "auc_kw": 0.9851258581235698,
+      "auc_kw_ci": [
+        0.9759118565239551,
+        0.9920639409609998
+      ],
+      "auc_jd": 0.5920953508394318,
+      "auc_jd_ci": [
+        0.5216770766561588,
+        0.6563585916195736
+      ]
+    },
+    {
+      "name": "all templates stripped cosine",
+      "n": 450,
+      "kw_label_scope": "original_prefix50",
+      "n_dis_kw": 13,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.0,
+      "kw_rate_b": 0.028888888888888888,
+      "sim_mean": 0.1803163005854073,
+      "sim_median": 0.01819884855165258,
+      "auc_kw": 0.7986270022883295,
+      "auc_kw_ci": [
+        0.7770114942528736,
+        0.8198208601210911
+      ],
+      "auc_jd": 0.48791971588463184,
+      "auc_jd_ci": [
+        0.40169498249257646,
+        0.5794931276575184
+      ]
+    },
+    {
+      "name": "targeted model specific stripped cosine",
+      "n": 450,
+      "kw_label_scope": "post_strip_prefix50",
+      "n_dis_kw": 3,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.006666666666666667,
+      "kw_rate_b": 0.0,
+      "sim_mean": 0.01173047674795499,
+      "sim_median": 0.0,
+      "auc_kw": 0.6420581655480985,
+      "auc_kw_ci": [
+        0.621923937360179,
+        0.6631108364029469
+      ],
+      "auc_jd": 0.42848687042617317,
+      "auc_jd_ci": [
+        0.3469188781631157,
+        0.5018613711298555
+      ]
+    },
+    {
+      "name": "thinking only stripped cosine",
+      "n": 450,
+      "kw_label_scope": "post_strip_prefix50",
+      "n_dis_kw": 13,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.006666666666666667,
+      "kw_rate_b": 0.035555555555555556,
+      "sim_mean": 0.18040553417723648,
+      "sim_median": 0.01858520440734144,
+      "auc_kw": 0.774159478964971,
+      "auc_kw_ci": [
+        0.7120034541687764,
+        0.8156682027649769
+      ],
+      "auc_jd": 0.48878067154541543,
+      "auc_jd_ci": [
+        0.40253788368961496,
+        0.581179478643216
+      ]
+    },
+    {
+      "name": "refusal only stripped cosine",
+      "n": 450,
+      "kw_label_scope": "post_strip_prefix50",
+      "n_dis_kw": 0,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.0,
+      "kw_rate_b": 0.0,
+      "sim_mean": 0.250166689145139,
+      "sim_median": 0.12711236843983748,
+      "auc_kw": null,
+      "auc_kw_ci": [
+        null,
+        null
+      ],
+      "auc_jd": 0.5920953508394318,
+      "auc_jd_ci": [
+        0.5216770766561588,
+        0.6563585916195736
+      ]
+    },
+    {
+      "name": "all templates stripped cosine",
+      "n": 450,
+      "kw_label_scope": "post_strip_prefix50",
+      "n_dis_kw": 0,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.006666666666666667,
+      "kw_rate_b": 0.006666666666666667,
+      "sim_mean": 0.1803163005854073,
+      "sim_median": 0.01819884855165258,
+      "auc_kw": null,
+      "auc_kw_ci": [
+        null,
+        null
+      ],
+      "auc_jd": 0.48791971588463184,
+      "auc_jd_ci": [
+        0.40169498249257646,
+        0.5794931276575184
+      ]
+    },
+    {
+      "name": "all templates stripped full cosine",
+      "n": 450,
+      "kw_label_scope": "original_prefix50",
+      "n_dis_kw": 13,
+      "n_dis_jd": 46,
+      "kw_rate_a": 0.0,
+      "kw_rate_b": 0.028888888888888888,
+      "sim_mean": 0.20121720780244137,
+      "sim_median": 0.17132213923443057,
+      "auc_kw": 0.9670832599894384,
+      "auc_kw_ci": [
+        0.9502295786531667,
+        0.9804608905409681
+      ],
+      "auc_jd": 0.5913689195006457,
+      "auc_jd_ci": [
+        0.49885593324089966,
+        0.6832058146243066
+      ]
+    }
+  ]
+}

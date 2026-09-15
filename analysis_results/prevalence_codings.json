@@ -1,0 +1,364 @@
+{
+  "n_pool": 178,
+  "n_screened_in": 125,
+  "n_sampled": 40,
+  "seed": 20260820,
+  "n_in_scope": 38,
+  "n_A": 3,
+  "n_B": 2,
+  "n_C": 33,
+  "rate_A": 0.07894736842105263,
+  "ci_A": [
+    0.027214595294883195,
+    0.2079937158975197
+  ],
+  "rate_AB": 0.13157894736842105,
+  "ci_AB": [
+    0.05753867653712515,
+    0.2732685957562274
+  ],
+  "codings": [
+    {
+      "arxiv": "2404.10136",
+      "title": "Language Model Cascades: Token-level uncertainty and beyond",
+      "year": 2024,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2404.14618",
+      "title": "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+      "year": 2024,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": [
+        "Traditional metrics, such as BLEU and ROUGE, initially designed for machine translation and summarization, have been found to be of limited concordance with human judgment and restricted applicability across diverse NLP tasks [ Blagec et al.",
+        "In spite of the high correlation with human perception, GPT-ranking suffers from high computational costs and inability to distinguish between examples with the same ranking.",
+        "GPT-4-based evaluators have been found to be well correlated with human assessments [ Liu et al."
+      ]
+    },
+    {
+      "arxiv": "2502.12464",
+      "title": "SafeRoute: Adaptive Model Selection for Efficient and Accurate Safety Guardrails in Large Language Models",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2504.07113",
+      "title": "How Robust Are Router-LLMs? Analysis of the Fragility of LLM Routing Capabilities",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": [
+        "We selected 100 simple, clear translation samples from WildChat, with instructions like \u201cPlease translate\u201d or \u201cTranslate,\u201d all verified by a human annotator."
+      ]
+    },
+    {
+      "arxiv": "2506.11887",
+      "title": "Cascaded Language Models for Cost-effective Human-AI Decision-Making",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2509.02718",
+      "title": "Efficient Training-Free Online Routing for High-Volume Multi-LLM Serving",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2509.09782",
+      "title": "One Head, Many Models: Cross-Attention Routing for Cost-Aware LLM Selection",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2509.19996",
+      "title": "Choosing to Be Green: Advancing Green AI via Dynamic Model Selection",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2509.25535",
+      "title": "Meta-Router: Bridging Gold-standard and Preference-based Evaluations in Large Language Model Routing",
+      "year": 2025,
+      "category": "A",
+      "justification": "Builds routing on both gold-standard and preference-based labels and models the shift between them explicitly; the discrepancy is the paper's object rather than an assumption.",
+      "candidate_passages": [
+        "A framework for human evaluation of large language models in healthcare derived from literature review."
+      ]
+    },
+    {
+      "arxiv": "2510.07429",
+      "title": "Learning to Route LLMs from Bandit Feedback: One Policy, Many Trade-offs",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2510.19208",
+      "title": "DiSRouter: Distributed Self-Routing for LLM Selections",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2511.07396",
+      "title": "C3PO: Optimized Large Language Model Cascades with Probabilistic Cost Constraints for Reasoning",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": [
+        "For the MATH-500 dataset, we have access to the \u2018true\u2019 difficulty of each question as part of the metadata, based on human annotation."
+      ]
+    },
+    {
+      "arxiv": "2511.16883",
+      "title": "PersonalizedRouter: Personalized LLM Routing via Graph-based User Preference Modeling",
+      "year": 2025,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2601.05903",
+      "title": "HAPS: Hierarchical LLM Routing with Joint Architecture and Parameter Search",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2601.06220",
+      "title": "Breaking Model Lock-in: Cost-Efficient Zero-Shot LLM Routing via a Universal Latent Space",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2601.17814",
+      "title": "MMR-Bench: A Comprehensive Benchmark for Multimodal LLM Routing",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2601.20352",
+      "title": "AMA: Adaptive Memory via Multi-Agent Collaboration",
+      "year": 2026,
+      "category": "X",
+      "justification": "Routes retrieval granularity inside one agent's memory; no selection among models and no deferral decision.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2602.02386",
+      "title": "Trust by Design: Skill Profiles for Transparent, Cost-Aware LLM Routing",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2602.02711",
+      "title": "Dynamic Mixed-Precision Routing for Efficient Multi-step LLM Interaction",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2602.11931",
+      "title": "AdaptEvolve: Improving Efficiency of Evolutionary AI Agents through Adaptive Model Selection",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2603.11957",
+      "title": "CHiL(L)Grader: Calibrated Human-in-the-Loop Short-Answer Grading",
+      "year": 2026,
+      "category": "A",
+      "justification": "Reports QWK against expert graders on its own data and compares it to inter-rater reliability among human graders.",
+      "candidate_passages": [
+        "5/4 grading, improving correlation with human evaluators, while Chu et al.",
+        "While these methods align models with human judgments, they rely on static fine tuning and do not incorporate uncertainty estimation or mechanisms for deferring uncertain cases.",
+        "8 indicating strong agreement, comparable to inter-rater reliability among human graders."
+      ]
+    },
+    {
+      "arxiv": "2603.24704",
+      "title": "Conformal Selective Prediction with General Risk Control",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": [
+        "Choi Trust or escalate: llm judges with provable guarantees for human agreement ."
+      ]
+    },
+    {
+      "arxiv": "2603.28972",
+      "title": "Privacy Guard &amp; Token Parsimony by Prompt and Context Handling and LLM Routing",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2604.00660",
+      "title": "Streaming Model Cascades for Semantic SQL",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2604.09377",
+      "title": "Task-Aware LLM Routing with Multi-Level Task-Profile-Guided Data Synthesis for Cold-Start Scenarios",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2604.15728",
+      "title": "Privacy-Preserving LLMs Routing",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2604.23530",
+      "title": "MTRouter: Cost-Aware Multi-Turn LLM Routing with History-Model Joint Embeddings",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2604.25855",
+      "title": "SIEVES: Selective Prediction Generalizes through Visual Evidence Scoring",
+      "year": 2026,
+      "category": "A",
+      "justification": "'we run a small human evaluation on 200 randomly chosen training samples and find that human annotations match the same g_coh label in 92% of cases.'",
+      "candidate_passages": [
+        "As a sanity check, we run a small human evaluation on 200 randomly chosen training samples and find that human annotations match the same g c \u200b o \u200b h g_{coh} label in 92% of cases.",
+        "Specifically, we use Gemini-3-Flash to obtain bounding boxes instead of using human annotations for the training set."
+      ]
+    },
+    {
+      "arxiv": "2605.05007",
+      "title": "Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2605.12001",
+      "title": "CR^2: Cost-Aware Risk-Controlled Routing for Wireless Device-Edge LLM Inference",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2605.18015",
+      "title": "LogRouter: Adaptive Two-Level LLM Routing for Log Question Answering in Big Data Systems",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2606.02581",
+      "title": "Cost-Aware Query Routing in RAG: Empirical Analysis of Retrieval Depth Tradeoffs",
+      "year": 2026,
+      "category": "B",
+      "justification": "'The lexical quality proxy is a weak surrogate for true answer quality; results may differ under human evaluation.' Named as a limitation; no agreement measured.",
+      "candidate_passages": [
+        "The lexical quality proxy is a weak surrogate for true answer quality; results may differ under human evaluation.",
+        "What limitations apply to lexical quality proxies versus human evaluation? How would you tune utility weights for a latency-sensitive chatbot? Describe an experiment protocol to log strategy choices and token usage per query."
+      ]
+    },
+    {
+      "arxiv": "2606.31163",
+      "title": "ComplianceGate: Classifier-Gated Multi-Tier LLM Routing for Inference in Regulated Industries",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2607.00053",
+      "title": "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2607.08665",
+      "title": "Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models",
+      "year": 2026,
+      "category": "B",
+      "justification": "Ablates sensitivity to verifier quality ('gains are verifier-gated, shrinking as verifier quality degrades') but does not measure the verifier's agreement with the construct.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2607.18240",
+      "title": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2607.23765",
+      "title": "WISERouter: LLM Routing with Workload Budget Constraint",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2607.24875",
+      "title": "FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2607.25018",
+      "title": "Conformal Cascade: Distribution-Free Accuracy Guarantees for Multi-Tier LLM Inference",
+      "year": 2026,
+      "category": "C",
+      "justification": "No in-setup check of the operative label against the claimed construct; where human agreement appears it is a citation to prior work or a reference-list entry.",
+      "candidate_passages": []
+    },
+    {
+      "arxiv": "2608.16203",
+      "title": "INSPIRE: A Benchmark for Instruction-Aware Speech Retrieval",
+      "year": 2026,
+      "category": "X",
+      "justification": "Speech-retrieval benchmark; no routing or deferral decision in the sense screened for.",
+      "candidate_passages": []
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "description": "Label-noise robustness for semantic refusal-disagreement labels. Adversarial swaps preserve semantic-positive prevalence and are chosen in the score-aligned direction.",
+  "random_trials": 1000,
+  "rows": [
+    {
+      "setting": "XSTest 450 (P3)",
+      "short": "xstest_p3",
+      "n": 450,
+      "surface_n_pos": 13,
+      "semantic_n_pos": 46,
+      "surface_auc": 0.9851258581235698,
+      "semantic_auc": 0.5920953508394318,
+      "auc_gap": 0.393030507284138,
+      "default_fail_gap": 0.15,
+      "random_pair_label_flips": [
+        {
+          "flip_rate": 0.05,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5636079199136672,
+          "semantic_auc_p05": 0.5252562684931741,
+          "semantic_auc_p95": 0.6012973137973138
+        },
+        {
+          "flip_rate": 0.1,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5443595712789845,
+          "semantic_auc_p05": 0.5032844693673117,
+          "semantic_auc_p95": 0.5867830819197498
+        },
+        {
+          "flip_rate": 0.2,
+          "trials": 1000,
+          "semantic_auc_mean": 0.526435559125906,
+          "semantic_auc_p05": 0.48367092452849947,
+          "semantic_auc_p95": 0.5718962552295885
+        },
+        {
+          "flip_rate": 0.3,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5149244325673278,
+          "semantic_auc_p05": 0.46847853375655096,
+          "semantic_auc_p95": 0.5561916778464598
+        }
+      ],
+      "adversarial_prevalence_preserving_swaps": {
+        "target_semantic_auc": 0.8351258581235698,
+        "min_swaps_to_target": 18,
+        "min_pair_label_flips_to_target": 36,
+        "min_pair_label_flip_rate_to_target": 0.08,
+        "semantic_auc_at_target": 0.8376291433491175,
+        "max_swaps": 46,
+        "checkpoints": [
+          {
+            "swaps": 0,
+            "pair_label_flips": 0,
+            "flip_rate": 0.0,
+            "semantic_auc": 0.5920953508394318
+          },
+          {
+            "swaps": 1,
+            "pair_label_flips": 2,
+            "flip_rate": 0.0044444444444444444,
+            "semantic_auc": 0.6139421007318124
+          },
+          {
+            "swaps": 2,
+            "pair_label_flips": 4,
+            "flip_rate": 0.008888888888888889,
+            "semantic_auc": 0.6357888506241929
+          },
+          {
+            "swaps": 3,
+            "pair_label_flips": 6,
+            "flip_rate": 0.013333333333333334,
+            "semantic_auc": 0.653330822212656
+          },
+          {
+            "swaps": 5,
+            "pair_label_flips": 10,
+            "flip_rate": 0.022222222222222223,
+            "semantic_auc": 0.6884147653895825
+          },
+          {
+            "swaps": 10,
+            "pair_label_flips": 20,
+            "flip_rate": 0.044444444444444446,
+            "semantic_auc": 0.7691831683168316
+          },
+          {
+            "swaps": 11,
+            "pair_label_flips": 22,
+            "flip_rate": 0.04888888888888889,
+            "semantic_auc": 0.7777389151958675
+          },
+          {
+            "swaps": 22,
+            "pair_label_flips": 44,
+            "flip_rate": 0.09777777777777778,
+            "semantic_auc": 0.8718521308652605
+          },
+          {
+            "swaps": 45,
+            "pair_label_flips": 90,
+            "flip_rate": 0.2,
+            "semantic_auc": 0.9954261730520878
+          },
+          {
+            "swaps": 46,
+            "pair_label_flips": 92,
+            "flip_rate": 0.20444444444444446,
+            "semantic_auc": 0.9933544984933276
+          }
+        ]
+      }
+    },
+    {
+      "setting": "AdvBench 520 (P4)",
+      "short": "advbench_p4",
+      "n": 520,
+      "surface_n_pos": 185,
+      "semantic_n_pos": 3,
+      "surface_auc": 0.7566760790641387,
+      "semantic_auc": 0.2901353965183752,
+      "auc_gap": 0.4665406825457635,
+      "default_fail_gap": 0.15,
+      "random_pair_label_flips": [
+        {
+          "flip_rate": 0.05,
+          "trials": 1000,
+          "semantic_auc_mean": 0.48036807782842617,
+          "semantic_auc_p05": 0.3911130172187078,
+          "semantic_auc_p95": 0.5612230737336257
+        },
+        {
+          "flip_rate": 0.1,
+          "trials": 1000,
+          "semantic_auc_mean": 0.48945801310740594,
+          "semantic_auc_p05": 0.42374193111761355,
+          "semantic_auc_p95": 0.5536423139928297
+        },
+        {
+          "flip_rate": 0.2,
+          "trials": 1000,
+          "semantic_auc_mean": 0.49416807336587526,
+          "semantic_auc_p05": 0.44111793870780025,
+          "semantic_auc_p95": 0.5427167758523528
+        },
+        {
+          "flip_rate": 0.3,
+          "trials": 1000,
+          "semantic_auc_mean": 0.4980644840579663,
+          "semantic_auc_p05": 0.4525689014713151,
+          "semantic_auc_p95": 0.5433775756648633
+        }
+      ],
+      "adversarial_prevalence_preserving_swaps": {
+        "target_semantic_auc": 0.6066760790641387,
+        "min_swaps_to_target": 2,
+        "min_pair_label_flips_to_target": 4,
+        "min_pair_label_flip_rate_to_target": 0.007692307692307693,
+        "semantic_auc_at_target": 0.7678916827852997,
+        "max_swaps": 3,
+        "checkpoints": [
+          {
+            "swaps": 0,
+            "pair_label_flips": 0,
+            "flip_rate": 0.0,
+            "semantic_auc": 0.2901353965183752
+          },
+          {
+            "swaps": 1,
+            "pair_label_flips": 2,
+            "flip_rate": 0.0038461538461538464,
+            "semantic_auc": 0.5290135396518375
+          },
+          {
+            "swaps": 2,
+            "pair_label_flips": 4,
+            "flip_rate": 0.007692307692307693,
+            "semantic_auc": 0.7678916827852997
+          },
+          {
+            "swaps": 3,
+            "pair_label_flips": 6,
+            "flip_rate": 0.011538461538461539,
+            "semantic_auc": 0.9303675048355899
+          }
+        ]
+      }
+    },
+    {
+      "setting": "SimpleSafety 100 (P4)",
+      "short": "simplesafety_p4",
+      "n": 100,
+      "surface_n_pos": 17,
+      "semantic_n_pos": 8,
+      "surface_auc": 0.9340892983699504,
+      "semantic_auc": 0.5006793478260869,
+      "auc_gap": 0.43340995054386344,
+      "default_fail_gap": 0.15,
+      "random_pair_label_flips": [
+        {
+          "flip_rate": 0.05,
+          "trials": 1000,
+          "semantic_auc_mean": 0.49699217609049984,
+          "semantic_auc_p05": 0.4071969696969696,
+          "semantic_auc_p95": 0.5843094315245478
+        },
+        {
+          "flip_rate": 0.1,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5009099395747557,
+          "semantic_auc_p05": 0.40389215686274504,
+          "semantic_auc_p95": 0.6017441860465116
+        },
+        {
+          "flip_rate": 0.2,
+          "trials": 1000,
+          "semantic_auc_mean": 0.4993257385337882,
+          "semantic_auc_p05": 0.4064319126819127,
+          "semantic_auc_p95": 0.5932732507367791
+        },
+        {
+          "flip_rate": 0.3,
+          "trials": 1000,
+          "semantic_auc_mean": 0.4984860944002302,
+          "semantic_auc_p05": 0.4038748594437851,
+          "semantic_auc_p95": 0.593740389285314
+        }
+      ],
+      "adversarial_prevalence_preserving_swaps": {
+        "target_semantic_auc": 0.7840892983699503,
+        "min_swaps_to_target": 4,
+        "min_pair_label_flips_to_target": 8,
+        "min_pair_label_flip_rate_to_target": 0.08,
+        "semantic_auc_at_target": 0.7853260869565216,
+        "max_swaps": 8,
+        "checkpoints": [
+          {
+            "swaps": 0,
+            "pair_label_flips": 0,
+            "flip_rate": 0.0,
+            "semantic_auc": 0.5006793478260869
+          },
+          {
+            "swaps": 1,
+            "pair_label_flips": 2,
+            "flip_rate": 0.02,
+            "semantic_auc": 0.6120923913043478
+          },
+          {
+            "swaps": 2,
+            "pair_label_flips": 4,
+            "flip_rate": 0.04,
+            "semantic_auc": 0.6698369565217392
+          },
+          {
+            "swaps": 3,
+            "pair_label_flips": 6,
+            "flip_rate": 0.06,
+            "semantic_auc": 0.7275815217391304
+          },
+          {
+            "swaps": 5,
+            "pair_label_flips": 10,
+            "flip_rate": 0.1,
+            "semantic_auc": 0.8430706521739131
+          },
+          {
+            "swaps": 8,
+            "pair_label_flips": 16,
+            "flip_rate": 0.16,
+            "semantic_auc": 0.9999999999999999
+          }
+        ]
+      }
+    },
+    {
+      "setting": "XSTest 100 / 512tok (P5)",
+      "short": "xstest100_p5",
+      "n": 100,
+      "surface_n_pos": 5,
+      "semantic_n_pos": 9,
+      "surface_auc": 0.9852631578947368,
+      "semantic_auc": 0.6166056166056166,
+      "auc_gap": 0.3686575412891202,
+      "default_fail_gap": 0.15,
+      "random_pair_label_flips": [
+        {
+          "flip_rate": 0.05,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5761232812651412,
+          "semantic_auc_p05": 0.4886274509803921,
+          "semantic_auc_p95": 0.6593755203130203
+        },
+        {
+          "flip_rate": 0.1,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5541905410822346,
+          "semantic_auc_p05": 0.46063952899736527,
+          "semantic_auc_p95": 0.6463614700398231
+        },
+        {
+          "flip_rate": 0.2,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5314033350225729,
+          "semantic_auc_p05": 0.4431750992063491,
+          "semantic_auc_p95": 0.6245471537290715
+        },
+        {
+          "flip_rate": 0.3,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5172627970909602,
+          "semantic_auc_p05": 0.43692067307692306,
+          "semantic_auc_p95": 0.6108939165016359
+        }
+      ],
+      "adversarial_prevalence_preserving_swaps": {
+        "target_semantic_auc": 0.8352631578947368,
+        "min_swaps_to_target": 5,
+        "min_pair_label_flips_to_target": 10,
+        "min_pair_label_flip_rate_to_target": 0.1,
+        "semantic_auc_at_target": 0.8577533577533577,
+        "max_swaps": 9,
+        "checkpoints": [
+          {
+            "swaps": 0,
+            "pair_label_flips": 0,
+            "flip_rate": 0.0,
+            "semantic_auc": 0.6166056166056166
+          },
+          {
+            "swaps": 1,
+            "pair_label_flips": 2,
+            "flip_rate": 0.02,
+            "semantic_auc": 0.699023199023199
+          },
+          {
+            "swaps": 2,
+            "pair_label_flips": 4,
+            "flip_rate": 0.04,
+            "semantic_auc": 0.7387057387057386
+          },
+          {
+            "swaps": 3,
+            "pair_label_flips": 6,
+            "flip_rate": 0.06,
+            "semantic_auc": 0.7783882783882784
+          },
+          {
+            "swaps": 5,
+            "pair_label_flips": 10,
+            "flip_rate": 0.1,
+            "semantic_auc": 0.8577533577533577
+          },
+          {
+            "swaps": 9,
+            "pair_label_flips": 18,
+            "flip_rate": 0.18,
+            "semantic_auc": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "setting": "AdvBench 100 / 512tok (P5)",
+      "short": "advbench100_p5",
+      "n": 100,
+      "surface_n_pos": 40,
+      "semantic_n_pos": 3,
+      "surface_auc": 0.7495833333333333,
+      "semantic_auc": 0.29553264604811,
+      "auc_gap": 0.45405068728522324,
+      "default_fail_gap": 0.15,
+      "random_pair_label_flips": [
+        {
+          "flip_rate": 0.05,
+          "trials": 1000,
+          "semantic_auc_mean": 0.42077298097815347,
+          "semantic_auc_p05": 0.2606100459823864,
+          "semantic_auc_p95": 0.5684496927803379
+        },
+        {
+          "flip_rate": 0.1,
+          "trials": 1000,
+          "semantic_auc_mean": 0.4507595168420076,
+          "semantic_auc_p05": 0.31387731042903455,
+          "semantic_auc_p95": 0.5890014914131763
+        },
+        {
+          "flip_rate": 0.2,
+          "trials": 1000,
+          "semantic_auc_mean": 0.47862105048609843,
+          "semantic_auc_p05": 0.3694565850815851,
+          "semantic_auc_p95": 0.5945785984848485
+        },
+        {
+          "flip_rate": 0.3,
+          "trials": 1000,
+          "semantic_auc_mean": 0.4864512675186426,
+          "semantic_auc_p05": 0.38898890920949747,
+          "semantic_auc_p95": 0.5866979166666666
+        }
+      ],
+      "adversarial_prevalence_preserving_swaps": {
+        "target_semantic_auc": 0.5995833333333332,
+        "min_swaps_to_target": 2,
+        "min_pair_label_flips_to_target": 4,
+        "min_pair_label_flip_rate_to_target": 0.04,
+        "semantic_auc_at_target": 0.7422680412371133,
+        "max_swaps": 3,
+        "checkpoints": [
+          {
+            "swaps": 0,
+            "pair_label_flips": 0,
+            "flip_rate": 0.0,
+            "semantic_auc": 0.29553264604811
+          },
+          {
+            "swaps": 1,
+            "pair_label_flips": 2,
+            "flip_rate": 0.02,
+            "semantic_auc": 0.5412371134020618
+          },
+          {
+            "swaps": 2,
+            "pair_label_flips": 4,
+            "flip_rate": 0.04,
+            "semantic_auc": 0.7422680412371133
+          },
+          {
+            "swaps": 3,
+            "pair_label_flips": 6,
+            "flip_rate": 0.06,
+            "semantic_auc": 0.943298969072165
+          }
+        ]
+      }
+    },
+    {
+      "setting": "OR-Bench hard 1k (P8)",
+      "short": "orbench_p8",
+      "n": 1319,
+      "surface_n_pos": 3,
+      "semantic_n_pos": 473,
+      "surface_auc": 0.8655015197568389,
+      "semantic_auc": 0.5172044542405749,
+      "auc_gap": 0.34829706551626394,
+      "default_fail_gap": 0.15,
+      "random_pair_label_flips": [
+        {
+          "flip_rate": 0.05,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5151117913775413,
+          "semantic_auc_p05": 0.5044026387383064,
+          "semantic_auc_p95": 0.5261426379778963
+        },
+        {
+          "flip_rate": 0.1,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5130121027534874,
+          "semantic_auc_p05": 0.498985069361289,
+          "semantic_auc_p95": 0.5262801922589274
+        },
+        {
+          "flip_rate": 0.2,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5101395036622108,
+          "semantic_auc_p05": 0.49192281334325694,
+          "semantic_auc_p95": 0.5293744986367779
+        },
+        {
+          "flip_rate": 0.3,
+          "trials": 1000,
+          "semantic_auc_mean": 0.5064117211424097,
+          "semantic_auc_p05": 0.48473771897391044,
+          "semantic_auc_p95": 0.5277426340348355
+        }
+      ],
+      "adversarial_prevalence_preserving_swaps": {
+        "target_semantic_auc": 0.7155015197568388,
+        "min_swaps_to_target": 81,
+        "min_pair_label_flips_to_target": 162,
+        "min_pair_label_flip_rate_to_target": 0.12282031842304776,
+        "semantic_auc_at_target": 0.7156623133862124,
+        "max_swaps": 473,
+        "checkpoints": [
+          {
+            "swaps": 0,
+            "pair_label_flips": 0,
+            "flip_rate": 0.0,
+            "semantic_auc": 0.5172044542405749
+          },
+          {
+            "swaps": 1,
+            "pair_label_flips": 2,
+            "flip_rate": 0.001516300227445034,
+            "semantic_auc": 0.5201407943862174
+          },
+          {
+            "swaps": 2,
+            "pair_label_flips": 4,
+            "flip_rate": 0.003032600454890068,
+            "semantic_auc": 0.5230771345318599
+          },
+          {
+            "swaps": 3,
+            "pair_label_flips": 6,
+            "flip_rate": 0.004548900682335102,
+            "semantic_auc": 0.5260134746775025
+          },
+          {
+            "swaps": 5,
+            "pair_label_flips": 10,
+            "flip_rate": 0.0075815011372251705,
+            "semantic_auc": 0.5318861549687874
+          },
+          {
+            "swaps": 10,
+            "pair_label_flips": 20,
+            "flip_rate": 0.015163002274450341,
+            "semantic_auc": 0.5465678556969997
+          },
+          {
+            "swaps": 33,
+            "pair_label_flips": 66,
+            "flip_rate": 0.050037907505686124,
+            "semantic_auc": 0.6141036790467764
+          },
+          {
+            "swaps": 66,
+            "pair_label_flips": 132,
+            "flip_rate": 0.10007581501137225,
+            "semantic_auc": 0.6923652657200405
+          },
+          {
+            "swaps": 132,
+            "pair_label_flips": 264,
+            "flip_rate": 0.2001516300227445,
+            "semantic_auc": 0.7816200100960121
+          },
+          {
+            "swaps": 473,
+            "pair_label_flips": 946,
+            "flip_rate": 0.7172100075815011,
+            "semantic_auc": 0.7078766387277026
+          }
+        ]
+      }
+    }
+  ]
+}

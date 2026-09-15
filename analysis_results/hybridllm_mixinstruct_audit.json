@@ -1,0 +1,1083 @@
+{
+  "n_pairs": 132,
+  "artifact": {
+    "r_proxy_length": 0.23934431971816764,
+    "r_construct_length": 0.07892540349508596,
+    "auc_length_vs_proxy": 0.60895984854703,
+    "auc_length_vs_construct": 0.5415661005191421
+  },
+  "pooled": {
+    "n": 253519,
+    "kappa": 0.42625768347402315,
+    "kappa_ci": [
+      0.42286984358509094,
+      0.42992595905740927
+    ],
+    "auc": 0.7778595953756122,
+    "disagreement_rate": 0.28681085046880117
+  },
+  "pairs": [
+    {
+      "pair": "mpt-7b vs chatglm-6b",
+      "n": 2207,
+      "agreement": 0.739,
+      "kappa": 0.29,
+      "auc_gap_vs_construct": 0.705,
+      "prevalence_y": 0.234
+    },
+    {
+      "pair": "mpt-7b-instruct vs chatglm-6b",
+      "n": 2188,
+      "agreement": 0.688,
+      "kappa": 0.291,
+      "auc_gap_vs_construct": 0.711,
+      "prevalence_y": 0.313
+    },
+    {
+      "pair": "mpt-7b vs alpaca-native",
+      "n": 2126,
+      "agreement": 0.773,
+      "kappa": 0.384,
+      "auc_gap_vs_construct": 0.773,
+      "prevalence_y": 0.202
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs llama-7b-hf-baize-lora-bf16",
+      "n": 2123,
+      "agreement": 0.787,
+      "kappa": 0.289,
+      "auc_gap_vs_construct": 0.747,
+      "prevalence_y": 0.169
+    },
+    {
+      "pair": "mpt-7b vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2116,
+      "agreement": 0.778,
+      "kappa": 0.203,
+      "auc_gap_vs_construct": 0.71,
+      "prevalence_y": 0.123
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs vicuna-13b-1.1",
+      "n": 2113,
+      "agreement": 0.789,
+      "kappa": 0.236,
+      "auc_gap_vs_construct": 0.732,
+      "prevalence_y": 0.136
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2090,
+      "agreement": 0.814,
+      "kappa": 0.176,
+      "auc_gap_vs_construct": 0.717,
+      "prevalence_y": 0.078
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs chatglm-6b",
+      "n": 2071,
+      "agreement": 0.794,
+      "kappa": 0.321,
+      "auc_gap_vs_construct": 0.766,
+      "prevalence_y": 0.173
+    },
+    {
+      "pair": "flan-t5-xxl vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2067,
+      "agreement": 0.905,
+      "kappa": 0.278,
+      "auc_gap_vs_construct": 0.75,
+      "prevalence_y": 0.076
+    },
+    {
+      "pair": "mpt-7b vs vicuna-13b-1.1",
+      "n": 2065,
+      "agreement": 0.79,
+      "kappa": 0.308,
+      "auc_gap_vs_construct": 0.73,
+      "prevalence_y": 0.176
+    },
+    {
+      "pair": "mpt-7b-instruct vs vicuna-13b-1.1",
+      "n": 2065,
+      "agreement": 0.723,
+      "kappa": 0.293,
+      "auc_gap_vs_construct": 0.705,
+      "prevalence_y": 0.257
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs mpt-7b",
+      "n": 2064,
+      "agreement": 0.778,
+      "kappa": 0.28,
+      "auc_gap_vs_construct": 0.719,
+      "prevalence_y": 0.834
+    },
+    {
+      "pair": "mpt-7b-instruct vs alpaca-native",
+      "n": 2060,
+      "agreement": 0.7,
+      "kappa": 0.311,
+      "auc_gap_vs_construct": 0.722,
+      "prevalence_y": 0.28
+    },
+    {
+      "pair": "dolly-v2-12b vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2059,
+      "agreement": 0.724,
+      "kappa": 0.195,
+      "auc_gap_vs_construct": 0.658,
+      "prevalence_y": 0.209
+    },
+    {
+      "pair": "koala-7B-HF vs mpt-7b-instruct",
+      "n": 2058,
+      "agreement": 0.69,
+      "kappa": 0.386,
+      "auc_gap_vs_construct": 0.756,
+      "prevalence_y": 0.536
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs alpaca-native",
+      "n": 2054,
+      "agreement": 0.784,
+      "kappa": 0.372,
+      "auc_gap_vs_construct": 0.803,
+      "prevalence_y": 0.167
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs mpt-7b-instruct",
+      "n": 2051,
+      "agreement": 0.709,
+      "kappa": 0.244,
+      "auc_gap_vs_construct": 0.679,
+      "prevalence_y": 0.773
+    },
+    {
+      "pair": "chatglm-6b vs mpt-7b-instruct",
+      "n": 2051,
+      "agreement": 0.671,
+      "kappa": 0.301,
+      "auc_gap_vs_construct": 0.703,
+      "prevalence_y": 0.61
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs mpt-7b-instruct",
+      "n": 2051,
+      "agreement": 0.754,
+      "kappa": 0.42,
+      "auc_gap_vs_construct": 0.782,
+      "prevalence_y": 0.31
+    },
+    {
+      "pair": "flan-t5-xxl vs alpaca-native",
+      "n": 2043,
+      "agreement": 0.853,
+      "kappa": 0.284,
+      "auc_gap_vs_construct": 0.741,
+      "prevalence_y": 0.139
+    },
+    {
+      "pair": "chatglm-6b vs flan-t5-xxl",
+      "n": 2043,
+      "agreement": 0.793,
+      "kappa": 0.166,
+      "auc_gap_vs_construct": 0.63,
+      "prevalence_y": 0.796
+    },
+    {
+      "pair": "mpt-7b-instruct vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 2039,
+      "agreement": 0.728,
+      "kappa": 0.258,
+      "auc_gap_vs_construct": 0.701,
+      "prevalence_y": 0.186
+    },
+    {
+      "pair": "mpt-7b-instruct vs llama-7b-hf-baize-lora-bf16",
+      "n": 2038,
+      "agreement": 0.674,
+      "kappa": 0.261,
+      "auc_gap_vs_construct": 0.688,
+      "prevalence_y": 0.338
+    },
+    {
+      "pair": "mpt-7b-instruct vs dolly-v2-12b",
+      "n": 2037,
+      "agreement": 0.623,
+      "kappa": 0.249,
+      "auc_gap_vs_construct": 0.682,
+      "prevalence_y": 0.489
+    },
+    {
+      "pair": "mpt-7b vs moss-moon-003-sft",
+      "n": 2037,
+      "agreement": 0.737,
+      "kappa": 0.295,
+      "auc_gap_vs_construct": 0.707,
+      "prevalence_y": 0.245
+    },
+    {
+      "pair": "mpt-7b vs llama-7b-hf-baize-lora-bf16",
+      "n": 2036,
+      "agreement": 0.744,
+      "kappa": 0.26,
+      "auc_gap_vs_construct": 0.705,
+      "prevalence_y": 0.231
+    },
+    {
+      "pair": "mpt-7b-instruct vs moss-moon-003-sft",
+      "n": 2036,
+      "agreement": 0.7,
+      "kappa": 0.324,
+      "auc_gap_vs_construct": 0.728,
+      "prevalence_y": 0.312
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs mpt-7b-instruct",
+      "n": 2031,
+      "agreement": 0.715,
+      "kappa": 0.27,
+      "auc_gap_vs_construct": 0.696,
+      "prevalence_y": 0.762
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs mpt-7b-instruct",
+      "n": 2030,
+      "agreement": 0.688,
+      "kappa": 0.241,
+      "auc_gap_vs_construct": 0.685,
+      "prevalence_y": 0.757
+    },
+    {
+      "pair": "mpt-7b-instruct vs flan-t5-xxl",
+      "n": 2027,
+      "agreement": 0.72,
+      "kappa": 0.248,
+      "auc_gap_vs_construct": 0.697,
+      "prevalence_y": 0.671
+    },
+    {
+      "pair": "alpaca-native vs mpt-7b",
+      "n": 2023,
+      "agreement": 0.745,
+      "kappa": 0.305,
+      "auc_gap_vs_construct": 0.723,
+      "prevalence_y": 0.794
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs mpt-7b",
+      "n": 2023,
+      "agreement": 0.777,
+      "kappa": 0.237,
+      "auc_gap_vs_construct": 0.701,
+      "prevalence_y": 0.849
+    },
+    {
+      "pair": "mpt-7b-instruct vs mpt-7b",
+      "n": 2017,
+      "agreement": 0.687,
+      "kappa": 0.331,
+      "auc_gap_vs_construct": 0.728,
+      "prevalence_y": 0.645
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs mpt-7b",
+      "n": 2015,
+      "agreement": 0.764,
+      "kappa": 0.27,
+      "auc_gap_vs_construct": 0.727,
+      "prevalence_y": 0.824
+    },
+    {
+      "pair": "flan-t5-xxl vs chatglm-6b",
+      "n": 2010,
+      "agreement": 0.82,
+      "kappa": 0.214,
+      "auc_gap_vs_construct": 0.691,
+      "prevalence_y": 0.172
+    },
+    {
+      "pair": "mpt-7b vs mpt-7b-instruct",
+      "n": 2010,
+      "agreement": 0.681,
+      "kappa": 0.319,
+      "auc_gap_vs_construct": 0.706,
+      "prevalence_y": 0.389
+    },
+    {
+      "pair": "dolly-v2-12b vs alpaca-native",
+      "n": 2008,
+      "agreement": 0.71,
+      "kappa": 0.3,
+      "auc_gap_vs_construct": 0.692,
+      "prevalence_y": 0.291
+    },
+    {
+      "pair": "flan-t5-xxl vs vicuna-13b-1.1",
+      "n": 2008,
+      "agreement": 0.859,
+      "kappa": 0.246,
+      "auc_gap_vs_construct": 0.704,
+      "prevalence_y": 0.133
+    },
+    {
+      "pair": "alpaca-native vs mpt-7b-instruct",
+      "n": 2007,
+      "agreement": 0.694,
+      "kappa": 0.303,
+      "auc_gap_vs_construct": 0.727,
+      "prevalence_y": 0.728
+    },
+    {
+      "pair": "mpt-7b-instruct vs stablelm-tuned-alpha-7b",
+      "n": 2007,
+      "agreement": 0.725,
+      "kappa": 0.404,
+      "auc_gap_vs_construct": 0.769,
+      "prevalence_y": 0.638
+    },
+    {
+      "pair": "chatglm-6b vs dolly-v2-12b",
+      "n": 2003,
+      "agreement": 0.647,
+      "kappa": 0.235,
+      "auc_gap_vs_construct": 0.664,
+      "prevalence_y": 0.585
+    },
+    {
+      "pair": "koala-7B-HF vs chatglm-6b",
+      "n": 2000,
+      "agreement": 0.722,
+      "kappa": 0.379,
+      "auc_gap_vs_construct": 0.756,
+      "prevalence_y": 0.367
+    },
+    {
+      "pair": "mpt-7b vs dolly-v2-12b",
+      "n": 1999,
+      "agreement": 0.625,
+      "kappa": 0.238,
+      "auc_gap_vs_construct": 0.674,
+      "prevalence_y": 0.366
+    },
+    {
+      "pair": "alpaca-native vs stablelm-tuned-alpha-7b",
+      "n": 1993,
+      "agreement": 0.789,
+      "kappa": 0.386,
+      "auc_gap_vs_construct": 0.777,
+      "prevalence_y": 0.806
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs flan-t5-xxl",
+      "n": 1992,
+      "agreement": 0.885,
+      "kappa": 0.293,
+      "auc_gap_vs_construct": 0.708,
+      "prevalence_y": 0.899
+    },
+    {
+      "pair": "chatglm-6b vs mpt-7b",
+      "n": 1991,
+      "agreement": 0.708,
+      "kappa": 0.245,
+      "auc_gap_vs_construct": 0.683,
+      "prevalence_y": 0.723
+    },
+    {
+      "pair": "chatglm-6b vs stablelm-tuned-alpha-7b",
+      "n": 1988,
+      "agreement": 0.741,
+      "kappa": 0.298,
+      "auc_gap_vs_construct": 0.739,
+      "prevalence_y": 0.734
+    },
+    {
+      "pair": "dolly-v2-12b vs mpt-7b-instruct",
+      "n": 1988,
+      "agreement": 0.622,
+      "kappa": 0.257,
+      "auc_gap_vs_construct": 0.684,
+      "prevalence_y": 0.543
+    },
+    {
+      "pair": "mpt-7b-instruct vs koala-7B-HF",
+      "n": 1987,
+      "agreement": 0.705,
+      "kappa": 0.41,
+      "auc_gap_vs_construct": 0.771,
+      "prevalence_y": 0.5
+    },
+    {
+      "pair": "moss-moon-003-sft vs mpt-7b-instruct",
+      "n": 1981,
+      "agreement": 0.676,
+      "kappa": 0.287,
+      "auc_gap_vs_construct": 0.708,
+      "prevalence_y": 0.704
+    },
+    {
+      "pair": "dolly-v2-12b vs vicuna-13b-1.1",
+      "n": 1980,
+      "agreement": 0.747,
+      "kappa": 0.303,
+      "auc_gap_vs_construct": 0.7,
+      "prevalence_y": 0.247
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs flan-t5-xxl",
+      "n": 1975,
+      "agreement": 0.837,
+      "kappa": 0.243,
+      "auc_gap_vs_construct": 0.68,
+      "prevalence_y": 0.844
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs moss-moon-003-sft",
+      "n": 1974,
+      "agreement": 0.76,
+      "kappa": 0.299,
+      "auc_gap_vs_construct": 0.747,
+      "prevalence_y": 0.199
+    },
+    {
+      "pair": "dolly-v2-12b vs chatglm-6b",
+      "n": 1969,
+      "agreement": 0.663,
+      "kappa": 0.226,
+      "auc_gap_vs_construct": 0.653,
+      "prevalence_y": 0.36
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs dolly-v2-12b",
+      "n": 1967,
+      "agreement": 0.708,
+      "kappa": 0.269,
+      "auc_gap_vs_construct": 0.679,
+      "prevalence_y": 0.714
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs stablelm-tuned-alpha-7b",
+      "n": 1965,
+      "agreement": 0.797,
+      "kappa": 0.255,
+      "auc_gap_vs_construct": 0.738,
+      "prevalence_y": 0.86
+    },
+    {
+      "pair": "koala-7B-HF vs dolly-v2-12b",
+      "n": 1965,
+      "agreement": 0.672,
+      "kappa": 0.342,
+      "auc_gap_vs_construct": 0.72,
+      "prevalence_y": 0.53
+    },
+    {
+      "pair": "flan-t5-xxl vs mpt-7b-instruct",
+      "n": 1962,
+      "agreement": 0.729,
+      "kappa": 0.245,
+      "auc_gap_vs_construct": 0.691,
+      "prevalence_y": 0.308
+    },
+    {
+      "pair": "flan-t5-xxl vs llama-7b-hf-baize-lora-bf16",
+      "n": 1962,
+      "agreement": 0.835,
+      "kappa": 0.23,
+      "auc_gap_vs_construct": 0.687,
+      "prevalence_y": 0.161
+    },
+    {
+      "pair": "dolly-v2-12b vs llama-7b-hf-baize-lora-bf16",
+      "n": 1961,
+      "agreement": 0.7,
+      "kappa": 0.271,
+      "auc_gap_vs_construct": 0.679,
+      "prevalence_y": 0.322
+    },
+    {
+      "pair": "koala-7B-HF vs mpt-7b",
+      "n": 1957,
+      "agreement": 0.706,
+      "kappa": 0.391,
+      "auc_gap_vs_construct": 0.763,
+      "prevalence_y": 0.645
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs flan-t5-xxl",
+      "n": 1956,
+      "agreement": 0.853,
+      "kappa": 0.291,
+      "auc_gap_vs_construct": 0.711,
+      "prevalence_y": 0.848
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs dolly-v2-12b",
+      "n": 1948,
+      "agreement": 0.708,
+      "kappa": 0.348,
+      "auc_gap_vs_construct": 0.734,
+      "prevalence_y": 0.291
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs dolly-v2-12b",
+      "n": 1948,
+      "agreement": 0.744,
+      "kappa": 0.295,
+      "auc_gap_vs_construct": 0.688,
+      "prevalence_y": 0.755
+    },
+    {
+      "pair": "moss-moon-003-sft vs flan-t5-xxl",
+      "n": 1947,
+      "agreement": 0.815,
+      "kappa": 0.262,
+      "auc_gap_vs_construct": 0.716,
+      "prevalence_y": 0.816
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs dolly-v2-12b",
+      "n": 1945,
+      "agreement": 0.747,
+      "kappa": 0.323,
+      "auc_gap_vs_construct": 0.704,
+      "prevalence_y": 0.74
+    },
+    {
+      "pair": "chatglm-6b vs alpaca-native",
+      "n": 1945,
+      "agreement": 0.645,
+      "kappa": 0.293,
+      "auc_gap_vs_construct": 0.725,
+      "prevalence_y": 0.362
+    },
+    {
+      "pair": "chatglm-6b vs llama-7b-hf-baize-lora-bf16",
+      "n": 1944,
+      "agreement": 0.614,
+      "kappa": 0.219,
+      "auc_gap_vs_construct": 0.672,
+      "prevalence_y": 0.412
+    },
+    {
+      "pair": "dolly-v2-12b vs mpt-7b",
+      "n": 1941,
+      "agreement": 0.654,
+      "kappa": 0.298,
+      "auc_gap_vs_construct": 0.71,
+      "prevalence_y": 0.64
+    },
+    {
+      "pair": "dolly-v2-12b vs moss-moon-003-sft",
+      "n": 1931,
+      "agreement": 0.699,
+      "kappa": 0.296,
+      "auc_gap_vs_construct": 0.706,
+      "prevalence_y": 0.329
+    },
+    {
+      "pair": "mpt-7b vs flan-t5-xxl",
+      "n": 1929,
+      "agreement": 0.649,
+      "kappa": 0.245,
+      "auc_gap_vs_construct": 0.706,
+      "prevalence_y": 0.559
+    },
+    {
+      "pair": "alpaca-native vs flan-t5-xxl",
+      "n": 1929,
+      "agreement": 0.861,
+      "kappa": 0.373,
+      "auc_gap_vs_construct": 0.752,
+      "prevalence_y": 0.849
+    },
+    {
+      "pair": "mpt-7b vs koala-7B-HF",
+      "n": 1923,
+      "agreement": 0.716,
+      "kappa": 0.423,
+      "auc_gap_vs_construct": 0.78,
+      "prevalence_y": 0.417
+    },
+    {
+      "pair": "chatglm-6b vs koala-7B-HF",
+      "n": 1919,
+      "agreement": 0.711,
+      "kappa": 0.388,
+      "auc_gap_vs_construct": 0.75,
+      "prevalence_y": 0.588
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs chatglm-6b",
+      "n": 1919,
+      "agreement": 0.613,
+      "kappa": 0.222,
+      "auc_gap_vs_construct": 0.66,
+      "prevalence_y": 0.588
+    },
+    {
+      "pair": "koala-7B-HF vs moss-moon-003-sft",
+      "n": 1918,
+      "agreement": 0.696,
+      "kappa": 0.344,
+      "auc_gap_vs_construct": 0.739,
+      "prevalence_y": 0.382
+    },
+    {
+      "pair": "alpaca-native vs dolly-v2-12b",
+      "n": 1916,
+      "agreement": 0.712,
+      "kappa": 0.294,
+      "auc_gap_vs_construct": 0.695,
+      "prevalence_y": 0.729
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs stablelm-tuned-alpha-7b",
+      "n": 1913,
+      "agreement": 0.786,
+      "kappa": 0.254,
+      "auc_gap_vs_construct": 0.742,
+      "prevalence_y": 0.844
+    },
+    {
+      "pair": "chatglm-6b vs vicuna-13b-1.1",
+      "n": 1911,
+      "agreement": 0.67,
+      "kappa": 0.271,
+      "auc_gap_vs_construct": 0.7,
+      "prevalence_y": 0.298
+    },
+    {
+      "pair": "moss-moon-003-sft vs mpt-7b",
+      "n": 1909,
+      "agreement": 0.715,
+      "kappa": 0.239,
+      "auc_gap_vs_construct": 0.71,
+      "prevalence_y": 0.79
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs chatglm-6b",
+      "n": 1907,
+      "agreement": 0.662,
+      "kappa": 0.292,
+      "auc_gap_vs_construct": 0.705,
+      "prevalence_y": 0.632
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs mpt-7b",
+      "n": 1902,
+      "agreement": 0.72,
+      "kappa": 0.431,
+      "auc_gap_vs_construct": 0.774,
+      "prevalence_y": 0.452
+    },
+    {
+      "pair": "koala-7B-HF vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1898,
+      "agreement": 0.741,
+      "kappa": 0.302,
+      "auc_gap_vs_construct": 0.727,
+      "prevalence_y": 0.227
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs koala-7B-HF",
+      "n": 1898,
+      "agreement": 0.742,
+      "kappa": 0.428,
+      "auc_gap_vs_construct": 0.793,
+      "prevalence_y": 0.316
+    },
+    {
+      "pair": "moss-moon-003-sft vs dolly-v2-12b",
+      "n": 1898,
+      "agreement": 0.701,
+      "kappa": 0.308,
+      "auc_gap_vs_construct": 0.707,
+      "prevalence_y": 0.682
+    },
+    {
+      "pair": "koala-7B-HF vs llama-7b-hf-baize-lora-bf16",
+      "n": 1895,
+      "agreement": 0.69,
+      "kappa": 0.285,
+      "auc_gap_vs_construct": 0.727,
+      "prevalence_y": 0.346
+    },
+    {
+      "pair": "chatglm-6b vs moss-moon-003-sft",
+      "n": 1891,
+      "agreement": 0.637,
+      "kappa": 0.279,
+      "auc_gap_vs_construct": 0.691,
+      "prevalence_y": 0.42
+    },
+    {
+      "pair": "flan-t5-xxl vs moss-moon-003-sft",
+      "n": 1889,
+      "agreement": 0.816,
+      "kappa": 0.305,
+      "auc_gap_vs_construct": 0.687,
+      "prevalence_y": 0.199
+    },
+    {
+      "pair": "alpaca-native vs koala-7B-HF",
+      "n": 1883,
+      "agreement": 0.733,
+      "kappa": 0.397,
+      "auc_gap_vs_construct": 0.765,
+      "prevalence_y": 0.693
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs koala-7B-HF",
+      "n": 1881,
+      "agreement": 0.728,
+      "kappa": 0.363,
+      "auc_gap_vs_construct": 0.754,
+      "prevalence_y": 0.703
+    },
+    {
+      "pair": "koala-7B-HF vs alpaca-native",
+      "n": 1879,
+      "agreement": 0.711,
+      "kappa": 0.342,
+      "auc_gap_vs_construct": 0.741,
+      "prevalence_y": 0.323
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs stablelm-tuned-alpha-7b",
+      "n": 1879,
+      "agreement": 0.786,
+      "kappa": 0.338,
+      "auc_gap_vs_construct": 0.762,
+      "prevalence_y": 0.813
+    },
+    {
+      "pair": "koala-7B-HF vs vicuna-13b-1.1",
+      "n": 1869,
+      "agreement": 0.729,
+      "kappa": 0.319,
+      "auc_gap_vs_construct": 0.736,
+      "prevalence_y": 0.288
+    },
+    {
+      "pair": "flan-t5-xxl vs mpt-7b",
+      "n": 1859,
+      "agreement": 0.668,
+      "kappa": 0.276,
+      "auc_gap_vs_construct": 0.721,
+      "prevalence_y": 0.434
+    },
+    {
+      "pair": "moss-moon-003-sft vs llama-7b-hf-baize-lora-bf16",
+      "n": 1857,
+      "agreement": 0.6,
+      "kappa": 0.206,
+      "auc_gap_vs_construct": 0.66,
+      "prevalence_y": 0.541
+    },
+    {
+      "pair": "mpt-7b vs stablelm-tuned-alpha-7b",
+      "n": 1857,
+      "agreement": 0.697,
+      "kappa": 0.382,
+      "auc_gap_vs_construct": 0.758,
+      "prevalence_y": 0.561
+    },
+    {
+      "pair": "stablelm-tuned-alpha-7b vs flan-t5-xxl",
+      "n": 1851,
+      "agreement": 0.632,
+      "kappa": 0.295,
+      "auc_gap_vs_construct": 0.73,
+      "prevalence_y": 0.45
+    },
+    {
+      "pair": "dolly-v2-12b vs flan-t5-xxl",
+      "n": 1847,
+      "agreement": 0.737,
+      "kappa": 0.284,
+      "auc_gap_vs_construct": 0.688,
+      "prevalence_y": 0.698
+    },
+    {
+      "pair": "koala-7B-HF vs flan-t5-xxl",
+      "n": 1846,
+      "agreement": 0.709,
+      "kappa": 0.271,
+      "auc_gap_vs_construct": 0.724,
+      "prevalence_y": 0.663
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs koala-7B-HF",
+      "n": 1844,
+      "agreement": 0.741,
+      "kappa": 0.334,
+      "auc_gap_vs_construct": 0.734,
+      "prevalence_y": 0.738
+    },
+    {
+      "pair": "moss-moon-003-sft vs stablelm-tuned-alpha-7b",
+      "n": 1840,
+      "agreement": 0.759,
+      "kappa": 0.31,
+      "auc_gap_vs_construct": 0.754,
+      "prevalence_y": 0.792
+    },
+    {
+      "pair": "alpaca-native vs chatglm-6b",
+      "n": 1838,
+      "agreement": 0.659,
+      "kappa": 0.32,
+      "auc_gap_vs_construct": 0.732,
+      "prevalence_y": 0.596
+    },
+    {
+      "pair": "dolly-v2-12b vs stablelm-tuned-alpha-7b",
+      "n": 1831,
+      "agreement": 0.688,
+      "kappa": 0.335,
+      "auc_gap_vs_construct": 0.739,
+      "prevalence_y": 0.666
+    },
+    {
+      "pair": "moss-moon-003-sft vs chatglm-6b",
+      "n": 1825,
+      "agreement": 0.637,
+      "kappa": 0.275,
+      "auc_gap_vs_construct": 0.692,
+      "prevalence_y": 0.556
+    },
+    {
+      "pair": "moss-moon-003-sft vs alpaca-native",
+      "n": 1810,
+      "agreement": 0.646,
+      "kappa": 0.29,
+      "auc_gap_vs_construct": 0.703,
+      "prevalence_y": 0.475
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs alpaca-native",
+      "n": 1803,
+      "agreement": 0.637,
+      "kappa": 0.272,
+      "auc_gap_vs_construct": 0.691,
+      "prevalence_y": 0.515
+    },
+    {
+      "pair": "koala-7B-HF vs stablelm-tuned-alpha-7b",
+      "n": 1793,
+      "agreement": 0.732,
+      "kappa": 0.407,
+      "auc_gap_vs_construct": 0.794,
+      "prevalence_y": 0.679
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs chatglm-6b",
+      "n": 1784,
+      "agreement": 0.642,
+      "kappa": 0.24,
+      "auc_gap_vs_construct": 0.657,
+      "prevalence_y": 0.668
+    },
+    {
+      "pair": "flan-t5-xxl vs koala-7B-HF",
+      "n": 1783,
+      "agreement": 0.721,
+      "kappa": 0.264,
+      "auc_gap_vs_construct": 0.703,
+      "prevalence_y": 0.319
+    },
+    {
+      "pair": "moss-moon-003-sft vs koala-7B-HF",
+      "n": 1780,
+      "agreement": 0.707,
+      "kappa": 0.331,
+      "auc_gap_vs_construct": 0.741,
+      "prevalence_y": 0.694
+    },
+    {
+      "pair": "moss-moon-003-sft vs vicuna-13b-1.1",
+      "n": 1779,
+      "agreement": 0.617,
+      "kappa": 0.196,
+      "auc_gap_vs_construct": 0.632,
+      "prevalence_y": 0.405
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs koala-7B-HF",
+      "n": 1779,
+      "agreement": 0.72,
+      "kappa": 0.292,
+      "auc_gap_vs_construct": 0.728,
+      "prevalence_y": 0.723
+    },
+    {
+      "pair": "chatglm-6b vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1774,
+      "agreement": 0.657,
+      "kappa": 0.232,
+      "auc_gap_vs_construct": 0.682,
+      "prevalence_y": 0.26
+    },
+    {
+      "pair": "dolly-v2-12b vs koala-7B-HF",
+      "n": 1772,
+      "agreement": 0.701,
+      "kappa": 0.402,
+      "auc_gap_vs_construct": 0.757,
+      "prevalence_y": 0.5
+    },
+    {
+      "pair": "alpaca-native vs moss-moon-003-sft",
+      "n": 1771,
+      "agreement": 0.645,
+      "kappa": 0.291,
+      "auc_gap_vs_construct": 0.711,
+      "prevalence_y": 0.522
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs vicuna-13b-1.1",
+      "n": 1771,
+      "agreement": 0.624,
+      "kappa": 0.225,
+      "auc_gap_vs_construct": 0.649,
+      "prevalence_y": 0.416
+    },
+    {
+      "pair": "flan-t5-xxl vs dolly-v2-12b",
+      "n": 1767,
+      "agreement": 0.724,
+      "kappa": 0.22,
+      "auc_gap_vs_construct": 0.685,
+      "prevalence_y": 0.29
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs moss-moon-003-sft",
+      "n": 1764,
+      "agreement": 0.629,
+      "kappa": 0.254,
+      "auc_gap_vs_construct": 0.686,
+      "prevalence_y": 0.549
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs llama-7b-hf-baize-lora-bf16",
+      "n": 1757,
+      "agreement": 0.624,
+      "kappa": 0.219,
+      "auc_gap_vs_construct": 0.665,
+      "prevalence_y": 0.624
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs alpaca-native",
+      "n": 1744,
+      "agreement": 0.624,
+      "kappa": 0.232,
+      "auc_gap_vs_construct": 0.681,
+      "prevalence_y": 0.549
+    },
+    {
+      "pair": "moss-moon-003-sft vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1738,
+      "agreement": 0.618,
+      "kappa": 0.193,
+      "auc_gap_vs_construct": 0.634,
+      "prevalence_y": 0.365
+    },
+    {
+      "pair": "flan-t5-xxl vs stablelm-tuned-alpha-7b",
+      "n": 1727,
+      "agreement": 0.643,
+      "kappa": 0.273,
+      "auc_gap_vs_construct": 0.698,
+      "prevalence_y": 0.482
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs moss-moon-003-sft",
+      "n": 1724,
+      "agreement": 0.64,
+      "kappa": 0.25,
+      "auc_gap_vs_construct": 0.681,
+      "prevalence_y": 0.597
+    },
+    {
+      "pair": "llama-7b-hf-baize-lora-bf16 vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1716,
+      "agreement": 0.596,
+      "kappa": 0.167,
+      "auc_gap_vs_construct": 0.622,
+      "prevalence_y": 0.395
+    },
+    {
+      "pair": "alpaca-native vs vicuna-13b-1.1",
+      "n": 1678,
+      "agreement": 0.657,
+      "kappa": 0.283,
+      "auc_gap_vs_construct": 0.703,
+      "prevalence_y": 0.402
+    },
+    {
+      "pair": "alpaca-native vs llama-7b-hf-baize-lora-bf16",
+      "n": 1646,
+      "agreement": 0.611,
+      "kappa": 0.226,
+      "auc_gap_vs_construct": 0.68,
+      "prevalence_y": 0.557
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs vicuna-13b-1.1",
+      "n": 1636,
+      "agreement": 0.619,
+      "kappa": 0.234,
+      "auc_gap_vs_construct": 0.665,
+      "prevalence_y": 0.452
+    },
+    {
+      "pair": "vicuna-13b-1.1 vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1621,
+      "agreement": 0.597,
+      "kappa": 0.195,
+      "auc_gap_vs_construct": 0.641,
+      "prevalence_y": 0.481
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs moss-moon-003-sft",
+      "n": 1606,
+      "agreement": 0.626,
+      "kappa": 0.228,
+      "auc_gap_vs_construct": 0.665,
+      "prevalence_y": 0.59
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs llama-7b-hf-baize-lora-bf16",
+      "n": 1601,
+      "agreement": 0.616,
+      "kappa": 0.217,
+      "auc_gap_vs_construct": 0.654,
+      "prevalence_y": 0.578
+    },
+    {
+      "pair": "oasst-sft-4-pythia-12b-epoch-3.5 vs alpaca-native",
+      "n": 1540,
+      "agreement": 0.645,
+      "kappa": 0.287,
+      "auc_gap_vs_construct": 0.707,
+      "prevalence_y": 0.518
+    },
+    {
+      "pair": "alpaca-native vs oasst-sft-4-pythia-12b-epoch-3.5",
+      "n": 1537,
+      "agreement": 0.671,
+      "kappa": 0.298,
+      "auc_gap_vs_construct": 0.716,
+      "prevalence_y": 0.374
+    }
+  ],
+  "verdict_distribution": {
+    "A is better": 125047,
+    "Same good": 42222,
+    "B is better": 128472,
+    "Same bad": 19145
+  }
+}

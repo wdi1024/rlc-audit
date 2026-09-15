@@ -1,0 +1,178 @@
+{
+ "rule": "modal share of the score, rounded to 6 decimals, exceeds 0.5",
+ "contracts": {
+  "XSTest 450 (primary run)": {
+   "n": 450,
+   "distinct_values": 43,
+   "modal_share": 0.43555555555555553,
+   "modal_value": 0.872875,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "AdvBench 520": {
+   "n": 520,
+   "distinct_values": 132,
+   "modal_share": 0.23076923076923078,
+   "modal_value": 0.849952,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "SimpleSafety 100": {
+   "n": 100,
+   "distinct_values": 14,
+   "modal_share": 0.5,
+   "modal_value": 0.872024,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "XSTest 100 / 512tok": {
+   "n": 100,
+   "distinct_values": 7,
+   "modal_share": 0.53,
+   "modal_value": 0.863491,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": true
+  },
+  "AdvBench 100 / 512tok": {
+   "n": 100,
+   "distinct_values": 35,
+   "modal_share": 0.19,
+   "modal_value": 0.849543,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "OR-Bench hard 1k": {
+   "n": 1319,
+   "distinct_values": 101,
+   "modal_share": 0.6444275966641395,
+   "modal_value": 0.855149,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": true
+  },
+  "JailbreakBench": {
+   "n": 200,
+   "distinct_values": 37,
+   "modal_share": 0.42,
+   "modal_value": 0.858841,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "GSM8K, 50-char span": {
+   "n": 1319,
+   "distinct_values": 12,
+   "modal_share": 0.6338134950720242,
+   "modal_value": 0.942063,
+   "proxy_positives_on_modal": 1.0,
+   "withdrawn_by_rule": true
+  },
+  "GSM8K, 80-char span": {
+   "n": 1319,
+   "distinct_values": 645,
+   "modal_share": 0.06520090978013647,
+   "modal_value": 0.949413,
+   "proxy_positives_on_modal": null,
+   "withdrawn_by_rule": false
+  },
+  "GSM8K, 120-char span": {
+   "n": 1319,
+   "distinct_values": 1309,
+   "modal_share": 0.001516300227445034,
+   "modal_value": 0.895563,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "GSM8K, 160-char span": {
+   "n": 1319,
+   "distinct_values": 1308,
+   "modal_share": 0.002274450341167551,
+   "modal_value": 0.969443,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "GSM8K, 200-char span": {
+   "n": 1319,
+   "distinct_values": 1303,
+   "modal_share": 0.001516300227445034,
+   "modal_value": 0.924914,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "GSM8K, 300-char span": {
+   "n": 1319,
+   "distinct_values": 1318,
+   "modal_share": 0.001516300227445034,
+   "modal_value": 0.636996,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "GSM8K, 600-char span": {
+   "n": 1319,
+   "distinct_values": 1316,
+   "modal_share": 0.001516300227445034,
+   "modal_value": 0.220308,
+   "proxy_positives_on_modal": 0.0,
+   "withdrawn_by_rule": false
+  },
+  "HotpotQA, 50-char span": {
+   "n": 2000,
+   "distinct_values": 1753,
+   "modal_share": 0.1115,
+   "modal_value": 1.0,
+   "proxy_positives_on_modal": 0.3753943217665615,
+   "withdrawn_by_rule": false
+  },
+  "HotpotQA, 80-char span": {
+   "n": 2000,
+   "distinct_values": 1844,
+   "modal_share": 0.0755,
+   "modal_value": 1.0,
+   "proxy_positives_on_modal": 0.17488789237668162,
+   "withdrawn_by_rule": false
+  },
+  "HotpotQA, 120-char span": {
+   "n": 2000,
+   "distinct_values": 1880,
+   "modal_share": 0.0595,
+   "modal_value": 1.0,
+   "proxy_positives_on_modal": 0.09433962264150944,
+   "withdrawn_by_rule": false
+  },
+  "HotpotQA, 160-char span": {
+   "n": 2000,
+   "distinct_values": 1891,
+   "modal_share": 0.0545,
+   "modal_value": 1.0,
+   "proxy_positives_on_modal": 0.0657030223390276,
+   "withdrawn_by_rule": false
+  },
+  "HotpotQA, 200-char span": {
+   "n": 2000,
+   "distinct_values": 1896,
+   "modal_share": 0.0505,
+   "modal_value": 1.0,
+   "proxy_positives_on_modal": 0.05238095238095238,
+   "withdrawn_by_rule": false
+  },
+  "HotpotQA, 300-char span": {
+   "n": 2000,
+   "distinct_values": 1924,
+   "modal_share": 0.0375,
+   "modal_value": 1.0,
+   "proxy_positives_on_modal": 0.0288153681963714,
+   "withdrawn_by_rule": false
+  },
+  "HotpotQA, 600-char span": {
+   "n": 2000,
+   "distinct_values": 1967,
+   "modal_share": 0.016,
+   "modal_value": 1.0,
+   "proxy_positives_on_modal": 0.016129032258064516,
+   "withdrawn_by_rule": false
+  }
+ },
+ "withdrawn": [
+  "XSTest 100 / 512tok",
+  "OR-Bench hard 1k",
+  "GSM8K, 50-char span"
+ ]
+}

@@ -1,0 +1,170 @@
+{
+  "phase": "phase_colab_qwen_same_family_xstest450_tagged768_thinkingoff_greedy",
+  "models": [
+    "qwen3-8b",
+    "qwen3.5-9b"
+  ],
+  "n_common": 450,
+  "parse": {
+    "qwen3-8b": {
+      "n": 450,
+      "parse_status": {
+        "exact": 421,
+        "fallback_truncated_final": 29
+      },
+      "final_nonempty": 450,
+      "final_coverage": 1.0
+    },
+    "qwen3.5-9b": {
+      "n": 450,
+      "parse_status": {
+        "exact": 361,
+        "fallback_truncated_final": 89
+      },
+      "final_nonempty": 450,
+      "final_coverage": 1.0
+    }
+  },
+  "score_tables": [
+    {
+      "score": "raw_prefix50",
+      "scope": "raw",
+      "prefix": 50,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_raw_prefix50_disagreement",
+          "n": 450,
+          "n_pos": 82,
+          "prevalence": 0.18222222222222223,
+          "auc": 0.45337354188759277,
+          "ap": 0.16066912844870523
+        },
+        {
+          "label": "judge_final_disagreement",
+          "n": 450,
+          "n_pos": 40,
+          "prevalence": 0.08888888888888889,
+          "auc": 0.37926829268292683,
+          "ap": 0.06787764218681533
+        }
+      ]
+    },
+    {
+      "score": "raw_full",
+      "scope": "raw",
+      "prefix": null,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_raw_full_disagreement",
+          "n": 450,
+          "n_pos": 72,
+          "prevalence": 0.16,
+          "auc": 0.5286228689006467,
+          "ap": 0.1942494664709209
+        },
+        {
+          "label": "judge_final_disagreement",
+          "n": 450,
+          "n_pos": 40,
+          "prevalence": 0.08888888888888889,
+          "auc": 0.6164634146341463,
+          "ap": 0.21427321889414785
+        }
+      ]
+    },
+    {
+      "score": "final_full",
+      "scope": "final",
+      "prefix": null,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_final_disagreement",
+          "n": 450,
+          "n_pos": 73,
+          "prevalence": 0.1622222222222222,
+          "auc": 0.5372987900148977,
+          "ap": 0.19048457050165835
+        },
+        {
+          "label": "judge_final_disagreement",
+          "n": 450,
+          "n_pos": 40,
+          "prevalence": 0.08888888888888889,
+          "auc": 0.6309756097560976,
+          "ap": 0.1811216722939185
+        }
+      ]
+    }
+  ],
+  "final_channel_practical_router": {
+    "label_scope": "final",
+    "n": 450,
+    "budgets": {
+      "top_10pct": 45,
+      "raw_prefix_gt_0_95_budget": 285,
+      "semantic_positive_count": 40
+    },
+    "surface_label": "final refusal-keyword disagreement",
+    "semantic_label": "final-channel LLM-judge refusal disagreement",
+    "embedder": null,
+    "rows": [
+      {
+        "router": "final_full_tfidf",
+        "n": 450,
+        "surface_positive_n": 73,
+        "semantic_positive_n": 40,
+        "surface_prevalence": 0.1622222222222222,
+        "semantic_prevalence": 0.08888888888888889,
+        "auc_surface": 0.5372987900148977,
+        "auc_semantic": 0.6309756097560976,
+        "ap_surface": 0.19048457050165835,
+        "ap_semantic": 0.1811216722939185,
+        "precision_at_semantic_positive_count": 0.2,
+        "pair_kappa": 0.23017107309486773,
+        "side_a_kappa": 0.6978971270609142,
+        "side_b_kappa": 0.5645885286783042,
+        "mean_side_kappa": 0.6312428278696092,
+        "routed_composition": {
+          "top_10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 8,
+            "semantic_precision": 0.17777777777777778,
+            "surface_disagreement_n": 6,
+            "surface_precision": 0.13333333333333333,
+            "both_refuse_n": 37,
+            "both_refuse_rate": 0.8222222222222222,
+            "both_comply_n": 0,
+            "both_comply_rate": 0.0
+          },
+          "raw_prefix_gt_0_95_budget": {
+            "budget": 285,
+            "semantic_disagreement_n": 32,
+            "semantic_precision": 0.11228070175438597,
+            "surface_disagreement_n": 53,
+            "surface_precision": 0.18596491228070175,
+            "both_refuse_n": 166,
+            "both_refuse_rate": 0.5824561403508772,
+            "both_comply_n": 87,
+            "both_comply_rate": 0.30526315789473685
+          },
+          "semantic_positive_count": {
+            "budget": 40,
+            "semantic_disagreement_n": 8,
+            "semantic_precision": 0.2,
+            "surface_disagreement_n": 6,
+            "surface_precision": 0.15,
+            "both_refuse_n": 32,
+            "both_refuse_rate": 0.8,
+            "both_comply_n": 0,
+            "both_comply_rate": 0.0
+          }
+        },
+        "status": "PASS",
+        "status_reason": "no surface-over-semantic failure detected"
+      }
+    ]
+  }
+}

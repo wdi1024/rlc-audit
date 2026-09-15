@@ -1,0 +1,414 @@
+{
+  "phase": "phase3_xstest_full",
+  "models": [
+    "qwen3.5-2b",
+    "gemma-4-e2b"
+  ],
+  "judge_tag": "anthropic_claude-haiku-4-5-20251001",
+  "prefix_k": 50,
+  "n_pairs": 450,
+  "n_single_outputs": 900,
+  "labels": {
+    "pair_keyword_disagreement": 13,
+    "pair_semantic_disagreement": 46,
+    "thinking_vs_refusal_opening_mismatch": 11,
+    "single_opening_family_counts": {
+      "direct_refusal": 13,
+      "other": 42,
+      "thinking": 845
+    }
+  },
+  "vocabulary": {
+    "n_features": 338,
+    "n_template_features": 17,
+    "template_features": [
+      "advice",
+      "analyze",
+      "analyze the",
+      "cannot",
+      "cannot fulfill",
+      "cannot provide",
+      "fulfill",
+      "information",
+      "instructions",
+      "process",
+      "provide",
+      "provide information",
+      "provide instructions",
+      "request",
+      "the request",
+      "thinking",
+      "thinking process"
+    ],
+    "n_empirical_opening_discriminative_features": 20,
+    "empirical_opening_discriminative_features": [
+      {
+        "feature": "cannot",
+        "score": 0.26051518189847667,
+        "mean_absdiff_keyword_positive": 0.26051518189847667,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "or",
+        "score": 0.24027935958376578,
+        "mean_absdiff_keyword_positive": 0.24027935958376578,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "cannot provide",
+        "score": 0.24027935958376578,
+        "mean_absdiff_keyword_positive": 0.24027935958376578,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "provide",
+        "score": 0.23634587945384208,
+        "mean_absdiff_keyword_positive": 0.23688021363046044,
+        "mean_absdiff_keyword_negative": 0.0005343341766183469
+      },
+      {
+        "feature": "instructions",
+        "score": 0.2240358321554899,
+        "mean_absdiff_keyword_positive": 0.2240358321554899,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "on",
+        "score": 0.2240358321554899,
+        "mean_absdiff_keyword_positive": 0.2240358321554899,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "information",
+        "score": 0.20969474827964263,
+        "mean_absdiff_keyword_positive": 0.20969474827964263,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "ho",
+        "score": 0.19279445953590424,
+        "mean_absdiff_keyword_positive": 0.19279445953590424,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "on ho",
+        "score": 0.19279445953590424,
+        "mean_absdiff_keyword_positive": 0.19279445953590424,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "instructions or",
+        "score": 0.19075185755823112,
+        "mean_absdiff_keyword_positive": 0.19075185755823112,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "provide instructions",
+        "score": 0.19075185755823112,
+        "mean_absdiff_keyword_positive": 0.19075185755823112,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "or information",
+        "score": 0.15798950728696284,
+        "mean_absdiff_keyword_positive": 0.15798950728696284,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "information on",
+        "score": 0.15798950728696284,
+        "mean_absdiff_keyword_positive": 0.15798950728696284,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "thinking",
+        "score": 0.09064547314866395,
+        "mean_absdiff_keyword_positive": 0.14430449292875713,
+        "mean_absdiff_keyword_negative": 0.05365901978009318
+      },
+      {
+        "feature": "process",
+        "score": 0.09064547314866395,
+        "mean_absdiff_keyword_positive": 0.14430449292875713,
+        "mean_absdiff_keyword_negative": 0.05365901978009318
+      },
+      {
+        "feature": "thinking process",
+        "score": 0.09064547314866395,
+        "mean_absdiff_keyword_positive": 0.14430449292875713,
+        "mean_absdiff_keyword_negative": 0.05365901978009318
+      },
+      {
+        "feature": "the",
+        "score": 0.08765499543744239,
+        "mean_absdiff_keyword_positive": 0.15911053771481326,
+        "mean_absdiff_keyword_negative": 0.07145554227737087
+      },
+      {
+        "feature": "request",
+        "score": 0.07323679817147757,
+        "mean_absdiff_keyword_positive": 0.220035544664806,
+        "mean_absdiff_keyword_negative": 0.1467987464933284
+      },
+      {
+        "feature": "provide information",
+        "score": 0.07181581463904035,
+        "mean_absdiff_keyword_positive": 0.07181581463904035,
+        "mean_absdiff_keyword_negative": 0.0
+      },
+      {
+        "feature": "information or",
+        "score": 0.07181581463904035,
+        "mean_absdiff_keyword_positive": 0.07181581463904035,
+        "mean_absdiff_keyword_negative": 0.0
+      }
+    ]
+  },
+  "template_energy": {
+    "overall_mean": 0.27570445646918396,
+    "qwen_mean": 0.27819903413755226,
+    "gemma_mean": 0.27320987880081565,
+    "gemma_keyword_prefix_mean": 0.4278452051474935,
+    "semantic_refusal_mean": 0.35015637451462844,
+    "semantic_compliance_mean": 0.2117127252565705,
+    "thinking_opening_mean": 0.28700295742118553,
+    "direct_refusal_opening_mean": 0.4278452051474935
+  },
+  "subspace_ablation": {
+    "rows": [
+      {
+        "representation": "Original prefix TF-IDF",
+        "auc_keyword": 0.9851258581235698,
+        "ap_keyword": 0.5,
+        "auc_semantic": 0.5920953508394318,
+        "ap_semantic": 0.12654496239270696,
+        "n_keyword": 13,
+        "n_semantic": 46,
+        "distance_mean": 0.7497546465770082,
+        "distance_median": 0.8728748149923528
+      },
+      {
+        "representation": "Opening-template features only",
+        "auc_keyword": 0.954233409610984,
+        "ap_keyword": 0.24528301886792453,
+        "auc_semantic": 0.5084481274214379,
+        "ap_semantic": 0.11080217489959297,
+        "n_keyword": 13,
+        "n_semantic": 46,
+        "distance_mean": 0.4057777843455023,
+        "distance_median": 0.37732065569308737
+      },
+      {
+        "representation": "Opening-template features removed",
+        "auc_keyword": 0.9805491990846682,
+        "ap_keyword": 0.43333333333333335,
+        "auc_semantic": 0.6016734825656478,
+        "ap_semantic": 0.12678662429416376,
+        "n_keyword": 13,
+        "n_semantic": 46,
+        "distance_mean": 0.7895758441180124,
+        "distance_median": 0.9568842835781386
+      },
+      {
+        "representation": "Top-20 opening-discriminative features only",
+        "auc_keyword": 0.9794050343249429,
+        "ap_keyword": 0.41935483870967744,
+        "auc_semantic": 0.41559944037882046,
+        "ap_semantic": 0.1017120236875978,
+        "n_keyword": 13,
+        "n_semantic": 46,
+        "distance_mean": 0.22496573183089494,
+        "distance_median": 0.14491558472257948
+      },
+      {
+        "representation": "Top-20 opening-discriminative features removed",
+        "auc_keyword": 0.7139588100686498,
+        "ap_keyword": 0.049429657794676805,
+        "auc_semantic": 0.6036913473956091,
+        "ap_semantic": 0.12642332400770967,
+        "n_keyword": 13,
+        "n_semantic": 46,
+        "distance_mean": 0.8194650293537592,
+        "distance_median": 1.0
+      }
+    ],
+    "random_same_size_removed": {
+      "auc_keyword": {
+        "mean": 0.9833695652173915,
+        "std": 0.005836235091169322,
+        "p025": 0.959954233409611,
+        "p975": 0.9851258581235699
+      },
+      "auc_semantic": {
+        "mean": 0.5929509255273353,
+        "std": 0.0018291370652708514,
+        "p025": 0.5903061773568661,
+        "p975": 0.5960537290142058
+      },
+      "ap_keyword": {
+        "mean": 0.4821538978494624,
+        "std": 0.05484292995953681,
+        "p025": 0.2708333333333333,
+        "p975": 0.5
+      },
+      "ap_semantic": {
+        "mean": 0.12684865908107532,
+        "std": 0.0015940668797863485,
+        "p025": 0.12420746563806813,
+        "p975": 0.13237697053108424
+      }
+    },
+    "random_same_size_only": {
+      "auc_keyword": {
+        "mean": 0.6078947368421053,
+        "std": 0.15822590651181564,
+        "p025": 0.5,
+        "p975": 0.9543764302059498
+      },
+      "auc_semantic": {
+        "mean": 0.5221269640551012,
+        "std": 0.033951234573447855,
+        "p025": 0.45553231274214373,
+        "p975": 0.5955284115368059
+      },
+      "ap_keyword": {
+        "mean": 0.06527903927720768,
+        "std": 0.08138723192740853,
+        "p025": 0.028888888888888888,
+        "p975": 0.2459217767295599
+      },
+      "ap_semantic": {
+        "mean": 0.10754584938654198,
+        "std": 0.007714836872612491,
+        "p025": 0.09720024179075214,
+        "p975": 0.12694700283298233
+      }
+    },
+    "random_top20_size_removed": {
+      "auc_keyword": {
+        "mean": 0.983346681922197,
+        "std": 0.006247606381121771,
+        "p025": 0.959954233409611,
+        "p975": 0.9851258581235699
+      },
+      "auc_semantic": {
+        "mean": 0.5931999300473525,
+        "std": 0.001918459123324358,
+        "p025": 0.590158200602669,
+        "p975": 0.5969422621609987
+      },
+      "ap_keyword": {
+        "mean": 0.48308803763440855,
+        "std": 0.057504249807166605,
+        "p025": 0.2708333333333333,
+        "p975": 0.5
+      },
+      "ap_semantic": {
+        "mean": 0.12664794239190377,
+        "std": 0.0011684127417130993,
+        "p025": 0.12421382708661775,
+        "p975": 0.12774500325016924
+      }
+    },
+    "random_top20_size_only": {
+      "auc_keyword": {
+        "mean": 0.6420823798627002,
+        "std": 0.18012937775066482,
+        "p025": 0.5,
+        "p975": 0.9748283752860412
+      },
+      "auc_semantic": {
+        "mean": 0.5259867359018511,
+        "std": 0.03703194351041674,
+        "p025": 0.4554737946620749,
+        "p975": 0.5980204746018081
+      },
+      "ap_keyword": {
+        "mean": 0.08416334044845733,
+        "std": 0.09910419173922855,
+        "p025": 0.028888888888888888,
+        "p975": 0.37142857142857144
+      },
+      "ap_semantic": {
+        "mean": 0.10891880157438756,
+        "std": 0.007974381525980286,
+        "p025": 0.10127930593701202,
+        "p975": 0.1279142888169923
+      }
+    }
+  },
+  "linear_probes": {
+    "single_output_prefix_tfidf": [
+      {
+        "target": "model_identity_gemma",
+        "n": 900,
+        "n_positive": 450,
+        "base_rate": 0.5,
+        "auc": 0.999925925925926,
+        "balanced_accuracy": 0.9988888888888889
+      },
+      {
+        "target": "opening_family",
+        "n": 900,
+        "classes": {
+          "direct_refusal": 13,
+          "other": 42,
+          "thinking": 845
+        },
+        "balanced_accuracy": 0.9739644970414201
+      },
+      {
+        "target": "prefix_keyword_refusal",
+        "n": 900,
+        "n_positive": 13,
+        "base_rate": 0.014444444444444444,
+        "auc": 1.0,
+        "balanced_accuracy": 0.9615384615384616
+      },
+      {
+        "target": "semantic_refusal",
+        "n": 900,
+        "n_positive": 416,
+        "base_rate": 0.4622222222222222,
+        "auc": 0.6904501748251748,
+        "balanced_accuracy": 0.6778150826446281
+      }
+    ],
+    "pair_absdiff_prefix_tfidf": [
+      {
+        "target": "thinking_vs_refusal_opening_mismatch",
+        "n": 450,
+        "n_positive": 11,
+        "base_rate": 0.024444444444444446,
+        "auc": 0.999585835576724,
+        "balanced_accuracy": 0.9522675502174363
+      },
+      {
+        "target": "pair_keyword_disagreement",
+        "n": 450,
+        "n_positive": 13,
+        "base_rate": 0.028888888888888888,
+        "auc": 1.0,
+        "balanced_accuracy": 0.9615384615384616
+      },
+      {
+        "target": "pair_semantic_disagreement",
+        "n": 450,
+        "n_positive": 46,
+        "base_rate": 0.10222222222222223,
+        "auc": 0.5506887645286268,
+        "balanced_accuracy": 0.5996018080068877
+      }
+    ]
+  },
+  "geometry": {
+    "figure": "figures/fig5_representation_geometry.png",
+    "explained_variance_ratio": [
+      0.13134791371528387,
+      0.457564509857485
+    ],
+    "silhouette_opening_family": 0.2014651762709289,
+    "silhouette_semantic_refusal": 0.09150779832430683,
+    "silhouette_model_identity": 0.4134342456253067
+  }
+}

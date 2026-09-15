@@ -1,0 +1,58 @@
+{
+  "n_common": 450,
+  "n_disagree_keyword": 25,
+  "n_disagree_judge": 46,
+  "permutation": [
+    {
+      "repr": "TF-IDF",
+      "label": "Keyword",
+      "observed_auc": 0.7874823529411764,
+      "null_mean": 0.49918917647058825,
+      "null_std": 0.06000794007162834,
+      "null_99": 0.6343614117647058,
+      "p_two_sided": 0.0,
+      "p_one_sided": 0.0,
+      "n_perm": 2000
+    },
+    {
+      "repr": "TF-IDF",
+      "label": "LLM-judge",
+      "observed_auc": 0.4817585019371502,
+      "null_mean": 0.5008654218682738,
+      "null_std": 0.04589981341670368,
+      "null_99": 0.6052319199311236,
+      "p_two_sided": 0.7015,
+      "p_one_sided": 0.6575,
+      "n_perm": 2000
+    },
+    {
+      "repr": "Sentence (L12)",
+      "label": "Keyword",
+      "observed_auc": 0.8204235294117648,
+      "null_mean": 0.4991126117647059,
+      "null_std": 0.05950557688012212,
+      "null_99": 0.6323840000000001,
+      "p_two_sided": 0.0,
+      "p_one_sided": 0.0,
+      "n_perm": 2000
+    },
+    {
+      "repr": "Sentence (L12)",
+      "label": "LLM-judge",
+      "observed_auc": 0.651097718467499,
+      "null_mean": 0.5000246717606543,
+      "null_std": 0.043655231773846975,
+      "null_99": 0.6050376668101592,
+      "p_two_sided": 0.0,
+      "p_one_sided": 0.0,
+      "n_perm": 2000
+    }
+  ],
+  "stability": {
+    "auc_mean": 0.6851905256893975,
+    "auc_variance": 0.017824622752621505,
+    "auc_range": 0.3386650274746146,
+    "spearman_rho_repr": 0.3545867851378568,
+    "pearson_r_repr": 0.5928854640615315
+  }
+}

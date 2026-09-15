@@ -1,0 +1,91 @@
+{
+  "mtbench": {
+    "n": 80,
+    "proxy": "stored GPT-4 judge score >= 0.7, XOR",
+    "construct": "haiku-4-5 adequacy adjudication, XOR",
+    "kappa_proxy_construct": 0.07361455748552526,
+    "proxy_threshold_sensitivity_kappa_at_0.5": 0.018404907975460127,
+    "full_span": {
+      "proxy": {
+        "n_pos": 17,
+        "auc": 0.44817927170868355,
+        "ap": 0.21408295680173864
+      },
+      "construct": {
+        "n_pos": 23,
+        "auc": 0.46300533943554545,
+        "ap": 0.2968379932597223
+      },
+      "routed": {
+        "budget": 8,
+        "construct_disagreements": 2,
+        "proxy_disagreements": 2
+      }
+    },
+    "opening_200": {
+      "proxy": {
+        "n_pos": 17,
+        "auc": 0.4780578898225958,
+        "ap": 0.21416537063927732
+      },
+      "construct": {
+        "n_pos": 23,
+        "auc": 0.46681922196796344,
+        "ap": 0.2942514726955002
+      },
+      "routed": {
+        "budget": 8,
+        "construct_disagreements": 2,
+        "proxy_disagreements": 0
+      }
+    },
+    "haiku_adequate_rate_a": 0.375,
+    "haiku_adequate_rate_b": 0.4125,
+    "stored_good_rate_a": 0.5875,
+    "stored_good_rate_b": 0.6,
+    "side_a_stored_vs_haiku": {
+      "raw_agreement": 0.7375,
+      "kappa": 0.4970059880239521
+    },
+    "side_b_stored_vs_haiku": {
+      "raw_agreement": 0.7125,
+      "kappa": 0.4444444444444444
+    }
+  },
+  "mmlu_professional_law": {
+    "n": 1534,
+    "n_dropped_no_letter": 0,
+    "proxy": "extracted answer-letter disagreement",
+    "construct": "stored exact-match correctness disagreement",
+    "kappa_proxy_construct": 0.7283826853585957,
+    "full_span": {
+      "proxy": {
+        "n_pos": 692,
+        "auc": 1.0,
+        "ap": 1.0
+      },
+      "construct": {
+        "n_pos": 491,
+        "auc": 0.9041227229146692,
+        "ap": 0.7105643994211288
+      },
+      "routed": {
+        "budget": 153,
+        "construct_disagreements": 111,
+        "proxy_disagreements": 153
+      }
+    }
+  },
+  "gsm8k_provenance": {
+    "n": 7450,
+    "rows_with_any_fractional_label": 7450,
+    "example_histogram_claude_instant": {
+      "0.0": 17,
+      "0.25": 1439,
+      "0.5": 746,
+      "0.75": 5232,
+      "1.0": 16
+    },
+    "finding": "stored labels are fractional aggregates while a single response string is stored per model; the construct label is not a function of the stored evidence, so no score-proxy-construct contract over the released responses can be instantiated or audited"
+  }
+}

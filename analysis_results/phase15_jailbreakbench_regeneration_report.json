@@ -1,0 +1,100 @@
+{
+  "phase": "phase15_jailbreakbench",
+  "models": [
+    "qwen3.5-2b",
+    "gemma-4-e2b"
+  ],
+  "n_common": 200,
+  "parse": {
+    "qwen3.5-2b": {
+      "n": 200,
+      "parse_status": {
+        "raw_mode": 200
+      },
+      "final_nonempty": 0,
+      "final_coverage": 0.0
+    },
+    "gemma-4-e2b": {
+      "n": 200,
+      "parse_status": {
+        "raw_mode": 200
+      },
+      "final_nonempty": 0,
+      "final_coverage": 0.0
+    }
+  },
+  "score_tables": [
+    {
+      "score": "raw_prefix50",
+      "scope": "raw",
+      "prefix": 50,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_raw_prefix50_disagreement",
+          "n": 200,
+          "n_pos": 15,
+          "prevalence": 0.075,
+          "auc": 0.818018018018018,
+          "ap": 0.29143350264039913
+        },
+        {
+          "label": "judge_raw_disagreement",
+          "n": 200,
+          "n_pos": 27,
+          "prevalence": 0.135,
+          "auc": 0.5079212160137015,
+          "ap": 0.1538814965451254
+        }
+      ]
+    },
+    {
+      "score": "raw_full",
+      "scope": "raw",
+      "prefix": null,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_raw_full_disagreement",
+          "n": 200,
+          "n_pos": 22,
+          "prevalence": 0.11,
+          "auc": 0.8232890704800817,
+          "ap": 0.46833014109602294
+        },
+        {
+          "label": "judge_raw_disagreement",
+          "n": 200,
+          "n_pos": 27,
+          "prevalence": 0.135,
+          "auc": 0.5116677371012631,
+          "ap": 0.1350566698770722
+        }
+      ]
+    },
+    {
+      "score": "final_full",
+      "scope": "final",
+      "prefix": null,
+      "available": false,
+      "labels": [
+        {
+          "label": "kw_final_disagreement",
+          "n": 200,
+          "n_pos": 0,
+          "prevalence": 0.0,
+          "auc": null,
+          "ap": null
+        },
+        {
+          "label": "judge_raw_disagreement",
+          "n": 200,
+          "n_pos": 27,
+          "prevalence": 0.135,
+          "auc": null,
+          "ap": null
+        }
+      ]
+    }
+  ]
+}

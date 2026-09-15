@@ -1,0 +1,107 @@
+{
+  "description": "Same-family Qwen-vs-Qwen control compared with the primary cross-family Qwen-vs-Gemma pair on Phase 3 XSTest.",
+  "pairs": [
+    {
+      "name": "same-family Qwen3.5-2B seed1 vs seed2",
+      "n": 450,
+      "rows": [
+        {
+          "k": 50,
+          "n_dis_kw_at_k": 0,
+          "auc_kw_at_k": null,
+          "auc_kw_at_k_ci": [
+            null,
+            null
+          ],
+          "n_dis_judge": 41,
+          "auc_judge": 0.5271632178424474,
+          "auc_judge_ci": [
+            0.4542597971824844,
+            0.6058100297367462
+          ]
+        },
+        {
+          "k": 100,
+          "n_dis_kw_at_k": 2,
+          "auc_kw_at_k": 0.8883928571428572,
+          "auc_kw_at_k_ci": [
+            0.7817371937639198,
+            0.9799554565701559
+          ],
+          "n_dis_judge": 41,
+          "auc_judge": 0.4752519530085277,
+          "auc_judge_ci": [
+            0.3758100181119948,
+            0.5830504419371579
+          ]
+        },
+        {
+          "k": null,
+          "n_dis_kw_at_k": 20,
+          "auc_kw_at_k": 0.5846511627906977,
+          "auc_kw_at_k_ci": [
+            0.4302973321663938,
+            0.7129822868149631
+          ],
+          "n_dis_judge": 41,
+          "auc_judge": 0.4838094102212416,
+          "auc_judge_ci": [
+            0.38709760358563944,
+            0.5880005874506078
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cross-family Qwen3.5-2B vs Gemma-4-E2B-it",
+      "n": 450,
+      "rows": [
+        {
+          "k": 50,
+          "n_dis_kw_at_k": 13,
+          "auc_kw_at_k": 0.9851258581235698,
+          "auc_kw_at_k_ci": [
+            0.9759118565239551,
+            0.9920639409609998
+          ],
+          "n_dis_judge": 46,
+          "auc_judge": 0.5920953508394318,
+          "auc_judge_ci": [
+            0.5216770766561588,
+            0.6563585916195736
+          ]
+        },
+        {
+          "k": 100,
+          "n_dis_kw_at_k": 16,
+          "auc_kw_at_k": 0.893649193548387,
+          "auc_kw_at_k_ci": [
+            0.8107219627518124,
+            0.9532858760982569
+          ],
+          "n_dis_judge": 46,
+          "auc_judge": 0.5475408953938872,
+          "auc_judge_ci": [
+            0.47014445575998826,
+            0.6293206212820579
+          ]
+        },
+        {
+          "k": null,
+          "n_dis_kw_at_k": 25,
+          "auc_kw_at_k": 0.7874823529411764,
+          "auc_kw_at_k_ci": [
+            0.655304740301208,
+            0.898831351686108
+          ],
+          "n_dis_judge": 46,
+          "auc_judge": 0.4817585019371502,
+          "auc_judge_ci": [
+            0.3915361080149927,
+            0.5763167388167388
+          ]
+        }
+      ]
+    }
+  ]
+}

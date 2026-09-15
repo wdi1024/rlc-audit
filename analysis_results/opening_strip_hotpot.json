@@ -1,0 +1,64 @@
+{
+ "phase": "phase14_hotpot_2k",
+ "n": 2000,
+ "span": 50,
+ "n_seeds": 20,
+ "patterns": {
+  "qwen": [
+   "^thinking process:\\s*\\n+\\s*1\\.\\s*\\*\\*analyze the request:\\*\\*\\s*",
+   "^the user wants to (know|identify|find|determine|compare|answer|confirm|verify|understand|figure out)\\s+"
+  ],
+  "gemma": [
+   "^based on the (provided )?passages( provided)?,?\\s*(there is \\*{0,2}no information\\*{0,2}\\s*)?",
+   "^the provided passages\\s+(do not|does not)?\\s*",
+   "^there is (\\*\\*)?no information(\\*\\*)? in the provided passages\\s*"
+  ]
+ },
+ "sides_altered": {
+  "qwen": 1999,
+  "gemma": 398
+ },
+ "chars_removed": 73003,
+ "chars_total": 6108442,
+ "targets": {
+  "z (same span)": {
+   "positives": 317,
+   "intact": 0.696737274395467,
+   "targeted": 0.6657903960743078,
+   "targeted_ci": [
+    0.6316713938361463,
+    0.7004668702415037
+   ],
+   "targeted_drop": 0.030946878321159166,
+   "matched_mean": 0.6971399839928324,
+   "matched_sd": 0.0027645096077432135,
+   "matched_drop": -0.000402709597365436
+  },
+  "z_comp (off-span only)": {
+   "positives": 719,
+   "intact": 0.6336561209677332,
+   "targeted": 0.603995596277682,
+   "targeted_ci": [
+    0.5780256651199772,
+    0.6296530321183265
+   ],
+   "targeted_drop": 0.029660524690051204,
+   "matched_mean": 0.6299623034420909,
+   "matched_sd": 0.0024409387868481866,
+   "matched_drop": 0.00369381752564224
+  },
+  "y (construct)": {
+   "positives": 436,
+   "intact": 0.5130986179872827,
+   "targeted": 0.5338603381121096,
+   "targeted_ci": [
+    0.5025529386012331,
+    0.5626509005660476
+   ],
+   "targeted_drop": -0.02076172012482691,
+   "matched_mean": 0.5125777235505291,
+   "matched_sd": 0.003107140046754873,
+   "matched_drop": 0.0005208944367536272
+  }
+ }
+}

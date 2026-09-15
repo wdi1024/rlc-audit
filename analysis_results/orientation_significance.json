@@ -1,0 +1,217 @@
+{
+  "n_boot": 4000,
+  "rows": [
+    {
+      "contract": "XSTest 450 (primary run)",
+      "n": 450,
+      "y_positives": 46,
+      "auc_y": 0.5920953508394318,
+      "ci": [
+        0.5203247081800265,
+        0.6586707040451567
+      ],
+      "class": "forward"
+    },
+    {
+      "contract": "AdvBench 520",
+      "n": 520,
+      "y_positives": 3,
+      "auc_y": 0.2901353965183752,
+      "ci": [
+        0.19439071566731142,
+        0.4508670520231214
+      ],
+      "class": "reversed (significant)"
+    },
+    {
+      "contract": "SimpleSafety 100",
+      "n": 100,
+      "y_positives": 8,
+      "auc_y": 0.5006793478260869,
+      "ci": [
+        0.37479470258002867,
+        0.6075268817204301
+      ],
+      "class": "unranked (covers 0.5)"
+    },
+    {
+      "contract": "XSTest 100 / 512tok",
+      "n": 100,
+      "y_positives": 9,
+      "auc_y": 0.6166056166056166,
+      "ci": [
+        0.5089254052684904,
+        0.7050214486454405
+      ],
+      "class": "forward"
+    },
+    {
+      "contract": "AdvBench 100 / 512tok",
+      "n": 100,
+      "y_positives": 3,
+      "auc_y": 0.29553264604811,
+      "ci": [
+        0.18985650236254298,
+        0.4030612244897959
+      ],
+      "class": "reversed (significant)"
+    },
+    {
+      "contract": "OR-Bench hard 1k",
+      "n": 1319,
+      "y_positives": 473,
+      "auc_y": 0.5172044542405749,
+      "ci": [
+        0.49028036753300486,
+        0.5448429956588636
+      ],
+      "class": "unranked (covers 0.5)"
+    },
+    {
+      "contract": "JailbreakBench",
+      "n": 200,
+      "y_positives": 27,
+      "auc_y": 0.5079212160137015,
+      "ci": [
+        0.41872367375887254,
+        0.5987126258845944
+      ],
+      "class": "unranked (covers 0.5)"
+    },
+    {
+      "contract": "GSM8K, 80-char span",
+      "n": 1319,
+      "y_positives": 320,
+      "auc_y": 0.29479792292292295,
+      "ci": [
+        0.2615944303081182,
+        0.32950053677391883
+      ],
+      "class": "reversed (significant)"
+    },
+    {
+      "contract": "GSM8K, 120-char span",
+      "n": 1319,
+      "y_positives": 320,
+      "auc_y": 0.3735641891891891,
+      "ci": [
+        0.3406869142225954,
+        0.4069353572739025
+      ],
+      "class": "reversed (significant)"
+    },
+    {
+      "contract": "GSM8K, 160-char span",
+      "n": 1319,
+      "y_positives": 320,
+      "auc_y": 0.34719094094094094,
+      "ci": [
+        0.31372517268967554,
+        0.38065981934496107
+      ],
+      "class": "reversed (significant)"
+    },
+    {
+      "contract": "GSM8K, 200-char span",
+      "n": 1319,
+      "y_positives": 320,
+      "auc_y": 0.3577296046046046,
+      "ci": [
+        0.3249673306194687,
+        0.3911255965787657
+      ],
+      "class": "reversed (significant)"
+    },
+    {
+      "contract": "GSM8K, 300-char span",
+      "n": 1319,
+      "y_positives": 320,
+      "auc_y": 0.6494306806806807,
+      "ci": [
+        0.6160625788004301,
+        0.6845329401338162
+      ],
+      "class": "forward"
+    },
+    {
+      "contract": "GSM8K, 600-char span",
+      "n": 1319,
+      "y_positives": 320,
+      "auc_y": 0.6154623373373374,
+      "ci": [
+        0.5799706188881957,
+        0.6503572114374203
+      ],
+      "class": "forward"
+    },
+    {
+      "contract": "HotpotQA, 80-char span",
+      "n": 2000,
+      "y_positives": 436,
+      "auc_y": 0.5276681175062765,
+      "ci": [
+        0.49754841207318157,
+        0.5581025154675286
+      ],
+      "class": "unranked (covers 0.5)"
+    },
+    {
+      "contract": "HotpotQA, 120-char span",
+      "n": 2000,
+      "y_positives": 436,
+      "auc_y": 0.5381974588798423,
+      "ci": [
+        0.5063125542154198,
+        0.5679256409191134
+      ],
+      "class": "forward"
+    },
+    {
+      "contract": "HotpotQA, 160-char span",
+      "n": 2000,
+      "y_positives": 436,
+      "auc_y": 0.5278162321969075,
+      "ci": [
+        0.4960272470557894,
+        0.5585330370597541
+      ],
+      "class": "unranked (covers 0.5)"
+    },
+    {
+      "contract": "HotpotQA, 200-char span",
+      "n": 2000,
+      "y_positives": 436,
+      "auc_y": 0.5282591097867149,
+      "ci": [
+        0.49782716704766133,
+        0.5590145533078342
+      ],
+      "class": "unranked (covers 0.5)"
+    },
+    {
+      "contract": "HotpotQA, 300-char span",
+      "n": 2000,
+      "y_positives": 436,
+      "auc_y": 0.5367427086510712,
+      "ci": [
+        0.5056287164669336,
+        0.5678038717399111
+      ],
+      "class": "forward"
+    },
+    {
+      "contract": "HotpotQA, 600-char span",
+      "n": 2000,
+      "y_positives": 436,
+      "auc_y": 0.5355233287970154,
+      "ci": [
+        0.5050760904960144,
+        0.5653659212151719
+      ],
+      "class": "forward"
+    }
+  ],
+  "n_below_half": 6,
+  "n_significant": 6,
+  "n_marginal": 0
+}

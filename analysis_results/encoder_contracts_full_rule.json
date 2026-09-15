@@ -1,0 +1,117 @@
+{
+ "span": 50,
+ "band": [
+  0.45,
+  0.55
+ ],
+ "rows": [
+  {
+   "contract": "XSTest 450 (primary run) / MiniLM-L6-v2 prefix-50",
+   "n": 450,
+   "y_positives": 46,
+   "z_positives": 13,
+   "z_comp_positives": 12,
+   "auc_z": 0.94261573666608,
+   "auc_y": 0.6096642272922944,
+   "delta_auc": 0.3329515093737856,
+   "auc_z_perp": 0.8222588235294117,
+   "delta_ext": 0.2125945962371173,
+   "auc_zc": 0.6730403348554034,
+   "delta_dis": 0.06337610756310896,
+   "delta_dis_ci": [
+    -0.11040835024825349,
+    0.2585777293784282
+   ],
+   "kappa_zc_y": -0.00816130580892983,
+   "modal_share": 0.28,
+   "auc_y_ci95": [
+    0.5254720233535003,
+    0.6888133710801393
+   ],
+   "auc_y_ci90": [
+    0.5379052144639808,
+    0.6772495260414916
+   ],
+   "reoriented": false,
+   "null_p95": 0.05399159462551374,
+   "p_perm": 0.0385,
+   "observed_dis": 0.06337610756310896,
+   "verdict": "ALIGNED"
+  },
+  {
+   "contract": "XSTest 450 (primary run) / e5-small-v2 prefix-50",
+   "n": 450,
+   "y_positives": 46,
+   "z_positives": 13,
+   "z_comp_positives": 12,
+   "auc_z": 0.9621545502552368,
+   "auc_y": 0.6020770555316401,
+   "delta_auc": 0.3600774947235966,
+   "auc_z_perp": 0.8423058823529412,
+   "delta_ext": 0.2402288268213011,
+   "auc_zc": 0.6924467275494672,
+   "delta_dis": 0.09036967201782709,
+   "delta_dis_ci": [
+    -0.07037219220239432,
+    0.2568516126076948
+   ],
+   "kappa_zc_y": -0.00816130580892983,
+   "modal_share": 0.43555555555555553,
+   "auc_y_ci95": [
+    0.528473632284463,
+    0.6743752995773751
+   ],
+   "auc_y_ci90": [
+    0.5406361805939438,
+    0.6623081448572045
+   ],
+   "reoriented": false,
+   "null_p95": 0.05803519713198232,
+   "p_perm": 0.017,
+   "observed_dis": 0.09036967201782709,
+   "verdict": "ALIGNED"
+  },
+  {
+   "contract": "OR-Bench hard 1k / MiniLM-L6-v2 prefix-50",
+   "n": 1319,
+   "y_positives": 473,
+   "z_positives": 3,
+   "z_comp_positives": 36,
+   "auc_z": 0.8837386018237082,
+   "auc_y": 0.5312339126045211,
+   "delta_auc": 0.3525046892191871,
+   "auc_z_perp": 0.7785133026942699,
+   "delta_ext": 0.24727939008974875,
+   "auc_zc": 0.780765566813891,
+   "delta_dis": 0.24953165420936985,
+   "delta_dis_ci": [
+    0.14790160099605795,
+    0.3387787623356742
+   ],
+   "kappa_zc_y": 0.00037344170465111997,
+   "modal_share": 0.5420773313115997,
+   "verdict": "UNDECIDABLE (resolution)"
+  },
+  {
+   "contract": "OR-Bench hard 1k / e5-small-v2 prefix-50",
+   "n": 1319,
+   "y_positives": 473,
+   "z_positives": 3,
+   "z_comp_positives": 36,
+   "auc_z": 0.869807497467072,
+   "auc_y": 0.530801583374567,
+   "delta_auc": 0.339005914092505,
+   "auc_z_perp": 0.7753931778892778,
+   "delta_ext": 0.2445915945147108,
+   "auc_zc": 0.7726898761583094,
+   "delta_dis": 0.24188829278374246,
+   "delta_dis_ci": [
+    0.1484620933405394,
+    0.32718829453173454
+   ],
+   "kappa_zc_y": 0.00037344170465111997,
+   "modal_share": 0.6444275966641395,
+   "verdict": "UNDECIDABLE (resolution)"
+  }
+ ]
+}

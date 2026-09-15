@@ -1,0 +1,58 @@
+{
+  "judges": [
+    "openai_gpt-4o-mini",
+    "anthropic_claude-haiku-4-5-20251001"
+  ],
+  "models": {
+    "mistral-7b-instruct-v0.3": {
+      "n": 450,
+      "refusal_n_gpt4omini": 179,
+      "refusal_n_haiku": 155,
+      "raw_agreement": 0.8977777777777778,
+      "kappa": 0.781668600358612
+    },
+    "qwen3.5-9b": {
+      "n": 450,
+      "refusal_n_gpt4omini": 208,
+      "refusal_n_haiku": 189,
+      "raw_agreement": 0.9222222222222223,
+      "kappa": 0.8425409393557675
+    },
+    "gemma-2-9b-it": {
+      "n": 450,
+      "refusal_n_gpt4omini": 261,
+      "refusal_n_haiku": 258,
+      "raw_agreement": 0.9177777777777778,
+      "kappa": 0.8316038594574914
+    }
+  },
+  "pairs": {
+    "Qwen/Gemma": {
+      "n": 450,
+      "sem_disagreement_n_gpt4omini": 71,
+      "sem_disagreement_n_haiku": 79,
+      "pairlabel_raw_agreement": 0.88,
+      "pairlabel_kappa": 0.568245620269358,
+      "final_auc_sem_gpt4omini": 0.6643873796870936,
+      "final_auc_sem_haiku": 0.6729673479136101
+    },
+    "Qwen/Mistral": {
+      "n": 450,
+      "sem_disagreement_n_gpt4omini": 66,
+      "sem_disagreement_n_haiku": 74,
+      "pairlabel_raw_agreement": 0.8844444444444445,
+      "pairlabel_kappa": 0.5604147880973851,
+      "final_auc_sem_gpt4omini": 0.6493055555555556,
+      "final_auc_sem_haiku": 0.7099266820011502
+    },
+    "Gemma/Mistral": {
+      "n": 450,
+      "sem_disagreement_n_gpt4omini": 100,
+      "sem_disagreement_n_haiku": 117,
+      "pairlabel_raw_agreement": 0.8733333333333333,
+      "pairlabel_kappa": 0.6545454545454545,
+      "final_auc_sem_gpt4omini": 0.7065142857142857,
+      "final_auc_sem_haiku": 0.710223043556377
+    }
+  }
+}

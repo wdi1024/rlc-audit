@@ -1,0 +1,170 @@
+{
+  "phase": "phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy",
+  "models": [
+    "qwen3.5-9b",
+    "mistral-7b-instruct-v0.3"
+  ],
+  "n_common": 450,
+  "parse": {
+    "qwen3.5-9b": {
+      "n": 450,
+      "parse_status": {
+        "exact": 361,
+        "fallback_truncated_final": 89
+      },
+      "final_nonempty": 450,
+      "final_coverage": 1.0
+    },
+    "mistral-7b-instruct-v0.3": {
+      "n": 450,
+      "parse_status": {
+        "fallback_truncated_final": 224,
+        "exact": 226
+      },
+      "final_nonempty": 450,
+      "final_coverage": 1.0
+    }
+  },
+  "score_tables": [
+    {
+      "score": "raw_prefix50",
+      "scope": "raw",
+      "prefix": 50,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_raw_prefix50_disagreement",
+          "n": 450,
+          "n_pos": 29,
+          "prevalence": 0.06444444444444444,
+          "auc": 0.6565648292243427,
+          "ap": 0.1678080756921719
+        },
+        {
+          "label": "judge_final_disagreement",
+          "n": 450,
+          "n_pos": 66,
+          "prevalence": 0.14666666666666667,
+          "auc": 0.44038036616161613,
+          "ap": 0.12922885856886857
+        }
+      ]
+    },
+    {
+      "score": "raw_full",
+      "scope": "raw",
+      "prefix": null,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_raw_full_disagreement",
+          "n": 450,
+          "n_pos": 134,
+          "prevalence": 0.29777777777777775,
+          "auc": 0.6317305875684867,
+          "ap": 0.39337436236648793
+        },
+        {
+          "label": "judge_final_disagreement",
+          "n": 450,
+          "n_pos": 66,
+          "prevalence": 0.14666666666666667,
+          "auc": 0.6536063762626263,
+          "ap": 0.25069882331674176
+        }
+      ]
+    },
+    {
+      "score": "final_full",
+      "scope": "final",
+      "prefix": null,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_final_disagreement",
+          "n": 450,
+          "n_pos": 150,
+          "prevalence": 0.3333333333333333,
+          "auc": 0.6672888888888888,
+          "ap": 0.45251588518045643
+        },
+        {
+          "label": "judge_final_disagreement",
+          "n": 450,
+          "n_pos": 66,
+          "prevalence": 0.14666666666666667,
+          "auc": 0.6493055555555556,
+          "ap": 0.2339381935337363
+        }
+      ]
+    }
+  ],
+  "final_channel_practical_router": {
+    "label_scope": "final",
+    "n": 450,
+    "budgets": {
+      "top_10pct": 45,
+      "raw_prefix_gt_0_95_budget": 285,
+      "semantic_positive_count": 66
+    },
+    "surface_label": "final refusal-keyword disagreement",
+    "semantic_label": "final-channel LLM-judge refusal disagreement",
+    "embedder": null,
+    "rows": [
+      {
+        "router": "final_full_tfidf",
+        "n": 450,
+        "surface_positive_n": 150,
+        "semantic_positive_n": 66,
+        "surface_prevalence": 0.3333333333333333,
+        "semantic_prevalence": 0.14666666666666667,
+        "auc_surface": 0.6672888888888888,
+        "auc_semantic": 0.6493055555555556,
+        "ap_surface": 0.45251588518045643,
+        "ap_semantic": 0.2339381935337363,
+        "precision_at_semantic_positive_count": 0.30303030303030304,
+        "pair_kappa": 0.2674418604651163,
+        "side_a_kappa": 0.5645885286783042,
+        "side_b_kappa": 0.5066554450621248,
+        "mean_side_kappa": 0.5356219868702146,
+        "routed_composition": {
+          "top_10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 13,
+            "semantic_precision": 0.28888888888888886,
+            "surface_disagreement_n": 20,
+            "surface_precision": 0.4444444444444444,
+            "both_refuse_n": 32,
+            "both_refuse_rate": 0.7111111111111111,
+            "both_comply_n": 0,
+            "both_comply_rate": 0.0
+          },
+          "raw_prefix_gt_0_95_budget": {
+            "budget": 285,
+            "semantic_disagreement_n": 49,
+            "semantic_precision": 0.17192982456140352,
+            "surface_disagreement_n": 117,
+            "surface_precision": 0.4105263157894737,
+            "both_refuse_n": 131,
+            "both_refuse_rate": 0.45964912280701753,
+            "both_comply_n": 105,
+            "both_comply_rate": 0.3684210526315789
+          },
+          "semantic_positive_count": {
+            "budget": 66,
+            "semantic_disagreement_n": 20,
+            "semantic_precision": 0.30303030303030304,
+            "surface_disagreement_n": 31,
+            "surface_precision": 0.4696969696969697,
+            "both_refuse_n": 45,
+            "both_refuse_rate": 0.6818181818181818,
+            "both_comply_n": 1,
+            "both_comply_rate": 0.015151515151515152
+          }
+        },
+        "status": "WARN",
+        "status_reason": "surface/semantic performance gap warrants inspection"
+      }
+    ]
+  }
+}

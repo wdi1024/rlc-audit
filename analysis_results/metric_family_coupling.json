@@ -1,0 +1,580 @@
+{
+  "judge": "anthropic_claude-haiku-4-5-20251001",
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "rows": [
+    {
+      "setting": "XSTest 450 (P3)",
+      "short": "xstest_p3",
+      "phase": "phase3_xstest_full",
+      "n": 450,
+      "keyword_positive_n": 13,
+      "semantic_positive_n": 46,
+      "metrics": [
+        {
+          "metric": "word_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9851258581235698,
+          "ap_keyword": 0.5,
+          "auc_semantic": 0.5920953508394318,
+          "ap_semantic": 0.12654496239270696,
+          "auc_gap_keyword_minus_semantic": 0.393030507284138
+        },
+        {
+          "metric": "char_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9753564513289914,
+          "ap_keyword": 0.4321911981957051,
+          "auc_semantic": 0.5891358157554887,
+          "ap_semantic": 0.12384950078818308,
+          "auc_gap_keyword_minus_semantic": 0.3862206355735027
+        },
+        {
+          "metric": "count_cosine_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9851258581235697,
+          "ap_keyword": 0.5,
+          "auc_semantic": 0.606139690055962,
+          "ap_semantic": 0.13037864172877162,
+          "auc_gap_keyword_minus_semantic": 0.37898616806760765
+        },
+        {
+          "metric": "word_jaccard_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9837176553423692,
+          "ap_keyword": 0.48717948717948717,
+          "auc_semantic": 0.6060320705983641,
+          "ap_semantic": 0.12901997760064143,
+          "auc_gap_keyword_minus_semantic": 0.37768558474400515
+        },
+        {
+          "metric": "sequence_distance_prefix50",
+          "family": "surface_string",
+          "auc_keyword": 0.9409434958634043,
+          "ap_keyword": 0.23322150404310232,
+          "auc_semantic": 0.5813872148084374,
+          "ap_semantic": 0.12073919103907275,
+          "auc_gap_keyword_minus_semantic": 0.35955628105496695
+        },
+        {
+          "metric": "word_tfidf_full",
+          "family": "full_lexical",
+          "auc_keyword": 0.9732441471571907,
+          "ap_keyword": 0.34346085592968495,
+          "auc_semantic": 0.4817585019371502,
+          "ap_semantic": 0.10555185257224384,
+          "auc_gap_keyword_minus_semantic": 0.49148564522004046
+        },
+        {
+          "metric": "minilm_prefix50",
+          "family": "surface_embedding",
+          "auc_keyword": 0.9426157366660799,
+          "ap_keyword": 0.2185820126591484,
+          "auc_semantic": 0.5790733964700818,
+          "ap_semantic": 0.12069340667585,
+          "auc_gap_keyword_minus_semantic": 0.36354234019599807
+        },
+        {
+          "metric": "minilm_full",
+          "family": "semantic_span_embedding",
+          "auc_keyword": 0.9662031332511881,
+          "ap_keyword": 0.3086455063145362,
+          "auc_semantic": 0.6494296168747309,
+          "ap_semantic": 0.1492968277144477,
+          "auc_gap_keyword_minus_semantic": 0.31677351637645723
+        }
+      ]
+    },
+    {
+      "setting": "AdvBench 520 (P4)",
+      "short": "advbench_p4",
+      "phase": "phase4_advbench",
+      "n": 520,
+      "keyword_positive_n": 185,
+      "semantic_positive_n": 3,
+      "metrics": [
+        {
+          "metric": "word_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.7566760790641387,
+          "ap_keyword": 0.5578427358230633,
+          "auc_semantic": 0.2901353965183752,
+          "ap_semantic": 0.005422929560860596,
+          "auc_gap_keyword_minus_semantic": 0.4665406825457635
+        },
+        {
+          "metric": "char_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.811649858814038,
+          "ap_keyword": 0.6469721817657217,
+          "auc_semantic": 0.29400386847195353,
+          "ap_semantic": 0.005447213193692067,
+          "auc_gap_keyword_minus_semantic": 0.5176459903420845
+        },
+        {
+          "metric": "count_cosine_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.8419927390076642,
+          "ap_keyword": 0.6673481086590551,
+          "auc_semantic": 0.2640232108317215,
+          "ap_semantic": 0.00641025641025641,
+          "auc_gap_keyword_minus_semantic": 0.5779695281759427
+        },
+        {
+          "metric": "word_jaccard_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.8190157321500604,
+          "ap_keyword": 0.6185678514875739,
+          "auc_semantic": 0.2640232108317215,
+          "ap_semantic": 0.00641025641025641,
+          "auc_gap_keyword_minus_semantic": 0.5549925213183389
+        },
+        {
+          "metric": "sequence_distance_prefix50",
+          "family": "surface_string",
+          "auc_keyword": 0.7626220250100847,
+          "ap_keyword": 0.5168249225788274,
+          "auc_semantic": 0.26595744680851063,
+          "ap_semantic": 0.006423982869379015,
+          "auc_gap_keyword_minus_semantic": 0.49666457820157406
+        },
+        {
+          "metric": "word_tfidf_full",
+          "family": "full_lexical",
+          "auc_keyword": 0.8590237999193224,
+          "ap_keyword": 0.7302864795164555,
+          "auc_semantic": 0.3803997421018698,
+          "ap_semantic": 0.006243741194420747,
+          "auc_gap_keyword_minus_semantic": 0.47862405781745265
+        },
+        {
+          "metric": "minilm_prefix50",
+          "family": "surface_embedding",
+          "auc_keyword": 0.8274304154901171,
+          "ap_keyword": 0.7220214901791918,
+          "auc_semantic": 0.2656350741457124,
+          "ap_semantic": 0.005584076891231644,
+          "auc_gap_keyword_minus_semantic": 0.5617953413444047
+        },
+        {
+          "metric": "minilm_full",
+          "family": "semantic_span_embedding",
+          "auc_keyword": 0.8892133924969746,
+          "ap_keyword": 0.7197335194097747,
+          "auc_semantic": 0.3010960670535139,
+          "ap_semantic": 0.005392383184265426,
+          "auc_gap_keyword_minus_semantic": 0.5881173254434607
+        }
+      ]
+    },
+    {
+      "setting": "SimpleSafety 100 (P4)",
+      "short": "simplesafety_p4",
+      "phase": "phase4_simplesafety",
+      "n": 100,
+      "keyword_positive_n": 17,
+      "semantic_positive_n": 8,
+      "metrics": [
+        {
+          "metric": "word_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9340892983699504,
+          "ap_keyword": 0.8050553009542238,
+          "auc_semantic": 0.5006793478260869,
+          "ap_semantic": 0.09770408163265307,
+          "auc_gap_keyword_minus_semantic": 0.43340995054386344
+        },
+        {
+          "metric": "char_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9751948972360028,
+          "ap_keyword": 0.8577775166010461,
+          "auc_semantic": 0.49116847826086957,
+          "ap_semantic": 0.09647168726645587,
+          "auc_gap_keyword_minus_semantic": 0.48402641897513327
+        },
+        {
+          "metric": "count_cosine_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9766123316796598,
+          "ap_keyword": 0.8692598766902171,
+          "auc_semantic": 0.49592391304347827,
+          "ap_semantic": 0.09647168726645587,
+          "auc_gap_keyword_minus_semantic": 0.4806884186361815
+        },
+        {
+          "metric": "word_jaccard_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9759036144578314,
+          "ap_keyword": 0.8613003095975234,
+          "auc_semantic": 0.49592391304347827,
+          "ap_semantic": 0.09647168726645587,
+          "auc_gap_keyword_minus_semantic": 0.4799797014143531
+        },
+        {
+          "metric": "sequence_distance_prefix50",
+          "family": "surface_string",
+          "auc_keyword": 0.9861800141743444,
+          "ap_keyword": 0.8751629762010386,
+          "auc_semantic": 0.4898097826086956,
+          "ap_semantic": 0.09626760563380281,
+          "auc_gap_keyword_minus_semantic": 0.4963702315656488
+        },
+        {
+          "metric": "word_tfidf_full",
+          "family": "full_lexical",
+          "auc_keyword": 0.9404677533664069,
+          "ap_keyword": 0.904616411420357,
+          "auc_semantic": 0.3097826086956522,
+          "ap_semantic": 0.061542484672478734,
+          "auc_gap_keyword_minus_semantic": 0.6306851446707546
+        },
+        {
+          "metric": "minilm_prefix50",
+          "family": "surface_embedding",
+          "auc_keyword": 0.9836995038979447,
+          "ap_keyword": 0.9066250742721331,
+          "auc_semantic": 0.49796195652173914,
+          "ap_semantic": 0.0975,
+          "auc_gap_keyword_minus_semantic": 0.48573754737620556
+        },
+        {
+          "metric": "minilm_full",
+          "family": "semantic_span_embedding",
+          "auc_keyword": 0.9922041105598866,
+          "ap_keyword": 0.961640598924336,
+          "auc_semantic": 0.46059782608695654,
+          "ap_semantic": 0.0801157187681274,
+          "auc_gap_keyword_minus_semantic": 0.53160628447293
+        }
+      ]
+    },
+    {
+      "setting": "XSTest 100 / 512tok (P5)",
+      "short": "xstest100_p5",
+      "phase": "phase5_xstest100_512tok",
+      "n": 100,
+      "keyword_positive_n": 5,
+      "semantic_positive_n": 9,
+      "metrics": [
+        {
+          "metric": "word_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9852631578947368,
+          "ap_keyword": 0.6583333333333333,
+          "auc_semantic": 0.6166056166056166,
+          "ap_semantic": 0.12735356834989336,
+          "auc_gap_keyword_minus_semantic": 0.3686575412891202
+        },
+        {
+          "metric": "char_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9936842105263158,
+          "ap_keyword": 0.925,
+          "auc_semantic": 0.6166056166056166,
+          "ap_semantic": 0.12735356834989336,
+          "auc_gap_keyword_minus_semantic": 0.3770785939206992
+        },
+        {
+          "metric": "count_cosine_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9873684210526316,
+          "ap_keyword": 0.6761904761904761,
+          "auc_semantic": 0.6166056166056166,
+          "ap_semantic": 0.12735356834989336,
+          "auc_gap_keyword_minus_semantic": 0.3707628044470149
+        },
+        {
+          "metric": "word_jaccard_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.9936842105263157,
+          "ap_keyword": 0.8066666666666668,
+          "auc_semantic": 0.6166056166056166,
+          "ap_semantic": 0.12735356834989336,
+          "auc_gap_keyword_minus_semantic": 0.3770785939206991
+        },
+        {
+          "metric": "sequence_distance_prefix50",
+          "family": "surface_string",
+          "auc_keyword": 0.991578947368421,
+          "ap_keyword": 0.8761904761904762,
+          "auc_semantic": 0.6037851037851037,
+          "ap_semantic": 0.12469534050179211,
+          "auc_gap_keyword_minus_semantic": 0.38779384358331725
+        },
+        {
+          "metric": "word_tfidf_full",
+          "family": "full_lexical",
+          "auc_keyword": 0.9663157894736842,
+          "ap_keyword": 0.5079365079365079,
+          "auc_semantic": 0.7411477411477411,
+          "ap_semantic": 0.36845542748676435,
+          "auc_gap_keyword_minus_semantic": 0.22516804832594317
+        },
+        {
+          "metric": "minilm_prefix50",
+          "family": "surface_embedding",
+          "auc_keyword": 0.991578947368421,
+          "ap_keyword": 0.9111111111111112,
+          "auc_semantic": 0.5366300366300366,
+          "ap_semantic": 0.10668458781362007,
+          "auc_gap_keyword_minus_semantic": 0.4549489107383844
+        },
+        {
+          "metric": "minilm_full",
+          "family": "semantic_span_embedding",
+          "auc_keyword": 0.968421052631579,
+          "ap_keyword": 0.6245421245421245,
+          "auc_semantic": 0.7472527472527473,
+          "ap_semantic": 0.30241600199075325,
+          "auc_gap_keyword_minus_semantic": 0.2211683053788317
+        }
+      ]
+    },
+    {
+      "setting": "AdvBench 100 / 512tok (P5)",
+      "short": "advbench100_p5",
+      "phase": "phase5_advbench100_512tok",
+      "n": 100,
+      "keyword_positive_n": 40,
+      "semantic_positive_n": 3,
+      "metrics": [
+        {
+          "metric": "word_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.7495833333333333,
+          "ap_keyword": 0.6180834752053658,
+          "auc_semantic": 0.29553264604811,
+          "ap_semantic": 0.030687307861220904,
+          "auc_gap_keyword_minus_semantic": 0.45405068728522324
+        },
+        {
+          "metric": "char_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.8304166666666667,
+          "ap_keyword": 0.7405289615334893,
+          "auc_semantic": 0.29553264604811,
+          "ap_semantic": 0.030687307861220904,
+          "auc_gap_keyword_minus_semantic": 0.5348840206185567
+        },
+        {
+          "metric": "count_cosine_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.8366666666666666,
+          "ap_keyword": 0.7115506923411388,
+          "auc_semantic": 0.23195876288659795,
+          "ap_semantic": 0.033707865168539325,
+          "auc_gap_keyword_minus_semantic": 0.6047079037800687
+        },
+        {
+          "metric": "word_jaccard_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.8066666666666666,
+          "ap_keyword": 0.6688536508294574,
+          "auc_semantic": 0.23195876288659795,
+          "ap_semantic": 0.033707865168539325,
+          "auc_gap_keyword_minus_semantic": 0.5747079037800686
+        },
+        {
+          "metric": "sequence_distance_prefix50",
+          "family": "surface_string",
+          "auc_keyword": 0.8154166666666667,
+          "ap_keyword": 0.6431928086984838,
+          "auc_semantic": 0.23195876288659795,
+          "ap_semantic": 0.033707865168539325,
+          "auc_gap_keyword_minus_semantic": 0.5834579037800687
+        },
+        {
+          "metric": "word_tfidf_full",
+          "family": "full_lexical",
+          "auc_keyword": 0.785,
+          "ap_keyword": 0.711032743677597,
+          "auc_semantic": 0.5257731958762887,
+          "ap_semantic": 0.04046677959721438,
+          "auc_gap_keyword_minus_semantic": 0.25922680412371135
+        },
+        {
+          "metric": "minilm_prefix50",
+          "family": "surface_embedding",
+          "auc_keyword": 0.7995833333333333,
+          "ap_keyword": 0.7069968570002325,
+          "auc_semantic": 0.17182130584192437,
+          "ap_semantic": 0.026287262872628725,
+          "auc_gap_keyword_minus_semantic": 0.627762027491409
+        },
+        {
+          "metric": "minilm_full",
+          "family": "semantic_span_embedding",
+          "auc_keyword": 0.9358333333333333,
+          "ap_keyword": 0.8423863859712428,
+          "auc_semantic": 0.4329896907216495,
+          "ap_semantic": 0.03470566503572748,
+          "auc_gap_keyword_minus_semantic": 0.5028436426116838
+        }
+      ]
+    },
+    {
+      "setting": "OR-Bench hard 1k (P8)",
+      "short": "orbench_p8",
+      "phase": "phase8_orbench_hard1k",
+      "n": 1319,
+      "keyword_positive_n": 3,
+      "semantic_positive_n": 473,
+      "metrics": [
+        {
+          "metric": "word_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.8655015197568389,
+          "ap_keyword": 0.009506541611862996,
+          "auc_semantic": 0.5172044542405749,
+          "ap_semantic": 0.3765569637109999,
+          "auc_gap_keyword_minus_semantic": 0.34829706551626394
+        },
+        {
+          "metric": "char_tfidf_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.8999493414387031,
+          "ap_keyword": 0.017627044286148086,
+          "auc_semantic": 0.5151590121901849,
+          "ap_semantic": 0.37343443507065327,
+          "auc_gap_keyword_minus_semantic": 0.3847903292485182
+        },
+        {
+          "metric": "count_cosine_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.8905775075987842,
+          "ap_keyword": 0.011291637549499184,
+          "auc_semantic": 0.5228397283073185,
+          "ap_semantic": 0.377861428785699,
+          "auc_gap_keyword_minus_semantic": 0.36773777929146567
+        },
+        {
+          "metric": "word_jaccard_prefix50",
+          "family": "surface_lexical",
+          "auc_keyword": 0.896403242147923,
+          "ap_keyword": 0.011792074603289153,
+          "auc_semantic": 0.5217526577002083,
+          "ap_semantic": 0.3780401000633127,
+          "auc_gap_keyword_minus_semantic": 0.3746505844477147
+        },
+        {
+          "metric": "sequence_distance_prefix50",
+          "family": "surface_string",
+          "auc_keyword": 0.8851317122593719,
+          "ap_keyword": 0.01397233641357179,
+          "auc_semantic": 0.5207018227800019,
+          "ap_semantic": 0.36816276444353424,
+          "auc_gap_keyword_minus_semantic": 0.36442988947937005
+        },
+        {
+          "metric": "word_tfidf_full",
+          "family": "full_lexical",
+          "auc_keyword": 0.954660587639311,
+          "ap_keyword": 0.04503339797457444,
+          "auc_semantic": 0.5433416300561278,
+          "ap_semantic": 0.3767423996257716,
+          "auc_gap_keyword_minus_semantic": 0.41131895758318326
+        },
+        {
+          "metric": "minilm_prefix50",
+          "family": "surface_embedding",
+          "auc_keyword": 0.8837386018237081,
+          "ap_keyword": 0.021431297797159483,
+          "auc_semantic": 0.5282963229524338,
+          "ap_semantic": 0.38413444011610376,
+          "auc_gap_keyword_minus_semantic": 0.35544227887127433
+        },
+        {
+          "metric": "minilm_full",
+          "family": "semantic_span_embedding",
+          "auc_keyword": 0.9437689969604863,
+          "ap_keyword": 0.025717186676090787,
+          "auc_semantic": 0.5275965993432594,
+          "ap_semantic": 0.3609498679194369,
+          "auc_gap_keyword_minus_semantic": 0.4161723976172269
+        }
+      ]
+    }
+  ],
+  "summary_by_metric": [
+    {
+      "metric": "char_tfidf_prefix50",
+      "family": "surface_lexical",
+      "settings_n": 6,
+      "mean_auc_keyword": 0.9143752376684531,
+      "mean_auc_semantic": 0.4669342395553706,
+      "mean_auc_gap": 0.4474409981130824,
+      "mean_ap_keyword": 0.6033494837303518,
+      "mean_ap_semantic": 0.1262072854216831
+    },
+    {
+      "metric": "count_cosine_prefix50",
+      "family": "surface_lexical",
+      "settings_n": 6,
+      "mean_auc_keyword": 0.9197239206881626,
+      "mean_auc_semantic": 0.4562484869551158,
+      "mean_auc_gap": 0.4634754337330469,
+      "mean_ap_keyword": 0.572606798571731,
+      "mean_ap_semantic": 0.12869724128493595
+    },
+    {
+      "metric": "minilm_full",
+      "family": "semantic_span_embedding",
+      "settings_n": 6,
+      "mean_auc_keyword": 0.9492740032055745,
+      "mean_auc_semantic": 0.519827091222143,
+      "mean_auc_gap": 0.4294469119834317,
+      "mean_ap_keyword": 0.5804442203063508,
+      "mean_ap_semantic": 0.155479410768793
+    },
+    {
+      "metric": "minilm_prefix50",
+      "family": "surface_embedding",
+      "settings_n": 6,
+      "mean_auc_keyword": 0.9047744230966007,
+      "mean_auc_semantic": 0.429903015426988,
+      "mean_auc_gap": 0.4748714076696127,
+      "mean_ap_keyword": 0.5811279738364961,
+      "mean_ap_semantic": 0.12348062906157237
+    },
+    {
+      "metric": "sequence_distance_prefix50",
+      "family": "surface_string",
+      "settings_n": 6,
+      "mean_auc_keyword": 0.8969788102237155,
+      "mean_auc_semantic": 0.44893335561289116,
+      "mean_auc_gap": 0.44804545461082435,
+      "mean_ap_keyword": 0.5264275040209166,
+      "mean_ap_semantic": 0.12499945827602005
+    },
+    {
+      "metric": "word_jaccard_prefix50",
+      "family": "surface_lexical",
+      "settings_n": 6,
+      "mean_auc_keyword": 0.9125651868818611,
+      "mean_auc_semantic": 0.4560493719443311,
+      "mean_auc_gap": 0.4565158149375299,
+      "mean_ap_keyword": 0.5757266733939996,
+      "mean_ap_semantic": 0.12850057580984983
+    },
+    {
+      "metric": "word_tfidf_full",
+      "family": "full_lexical",
+      "settings_n": 6,
+      "mean_auc_keyword": 0.9131186795926526,
+      "mean_auc_semantic": 0.49703390330247155,
+      "mean_auc_gap": 0.41608477629018087,
+      "mean_ap_keyword": 0.5403943994091961,
+      "mean_ap_semantic": 0.15983378085814895
+    },
+    {
+      "metric": "word_tfidf_prefix50",
+      "family": "surface_lexical",
+      "settings_n": 6,
+      "mean_auc_keyword": 0.8793732077570947,
+      "mean_auc_semantic": 0.46870880201303255,
+      "mean_auc_gap": 0.41066440574406204,
+      "mean_ap_keyword": 0.5248035644879748,
+      "mean_ap_semantic": 0.12737830225138913
+    }
+  ]
+}

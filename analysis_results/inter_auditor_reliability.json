@@ -1,0 +1,157 @@
+{
+  "model": "gpt-4.1-mini",
+  "n_samples": 3,
+  "temperature": 1.0,
+  "n_items": 8,
+  "agreement_preregistered": 0.875,
+  "agreement": 1.0,
+  "constant_baseline": 0.625,
+  "kappa": 1.0,
+  "unanimous": 7,
+  "results": [
+    {
+      "id": "routerbench-gsm8k",
+      "question": "Can the released label for this slice be computed, even in p",
+      "ours": "NO",
+      "votes": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "majority": "NO",
+      "unanimous": true,
+      "agrees_with_paper": true,
+      "raw": [
+        "ANSWER: NO  \nBECAUSE: The released label is a fractional value between 0 and 1, but exact match as a metric is binary and cannot be derived solely from the single stored response string and prompt without access to multiple references or additional information.",
+        "ANSWER: NO  \nBECAUSE: The released numeric values are fractional scores between 0 and 1, yet exact match labels for grade-school-math must be binary, so the fractional values cannot be computed solely as functions of the exact match evidence provided.",
+        "ANSWER: NO  \nBECAUSE: The released numeric values are fractional exact-match scores that cannot be derived from a single stored response string paired with a single reference answer, as exact match is binary by definition."
+      ]
+    },
+    {
+      "id": "routerbench-mmlu-law",
+      "question": "Can the released label for this slice be computed, even in p",
+      "ours": "YES",
+      "votes": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "majority": "YES",
+      "unanimous": true,
+      "agrees_with_paper": true,
+      "raw": [
+        "ANSWER: YES  \nBECAUSE: The released label is binary correctness per (model, prompt) pair, which can be derived from the stored response string by comparing it to the reference option included in the evidence.",
+        "ANSWER: YES  \nBECAUSE: The released label is a binary performance value derived directly from whether the stored response string matches the reference option, which can be determined from the released evidence.",
+        "ANSWER: YES  \nBECAUSE: The released stored response string per (model, prompt) cell contains the chosen option, from which the binary performance value (correct or incorrect) can be deterministically computed by comparison to the reference option."
+      ]
+    },
+    {
+      "id": "prm800k-spans",
+      "question": "Can the released label for this slice be computed, even in p",
+      "ours": "YES",
+      "votes": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "majority": "YES",
+      "unanimous": true,
+      "agrees_with_paper": true,
+      "raw": [
+        "ANSWER: YES  \nBECAUSE: The final-answer correctness label can be derived as a deterministic function of the solution steps and their step-level reward-model scores, all of which are provided in the released data.",
+        "ANSWER: YES  \nBECAUSE: The final-answer correctness label per solution can be determined as a function of the step-level reward scores and the full solution provided in the dataset.",
+        "ANSWER: YES  \nBECAUSE: The final-answer correctness label per solution can be determined from the step-level reward-model scores for every prefix of that solution, which are included in the released evidence."
+      ]
+    },
+    {
+      "id": "searchandlearn-beams",
+      "question": "Can the released label for this slice be computed, even in p",
+      "ours": "NO",
+      "votes": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "majority": "NO",
+      "unanimous": true,
+      "agrees_with_paper": true,
+      "raw": [
+        "ANSWER: NO  \nBECAUSE: The label depends on the full set of candidates at the pruning depth, but only surviving candidates and their scores are released, so discarded candidates' information needed to compute the label is missing.",
+        "ANSWER: NO  \nBECAUSE: The discarded candidates at the pruning depth, which are not released, may contain necessary information to fully assess the reward model's separation performance, making it impossible to compute the label solely from the released survivors and their scores.",
+        "ANSWER: NO  \nBECAUSE: The released data excludes candidates discarded during pruning, preventing reconstruction of the full set of candidates at pruning depth needed to compute the label."
+      ]
+    },
+    {
+      "id": "mtbench-two-judges",
+      "question": "Are the two labels described below two measurements of a sin",
+      "ours": "YES",
+      "votes": [
+        "NO",
+        "YES",
+        "YES"
+      ],
+      "majority": "YES",
+      "unanimous": false,
+      "agrees_with_paper": true,
+      "raw": [
+        "ANSWER: NO  \nBECAUSE: The use of differently-prompted LLM judges suggests they may apply distinct evaluation criteria, indicating the labels measure related but not identical constructs.",
+        "ANSWER: YES  \nBECAUSE: Both labels are described as measuring answer quality, indicating they target the same underlying construct despite different prompting conditions.",
+        "ANSWER: YES  \nBECAUSE: Both labels are described as measuring overall response quality, indicating they target the same underlying construct despite using different LLM judges."
+      ]
+    },
+    {
+      "id": "refusal-keyword-vs-judge",
+      "question": "Are the two labels described below two measurements of a sin",
+      "ours": "NO",
+      "votes": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "majority": "NO",
+      "unanimous": true,
+      "agrees_with_paper": true,
+      "raw": [
+        "ANSWER: NO  \nBECAUSE: Label A measures the presence of specific refusal phrases early in the response, while Label B assesses the overall refusal judgment by a human reader, indicating they capture related but distinct aspects of model refusal.",
+        "ANSWER: NO  \nBECAUSE: Label A measures the presence of specific refusal phrases within the first 50 characters, while Label B captures the overall adjudicated refusal which considers the entire response, indicating they assess related but distinct constructs.",
+        "ANSWER: NO  \nBECAUSE: Label A measures the presence of specific refusal phrases early in the response, while Label B assesses the overall judgment of refusal based on the entire response, indicating they capture related but distinct aspects."
+      ]
+    },
+    {
+      "id": "bartscore-vs-adequacy",
+      "question": "Are the two labels described below two measurements of a sin",
+      "ours": "NO",
+      "votes": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "majority": "NO",
+      "unanimous": true,
+      "agrees_with_paper": true,
+      "raw": [
+        "ANSWER: NO  \nBECAUSE: Label A measures automatic reference-based generation-quality scores while Label B captures human-facing adequacy verdicts, indicating they target different constructs of quality assessment.",
+        "ANSWER: NO  \nBECAUSE: Label A measures automatic reference-based generation quality scores, which are algorithmic evaluations, while Label B reflects human adequacy judgments, indicating they assess related but distinct constructs.",
+        "ANSWER: NO  \nBECAUSE: Label A measures automated reference-based generation quality, while Label B captures human judgments of adequacy, reflecting different evaluation perspectives rather than identical constructs."
+      ]
+    },
+    {
+      "id": "ultrafeedback-truthfulness",
+      "question": "Are the two labels described below two measurements of a sin",
+      "ours": "NO",
+      "votes": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "majority": "NO",
+      "unanimous": true,
+      "agrees_with_paper": true,
+      "raw": [
+        "ANSWER: NO  \nBECAUSE: The overall score and truthfulness sub-rating assess different aspects of the completions, indicating they target distinct constructs rather than a single underlying one.",
+        "ANSWER: NO  \nBECAUSE: The two labels measure different constructs\u2014overall preference versus truthfulness sub-rating\u2014so disagreement reflects genuine differences in evaluation criteria, not measurement error.",
+        "ANSWER: NO  \nBECAUSE: Label A reflects overall preference while Label B specifically targets truthfulness, indicating they measure related but distinct constructs."
+      ]
+    }
+  ]
+}

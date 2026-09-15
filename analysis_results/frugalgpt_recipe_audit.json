@@ -1,0 +1,51 @@
+{
+  "recipe": "FrugalGPT-style scorer on (question, answer) validated against string-match correctness",
+  "tasks": {
+    "HotpotQA multi-hop": {
+      "n": 500,
+      "models": [
+        "qwen3.5-2b",
+        "gemma-4-e2b"
+      ],
+      "prevalence_proxy": 0.818,
+      "prevalence_construct": 0.732,
+      "kappa_z_y": 0.529008534592337,
+      "auc_proxy": 0.75372793465703,
+      "auc_construct": 0.7058355762172743,
+      "ap_proxy": 0.9271829513860755,
+      "ap_construct": 0.848822809390618,
+      "auc_gap": 0.04755660548930672,
+      "auc_gap_ci": [
+        -0.00940697444792016,
+        0.10291310148769107
+      ],
+      "budget": 50,
+      "routed_proxy_fail": 30,
+      "routed_judge_wrong": 35,
+      "base_rate_wrong": 0.268
+    },
+    "GSM8K reasoning": {
+      "n": 500,
+      "models": [
+        "qwen3.5-2b",
+        "gemma-4-e2b"
+      ],
+      "prevalence_proxy": 0.676,
+      "prevalence_construct": 0.62,
+      "kappa_z_y": 0.7465921006641034,
+      "auc_proxy": 0.8935824384542332,
+      "auc_construct": 0.9017826825127335,
+      "ap_proxy": 0.9465629885266109,
+      "ap_construct": 0.9379084511539592,
+      "auc_gap": -0.008523705047789158,
+      "auc_gap_ci": [
+        -0.032877104120728445,
+        0.015598292382138392
+      ],
+      "budget": 50,
+      "routed_proxy_fail": 48,
+      "routed_judge_wrong": 50,
+      "base_rate_wrong": 0.38
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "phase": "phase13_pinned_xstest450_raw",
+  "models": [
+    "qwen3.5-2b",
+    "gemma-4-e2b"
+  ],
+  "n_common": 450,
+  "parse": {
+    "qwen3.5-2b": {
+      "n": 450,
+      "parse_status": {
+        "raw_mode": 450
+      },
+      "final_nonempty": 0,
+      "final_coverage": 0.0
+    },
+    "gemma-4-e2b": {
+      "n": 450,
+      "parse_status": {
+        "raw_mode": 450
+      },
+      "final_nonempty": 0,
+      "final_coverage": 0.0
+    }
+  },
+  "score_tables": [
+    {
+      "score": "raw_prefix50",
+      "scope": "raw",
+      "prefix": 50,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_raw_prefix50_disagreement",
+          "n": 450,
+          "n_pos": 15,
+          "prevalence": 0.03333333333333333,
+          "auc": 0.9591570881226054,
+          "ap": 0.3958048048048048
+        },
+        {
+          "label": "judge_raw_disagreement",
+          "n": 450,
+          "n_pos": 53,
+          "prevalence": 0.11777777777777777,
+          "auc": 0.5721448600351695,
+          "ap": 0.1417074945026085
+        }
+      ]
+    },
+    {
+      "score": "raw_full",
+      "scope": "raw",
+      "prefix": null,
+      "available": true,
+      "labels": [
+        {
+          "label": "kw_raw_full_disagreement",
+          "n": 450,
+          "n_pos": 26,
+          "prevalence": 0.057777777777777775,
+          "auc": 0.7752177068214804,
+          "ap": 0.4111261388503886
+        },
+        {
+          "label": "judge_raw_disagreement",
+          "n": 450,
+          "n_pos": 53,
+          "prevalence": 0.11777777777777777,
+          "auc": 0.4919918254835797,
+          "ap": 0.14164640894740804
+        }
+      ]
+    },
+    {
+      "score": "final_full",
+      "scope": "final",
+      "prefix": null,
+      "available": false,
+      "labels": [
+        {
+          "label": "kw_final_disagreement",
+          "n": 450,
+          "n_pos": 0,
+          "prevalence": 0.0,
+          "auc": null,
+          "ap": null
+        },
+        {
+          "label": "judge_raw_disagreement",
+          "n": 450,
+          "n_pos": 53,
+          "prevalence": 0.11777777777777777,
+          "auc": null,
+          "ap": null
+        }
+      ]
+    }
+  ]
+}

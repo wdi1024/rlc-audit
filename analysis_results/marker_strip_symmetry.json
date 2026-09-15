@@ -1,0 +1,69 @@
+{
+  "n": 548,
+  "budget": 55,
+  "chars_kept": 0.7721033562428546,
+  "semantic_positives": 79,
+  "rows": {
+    "final TF-IDF": {
+      "auc_proxy": 0.6038862215780414,
+      "auc_semantic": 0.6746106717767402,
+      "auc_semantic_ci": [
+        0.6061258294572618,
+        0.7409427490486693
+      ],
+      "ap_semantic": 0.2992241186363638,
+      "routed_semantic": 20
+    },
+    "composite (final TF-IDF + marker)": {
+      "auc_proxy": 0.7152821813570069,
+      "auc_semantic": 0.7149874497314512,
+      "auc_semantic_ci": [
+        0.6438968148258153,
+        0.7788031151661702
+      ],
+      "ap_semantic": 0.4018238673648159,
+      "routed_semantic": 28
+    },
+    "final TF-IDF, markers stripped": {
+      "auc_proxy": 0.5954071926804965,
+      "auc_semantic": 0.6014412566462443,
+      "auc_semantic_ci": [
+        0.5346625774803846,
+        0.666613475177305
+      ],
+      "ap_semantic": 0.18982123276472015,
+      "routed_semantic": 8
+    },
+    "composite, markers stripped": {
+      "auc_proxy": 0.7365703415164417,
+      "auc_semantic": 0.6781463388302609,
+      "auc_semantic_ci": [
+        0.6006930024916943,
+        0.7511953831702028
+      ],
+      "ap_semantic": 0.3337528660318717,
+      "routed_semantic": 28
+    },
+    "marker only": {
+      "auc_proxy": 1.0,
+      "auc_semantic": 0.7279695554775849,
+      "auc_semantic_ci": [
+        0.6678882290095526,
+        0.78310279392958
+      ],
+      "ap_semantic": 0.29085632171531106,
+      "routed_semantic": 20
+    }
+  },
+  "strip_deltas": {
+    "proxy_auc_drop": 0.008479028897544927,
+    "semantic_auc_drop": 0.07316941513049591
+  },
+  "volume_control": {
+    "auc_semantic_mean": 0.5483111117108851,
+    "auc_semantic_p5": 0.5381103074141049,
+    "auc_semantic_p95": 0.5604713772907614,
+    "routed_mean": 1.0,
+    "n_seeds": 20
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "tally": {
+    "UNDETERMINED": 27,
+    "RELEASED": 1,
+    "NOT RELEASED": 12
+  },
+  "papers": {
+    "2404.10136": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2404.14618": {
+      "coding": "UNDETERMINED",
+      "repos": [
+        {
+          "repo": "m365-core/hybrid_llm_routing",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    "2502.12464": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2504.07113": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2506.11887": {
+      "coding": "RELEASED",
+      "repos": [
+        {
+          "repo": "fanconic/cascaded-llms",
+          "n_files": 677,
+          "gen_files": [
+            "precomputed_responses/different_calibration/200_samples/llama_arc_challenge_calibrated/metrics_combined.csv",
+            "precomputed_responses/different_calibration/200_samples/llama_arc_challenge_calibrated/responses.csv",
+            "precomputed_responses/different_calibration/200_samples/llama_arc_easy_calibrated/metrics_combined.csv",
+            "precomputed_responses/different_calibration/200_samples/llama_arc_easy_calibrated/responses.csv",
+            "precomputed_responses/different_calibration/200_samples/llama_medmcqa_calibrated/metrics_combined.csv",
+            "precomputed_responses/different_calibration/200_samples/llama_medmcqa_calibrated/responses.csv",
+            "precomputed_responses/different_calibration/200_samples/llama_medqa_calibrated/metrics_combined.csv",
+            "precomputed_responses/different_calibration/200_samples/llama_medqa_calibrated/responses.csv"
+          ],
+          "gen_dirs": [
+            "precomputed_responses"
+          ]
+        }
+      ]
+    },
+    "2509.02718": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2509.09782": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2509.19996": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2509.25535": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2510.07429": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2510.19208": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2511.07396": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "AntonValk/C3PO-LLM",
+          "n_files": 17,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2511.16883": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2601.05903": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "zihangtian/HAPS",
+          "n_files": 29,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2601.06220": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "Codeffun3/ZeroRouter",
+          "n_files": 2,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2601.17814": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "Hunter-Wrynn/MMR-Bench",
+          "n_files": 94,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2601.20352": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2602.02386": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2602.02711": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2602.11931": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "raypretam/adaptive_llm_selection",
+          "n_files": 108,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2603.11957": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "dishankaggarwal/EngSAF",
+          "n_files": 2,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2603.24704": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "Tian-Bai/SCoRE",
+          "n_files": 31,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2603.28972": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "alangiu-gif/privacy-n-parsimony",
+          "n_files": 30,
+          "gen_files": [],
+          "gen_dirs": []
+        },
+        {
+          "repo": "aurelio-labs/semantic-router",
+          "n_files": 206,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2604.00660": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2604.09377": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "less-and-less-bugs/ColdStartLLMRouter",
+          "n_files": 48,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2604.15728": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2604.23530": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "ZhangYiqun018/MTRouter",
+          "n_files": 223,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2604.25855": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2605.05007": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "CuiZHIQ/Uno-Orchestra",
+          "n_files": 1302,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    },
+    "2605.12001": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2605.18015": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2606.02581": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2606.31163": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2607.00053": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2607.08665": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2607.18240": {
+      "coding": "UNDETERMINED",
+      "repos": [
+        {
+          "repo": "cheshireyang/ECE.git",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    "2607.23765": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2607.24875": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2607.25018": {
+      "coding": "UNDETERMINED",
+      "reason": "no own-repo link in text",
+      "repos": []
+    },
+    "2608.16203": {
+      "coding": "NOT RELEASED",
+      "repos": [
+        {
+          "repo": "lca0503/INSPIRE",
+          "n_files": 35,
+          "gen_files": [],
+          "gen_dirs": []
+        }
+      ]
+    }
+  }
+}

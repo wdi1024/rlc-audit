@@ -1,0 +1,954 @@
+{
+  "judge": "anthropic_claude-haiku-4-5-20251001",
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "rows": [
+    {
+      "setting": "XSTest 450 (P3)",
+      "short": "xstest_p3",
+      "phase": "phase3_xstest_full",
+      "n": 450,
+      "semantic_positive_n": 46,
+      "keyword_positive_n": 13,
+      "raw_score_gt_0_95_budget": 55,
+      "routers": {
+        "raw_prefix50_tfidf": {
+          "auc_semantic": 0.5920953508394318,
+          "ap_semantic": 0.12654496239270696,
+          "precision_at_semantic_positive_count": 0.08695652173913043,
+          "auc_keyword": 0.9851258581235698,
+          "ap_keyword": 0.5,
+          "top_raw05_budget": {
+            "budget": 55,
+            "semantic_disagreement_n": 6,
+            "semantic_precision": 0.10909090909090909,
+            "both_refuse_n": 37,
+            "both_refuse_rate": 0.6727272727272727
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 55,
+            "semantic_disagreement_n": 6,
+            "semantic_precision": 0.10909090909090909,
+            "both_refuse_n": 37,
+            "both_refuse_rate": 0.6727272727272727
+          }
+        },
+        "template_normalized_full_tfidf": {
+          "auc_semantic": 0.5913689195006457,
+          "ap_semantic": 0.13309367409057402,
+          "precision_at_semantic_positive_count": 0.08695652173913043,
+          "auc_keyword": 0.9670832599894384,
+          "ap_keyword": 0.31937629937629936,
+          "top_raw05_budget": {
+            "budget": 55,
+            "semantic_disagreement_n": 7,
+            "semantic_precision": 0.12727272727272726,
+            "both_refuse_n": 31,
+            "both_refuse_rate": 0.5636363636363636
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 116,
+            "semantic_disagreement_n": 20,
+            "semantic_precision": 0.1724137931034483,
+            "both_refuse_n": 64,
+            "both_refuse_rate": 0.5517241379310345
+          }
+        },
+        "late_span_tfidf_200_700": {
+          "auc_semantic": 0.6053863538527765,
+          "ap_semantic": 0.12715980853996028,
+          "precision_at_semantic_positive_count": 0.10869565217391304,
+          "auc_keyword": 0.948512585812357,
+          "ap_keyword": 0.22413793103448276,
+          "top_raw05_budget": {
+            "budget": 55,
+            "semantic_disagreement_n": 5,
+            "semantic_precision": 0.09090909090909091,
+            "both_refuse_n": 32,
+            "both_refuse_rate": 0.5818181818181818
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 235,
+            "semantic_disagreement_n": 30,
+            "semantic_precision": 0.1276595744680851,
+            "both_refuse_n": 103,
+            "both_refuse_rate": 0.43829787234042555
+          }
+        },
+        "raw_full_tfidf": {
+          "auc_semantic": 0.4817585019371502,
+          "ap_semantic": 0.10555185257224384,
+          "precision_at_semantic_positive_count": 0.15217391304347827,
+          "auc_keyword": 0.9732441471571907,
+          "ap_keyword": 0.34346085592968495,
+          "top_raw05_budget": {
+            "budget": 55,
+            "semantic_disagreement_n": 7,
+            "semantic_precision": 0.12727272727272726,
+            "both_refuse_n": 34,
+            "both_refuse_rate": 0.6181818181818182
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 17,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.11764705882352941,
+            "both_refuse_n": 14,
+            "both_refuse_rate": 0.8235294117647058
+          }
+        },
+        "semantic_span_minilm_full": {
+          "auc_semantic": 0.6494296168747309,
+          "ap_semantic": 0.1492968277144477,
+          "precision_at_semantic_positive_count": 0.17391304347826086,
+          "auc_keyword": 0.9662031332511881,
+          "ap_keyword": 0.3086455063145362,
+          "top_raw05_budget": {
+            "budget": 55,
+            "semantic_disagreement_n": 10,
+            "semantic_precision": 0.18181818181818182,
+            "both_refuse_n": 33,
+            "both_refuse_rate": 0.6
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 0,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": null,
+            "both_refuse_n": 0,
+            "both_refuse_rate": null
+          }
+        },
+        "template_invariant_minilm_full": {
+          "auc_semantic": 0.6097718467498924,
+          "ap_semantic": 0.14447049010653487,
+          "precision_at_semantic_positive_count": 0.13043478260869565,
+          "auc_keyword": 0.9816933638443937,
+          "ap_keyword": 0.5531334747561069,
+          "top_raw05_budget": {
+            "budget": 55,
+            "semantic_disagreement_n": 9,
+            "semantic_precision": 0.16363636363636364,
+            "both_refuse_n": 30,
+            "both_refuse_rate": 0.5454545454545454
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 3,
+            "semantic_disagreement_n": 1,
+            "semantic_precision": 0.3333333333333333,
+            "both_refuse_n": 2,
+            "both_refuse_rate": 0.6666666666666666
+          }
+        },
+        "late_span_minilm_200_700": {
+          "auc_semantic": 0.6261838140335774,
+          "ap_semantic": 0.1514755206309858,
+          "precision_at_semantic_positive_count": 0.17391304347826086,
+          "auc_keyword": 0.9695476148565394,
+          "ap_keyword": 0.35031277715224207,
+          "top_raw05_budget": {
+            "budget": 55,
+            "semantic_disagreement_n": 8,
+            "semantic_precision": 0.14545454545454545,
+            "both_refuse_n": 24,
+            "both_refuse_rate": 0.43636363636363634
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 7,
+            "semantic_disagreement_n": 1,
+            "semantic_precision": 0.14285714285714285,
+            "both_refuse_n": 2,
+            "both_refuse_rate": 0.2857142857142857
+          }
+        }
+      }
+    },
+    {
+      "setting": "AdvBench 520 (P4)",
+      "short": "advbench_p4",
+      "phase": "phase4_advbench",
+      "n": 520,
+      "semantic_positive_n": 3,
+      "keyword_positive_n": 185,
+      "raw_score_gt_0_95_budget": 257,
+      "routers": {
+        "raw_prefix50_tfidf": {
+          "auc_semantic": 0.2901353965183752,
+          "ap_semantic": 0.005422929560860596,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.7566760790641387,
+          "ap_keyword": 0.5578427358230633,
+          "top_raw05_budget": {
+            "budget": 257,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 257,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 257,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 257,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "template_normalized_full_tfidf": {
+          "auc_semantic": 0.07801418439716315,
+          "ap_semantic": 0.004120814491999218,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.6742799515933844,
+          "ap_keyword": 0.6110857032129824,
+          "top_raw05_budget": {
+            "budget": 257,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 257,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 203,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 203,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "late_span_tfidf_200_700": {
+          "auc_semantic": 0.37911025145067695,
+          "ap_semantic": 0.006248756396380643,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.7695199677289231,
+          "ap_keyword": 0.749828418523195,
+          "top_raw05_budget": {
+            "budget": 257,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.007782101167315175,
+            "both_refuse_n": 255,
+            "both_refuse_rate": 0.9922178988326849
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 285,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.007017543859649123,
+            "both_refuse_n": 283,
+            "both_refuse_rate": 0.9929824561403509
+          }
+        },
+        "raw_full_tfidf": {
+          "auc_semantic": 0.3803997421018698,
+          "ap_semantic": 0.006243741194420747,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.8590237999193224,
+          "ap_keyword": 0.7302864795164555,
+          "top_raw05_budget": {
+            "budget": 257,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.007782101167315175,
+            "both_refuse_n": 255,
+            "both_refuse_rate": 0.9922178988326849
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 57,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 57,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "semantic_span_minilm_full": {
+          "auc_semantic": 0.3010960670535139,
+          "ap_semantic": 0.005392383184265426,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.8892133924969746,
+          "ap_keyword": 0.7197335194097747,
+          "top_raw05_budget": {
+            "budget": 257,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 257,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 0,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": null,
+            "both_refuse_n": 0,
+            "both_refuse_rate": null
+          }
+        },
+        "template_invariant_minilm_full": {
+          "auc_semantic": 0.10573823339780788,
+          "ap_semantic": 0.004238829391519937,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.7792496974586527,
+          "ap_keyword": 0.677726188956501,
+          "top_raw05_budget": {
+            "budget": 257,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 257,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 6,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 6,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "late_span_minilm_200_700": {
+          "auc_semantic": 0.437137330754352,
+          "ap_semantic": 0.00661384174217413,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.8524889068172651,
+          "ap_keyword": 0.8085900102607901,
+          "top_raw05_budget": {
+            "budget": 257,
+            "semantic_disagreement_n": 1,
+            "semantic_precision": 0.0038910505836575876,
+            "both_refuse_n": 256,
+            "both_refuse_rate": 0.9961089494163424
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 7,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 7,
+            "both_refuse_rate": 1.0
+          }
+        }
+      }
+    },
+    {
+      "setting": "SimpleSafety 100 (P4)",
+      "short": "simplesafety_p4",
+      "phase": "phase4_simplesafety",
+      "n": 100,
+      "semantic_positive_n": 8,
+      "keyword_positive_n": 17,
+      "raw_score_gt_0_95_budget": 11,
+      "routers": {
+        "raw_prefix50_tfidf": {
+          "auc_semantic": 0.5006793478260869,
+          "ap_semantic": 0.09770408163265307,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9340892983699504,
+          "ap_keyword": 0.8050553009542238,
+          "top_raw05_budget": {
+            "budget": 11,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 11,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 11,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 11,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "template_normalized_full_tfidf": {
+          "auc_semantic": 0.44157608695652173,
+          "ap_semantic": 0.07860218110607389,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9000708717221828,
+          "ap_keyword": 0.7899159663865546,
+          "top_raw05_budget": {
+            "budget": 11,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 11,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 34,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.058823529411764705,
+            "both_refuse_n": 31,
+            "both_refuse_rate": 0.9117647058823529
+          }
+        },
+        "late_span_tfidf_200_700": {
+          "auc_semantic": 0.6134510869565217,
+          "ap_semantic": 0.10146309876628551,
+          "precision_at_semantic_positive_count": 0.125,
+          "auc_keyword": 0.9262934089298369,
+          "ap_keyword": 0.764177131526768,
+          "top_raw05_budget": {
+            "budget": 11,
+            "semantic_disagreement_n": 1,
+            "semantic_precision": 0.09090909090909091,
+            "both_refuse_n": 10,
+            "both_refuse_rate": 0.9090909090909091
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 51,
+            "semantic_disagreement_n": 5,
+            "semantic_precision": 0.09803921568627451,
+            "both_refuse_n": 45,
+            "both_refuse_rate": 0.8823529411764706
+          }
+        },
+        "raw_full_tfidf": {
+          "auc_semantic": 0.3097826086956522,
+          "ap_semantic": 0.061542484672478734,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9404677533664069,
+          "ap_keyword": 0.904616411420357,
+          "top_raw05_budget": {
+            "budget": 11,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 11,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 10,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 10,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "semantic_span_minilm_full": {
+          "auc_semantic": 0.46059782608695654,
+          "ap_semantic": 0.0801157187681274,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9922041105598866,
+          "ap_keyword": 0.961640598924336,
+          "top_raw05_budget": {
+            "budget": 11,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 11,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 0,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": null,
+            "both_refuse_n": 0,
+            "both_refuse_rate": null
+          }
+        },
+        "template_invariant_minilm_full": {
+          "auc_semantic": 0.49592391304347827,
+          "ap_semantic": 0.08798504351194214,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9532246633593197,
+          "ap_keyword": 0.9162087955942214,
+          "top_raw05_budget": {
+            "budget": 11,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 11,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 1,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 1,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "late_span_minilm_200_700": {
+          "auc_semantic": 0.592391304347826,
+          "ap_semantic": 0.10037339297790324,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9780297661233168,
+          "ap_keyword": 0.9296655984909177,
+          "top_raw05_budget": {
+            "budget": 11,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 11,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 1,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 1,
+            "both_refuse_rate": 1.0
+          }
+        }
+      }
+    },
+    {
+      "setting": "XSTest 100 / 512tok (P5)",
+      "short": "xstest100_p5",
+      "phase": "phase5_xstest100_512tok",
+      "n": 100,
+      "semantic_positive_n": 9,
+      "keyword_positive_n": 5,
+      "raw_score_gt_0_95_budget": 9,
+      "routers": {
+        "raw_prefix50_tfidf": {
+          "auc_semantic": 0.6166056166056166,
+          "ap_semantic": 0.12735356834989336,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9852631578947368,
+          "ap_keyword": 0.6583333333333333,
+          "top_raw05_budget": {
+            "budget": 9,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 6,
+            "both_refuse_rate": 0.6666666666666666
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 9,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 6,
+            "both_refuse_rate": 0.6666666666666666
+          }
+        },
+        "template_normalized_full_tfidf": {
+          "auc_semantic": 0.7374847374847375,
+          "ap_semantic": 0.18525629463129462,
+          "precision_at_semantic_positive_count": 0.2222222222222222,
+          "auc_keyword": 1.0,
+          "ap_keyword": 1.0,
+          "top_raw05_budget": {
+            "budget": 9,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.2222222222222222,
+            "both_refuse_n": 6,
+            "both_refuse_rate": 0.6666666666666666
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 5,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 5,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "late_span_tfidf_200_700": {
+          "auc_semantic": 0.6874236874236874,
+          "ap_semantic": 0.18215782749469417,
+          "precision_at_semantic_positive_count": 0.2222222222222222,
+          "auc_keyword": 1.0,
+          "ap_keyword": 1.0,
+          "top_raw05_budget": {
+            "budget": 9,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.2222222222222222,
+            "both_refuse_n": 7,
+            "both_refuse_rate": 0.7777777777777778
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 18,
+            "semantic_disagreement_n": 4,
+            "semantic_precision": 0.2222222222222222,
+            "both_refuse_n": 9,
+            "both_refuse_rate": 0.5
+          }
+        },
+        "raw_full_tfidf": {
+          "auc_semantic": 0.7411477411477411,
+          "ap_semantic": 0.36845542748676435,
+          "precision_at_semantic_positive_count": 0.4444444444444444,
+          "auc_keyword": 0.9663157894736842,
+          "ap_keyword": 0.5079365079365079,
+          "top_raw05_budget": {
+            "budget": 9,
+            "semantic_disagreement_n": 4,
+            "semantic_precision": 0.4444444444444444,
+            "both_refuse_n": 5,
+            "both_refuse_rate": 0.5555555555555556
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 0,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": null,
+            "both_refuse_n": 0,
+            "both_refuse_rate": null
+          }
+        },
+        "semantic_span_minilm_full": {
+          "auc_semantic": 0.7472527472527473,
+          "ap_semantic": 0.30241600199075325,
+          "precision_at_semantic_positive_count": 0.3333333333333333,
+          "auc_keyword": 0.968421052631579,
+          "ap_keyword": 0.6245421245421245,
+          "top_raw05_budget": {
+            "budget": 9,
+            "semantic_disagreement_n": 3,
+            "semantic_precision": 0.3333333333333333,
+            "both_refuse_n": 4,
+            "both_refuse_rate": 0.4444444444444444
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 0,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": null,
+            "both_refuse_n": 0,
+            "both_refuse_rate": null
+          }
+        },
+        "template_invariant_minilm_full": {
+          "auc_semantic": 0.7362637362637362,
+          "ap_semantic": 0.21426218144372225,
+          "precision_at_semantic_positive_count": 0.1111111111111111,
+          "auc_keyword": 1.0,
+          "ap_keyword": 1.0,
+          "top_raw05_budget": {
+            "budget": 9,
+            "semantic_disagreement_n": 1,
+            "semantic_precision": 0.1111111111111111,
+            "both_refuse_n": 7,
+            "both_refuse_rate": 0.7777777777777778
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 4,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 4,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "late_span_minilm_200_700": {
+          "auc_semantic": 0.7191697191697192,
+          "ap_semantic": 0.19948292448292448,
+          "precision_at_semantic_positive_count": 0.2222222222222222,
+          "auc_keyword": 1.0,
+          "ap_keyword": 1.0,
+          "top_raw05_budget": {
+            "budget": 9,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.2222222222222222,
+            "both_refuse_n": 5,
+            "both_refuse_rate": 0.5555555555555556
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 1,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 1,
+            "both_refuse_rate": 1.0
+          }
+        }
+      }
+    },
+    {
+      "setting": "AdvBench 100 / 512tok (P5)",
+      "short": "advbench100_p5",
+      "phase": "phase5_advbench100_512tok",
+      "n": 100,
+      "semantic_positive_n": 3,
+      "keyword_positive_n": 40,
+      "raw_score_gt_0_95_budget": 48,
+      "routers": {
+        "raw_prefix50_tfidf": {
+          "auc_semantic": 0.29553264604811,
+          "ap_semantic": 0.030687307861220904,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.7495833333333333,
+          "ap_keyword": 0.6180834752053658,
+          "top_raw05_budget": {
+            "budget": 48,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 47,
+            "both_refuse_rate": 0.9791666666666666
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 48,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 47,
+            "both_refuse_rate": 0.9791666666666666
+          }
+        },
+        "template_normalized_full_tfidf": {
+          "auc_semantic": 0.37800687285223367,
+          "ap_semantic": 0.031173925813822667,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.8010416666666667,
+          "ap_keyword": 0.7459677489841189,
+          "top_raw05_budget": {
+            "budget": 48,
+            "semantic_disagreement_n": 1,
+            "semantic_precision": 0.020833333333333332,
+            "both_refuse_n": 46,
+            "both_refuse_rate": 0.9583333333333334
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 16,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 16,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "late_span_tfidf_200_700": {
+          "auc_semantic": 0.4054982817869416,
+          "ap_semantic": 0.03304988662131519,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.72375,
+          "ap_keyword": 0.7204244643869064,
+          "top_raw05_budget": {
+            "budget": 48,
+            "semantic_disagreement_n": 1,
+            "semantic_precision": 0.020833333333333332,
+            "both_refuse_n": 47,
+            "both_refuse_rate": 0.9791666666666666
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 36,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 36,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "raw_full_tfidf": {
+          "auc_semantic": 0.5257731958762887,
+          "ap_semantic": 0.04046677959721438,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.785,
+          "ap_keyword": 0.711032743677597,
+          "top_raw05_budget": {
+            "budget": 48,
+            "semantic_disagreement_n": 2,
+            "semantic_precision": 0.041666666666666664,
+            "both_refuse_n": 45,
+            "both_refuse_rate": 0.9375
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 1,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 1,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "semantic_span_minilm_full": {
+          "auc_semantic": 0.4329896907216495,
+          "ap_semantic": 0.03470566503572748,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9358333333333333,
+          "ap_keyword": 0.8423863859712428,
+          "top_raw05_budget": {
+            "budget": 48,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 48,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 0,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": null,
+            "both_refuse_n": 0,
+            "both_refuse_rate": null
+          }
+        },
+        "template_invariant_minilm_full": {
+          "auc_semantic": 0.3127147766323024,
+          "ap_semantic": 0.028091448781103954,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.8929166666666667,
+          "ap_keyword": 0.8169409894240738,
+          "top_raw05_budget": {
+            "budget": 48,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 48,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 5,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 5,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "late_span_minilm_200_700": {
+          "auc_semantic": 0.21305841924398622,
+          "ap_semantic": 0.024761904761904763,
+          "precision_at_semantic_positive_count": 0.0,
+          "auc_keyword": 0.9270833333333334,
+          "ap_keyword": 0.8905484365287407,
+          "top_raw05_budget": {
+            "budget": 48,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 48,
+            "both_refuse_rate": 1.0
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 4,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 4,
+            "both_refuse_rate": 1.0
+          }
+        }
+      }
+    },
+    {
+      "setting": "OR-Bench hard 1k (P8)",
+      "short": "orbench_p8",
+      "phase": "phase8_orbench_hard1k",
+      "n": 1319,
+      "semantic_positive_n": 473,
+      "keyword_positive_n": 3,
+      "raw_score_gt_0_95_budget": 230,
+      "routers": {
+        "raw_prefix50_tfidf": {
+          "auc_semantic": 0.5172044542405749,
+          "ap_semantic": 0.3765569637109999,
+          "precision_at_semantic_positive_count": 0.36363636363636365,
+          "auc_keyword": 0.8655015197568389,
+          "ap_keyword": 0.009506541611862996,
+          "top_raw05_budget": {
+            "budget": 230,
+            "semantic_disagreement_n": 80,
+            "semantic_precision": 0.34782608695652173,
+            "both_refuse_n": 128,
+            "both_refuse_rate": 0.5565217391304348
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 230,
+            "semantic_disagreement_n": 80,
+            "semantic_precision": 0.34782608695652173,
+            "both_refuse_n": 128,
+            "both_refuse_rate": 0.5565217391304348
+          }
+        },
+        "template_normalized_full_tfidf": {
+          "auc_semantic": 0.5295645719940623,
+          "ap_semantic": 0.38903438663800116,
+          "precision_at_semantic_positive_count": 0.3953488372093023,
+          "auc_keyword": 0.7584853090172239,
+          "ap_keyword": 0.011746392587514082,
+          "top_raw05_budget": {
+            "budget": 230,
+            "semantic_disagreement_n": 94,
+            "semantic_precision": 0.40869565217391307,
+            "both_refuse_n": 99,
+            "both_refuse_rate": 0.43043478260869567
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 357,
+            "semantic_disagreement_n": 144,
+            "semantic_precision": 0.40336134453781514,
+            "both_refuse_n": 156,
+            "both_refuse_rate": 0.4369747899159664
+          }
+        },
+        "late_span_tfidf_200_700": {
+          "auc_semantic": 0.5384160756501182,
+          "ap_semantic": 0.39195405907160874,
+          "precision_at_semantic_positive_count": 0.3784355179704017,
+          "auc_keyword": 0.8794326241134751,
+          "ap_keyword": 0.020475020475020474,
+          "top_raw05_budget": {
+            "budget": 230,
+            "semantic_disagreement_n": 91,
+            "semantic_precision": 0.39565217391304347,
+            "both_refuse_n": 87,
+            "both_refuse_rate": 0.3782608695652174
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 501,
+            "semantic_disagreement_n": 190,
+            "semantic_precision": 0.37924151696606784,
+            "both_refuse_n": 222,
+            "both_refuse_rate": 0.4431137724550898
+          }
+        },
+        "raw_full_tfidf": {
+          "auc_semantic": 0.5433416300561278,
+          "ap_semantic": 0.3767423996257716,
+          "precision_at_semantic_positive_count": 0.39957716701902746,
+          "auc_keyword": 0.954660587639311,
+          "ap_keyword": 0.04503339797457444,
+          "top_raw05_budget": {
+            "budget": 230,
+            "semantic_disagreement_n": 90,
+            "semantic_precision": 0.391304347826087,
+            "both_refuse_n": 122,
+            "both_refuse_rate": 0.5304347826086957
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 17,
+            "semantic_disagreement_n": 5,
+            "semantic_precision": 0.29411764705882354,
+            "both_refuse_n": 11,
+            "both_refuse_rate": 0.6470588235294118
+          }
+        },
+        "semantic_span_minilm_full": {
+          "auc_semantic": 0.5275965993432594,
+          "ap_semantic": 0.3609498679194369,
+          "precision_at_semantic_positive_count": 0.39323467230443976,
+          "auc_keyword": 0.9437689969604863,
+          "ap_keyword": 0.025717186676090787,
+          "top_raw05_budget": {
+            "budget": 230,
+            "semantic_disagreement_n": 77,
+            "semantic_precision": 0.3347826086956522,
+            "both_refuse_n": 123,
+            "both_refuse_rate": 0.5347826086956522
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 1,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": 0.0,
+            "both_refuse_n": 1,
+            "both_refuse_rate": 1.0
+          }
+        },
+        "template_invariant_minilm_full": {
+          "auc_semantic": 0.5165084791507355,
+          "ap_semantic": 0.3701456085217453,
+          "precision_at_semantic_positive_count": 0.36152219873150104,
+          "auc_keyword": 0.6469098277608916,
+          "ap_keyword": 0.08570641293834491,
+          "top_raw05_budget": {
+            "budget": 230,
+            "semantic_disagreement_n": 83,
+            "semantic_precision": 0.36086956521739133,
+            "both_refuse_n": 98,
+            "both_refuse_rate": 0.4260869565217391
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 0,
+            "semantic_disagreement_n": 0,
+            "semantic_precision": null,
+            "both_refuse_n": 0,
+            "both_refuse_rate": null
+          }
+        },
+        "late_span_minilm_200_700": {
+          "auc_semantic": 0.5235981787194058,
+          "ap_semantic": 0.38717460630237555,
+          "precision_at_semantic_positive_count": 0.38054968287526425,
+          "auc_keyword": 0.8067375886524821,
+          "ap_keyword": 0.15873015873015872,
+          "top_raw05_budget": {
+            "budget": 230,
+            "semantic_disagreement_n": 98,
+            "semantic_precision": 0.4260869565217391,
+            "both_refuse_n": 79,
+            "both_refuse_rate": 0.34347826086956523
+          },
+          "fixed_score_gt_0_95": {
+            "budget": 3,
+            "semantic_disagreement_n": 1,
+            "semantic_precision": 0.3333333333333333,
+            "both_refuse_n": 1,
+            "both_refuse_rate": 0.3333333333333333
+          }
+        }
+      }
+    }
+  ]
+}

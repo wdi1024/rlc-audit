@@ -1,0 +1,17 @@
+{
+  "sentence_auc_per_seed": [
+    0.9667260439831502,
+    1.0,
+    0.989695349593515
+  ],
+  "tfidf_auc_per_seed": [
+    0.9240331164821061,
+    0.9925365696993838,
+    0.9657179091730602
+  ],
+  "sentence_mean": 0.9854737978588884,
+  "sentence_std": 0.013908154958846036,
+  "tfidf_mean": 0.9607625317848499,
+  "tfidf_std": 0.028185074057825086,
+  "note": "keyword label only; judge label requires separate run"
+}

@@ -1,0 +1,110 @@
+{
+  "n_perm": 300,
+  "scores": {
+    "step 1 only": {
+      "n": 815632,
+      "n_pos": 433067,
+      "n_strata": 500,
+      "lam": 0.00105,
+      "pooled": 0.6175,
+      "within": 0.5259,
+      "cross": 0.6176,
+      "recon": 0.6175,
+      "pooled_null_mean": 0.6067,
+      "pooled_null_ci": [
+        0.6061,
+        0.6073
+      ]
+    },
+    "prefix 25%": {
+      "n": 815632,
+      "n_pos": 433067,
+      "n_strata": 500,
+      "lam": 0.00105,
+      "pooled": 0.7382,
+      "within": 0.6121,
+      "cross": 0.7383,
+      "recon": 0.7382,
+      "pooled_null_mean": 0.693,
+      "pooled_null_ci": [
+        0.6924,
+        0.6937
+      ]
+    },
+    "prefix 50%": {
+      "n": 815632,
+      "n_pos": 433067,
+      "n_strata": 500,
+      "lam": 0.00105,
+      "pooled": 0.8186,
+      "within": 0.7032,
+      "cross": 0.8188,
+      "recon": 0.8186,
+      "pooled_null_mean": 0.7375,
+      "pooled_null_ci": [
+        0.7369,
+        0.7381
+      ]
+    },
+    "prefix 75%": {
+      "n": 815632,
+      "n_pos": 433067,
+      "n_strata": 500,
+      "lam": 0.00105,
+      "pooled": 0.8766,
+      "within": 0.7978,
+      "cross": 0.8766,
+      "recon": 0.8766,
+      "pooled_null_mean": 0.7601,
+      "pooled_null_ci": [
+        0.7595,
+        0.7607
+      ]
+    },
+    "full product": {
+      "n": 815632,
+      "n_pos": 433067,
+      "n_strata": 500,
+      "lam": 0.00105,
+      "pooled": 0.9217,
+      "within": 0.8707,
+      "cross": 0.9218,
+      "recon": 0.9217,
+      "pooled_null_mean": 0.7825,
+      "pooled_null_ci": [
+        0.782,
+        0.7831
+      ]
+    },
+    "released prm_score": {
+      "n": 815632,
+      "n_pos": 433067,
+      "n_strata": 500,
+      "lam": 0.00105,
+      "pooled": 0.9324,
+      "within": 0.8812,
+      "cross": 0.9324,
+      "recon": 0.9324,
+      "pooled_null_mean": 0.7905,
+      "pooled_null_ci": [
+        0.7898,
+        0.7911
+      ]
+    },
+    "ORM comparator": {
+      "n": 815632,
+      "n_pos": 433067,
+      "n_strata": 500,
+      "lam": 0.00105,
+      "pooled": 0.9408,
+      "within": 0.8843,
+      "cross": 0.9408,
+      "recon": 0.9408,
+      "pooled_null_mean": 0.7971,
+      "pooled_null_ci": [
+        0.7964,
+        0.7977
+      ]
+    }
+  }
+}

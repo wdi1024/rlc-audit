@@ -1,0 +1,52 @@
+{
+  "failed": {
+    "positive_steps": 120661,
+    "with_equations": 105498,
+    "arithmetically_false": 4690,
+    "false_rate_of_covered": 0.04445581906766005,
+    "coverage": 0.8743338775577859
+  },
+  "succeeded_control": {
+    "positive_steps": 86954,
+    "with_equations": 80247,
+    "arithmetically_false": 1747,
+    "false_rate_of_covered": 0.021770284247386196,
+    "coverage": 0.9228672631506314
+  },
+  "solution_level": {
+    "never_warned": 16697,
+    "with_false_step": 1259,
+    "share": 0.07540276696412529,
+    "failing": 95694,
+    "failing_with_positive_false_step": 4334
+  },
+  "manual_precision_v1": {
+    "sample": 200,
+    "seed": 20260905,
+    "genuine": 91,
+    "sign_error": 12,
+    "false_as_written_other": 5,
+    "rounding_only": 39,
+    "parser_artifact": 53
+  },
+  "manual_precision_v2": {
+    "sample": 200,
+    "seed": 20260905,
+    "genuine_error": 128,
+    "sign_error": 23,
+    "false_as_written_other": 6,
+    "rounding_beyond_display": 9,
+    "parser_or_unit_artifact": 34,
+    "false_as_written": 157,
+    "false_as_written_rate": 0.785,
+    "wilson95": [
+      0.722,
+      0.836
+    ],
+    "implied_certified": [
+      3386,
+      3682,
+      3921
+    ]
+  }
+}

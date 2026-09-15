@@ -1,0 +1,96 @@
+{
+  "spans": {
+    "0.25": {
+      "problems": 400,
+      "solutions": 8497,
+      "y_positives": 1184,
+      "auc_y": 0.6784574520992056,
+      "empty_complement": 0.0,
+      "proxies": {
+        "backtrack": {
+          "prevalence": 0.0009415087678004002,
+          "auc_z": 0.5738888888888889,
+          "auc_zc": 0.3829904436522084,
+          "zc_positives": 7,
+          "delta_dis_abs": -0.06144789575141402,
+          "ci": [
+            -0.1742835387712504,
+            0.11230337881592997
+          ],
+          "verdict": "UNDECIDABLE"
+        },
+        "arith_density": {
+          "prevalence": 0.4999411557020125,
+          "auc_z": 0.47503628582168095,
+          "auc_zc": 0.48116907233506767,
+          "zc_positives": 4239,
+          "delta_dis_abs": -0.15962652443427328,
+          "ci": [
+            -0.1830192007745189,
+            -0.13517996530694448
+          ],
+          "verdict": "ALIGNED"
+        },
+        "length": {
+          "prevalence": 0.4981758267623867,
+          "auc_z": 0.49193226998283307,
+          "auc_zc": 0.5203319363761207,
+          "zc_positives": 4243,
+          "delta_dis_abs": -0.15812551572308486,
+          "ci": [
+            -0.18077146327443946,
+            -0.13397471273692335
+          ],
+          "verdict": "ALIGNED"
+        }
+      }
+    },
+    "0.5": {
+      "problems": 400,
+      "solutions": 8497,
+      "y_positives": 1184,
+      "auc_y": 0.8361560066370803,
+      "empty_complement": 0.0,
+      "proxies": {
+        "backtrack": {
+          "prevalence": 0.0012945745557255502,
+          "auc_z": 0.45855135387488327,
+          "auc_zc": 0.3153037730243613,
+          "zc_positives": 4,
+          "delta_dis_abs": -0.15145977966144164,
+          "ci": [
+            -0.31858262098676954,
+            0.05872763946788407
+          ],
+          "verdict": "UNDECIDABLE"
+        },
+        "arith_density": {
+          "prevalence": 0.4998234671060374,
+          "auc_z": 0.45628516470815617,
+          "auc_zc": 0.475455239064968,
+          "zc_positives": 4245,
+          "delta_dis_abs": -0.31161124570204835,
+          "ci": [
+            -0.3369752611092775,
+            -0.2863303203352754
+          ],
+          "verdict": "ALIGNED"
+        },
+        "length": {
+          "prevalence": 0.49652818641873603,
+          "auc_z": 0.49889600817867746,
+          "auc_zc": 0.5341672684373595,
+          "zc_positives": 4239,
+          "delta_dis_abs": -0.30198873819972083,
+          "ci": [
+            -0.32807392830902193,
+            -0.27584587483432876
+          ],
+          "verdict": "ALIGNED"
+        }
+      }
+    }
+  },
+  "n_boot": 2000,
+  "last_label_agreement": 0.999882311404025
+}

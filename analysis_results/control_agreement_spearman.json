@@ -1,0 +1,19 @@
+{
+ "row_set": "rows carrying both controls after the power and complement preconditions",
+ "n": 11,
+ "rows": [
+  "XSTest 450 (primary run)",
+  "OR-Bench hard 1k",
+  "JailbreakBench",
+  "GSM8K, 50-char span (50-char)",
+  "GSM8K, 120-char span (120-char)",
+  "GSM8K, 160-char span (160-char)",
+  "GSM8K, 200-char span (200-char)",
+  "GSM8K, 300-char span (300-char)",
+  "GSM8K, 600-char span (600-char)",
+  "HotpotQA, 50-char span (50-char)",
+  "HotpotQA, 80-char span (80-char)"
+ ],
+ "spearman_rho": 0.9363636363636365,
+ "p": 2.2082076449177497e-05
+}

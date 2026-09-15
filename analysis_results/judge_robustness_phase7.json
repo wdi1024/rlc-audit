@@ -1,0 +1,40 @@
+{
+  "phase": "phase7_xstest450_512tok",
+  "models": [
+    "qwen3.5-2b",
+    "gemma-4-e2b"
+  ],
+  "n": 450,
+  "rows": [
+    {
+      "label": "keyword",
+      "n_dis": 99,
+      "auc_full": 0.5004460560016115,
+      "auc_50": 0.4764309764309765
+    },
+    {
+      "label": "judge_gpt-4o-mini",
+      "n_dis": 56,
+      "auc_full": 0.4508701957940537,
+      "auc_50": 0.6149836838288615
+    },
+    {
+      "label": "judge_haiku-4-5",
+      "n_dis": 44,
+      "auc_full": 0.6018248992386923,
+      "auc_50": 0.5667543663233318
+    },
+    {
+      "label": "judge_sonnet-4-6",
+      "n_dis": 45,
+      "auc_full": 0.6500960219478739,
+      "auc_50": 0.58
+    },
+    {
+      "label": "judge_majority",
+      "n_dis": 40,
+      "auc_full": 0.6064634146341463,
+      "auc_50": 0.5595731707317073
+    }
+  ]
+}

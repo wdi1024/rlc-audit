@@ -1,0 +1,382 @@
+{
+  "GSM8K": {
+    "phase": "phase14_gsm8k_2k",
+    "n": 1319,
+    "construct_positives": 320,
+    "arrival_substring": {
+      "n_traces_containing": 2173,
+      "n_traces_total": 2638,
+      "median": 1049.0,
+      "q25": 688.0,
+      "q75": 1364.0
+    },
+    "arrival_word_boundary": {
+      "n_traces_containing": 2152,
+      "n_traces_total": 2638,
+      "median": 1074.5,
+      "q25": 755.75,
+      "q75": 1394.25
+    },
+    "rows": [
+      {
+        "span": "prefix-50",
+        "span_chars": 50,
+        "coverage": 0.006065200909780136,
+        "proxy_positives": 8,
+        "verdict": "not instantiable (score degenerate at this span)"
+      },
+      {
+        "span": "prefix-120",
+        "span_chars": 120,
+        "coverage": 0.01819560272934041,
+        "proxy_positives": 12,
+        "auc_proxy": 0.568604947717419,
+        "auc_semantic": 0.3735641891891891,
+        "gap": 0.19504075852822989,
+        "gap_ci": [
+          0.03916526309442017,
+          0.34780407643618266
+        ]
+      },
+      {
+        "span": "prefix-200",
+        "span_chars": 200,
+        "coverage": 0.04927975739196361,
+        "proxy_positives": 79,
+        "auc_proxy": 0.47328501429154757,
+        "auc_semantic": 0.3577296046046046,
+        "gap": 0.11555540968694294,
+        "gap_ci": [
+          0.036321416424380124,
+          0.19157488278293044
+        ]
+      },
+      {
+        "span": "prefix-300",
+        "span_chars": 300,
+        "coverage": 0.08642911296436695,
+        "proxy_positives": 82,
+        "auc_proxy": 0.5943766389967862,
+        "auc_semantic": 0.6494306806806807,
+        "gap": -0.055054041683894495,
+        "gap_ci": [
+          -0.12239240818163802,
+          0.017623259076887447
+        ]
+      },
+      {
+        "span": "prefix-600",
+        "span_chars": 600,
+        "coverage": 0.18423047763457165,
+        "proxy_positives": 132,
+        "auc_proxy": 0.5133963901866176,
+        "auc_semantic": 0.6154623373373374,
+        "gap": -0.1020659471507197,
+        "gap_ci": [
+          -0.1676814713126864,
+          -0.03911394858631439
+        ]
+      },
+      {
+        "span": "full trace",
+        "span_chars": null,
+        "coverage": 0.910538286580743,
+        "proxy_positives": 237,
+        "auc_proxy": 0.5906237082446166,
+        "auc_semantic": 0.6265890890890891,
+        "gap": -0.03596538084447243,
+        "gap_ci": [
+          -0.0667396513065844,
+          -0.004674757691025669
+        ]
+      }
+    ],
+    "gap_closes_at_span": 300,
+    "gap_closes_at_coverage": 0.08642911296436695
+  },
+  "HotpotQA": {
+    "phase": "phase14_hotpot_2k",
+    "n": 2000,
+    "construct_positives": 436,
+    "arrival_substring": {
+      "n_traces_containing": 3140,
+      "n_traces_total": 4000,
+      "median": 341.0,
+      "q25": 91.0,
+      "q75": 799.25
+    },
+    "arrival_word_boundary": {
+      "n_traces_containing": 3120,
+      "n_traces_total": 4000,
+      "median": 376.5,
+      "q25": 98.0,
+      "q75": 825.0
+    },
+    "rows": [
+      {
+        "span": "prefix-50",
+        "span_chars": 50,
+        "coverage": 0.171,
+        "proxy_positives": 317,
+        "auc_proxy": 0.696737274395467,
+        "auc_semantic": 0.5130986179872827,
+        "gap": 0.18363865640818422,
+        "gap_ci": [
+          0.1342366099718897,
+          0.2335625025338406
+        ]
+      },
+      {
+        "span": "prefix-120",
+        "span_chars": 120,
+        "coverage": 0.382,
+        "proxy_positives": 636,
+        "auc_proxy": 0.5529450008299673,
+        "auc_semantic": 0.5381974588798423,
+        "gap": 0.014747541950125065,
+        "gap_ci": [
+          -0.030384536988672654,
+          0.05861130433128284
+        ]
+      },
+      {
+        "span": "prefix-200",
+        "span_chars": 200,
+        "coverage": 0.5145,
+        "proxy_positives": 840,
+        "auc_proxy": 0.5513936781609196,
+        "auc_semantic": 0.5282591097867149,
+        "gap": 0.02313456837420469,
+        "gap_ci": [
+          -0.021410105135423477,
+          0.06858008190880664
+        ]
+      },
+      {
+        "span": "prefix-300",
+        "span_chars": 300,
+        "coverage": 0.5905,
+        "proxy_positives": 937,
+        "auc_proxy": 0.5539235224606462,
+        "auc_semantic": 0.5367427086510712,
+        "gap": 0.017180813809575035,
+        "gap_ci": [
+          -0.024759194539299784,
+          0.057890512099520695
+        ]
+      },
+      {
+        "span": "prefix-600",
+        "span_chars": 600,
+        "coverage": 0.709,
+        "proxy_positives": 868,
+        "auc_proxy": 0.5655623585351159,
+        "auc_semantic": 0.5355233287970154,
+        "gap": 0.030039029738100576,
+        "gap_ci": [
+          -0.010107445818255106,
+          0.06908051712126968
+        ]
+      },
+      {
+        "span": "full trace",
+        "span_chars": null,
+        "coverage": 0.893,
+        "proxy_positives": 436,
+        "auc_proxy": 0.6266849879161877,
+        "auc_semantic": 0.6030966235716464,
+        "gap": 0.023588364344541257,
+        "gap_ci": [
+          -0.011200414355141972,
+          0.06079437023742674
+        ]
+      }
+    ],
+    "gap_closes_at_span": 120,
+    "gap_closes_at_coverage": 0.382
+  },
+  "GSM8K (replication)": {
+    "phase": "phase11_gsm8k",
+    "n": 250,
+    "construct_positives": 92,
+    "arrival_substring": {
+      "n_traces_containing": 338,
+      "n_traces_total": 500,
+      "median": 1042.5,
+      "q25": 743.5,
+      "q75": 1254.0
+    },
+    "arrival_word_boundary": {
+      "n_traces_containing": 334,
+      "n_traces_total": 500,
+      "median": 1061.0,
+      "q25": 802.5,
+      "q75": 1266.0
+    },
+    "rows": [
+      {
+        "span": "prefix-50",
+        "span_chars": 50,
+        "coverage": 0.004,
+        "proxy_positives": 1,
+        "verdict": "not instantiable (score degenerate at this span)"
+      },
+      {
+        "span": "prefix-120",
+        "span_chars": 120,
+        "coverage": 0.004,
+        "proxy_positives": 0,
+        "verdict": "not instantiable (no proxy variation)"
+      },
+      {
+        "span": "prefix-200",
+        "span_chars": 200,
+        "coverage": 0.024,
+        "proxy_positives": 8,
+        "auc_proxy": 0.43336776859504134,
+        "auc_semantic": 0.4065767749036874,
+        "gap": 0.02679099369135396,
+        "gap_ci": [
+          -0.10980058822101266,
+          0.1565904422617437
+        ]
+      },
+      {
+        "span": "prefix-300",
+        "span_chars": 300,
+        "coverage": 0.056,
+        "proxy_positives": 11,
+        "auc_proxy": 0.6477748193229365,
+        "auc_semantic": 0.5529719317556412,
+        "gap": 0.09480288756729527,
+        "gap_ci": [
+          -0.06479166727944378,
+          0.2519425441889532
+        ]
+      },
+      {
+        "span": "prefix-600",
+        "span_chars": 600,
+        "coverage": 0.124,
+        "proxy_positives": 16,
+        "auc_proxy": 0.7053952991452992,
+        "auc_semantic": 0.565148596587782,
+        "gap": 0.14024670255751714,
+        "gap_ci": [
+          -0.049708767525934165,
+          0.30388343560611086
+        ]
+      },
+      {
+        "span": "full trace",
+        "span_chars": null,
+        "coverage": 0.812,
+        "proxy_positives": 72,
+        "auc_proxy": 0.6210205992509362,
+        "auc_semantic": 0.6219730324711062,
+        "gap": -0.0009524332201700236,
+        "gap_ci": [
+          -0.0710005551101117,
+          0.07322753358694195
+        ]
+      }
+    ],
+    "gap_closes_at_span": 300,
+    "gap_closes_at_coverage": 0.056
+  },
+  "HotpotQA (replication)": {
+    "phase": "phase10_hotpot",
+    "n": 250,
+    "construct_positives": 60,
+    "arrival_substring": {
+      "n_traces_containing": 409,
+      "n_traces_total": 500,
+      "median": 809.0,
+      "q25": 489.0,
+      "q75": 1111.0
+    },
+    "arrival_word_boundary": {
+      "n_traces_containing": 407,
+      "n_traces_total": 500,
+      "median": 836.0,
+      "q25": 508.5,
+      "q75": 1121.0
+    },
+    "rows": [
+      {
+        "span": "prefix-50",
+        "span_chars": 50,
+        "coverage": 0.0,
+        "proxy_positives": 0,
+        "verdict": "not instantiable (no proxy variation)"
+      },
+      {
+        "span": "prefix-120",
+        "span_chars": 120,
+        "coverage": 0.052,
+        "proxy_positives": 16,
+        "auc_proxy": 0.545673076923077,
+        "auc_semantic": 0.48833333333333334,
+        "gap": 0.05733974358974364,
+        "gap_ci": [
+          -0.07566118220867134,
+          0.18398865254775065
+        ]
+      },
+      {
+        "span": "prefix-200",
+        "span_chars": 200,
+        "coverage": 0.088,
+        "proxy_positives": 16,
+        "auc_proxy": 0.6127136752136751,
+        "auc_semantic": 0.46342105263157896,
+        "gap": 0.1492926225820962,
+        "gap_ci": [
+          -0.019494234803566712,
+          0.3041723888316986
+        ]
+      },
+      {
+        "span": "prefix-300",
+        "span_chars": 300,
+        "coverage": 0.12,
+        "proxy_positives": 19,
+        "auc_proxy": 0.6092503987240829,
+        "auc_semantic": 0.46456140350877195,
+        "gap": 0.14468899521531098,
+        "gap_ci": [
+          0.027930168069404376,
+          0.2611529371894316
+        ]
+      },
+      {
+        "span": "prefix-600",
+        "span_chars": 600,
+        "coverage": 0.348,
+        "proxy_positives": 46,
+        "auc_proxy": 0.5768329070758739,
+        "auc_semantic": 0.568859649122807,
+        "gap": 0.007973257953066915,
+        "gap_ci": [
+          -0.12638739426708842,
+          0.13179328409402125
+        ]
+      },
+      {
+        "span": "full trace",
+        "span_chars": null,
+        "coverage": 0.92,
+        "proxy_positives": 51,
+        "auc_proxy": 0.6572076066607547,
+        "auc_semantic": 0.6667543859649123,
+        "gap": -0.009546779304157593,
+        "gap_ci": [
+          -0.09129347118588109,
+          0.07707685145602941
+        ]
+      }
+    ],
+    "gap_closes_at_span": 200,
+    "gap_closes_at_coverage": 0.088
+  }
+}

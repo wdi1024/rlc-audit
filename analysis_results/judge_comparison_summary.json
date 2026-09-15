@@ -1,0 +1,22 @@
+{
+  "n": 450,
+  "keyword": {
+    "disagreement_rate": 0.05555555555555555,
+    "n_disagreement": 25,
+    "auc": 0.7874823529411764,
+    "mean_sim_disagree": 0.18075400774218067,
+    "mean_sim_agree": 0.3698653884590163
+  },
+  "judge": {
+    "disagreement_rate": 0.10222222222222223,
+    "n_disagreement": 46,
+    "auc": 0.4817585019371502,
+    "mean_sim_disagree": 0.3632528348243111,
+    "mean_sim_agree": 0.358915866056233,
+    "auc_ci_lo": 0.3915132826386579,
+    "auc_ci_hi": 0.5701082575529645
+  },
+  "delta_auc": -0.3057238510040262,
+  "qwen_label_flip_rate": 0.43555555555555553,
+  "gemma_label_flip_rate": 0.4866666666666667
+}

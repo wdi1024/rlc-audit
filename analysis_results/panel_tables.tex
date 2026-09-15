@@ -1,0 +1,56 @@
+% ---- main-text panel table (pairs without raw-as-final fallback) ----
+\begin{table}[!htbp]
+\centering
+\small
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Pair & n & sem n+ & kw n+ & $\kappa$ & AUC kw & AUC sem & $\Delta_{\mathrm{AUC}}$ & sem@B \\
+\midrule
+Qwen/Gemma & 450 & 71 & 110 & 0.296 & 0.650 & 0.664 & -0.015 & 17/45 \\
+Qwen/Mistral & 450 & 66 & 150 & 0.267 & 0.667 & 0.649 & +0.018 & 13/45 \\
+Qwen/Phi & 450 & 43 & 114 & 0.090 & 0.654 & 0.526 & +0.128 & 6/45 \\
+Qwen3-8B/Phi & 450 & 50 & 101 & 0.168 & 0.697 & 0.579 & +0.118 & 9/45 \\
+Gemma/Mistral & 450 & 100 & 154 & 0.343 & 0.700 & 0.707 & -0.006 & 18/45 \\
+Gemma/Qwen3-8B & 450 & 74 & 85 & 0.382 & 0.600 & 0.557 & +0.042 & 8/45 \\
+Gemma/Phi & 450 & 64 & 122 & 0.299 & 0.662 & 0.647 & +0.015 & 11/45 \\
+Mistral/Qwen3-8B & 450 & 82 & 137 & 0.355 & 0.764 & 0.696 & +0.068 & 22/45 \\
+Mistral/Phi & 450 & 70 & 120 & 0.227 & 0.721 & 0.667 & +0.054 & 11/45 \\
+Qwen/Qwen & 450 & 40 & 73 & 0.230 & 0.537 & 0.631 & -0.094 & 8/45 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{PLACEHOLDER main panel caption.}
+\label{tab:pair-panel}
+\end{table}
+
+% ---- appendix full panel table with parse coverage ----
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrrl}
+\toprule
+Pair & exact parse coverage & $\kappa$ & AUC kw & AUC sem & $\Delta_{\mathrm{AUC}}$ & sem@B & Row \\
+\midrule
+Qwen/Gemma & 385/450; 449/450 & 0.296 & 0.650 & 0.664 & -0.015 & 17/45 & panel \\
+Qwen/Mistral & 361/450; 226/450 & 0.267 & 0.667 & 0.649 & +0.018 & 13/45 & panel \\
+Qwen/Phi & 385/450; 336/450 & 0.090 & 0.654 & 0.526 & +0.128 & 6/45 & panel \\
+Qwen3-8B/Phi & 421/450; 336/450 & 0.168 & 0.697 & 0.579 & +0.118 & 9/45 & panel \\
+Gemma/Mistral & 449/450; 226/450 & 0.343 & 0.700 & 0.707 & -0.006 & 18/45 & panel \\
+Gemma/Qwen3-8B & 449/450; 421/450 & 0.382 & 0.600 & 0.557 & +0.042 & 8/45 & panel \\
+Gemma/Phi & 449/450; 336/450 & 0.299 & 0.662 & 0.647 & +0.015 & 11/45 & panel \\
+Mistral/Qwen3-8B & 226/450; 421/450 & 0.355 & 0.764 & 0.696 & +0.068 & 22/45 & panel \\
+Mistral/Phi & 226/450; 336/450 & 0.227 & 0.721 & 0.667 & +0.054 & 11/45 & panel \\
+Qwen/Llama & 385/450; 8/450 (raw-as-final 80) & 0.186 & 0.623 & 0.559 & +0.064 & 4/45 & excluded \\
+Gemma/Llama & 449/450; 8/450 (raw-as-final 80) & 0.367 & 0.642 & 0.633 & +0.009 & 13/45 & excluded \\
+Mistral/Llama & 226/450; 8/450 (raw-as-final 80) & 0.309 & 0.764 & 0.701 & +0.063 & 18/45 & excluded \\
+Qwen3-8B/Llama & 421/450; 8/450 (raw-as-final 80) & 0.337 & 0.716 & 0.664 & +0.052 & 11/45 & excluded \\
+Llama/Phi & 8/450 (raw-as-final 80); 336/450 & 0.164 & 0.686 & 0.598 & +0.087 & 7/45 & excluded \\
+Qwen/Qwen & 421/450; 361/450 & 0.230 & 0.537 & 0.631 & -0.094 & 8/45 & panel \\
+\bottomrule
+\end{tabular}%
+}
+\caption{PLACEHOLDER appendix panel caption.}
+\label{tab:pair-panel-full}
+\end{table}

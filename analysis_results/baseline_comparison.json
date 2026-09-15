@@ -1,0 +1,29 @@
+{
+  "ours_cross_slm": {
+    "n": 450,
+    "auc_disagreement": 0.7874823529411764,
+    "auc_xstest_safety": 0.67017,
+    "mean_sim_disagree": 0.18075400774218067,
+    "mean_sim_agree": 0.36986538845901623
+  },
+  "same_family_qwen_qwen": {
+    "n": 450,
+    "same_family_disagreement_rate": 0.044444444444444446,
+    "auc_same_family_disagreement": 0.5846511627906977,
+    "auc_cross_family_disagreement": 0.5504941176470588,
+    "auc_xstest_safety": 0.6470799999999999,
+    "mean_sim": 0.5058572443239281
+  },
+  "fjd_qwen3.5-2b": {
+    "n": 450,
+    "auc_cross_slm_disagreement": 0.5901176470588235,
+    "auc_xstest_safety": 0.5231,
+    "mean_max_prob": 0.41108279633853173
+  },
+  "fjd_gemma-4-e2b": {
+    "n": 450,
+    "auc_cross_slm_disagreement": 0.6415058823529413,
+    "auc_xstest_safety": 0.91348,
+    "mean_max_prob": 0.8507704420222176
+  }
+}

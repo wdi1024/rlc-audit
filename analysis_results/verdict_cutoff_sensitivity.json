@@ -1,0 +1,112 @@
+{
+  "gap_thresholds": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+  ],
+  "kappa_thresholds": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "contracts": [
+    {
+      "label": "primary raw-prefix (clean run)",
+      "n": 548,
+      "gap": 0.334259585612239,
+      "kappa": 0.003243338008415142
+    },
+    {
+      "label": "panel qwen3.5-9b/gemma-2-9b-it",
+      "n": 450,
+      "gap": -0.023288203528583407,
+      "kappa": 0.3017585340623614
+    },
+    {
+      "label": "panel qwen3.5-9b/mistral-7b-instruct-v0.3",
+      "n": 450,
+      "gap": -0.042637793112261346,
+      "kappa": 0.3129770992366412
+    },
+    {
+      "label": "panel qwen3.5-9b/phi-3.5-mini-instruct",
+      "n": 450,
+      "gap": 0.07819421314528419,
+      "kappa": 0.09776589650563305
+    },
+    {
+      "label": "panel qwen3-8b/phi-3.5-mini-instruct",
+      "n": 450,
+      "gap": 0.10145314261874838,
+      "kappa": 0.16348239182071667
+    },
+    {
+      "label": "panel gemma-2-9b-it/mistral-7b-instruct-v0.3",
+      "n": 450,
+      "gap": -0.009801843135176513,
+      "kappa": 0.39765346742090923
+    },
+    {
+      "label": "panel gemma-2-9b-it/qwen3-8b",
+      "n": 450,
+      "gap": 0.02184428141687511,
+      "kappa": 0.3831226633434217
+    },
+    {
+      "label": "panel gemma-2-9b-it/phi-3.5-mini-instruct",
+      "n": 450,
+      "gap": 0.06190057543416205,
+      "kappa": 0.2290232830575487
+    },
+    {
+      "label": "panel mistral-7b-instruct-v0.3/qwen3-8b",
+      "n": 450,
+      "gap": 0.044713489892289404,
+      "kappa": 0.3940702726048626
+    },
+    {
+      "label": "panel mistral-7b-instruct-v0.3/phi-3.5-mini-instruct",
+      "n": 450,
+      "gap": 0.040982042648709416,
+      "kappa": 0.19753086419753085
+    },
+    {
+      "label": "HotpotQA correctness",
+      "n": 250,
+      "gap": 0.0038486809693462076,
+      "kappa": NaN
+    },
+    {
+      "label": "GSM8K correctness",
+      "n": 250,
+      "gap": -0.024671999443316328,
+      "kappa": NaN
+    }
+  ],
+  "mismatch_fraction": {
+    "primary raw-prefix (clean run)": 0.75,
+    "panel qwen3.5-9b/gemma-2-9b-it": 0.0,
+    "panel qwen3.5-9b/mistral-7b-instruct-v0.3": 0.0,
+    "panel qwen3.5-9b/phi-3.5-mini-instruct": 0.1125,
+    "panel qwen3-8b/phi-3.5-mini-instruct": 0.175,
+    "panel gemma-2-9b-it/mistral-7b-instruct-v0.3": 0.0,
+    "panel gemma-2-9b-it/qwen3-8b": 0.0,
+    "panel gemma-2-9b-it/phi-3.5-mini-instruct": 0.075,
+    "panel mistral-7b-instruct-v0.3/qwen3-8b": 0.0,
+    "panel mistral-7b-instruct-v0.3/phi-3.5-mini-instruct": 0.0,
+    "HotpotQA correctness": 0.0,
+    "GSM8K correctness": 0.0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "solutions": 127482,
+  "failed_solutions": 95694,
+  "nonfinal_steps_in_failed": 310097,
+  "positive_steps_in_failed": 120661,
+  "positive_rate_in_failed": 0.38910727933517575,
+  "all_positive_failed_solutions": 16697,
+  "all_positive_failed_rate": 0.17448324868852802
+}

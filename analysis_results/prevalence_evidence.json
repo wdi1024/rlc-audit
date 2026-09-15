@@ -1,0 +1,518 @@
+[
+  {
+    "arxiv": "2404.10136",
+    "title": "Language Model Cascades: Token-level uncertainty and beyond",
+    "year": 2024,
+    "abstract": "Recent advances in language models (LMs) have led to significant improvements in quality on complex NLP tasks, but at the expense of increased inference costs. Cascading offers a simple strategy to achieve more favorable cost-quality tradeoffs: here, a small model is invoked for most \"easy\" instances, while a few \"hard\" instances are deferred to the large model. While the principles underpinning cascading are well-studied for classification tasks - with deferral based on predicted class uncertainty favored theoretically and practically - a similar understanding is lacking for generative LM tasks. In this work, we initiate a systematic study of deferral rules for LM cascades. We begin by examining the natural extension of predicted class uncertainty to generative LM tasks, namely, the predicted sequence uncertainty. We show that this measure suffers from the length bias problem, either over- or under-emphasizing outputs based on their lengths. This is because LMs produce a sequence of uncertainty values, one for each output token; and moreover, the number of output tokens is variable across examples. To mitigate this issue, we propose to exploit the richer token-level uncertainty information implicit in generative LMs. We argue that naive predicted sequence uncertainty corresponds to a simple aggregation of these uncertainties. By contrast, we show that incorporating token-level uncertainty through learned post-hoc deferral rules can significantly outperform such simple aggregation strategies, via experiments on a range of natural language benchmarks with FLAN-T5 models. We further show that incorporating embeddings from the smaller model and intermediate layers of the larger model can give an additional boost in the overall cost-quality tradeoff.",
+    "fetched": true,
+    "n_chars": 107436,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2404.14618",
+    "title": "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+    "year": 2024,
+    "abstract": "Large language models (LLMs) excel in most NLP tasks but also require expensive cloud servers for deployment due to their size, while smaller models that can be deployed on lower cost (e.g., edge) devices, tend to lag behind in terms of response quality. Therefore in this work we propose a hybrid inference approach which combines their respective strengths to save cost and maintain quality. Our approach uses a router that assigns queries to the small or large model based on the predicted query difficulty and the desired quality level. The desired quality level can be tuned dynamically at test time to seamlessly trade quality for cost as per the scenario requirements. In experiments our approach allows us to make up to 40% fewer calls to the large model, with no drop in response quality.",
+    "fetched": true,
+    "n_chars": 67771,
+    "label_evidence": [
+      "we use the BART score",
+      "ground truth",
+      "We use q \u2061 ( z ) , q : \ud835\udcb5 \u2192 \u211d q(z),\\ q:\\mathcal{Z}\\to\\mathbb{R} to denote the BART score",
+      "labels are often explicit and unique such as image classification [ Masana et al",
+      "We use BART score"
+    ],
+    "validation_evidence": [
+      "Traditional metrics, such as BLEU and ROUGE, initially designed for machine translation and summarization, have been found to be of limited concordance with human judgment and restricted applicability across diverse NLP tasks [ Blagec et al.",
+      "In spite of the high correlation with human perception, GPT-ranking suffers from high computational costs and inability to distinguish between examples with the same ranking.",
+      "GPT-4-based evaluators have been found to be well correlated with human assessments [ Liu et al.",
+      "2 BART score: A case study In this section, we empirically examine the correlation between BART scores and human judgments."
+    ]
+  },
+  {
+    "arxiv": "2502.12464",
+    "title": "SafeRoute: Adaptive Model Selection for Efficient and Accurate Safety Guardrails in Large Language Models",
+    "year": 2025,
+    "abstract": "Deploying large language models (LLMs) in real-world applications requires robust safety guard models to detect and block harmful user prompts. While large safety guard models achieve strong performance, their computational cost is substantial. To mitigate this, smaller distilled models are used, but they often underperform on \"hard\" examples where the larger model provides accurate predictions. We observe that many inputs can be reliably handled by the smaller model, while only a small fraction require the larger model's capacity. Motivated by this, we propose SafeRoute, a binary router that distinguishes hard examples from easy ones. Our method selectively applies the larger safety guard model to the data that the router considers hard, improving efficiency while maintaining accuracy compared to solely using the larger safety guard model. Experimental results on multiple benchmark datasets demonstrate that our adaptive model selection significantly enhances the trade-off between computational cost and safety performance, outperforming relevant baselines.",
+    "fetched": true,
+    "n_chars": 57671,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2504.07113",
+    "title": "How Robust Are Router-LLMs? Analysis of the Fragility of LLM Routing Capabilities",
+    "year": 2025,
+    "abstract": "Large language model (LLM) routing has emerged as a crucial strategy for balancing computational costs with performance by dynamically assigning queries to the most appropriate model based on query complexity. Despite recent advances showing that preference-data-based routers can outperform traditional methods, current evaluation benchmarks remain limited. They largely focus on general model capabilities while overlooking task-specific behaviors and critical concerns such as privacy, safety, and potential backdoor vulnerabilities introduced through preference data. In response, we propose the DSC benchmark: Diverse, Simple, and Categorized, an evaluation framework that categorizes router performance across a broad spectrum of query types, including coding, translation, mathematics, human instructions, general knowledge, and LLM jailbreaking. Additionally, it integrates privacy and safety assessments to reveal hidden risks. Our experiments on three preference-based routers and two commercial counterparts demonstrate that while these systems improve efficiency, they often make suboptimal, category-driven decisions. For instance, a BERT-based router directs all coding and mathematics queries to the most powerful LLM even when simpler models would suffice, while routing jailbreaking attempts to weaker models, thereby elevating safety risks.",
+    "fetched": true,
+    "n_chars": 41428,
+    "label_evidence": [],
+    "validation_evidence": [
+      "We selected 100 simple, clear translation samples from WildChat, with instructions like \u201cPlease translate\u201d or \u201cTranslate,\u201d all verified by a human annotator."
+    ]
+  },
+  {
+    "arxiv": "2506.11887",
+    "title": "Cascaded Language Models for Cost-effective Human-AI Decision-Making",
+    "year": 2025,
+    "abstract": "A challenge in human-AI decision-making is to balance three factors: the correctness of predictions, the cost of knowledge and reasoning complexity, and the confidence about whether to abstain from automated answers or escalate to human experts. In this work, we present a cascaded LLM decision framework that adaptively delegates tasks across multiple tiers of expertise -- a base model for initial candidate answers, a more capable and knowledgeable (but costlier) large model, and a human expert for when the model cascade abstains. Our method proceeds in two stages. First, a deferral policy determines whether to accept the base model's answer or regenerate it with the large model based on the confidence score. Second, an abstention policy decides whether the cascade model response is sufficiently certain or requires human intervention. Moreover, to overcome static policies and accommodate changing task difficulty, we incorporate an online learning mechanism which uses human feedback. We demonstrate this approach to general question-answering (ARC-Easy, ARC-Challenge, and MMLU) and medical question-answering (MedQA and MedMCQA). Our results demonstrate that our cascaded strategy outperforms single-model baselines in most cases, achieving higher accuracy while reducing costs and providing a principled approach to handling abstentions.",
+    "fetched": true,
+    "n_chars": 69030,
+    "label_evidence": [
+      "ground truth",
+      "ground-truth",
+      "we use prompts to make decision predictions using Chain-of-Thought and verification prompts to determine a response\u2019s factual correctness"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2509.02718",
+    "title": "Efficient Training-Free Online Routing for High-Volume Multi-LLM Serving",
+    "year": 2025,
+    "abstract": "Increasing demand for Large Language Models (LLMs) services imposes substantial deployment and computation costs on providers. LLM routing offers a cost-efficient solution by directing queries to the optimal LLM based on model and query features. However, existing works primarily focus on offline scenarios and struggle to adapt to online settings with high query volume and constrained token budgets. In this work, we introduce the first training-free algorithm for online routing scenarios. Our algorithm leverages approximate nearest neighbor search to efficiently estimate query features and performs a one-time optimization over a small set of initial queries to learn a routing strategy that guides future routing. We provide theoretical guarantees demonstrating that our algorithm achieves a competitive ratio of $1 - o(1)$ under natural assumptions, which is further validated by extensive experiments across 3 benchmark datasets and 8 baselines, showing an average improvement of 3.55$\\times$ in overall performance, 1.85$\\times$ in cost efficiency, and nearly 4.25$\\times$ in throughput. Our code is available at https://github.com/fzwark/PORT.",
+    "fetched": true,
+    "n_chars": 118712,
+    "label_evidence": [
+      "ground-truth"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2509.09782",
+    "title": "One Head, Many Models: Cross-Attention Routing for Cost-Aware LLM Selection",
+    "year": 2025,
+    "abstract": "The proliferation of large language models (LLMs) with varying computational costs and performance profiles presents a critical challenge for scalable, cost-effective deployment in real-world applications. We introduce a unified routing framework that leverages a single-head cross-attention mechanism to jointly model query and model embeddings, enabling dynamic selection of the optimal LLM for each input query. Our approach is evaluated on RouterBench, a large-scale, publicly available benchmark encompassing diverse LLM pools and domains. By explicitly capturing fine-grained query-model interactions, our router predicts both response quality and generation cost, achieving up to 6.6% improvement in Average Improvement in Quality (AIQ) and 2.9% in maximum performance over existing routers. To robustly balance performance and cost, we propose an exponential reward function that enhances stability across user preferences. The resulting architecture is lightweight, generalizes effectively across domains, and demonstrates improved efficiency compared to prior methods, establishing a new standard for cost-aware LLM routing.",
+    "fetched": true,
+    "n_chars": 40967,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2509.19996",
+    "title": "Choosing to Be Green: Advancing Green AI via Dynamic Model Selection",
+    "year": 2025,
+    "abstract": "Artificial Intelligence is increasingly pervasive across domains, with ever more complex models delivering impressive predictive performance. This fast technological advancement however comes at a concerning environmental cost, with state-of-the-art models - particularly deep neural networks and large language models - requiring substantial computational resources and energy. In this work, we present the intuition of Green AI dynamic model selection, an approach based on dynamic model selection that aims at reducing the environmental footprint of AI by selecting the most sustainable model while minimizing potential accuracy loss. Specifically, our approach takes into account the inference task, the environmental sustainability of available models, and accuracy requirements to dynamically choose the most suitable model. Our approach presents two different methods, namely Green AI dynamic model cascading and Green AI dynamic model routing. We demonstrate the effectiveness of our approach via a proof of concept empirical example based on a real-world dataset. Our results show that Green AI dynamic model selection can achieve substantial energy savings (up to ~25%) while substantially retaining the accuracy of the most energy greedy solution (up to ~95%). As conclusion, our preliminary findings highlight the potential that hybrid, adaptive model selection strategies withhold to mitigate the energy demands of modern AI systems without significantly compromising accuracy requirements.",
+    "fetched": true,
+    "n_chars": 38591,
+    "label_evidence": [
+      "we use the prediction of G G when the confidence score",
+      "we measure its accuracy"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2509.25535",
+    "title": "Meta-Router: Bridging Gold-standard and Preference-based Evaluations in Large Language Model Routing",
+    "year": 2025,
+    "abstract": "In language tasks that require extensive human--model interaction, deploying a single \"best\" model for every query can be expensive. To reduce inference cost while preserving the quality of the responses, a large language model (LLM) router selects the most appropriate model from a pool of candidates for each query. A central challenge to training a high-quality router is the scarcity of reliable supervision. Gold-standard data (e.g., expert-verified labels or rubric-based scores) provide accurate quality evaluations of LLM responses but are costly and difficult to scale. In contrast, preference-based data, collected via crowdsourcing or LLM-as-a-judge systems, are cheaper and more scalable, yet often biased in reflecting the true quality of responses. We cast the problem of LLM router training with combined gold-standard and preference-based data into a causal inference framework by viewing the response evaluation mechanism as the treatment assignment. This perspective further reveals that the bias in preference-based data corresponds to the well-known causal estimand: the conditional average treatment effect. Based on this new perspective, we develop an integrative causal router training framework that corrects preference-data bias, address imbalances between two data sources, and improve routing robustness and efficiency. Numerical experiments demonstrate that our approach delivers more accurate routing and improves the trade-off between cost and quality.",
+    "fetched": true,
+    "n_chars": 60767,
+    "label_evidence": [
+      "gold label",
+      "ground truth"
+    ],
+    "validation_evidence": [
+      "A framework for human evaluation of large language models in healthcare derived from literature review."
+    ]
+  },
+  {
+    "arxiv": "2510.07429",
+    "title": "Learning to Route LLMs from Bandit Feedback: One Policy, Many Trade-offs",
+    "year": 2025,
+    "abstract": "Efficient use of large language models (LLMs) is critical for deployment at scale: without adaptive routing, systems either overpay for strong models or risk poor performance from weaker ones. Selecting the right LLM for each query is fundamentally an online decision problem: models differ in strengths, prices fluctuate, and users value accuracy and cost differently. Yet most routers are trained offline with labels for all candidate models, an assumption that breaks in deployment, where only the outcome of the chosen model is observed. We bridge this gap with BaRP, a Bandit-feedback Routing with Preferences approach that trains under the same partial-feedback restriction as deployment, while supporting preference-tunable inference: operators can dial the performance/cost trade-off at test time without retraining. Framed as a contextual bandit over prompt features and a user preference vector, our method simulates an online feedback setting during training and adapts its routing decisions to each new prompt, rather than depending on full-information offline supervision. Comprehensive experiments show that our method consistently outperforms strong offline routers by at least 12.46% and the largest LLM by at least 2.45%, and generalizes robustly for unseen tasks.",
+    "fetched": true,
+    "n_chars": 55678,
+    "label_evidence": [
+      "we evaluate methods on two axes: \u2022 Performance score"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2510.19208",
+    "title": "DiSRouter: Distributed Self-Routing for LLM Selections",
+    "year": 2025,
+    "abstract": "The proliferation of Large Language Models (LLMs) has created a diverse ecosystem of models with highly varying performance and costs, necessitating effective query routing to balance performance and expense. Current routing systems often rely on a centralized external router trained on a fixed set of LLMs, making them inflexible and prone to poor performance since the small router can not fully understand the knowledge boundaries of different LLMs. We introduce DiSRouter (Distributed Self-Router), a novel paradigm that shifts from centralized control to distributed routing. In DiSRouter, a query traverses a network of LLM agents, each independently deciding whether to answer or route to other agents based on its own self-awareness, its ability to judge its competence. This distributed design offers superior flexibility, scalability, and generalizability. To enable this, we propose a two-stage Self-Awareness Training pipeline that enhances each LLM's self-awareness. Extensive experiments demonstrate that DiSRouter significantly outperforms existing routing methods in utility across various scenarios, effectively distinguishes between easy and hard queries, and shows strong generalization to out-of-domain tasks. Our work validates that leveraging an LLM's intrinsic self-awareness is more effective than external assessment, paving the way for more modular and efficient multi-agent systems.",
+    "fetched": true,
+    "n_chars": 79325,
+    "label_evidence": [
+      "ground truth"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2511.07396",
+    "title": "C3PO: Optimized Large Language Model Cascades with Probabilistic Cost Constraints for Reasoning",
+    "year": 2025,
+    "abstract": "Large language models (LLMs) have achieved impressive results on complex reasoning tasks, but their high inference cost remains a major barrier to real-world deployment. A promising solution is to use cascaded inference, where small, cheap models handle easy queries, and only the hardest examples are escalated to more powerful models. However, existing cascade methods typically rely on supervised training with labeled data, offer no theoretical generalization guarantees, and provide limited control over test-time computational cost. We introduce C3PO (Cost Controlled Cascaded Prediction Optimization), a self-supervised framework for optimizing LLM cascades under probabilistic cost constraints. By focusing on minimizing regret with respect to the most powerful model (MPM), C3PO avoids the need for labeled data by constructing a cascade using only unlabeled model outputs. It leverages conformal prediction to bound the probability that inference cost exceeds a user-specified budget. We provide theoretical guarantees on both cost control and generalization error, and show that our optimization procedure is effective even with small calibration sets. Empirically, C3PO achieves state-of-the-art performance across a diverse set of reasoning benchmarks including GSM8K, MATH-500, BigBench-Hard and AIME, outperforming strong LLM cascading baselines in both accuracy and cost-efficiency. Our results demonstrate that principled, label-free cascade optimization can enable scalable LLM deployment.",
+    "fetched": true,
+    "n_chars": 118835,
+    "label_evidence": [
+      "ground truth",
+      "ground-truth",
+      "we evaluate each method using the hyperparameters which resulted in their maximum accuracy"
+    ],
+    "validation_evidence": [
+      "For the MATH-500 dataset, we have access to the \u2018true\u2019 difficulty of each question as part of the metadata, based on human annotation."
+    ]
+  },
+  {
+    "arxiv": "2511.16883",
+    "title": "PersonalizedRouter: Personalized LLM Routing via Graph-based User Preference Modeling",
+    "year": 2025,
+    "abstract": "The growing number of Large Language Models (LLMs) with diverse capabilities and response styles provides users with a wider range of choices, which presents challenges in selecting appropriate LLMs, as user preferences vary in terms of performance, cost, and response style. Current LLM selection methods typically optimize for a single fixed objective, such as performance, cost, or a trade-off between them, and fail to learn individual user preferences from interaction data. To address these limitations, we propose PersonalizedRouter, a graph-based framework that models diverse user profiles and performs personalized LLM selection by leveraging interaction data that includes task context, queries, candidate LLMs, and user decisions. To capture contextual information between user queries and optimal LLMs, PersonalizedRouter converts the interaction data into a heterogeneous graph, where the relationships between different types of nodes are represented by edges. To evaluate adaptability across users, we design two strategies: the multi-cost-efficiency simulation strategy and the LLM-as-a-Judge strategy. In addition, we construct PersonaRoute-Bench, a large-scale benchmark with 1,000 simulated users and 10 LLMs. Experimental results show that PersonalizedRouter significantly outperforms existing LLM selection methods and surpasses the strongest methods by a large margin of 15.38% and 9.83% under two simulation strategies. On the PersonaRoute-Bench with 1,000 users, it further surpasses the best methods by 16.19% and 59.69% while maintaining higher efficiency. Moreover, PersonalizedRouter demonstrates strong few-shot generalization, achieving 64.81% and 85.80% of the fully trained model's performance when adapting to new users and new LLMs.",
+    "fetched": true,
+    "n_chars": 90022,
+    "label_evidence": [
+      "we use Together AI, OpenRouter AI, and NVIDIA Build for calling candidate LLMs and an LLM judge"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2601.05903",
+    "title": "HAPS: Hierarchical LLM Routing with Joint Architecture and Parameter Search",
+    "year": 2026,
+    "abstract": "Large language model (LLM) routing aims to exploit the specialized strengths of different LLMs for diverse tasks. However, existing approaches typically focus on selecting LLM architectures while overlooking parameter settings, which are critical for task performance. In this paper, we introduce HAPS, a hierarchical LLM routing framework that jointly searches over model architectures and parameters. Specifically, we use a high-level router to select among candidate LLM architectures, and then search for the optimal parameters for the selected architectures based on a low-level router. We design a parameter generation network to share parameters between the two routers to mutually enhance their capabilities. In the training process, we design a reward-augmented objective to effectively optimize our framework. Experiments on two commonly used benchmarks show that HAPS consistently outperforms strong routing baselines. We have released our code at https://github.com/zihangtian/HAPS.",
+    "fetched": true,
+    "n_chars": 84823,
+    "label_evidence": [
+      "ground-truth",
+      "ground truth",
+      "we use token-level F1 for HotpotQA and accuracy"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2601.06220",
+    "title": "Breaking Model Lock-in: Cost-Efficient Zero-Shot LLM Routing via a Universal Latent Space",
+    "year": 2026,
+    "abstract": "The rapid proliferation of Large Language Models (LLMs) has led to a fragmented and inefficient ecosystem, a state of ``model lock-in'' where seamlessly integrating novel models remains a significant bottleneck. Current routing frameworks require exhaustive, costly retraining, hindering scalability and adaptability. We introduce ZeroRouter, a new paradigm for LLM routing that breaks this lock-in. Our approach is founded on a universal latent space, a model-agnostic representation of query difficulty that fundamentally decouples the characterization of a query from the profiling of a model. This allows for zero-shot onboarding of new models without full-scale retraining. ZeroRouter features a context-aware predictor that maps queries to this universal space and a dual-mode optimizer that balances accuracy, cost, and latency. Our framework consistently outperforms all baselines, delivering higher accuracy at lower cost and latency.",
+    "fetched": true,
+    "n_chars": 47844,
+    "label_evidence": [
+      "ground-truth",
+      "ground truth"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2601.17814",
+    "title": "MMR-Bench: A Comprehensive Benchmark for Multimodal LLM Routing",
+    "year": 2026,
+    "abstract": "Multimodal large language models (MLLMs) have advanced rapidly, yet heterogeneity in architecture, alignment strategies, and efficiency means that no single model is uniformly superior across tasks. In practical deployments, workloads span lightweight OCR to complex multimodal reasoning; using one MLLM for all queries either over-provisions compute on easy instances or sacrifices accuracy on hard ones. Query-level model selection (routing) addresses this tension, but extending routing from text-only LLMs to MLLMs is nontrivial due to modality fusion, wide variation in computational cost across models, and the absence of a standardized, budget-aware evaluation. We present MMR-Bench, a unified benchmark that isolates the multimodal routing problem and enables comparison under fixed candidate sets and cost models. MMR-Bench provides (i) a controlled environment with modality-aware inputs and variable compute budgets, (ii) a broad suite of vision-language tasks covering OCR, general VQA, and multimodal math reasoning, and (iii) strong single-model reference, oracle upper bounds, and representative routing policies. Using MMR-Bench, we show that incorporating multimodal signals improves routing quality. Empirically, these cues improve the cost-accuracy frontier and enable the routed system to exceed the strongest single model's accuracy at roughly 33% of its cost. Furthermore, policies trained on a subset of models and tasks generalize zero-shot to new datasets and text-only benchmarks without retuning, establishing MMR-Bench as a foundation for studying adaptive multimodal model selection and efficient MLLM deployment. The code will be available at: https://github.com/Hunter-Wrynn/MMR-Bench.",
+    "fetched": true,
+    "n_chars": 69171,
+    "label_evidence": [
+      "ground-truth"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2601.20352",
+    "title": "AMA: Adaptive Memory via Multi-Agent Collaboration",
+    "year": 2026,
+    "abstract": "The rapid evolution of Large Language Model (LLM) agents has necessitated robust memory systems to support cohesive long-term interaction and complex reasoning. Benefiting from the strong capabilities of LLMs, recent research focus has shifted from simple context extension to the development of dedicated agentic memory systems. However, existing approaches typically rely on rigid retrieval granularity, accumulation-heavy maintenance strategies, and coarse-grained update mechanisms. These design choices create a persistent mismatch between stored information and task-specific reasoning demands, while leading to the unchecked accumulation of logical inconsistencies over time. To address these challenges, we propose Adaptive Memory via Multi-Agent Collaboration (AMA), a novel framework that leverages coordinated agents to manage memory across multiple granularities. AMA employs a hierarchical memory design that dynamically aligns retrieval granularity with task complexity. Specifically, the Constructor and Retriever jointly enable multi-granularity memory construction and adaptive query routing. The Judge verifies the relevance and consistency of retrieved content, triggering iterative retrieval when evidence is insufficient or invoking the Refresher upon detecting logical conflicts. The Refresher then enforces memory consistency by performing targeted updates or removing outdated entries. Extensive experiments on challenging long-context benchmarks show that AMA significantly outperforms state-of-the-art baselines while reducing token consumption by approximately 80% compared to full-context methods, demonstrating its effectiveness in maintaining retrieval precision and long-term memory consistency.",
+    "fetched": true,
+    "n_chars": 82963,
+    "label_evidence": [
+      "We evaluate the quality of generated answers using F1 score",
+      "ground truth"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2602.02386",
+    "title": "Trust by Design: Skill Profiles for Transparent, Cost-Aware LLM Routing",
+    "year": 2026,
+    "abstract": "How should Large Language Model (LLM) practitioners select the right model for a task without wasting money? We introduce BELLA (Budget-Efficient LLM Selection via Automated skill-profiling), a framework that recommends optimal LLM selection for tasks through interpretable skill-based model selection. Standard benchmarks report aggregate metrics that obscure which specific capabilities a task requires and whether a cheaper model could suffice. BELLA addresses this gap through three stages: (1) decomposing LLM outputs and extract the granular skills required by using critic-based profiling, (2) clustering skills into structured capability matrices, and (3) multi-objective optimization to select the right models to maximize performance while respecting budget constraints. BELLA provides natural-language rationale for recommendations, providing transparency that current black-box routing systems lack. We describe the framework architecture, situate it within the landscape of LLM routing and evaluation, and discuss its application to financial reasoning as a representative domain exhibiting diverse skill requirements and cost-variation across models. Our framework enables practitioners to make principled and cost-performance trade-offs for deploying LLMs.",
+    "fetched": true,
+    "n_chars": 26146,
+    "label_evidence": [
+      "We evaluate LLMs on multi-skill reasoning tasks, collecting: (1) performance metrics (accuracy"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2602.02711",
+    "title": "Dynamic Mixed-Precision Routing for Efficient Multi-step LLM Interaction",
+    "year": 2026,
+    "abstract": "Large language models (LLMs) achieve strong performance in long-horizon decision-making tasks through multi-step interaction and reasoning at test time. While practitioners commonly believe a higher task success rate necessitates the use of a larger and stronger LLM model, multi-step interaction with a large LLM incurs prohibitive inference cost. To address this problem, we explore the use of low-precision quantized LLMs in the long-horizon decision-making process. Based on the observation of diverse sensitivities among interaction steps, we propose Dynamic Mixed-Precision Routing (DMR), a framework that adaptively selects between high-precision and low-precision LLMs at each decision step. The router is trained via a two-stage pipeline, consisting of KL-divergence-based supervised learning that identifies precision-sensitive steps, followed by Group-Relative Policy Optimization (GRPO) to further improve task success rates. Experiments on ALFWorld and WebShop demonstrate that our approach achieves a strong accuracy-cost trade-off over single-precision baselines.",
+    "fetched": true,
+    "n_chars": 51583,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2602.11931",
+    "title": "AdaptEvolve: Improving Efficiency of Evolutionary AI Agents through Adaptive Model Selection",
+    "year": 2026,
+    "abstract": "Evolutionary agentic systems intensify the trade-off between computational efficiency and reasoning capability by repeatedly invoking large language models (LLMs) during inference. This setting raises a central question: how can an agent dynamically select an LLM that is sufficiently capable for the current generation step while remaining computationally efficient? While model cascades offer a practical mechanism for balancing this trade-off, existing routing strategies typically rely on static heuristics or external controllers and do not explicitly account for model uncertainty. We introduce AdaptEvolve: Adaptive LLM Selection for Multi-LLM Evolutionary Refinement within an evolutionary sequential refinement framework that leverages intrinsic generation confidence to estimate real-time solvability. Empirical results show that confidence-driven selection yields a favourable Pareto frontier, reducing total inference cost by an average of 37.9% across benchmarks while retaining 97.5% of the upper-bound accuracy of static large-model baselines. Our code is available at https://github.com/raypretam/adaptive_llm_selection.",
+    "fetched": true,
+    "n_chars": 29854,
+    "label_evidence": [
+      "ground-truth",
+      "We evaluate performance using accuracy, assigning a binary score",
+      "ground truth",
+      "Ground Truth"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2603.11957",
+    "title": "CHiL(L)Grader: Calibrated Human-in-the-Loop Short-Answer Grading",
+    "year": 2026,
+    "abstract": "Scaling educational assessment with large language models requires not just accuracy, but the ability to recognize when predictions are trustworthy. Instruction-tuned models tend to be overconfident, and their reliability deteriorates as curricula evolve, making fully autonomous deployment unsafe in high-stakes settings. We introduce CHiL(L)Grader, the first automated grading framework that incorporates calibrated confidence estimation into a human-in-the-loop workflow. Using post-hoc temperature scaling, confidence-based selective prediction, and continual learning, CHiL(L)Grader automates only high-confidence predictions while routing uncertain cases to human graders, and adapts to evolving rubrics and unseen questions. Across three short-answer grading datasets, CHiL(L)Grader automatically scores 35-65% of responses at expert-level quality (QWK &gt;= 0.80). A QWK gap of 0.347 between accepted and rejected predictions confirms the effectiveness of the confidence-based routing. Each correction cycle strengthens the model's grading capability as it learns from teacher feedback. These results show that uncertainty quantification is key for reliable AI-assisted grading.",
+    "fetched": true,
+    "n_chars": 66683,
+    "label_evidence": [
+      "ground-truth",
+      "ground truth"
+    ],
+    "validation_evidence": [
+      "5/4 grading, improving correlation with human evaluators, while Chu et al.",
+      "While these methods align models with human judgments, they rely on static fine tuning and do not incorporate uncertainty estimation or mechanisms for deferring uncertain cases.",
+      "8 indicating strong agreement, comparable to inter-rater reliability among human graders."
+    ]
+  },
+  {
+    "arxiv": "2603.24704",
+    "title": "Conformal Selective Prediction with General Risk Control",
+    "year": 2026,
+    "abstract": "In deploying artificial intelligence (AI) models, selective prediction offers the option to abstain from making a prediction when uncertain about model quality. To fulfill its promise, it is crucial to enforce strict and precise error control over cases where the model is trusted. We propose Selective Conformal Risk control with E-values (SCoRE), a new framework for deriving such decisions for any trained model and any user-defined, bounded and continuously-valued risk. SCoRE offers two types of guarantees on the risk among ``positive'' cases in which the system opts to trust the model. Built upon conformal inference and hypothesis testing ideas, SCoRE first constructs a class of (generalized) e-values, which are non-negative random variables whose product with the unknown risk has expectation no greater than one. Such a property is ensured by data exchangeability without requiring any modeling assumptions. Passing these e-values on to hypothesis testing procedures, we yield the binary trust decisions with finite-sample error control. SCoRE avoids the need of uniform concentration, and can be readily extended to settings with distribution shifts. We evaluate the proposed methods with simulations and demonstrate their efficacy through applications to error management in drug discovery, health risk prediction, and large language models.",
+    "fetched": true,
+    "n_chars": 304897,
+    "label_evidence": [
+      "label is reached",
+      "we use the synthetic accessibility (SA) score",
+      "we use two score choices suggested by our optimality analysis, a risk_prediction score",
+      "ground truth",
+      "ground-truth",
+      "we use an estimator w ^ \\hat{w} in the SCoRE"
+    ],
+    "validation_evidence": [
+      "Choi Trust or escalate: llm judges with provable guarantees for human agreement ."
+    ]
+  },
+  {
+    "arxiv": "2603.28972",
+    "title": "Privacy Guard &amp; Token Parsimony by Prompt and Context Handling and LLM Routing",
+    "year": 2026,
+    "abstract": "The large-scale adoption of Large Language Models (LLMs) forces a trade-off between operational cost (OpEx) and data privacy. Current routing frameworks reduce costs but ignore prompt sensitivity, exposing users and institutions to leakage risks towards third-party cloud providers. We formalise the \"Inseparability Paradigm\": advanced context management intrinsically coincides with privacy management. We propose a local \"Privacy Guard\" -- a holistic contextual observer powered by an on-premise Small Language Model (SLM) -- that performs abstractive summarisation and Automatic Prompt Optimisation (APO) to decompose prompts into focused sub-tasks, re-routing high-risk queries to Zero-Trust or NDA-covered models. This dual mechanism simultaneously eliminates sensitive inference vectors (Zero Leakage) and reduces cloud token payloads (OpEx Reduction). A LIFO-based context compacting mechanism further bounds working memory, limiting the emergent leakage surface. We validate the framework through a 2x2 benchmark (Lazy vs. Expert users; Personal vs. Institutional secrets) on a 1,000-sample dataset, achieving a 45% blended OpEx reduction, 100% redaction success on personal secrets, and -- via LLM-as-a-Judge evaluation -- an 85% preference rate for APO-compressed responses over raw baselines. Our results demonstrate that Token Parsimony and Zero Leakage are mathematically dual projections of the same contextual compression operator.",
+    "fetched": true,
+    "n_chars": 47705,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2604.00660",
+    "title": "Streaming Model Cascades for Semantic SQL",
+    "year": 2026,
+    "abstract": "Modern data warehouses extend SQL with semantic operators that invoke large language models on each qualifying row, making per-row inference orders of magnitude more expensive than traditional SQL. Model cascades reduce this cost by routing most rows through a fast proxy model and delegating uncertain cases to an expensive oracle. Prior SUPG-style cascades, however, require a global proxy-score pass that is itself an LLM-inference workload and blocks output in pipelined query engines. They also target either precision or recall and cannot serve workloads that need both. We formalize the cascade routing problem for streaming semantic SQL with independent parallel workers and present two complementary algorithms within this model. SUPG-IT extends SUPG from single-pass, single-metric estimation to streaming execution by iteratively refining two thresholds as oracle labels accumulate across batches, and is the first streaming cascade with joint probabilistic guarantees on user-specified precision and recall at a chosen failure probability $\u03b4$. GAMCAL replaces user-specified targets with a single tradeoff parameter $\u03b1$ between classification error and oracle cost, and learns a monotone Generalized Additive Model that calibrates proxy scores to true-positive probabilities and supplies pointwise uncertainty for stochastic routing. On six classification, filtering, and join benchmarks evaluated in a production semantic SQL engine, both algorithms reach $F_1 \\geq 0.95$ at their best operating points. GAMCAL also leads all six datasets at a 20% delegation budget and reaches $F_1 \\geq 0.95$ with up to 58% fewer oracle calls than LOTUS's SUPG cascade. SUPG-IT attains the highest best-case $F_1$, with a mean of 0.989 across the six datasets.",
+    "fetched": true,
+    "n_chars": 103759,
+    "label_evidence": [
+      "ground truth",
+      "labels are scarce (precisely the regime encountered in early streaming batches)",
+      "labels are drawn by uniform random sampling without replacement from the uncertain region: S t \\displaystyle S_{t} \u223c Uniform \u200b ( {",
+      "labels are available"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2604.09377",
+    "title": "Task-Aware LLM Routing with Multi-Level Task-Profile-Guided Data Synthesis for Cold-Start Scenarios",
+    "year": 2026,
+    "abstract": "Large language models (LLMs) exhibit substantial variability in performance and computational cost across tasks and queries, motivating routing systems that select models to meet user-specific cost-performance trade-offs. However, existing routers generalize poorly in cold-start scenarios where in-domain training data is unavailable. We address this limitation with a multi-level task-profile-guided data synthesis framework that constructs a hierarchical task taxonomy and produces diverse question-answer pairs to approximate the test-time query distribution. Building on this, we introduce TRouter, a task-type-aware router approach that models query-conditioned cost and performance via latent task-type variables, with prior regularization derived from the synthesized task taxonomy. This design enhances TRouter's routing utility under both cold-start and in-domain settings. Across multiple benchmarks, we show that our synthesis framework alleviates cold-start issues and that TRouter delivers effective LLM routing.",
+    "fetched": true,
+    "n_chars": 115102,
+    "label_evidence": [
+      "ground-truth",
+      "label by selecting the task type corresponding to the query\u2019s annotated difficulty level",
+      "label is represented as a one-hot vector y \u2208 \u211d K y\\in\\mathbb{R}^{K} and serves as prior ( p \u2061 ( t \u2223 q ) p(t\\mid q) ) for the rec",
+      "ground truth",
+      "we evaluate the answer accuracy"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2604.15728",
+    "title": "Privacy-Preserving LLMs Routing",
+    "year": 2026,
+    "abstract": "Large language model (LLM) routing has emerged as a critical strategy to balance model performance and cost-efficiency by dynamically selecting services from various model providers. However, LLM routing adds an intermediate layer between users and LLMs, creating new privacy risks to user data. These privacy risks have not been systematically studied. Although cryptographic techniques such as Secure Multi-Party Computation (MPC) enable privacy-preserving computation, their protocol design and implementation remain under-explored, and na\u00efve implementations typically incur prohibitive computational overhead. To address this, we propose a privacy-preserving LLM routing framework (PPRoute). PPRoute includes multiple strategies to speed up encoder inference and nearest neighbor search under the MPC and maintain the quality of LLM routing. First, PPRoute uses MPC-friendly operations to boost the encoder inference. Second, PPRoute uses a multiple-step model training algorithm to maintain routing quality despite the constraints of the encrypted domain. Third, PPRoute proposes an unsorted Top-k algorithm with $O(1)$ communication complexity for secure sorting in model search, significantly reducing communication latency. Across different datasets, PPRoute achieves the performance of plaintext counterparts, while achieving approximately a 20$\\times$ speedup over na\u00efve MPC implementations.",
+    "fetched": true,
+    "n_chars": 48889,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2604.23530",
+    "title": "MTRouter: Cost-Aware Multi-Turn LLM Routing with History-Model Joint Embeddings",
+    "year": 2026,
+    "abstract": "Multi-turn, long-horizon tasks are increasingly common for large language models (LLMs), but solving them typically requires many sequential model invocations, accumulating substantial inference costs. Here, we study cost-aware multi-turn LLM routing: selecting which model to invoke at each turn from a model pool, given a fixed cost budget. We propose MTRouter, which encodes the interaction history and candidate models into joint history-model embeddings, and learns an outcome estimator from logged trajectories to predict turn-level model utility. Experiments show that MTRouter improves the performance-cost trade-off: on ScienceWorld, it surpasses GPT-5 while reducing total cost by 58.7%; on Humanity's Last Exam (HLE), it achieves competitive accuracy while reducing total cost by 43.4% relative to GPT-5, and these gains even carry over to held-out tasks. Further analyses reveal several mechanisms underlying its effectiveness: relative to prior multi-turn routers, MTRouter makes fewer model switches, is more tolerant to transient errors, and exhibits emergent specialization across models. Code: https://github.com/ZhangYiqun018/MTRouter",
+    "fetched": true,
+    "n_chars": 67411,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2604.25855",
+    "title": "SIEVES: Selective Prediction Generalizes through Visual Evidence Scoring",
+    "year": 2026,
+    "abstract": "Multimodal large language models (MLLMs) achieve ever-stronger performance on visual-language tasks. Even as traditional visual question answering (VQA) benchmarks approach saturation, reliable deployment requires satisfying low error tolerances in real-world, out-of-distribution (OOD) scenarios. Precisely, selective prediction aims to improve coverage, i.e. the share of inputs the system answers, while adhering to a user-defined risk level. This is typically achieved by assigning a confidence score to each answer and abstaining on those that fall below a certain threshold. Existing selective prediction methods estimate implicit confidence scores, relying on model internal signals like logits or hidden representations, which are not available for frontier closed-sourced models. To enable reliable generalization in VQA, we require reasoner models to produce localized visual evidence while answering, and design a selector that explicitly learns to estimate the quality of the localization provided by the reasoner using only model inputs and outputs. We show that SIEVES (Selective Prediction through Visual Evidence Scoring) improves coverage by up to three times on challenging OOD benchmarks (V* Bench, HR-Bench-8k, MME-RealWorld-Lite, VizWiz, and AdVQA), compared to non-grounding baselines. Beyond better generalization to OOD tasks, the design of the SIEVES selector enables transfer to proprietary reasoners without access to their weights or logits, such as o3 and Gemini-3-Pro, providing coverage boosts beyond those attributable to accuracy alone. We highlight that SIEVES generalizes across all tested OOD benchmarks and reasoner models (Pixel-Reasoner, o3, and Gemini-3-Pro), without benchmark- or reasoner-specific training or adaptation. Code is publicly available at https://github.com/hector-gr/SIEVES .",
+    "fetched": true,
+    "n_chars": 97352,
+    "label_evidence": [
+      "ground truth",
+      "ground-truth",
+      "we use the predicted visual evidence scores and the answer correctness",
+      "we use a hard accuracy metric with the same LLM judge",
+      "labels are not public and the official server does not support selective-prediction metrics",
+      "we use the validation split using a hard accuracy"
+    ],
+    "validation_evidence": [
+      "As a sanity check, we run a small human evaluation on 200 randomly chosen training samples and find that human annotations match the same g c \u200b o \u200b h g_{coh} label in 92% of cases.",
+      "Specifically, we use Gemini-3-Flash to obtain bounding boxes instead of using human annotations for the training set."
+    ]
+  },
+  {
+    "arxiv": "2605.05007",
+    "title": "Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation",
+    "year": 2026,
+    "abstract": "Large language model (LLM) multi-agent systems typically rely on rigid orchestration, committing either to flat per-query routing or to hand-engineered task decomposition, so decomposition depth, worker choice, and inference budget are not jointly optimized under one objective. We introduce Uno-Orchestra, a unified orchestration policy that selectively decomposes a task and dispatches each subtask to an admissible (model, primitive) pair, with both decisions learned together from curated RL trajectories grounded in real worker interactions. Against 22 baselines on a 13-benchmark suite spanning math, code, knowledge, long-context, and agentic tool-use, Uno-Orchestra reaches 77.0% macro pass@1, roughly 16% above the strongest workflow baseline, at roughly an order of magnitude lower per-query cost, advancing the accuracy-efficiency frontier of selective delegation.",
+    "fetched": true,
+    "n_chars": 110323,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2605.12001",
+    "title": "CR^2: Cost-Aware Risk-Controlled Routing for Wireless Device-Edge LLM Inference",
+    "year": 2026,
+    "abstract": "As large language models (LLMs) move from centralized clouds to mobile edge environments, efficient serving must balance latency, energy consumption, and accuracy under constrained device-edge resources. Query-level routing between lightweight on-device models and stronger edge models provides a flexible mechanism to navigate this trade-off. However, existing routers are designed for centralized cloud settings and optimize token-level costs, failing to capture the dynamic latency and energy overheads in wireless edge deployments. In this paper, we formulate mobile edge LLM routing as a deployment-constrained, cost-aware decision problem, and propose CR^2, a two-stage device-edge routing framework. CR^2 decouples a lightweight on-device margin gate from an edge-side utility selector for deferred queries. The margin gate operates on frozen query embeddings and a user-specified cost weight to predict whether local execution is utility-optimal relative to the best edge alternative under the target operating point. We further introduce a conformal risk control (CRC) calibration procedure that maps each operating point to an acceptance threshold, enabling explicit control of the marginal false-acceptance risk under the full-information utility reference. Experiments on the routing task show that CR^2 closely matches a full-information reference router using only device-side signals before deferral. Compared with strong query-level baselines, CR^2 consistently improves the deployable accuracy-cost Pareto frontier and reduces normalized deployment cost by up to 16.9% at matched accuracy.",
+    "fetched": true,
+    "n_chars": 80097,
+    "label_evidence": [
+      "labels are obtained using lm-evaluation-harness [ 15 ] , following the dataset construction setting of EmbedLLM [ 49 ]"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2605.18015",
+    "title": "LogRouter: Adaptive Two-Level LLM Routing for Log Question Answering in Big Data Systems",
+    "year": 2026,
+    "abstract": "Production log analytics in self-hosted, resource-constrained environments requires natural-language access to massive log streams without the cost of routing every query through a large language model. We present LogRouter, an end-to-end log question-answering system deployed on TUBITAK BILGEM's national big data platform that combines a PySpark-based Drain3 ingestion pipeline, GPU-accelerated embeddings, and dual-index storage in Apache Druid and PostgreSQL with pgvector. A two-level cost-aware router dispatches each query along one of four execution paths: direct response, Druid keyword search, template lookup with SQL generation, and pgvector semantic retrieval, while a Level-2 router selects either a 14B-class or 32B-class generator for the semantic path. A dedicated coder LLM handles text-to-SQL generation. We evaluate the system on four LogHub datasets (Linux, Apache, Windows, and Mac; 70 questions in total) under both an online full-pipeline configuration and an offline configuration that isolates the generator. The router reaches 88.4% mean accuracy across datasets and 94.7% on Linux, while the full pipeline attains a mean ROUGE-1 of 0.373, BERTScore of 0.879, RAGAS Faithfulness of 0.779, and an end-to-end latency of 18.6 s. In an apples-to-apples offline comparison, the routed system reduces mean latency by 55% versus a Fixed-32B baseline (46.3 s vs. 102.1 s) while preserving Answer Correctness within 5.8 points and exceeding a Fixed-14B baseline on RAGAS Faithfulness across every dataset. Cost-aware dispatching is therefore a practical mechanism for production log QA: routing recovers most of the quality of an always-32B configuration at less than half the latency, and the L1 keyword vocabulary makes that routing decision with high precision without a learned classifier.",
+    "fetched": true,
+    "n_chars": 49122,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2606.02581",
+    "title": "Cost-Aware Query Routing in RAG: Empirical Analysis of Retrieval Depth Tradeoffs",
+    "year": 2026,
+    "abstract": "Retrieval-augmented generation (RAG) faces a fundamental three-way tension: deeper retrieval improves factual grounding but inflates token costs and end-to-end latency. Static retrieval configurations cannot resolve this tension across heterogeneous query workloads -- simple definitional queries waste budget on unnecessary context, while complex analytical prompts are underserved by shallow retrieval. This paper introduces \\emph{Cost-Aware RAG} (CA-RAG), a per-query routing framework that selects from a discrete catalog of \\emph{strategy bundles} -- each coupling a retrieval depth (from retrieval-free direct inference to top-$k{=}10$ dense retrieval) with a fixed generation profile -- by maximizing a scalar utility that linearly combines an estimated quality prior with normalized penalties for predicted latency and total billed tokens. CA-RAG is implemented with FAISS-backed dense retrieval and OpenAI chat/embedding APIs, and evaluated on a 28-query benchmark spanning four bundles. The router dynamically exercises all bundles, achieving \\textbf{26\\% fewer billed tokens} than always-heavy retrieval and \\textbf{34\\% lower mean latency} than always-direct inference while maintaining equivalent answer quality. Per-query delta analysis reveals that savings are non-uniform and concentrated in simpler queries, motivating complexity-aware guardrails. Sensitivity analysis confirms that the same bundle catalog supports multiple cost-latency-quality operating points through weight adjustment alone. All results are generated directly from logged CSV artifacts for full reproducibility. CA-RAG provides a transparent, auditable foundation for cost-conscious LLM deployments.",
+    "fetched": true,
+    "n_chars": 44675,
+    "label_evidence": [],
+    "validation_evidence": [
+      "The lexical quality proxy is a weak surrogate for true answer quality; results may differ under human evaluation.",
+      "What limitations apply to lexical quality proxies versus human evaluation? How would you tune utility weights for a latency-sensitive chatbot? Describe an experiment protocol to log strategy choices and token usage per query."
+    ]
+  },
+  {
+    "arxiv": "2606.31163",
+    "title": "ComplianceGate: Classifier-Gated Multi-Tier LLM Routing for Inference in Regulated Industries",
+    "year": 2026,
+    "abstract": "Large language models deployed in regulated industries operate under two constraints: compliance enforcement and cost efficiency. Personally identifiable information (PII) in user queries can reach model endpoints before the system determines whether that data should leave its jurisdictional boundary. Serving all queries through a single large model consumes full GPU capacity regardless of query complexity while offering no mechanism for geographic routing. Mixture-of-Experts architectures do not address this routing occurs between expert layers within the model after data has already arrived at the endpoint, with all experts loaded in memory regardless of query complexity. We propose a classifier-gated routing architecture that enforces compliance by design. A trained encoder classifier sits before any decoder inference, evaluating each query for complexity and data sensitivity, then routing it to an appropriately sized dense model in the appropriate geographic location. PII-containing queries route to local endpoints before any LLM computation begins, making data residency violations structurally impossible. Simple queries reach small, fast models at a fraction of the cost. Our evaluation on 600 queries demonstrates 39% median latency reduction, 33-52% cost savings depending on query distribution, and generation throughput of 122-200 tokens/second versus 50-64 for the baseline. The encoder classifier achieves 99.2% accuracy with near-perfect PII recall at 7ms inference overhead, establishing pre-inference classification as a practical path to compliance-by-design LLM deployment.",
+    "fetched": true,
+    "n_chars": 5111,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2607.00053",
+    "title": "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks",
+    "year": 2026,
+    "abstract": "Large language models (LLMs) embedded in multi-turn agentic harnesses are reshaping software engineering (SWE), but routing every task to a frontier model is wasteful when many issues admit cheap fixes. Existing LLM routers operate on the task description alone, which inherits an information-theoretic Bayes-error floor in agentic settings: a similar issue can hide either a localized typo or a multi-module refactor, and the prompt does not separate the two. We introduce SWE-Router, a value-based temporal approach that lets a cheap model run for a few exploratory turns and reads the resulting partial trajectory before deciding whether to continue cheaply or to escalate to an expensive model. We provide a Bayes-optimality theorem showing that conditioning on the partial trajectory never harms routing and is strictly better whenever exploration is informative. Across the LLM pairs of weak and strong models spanning the contemporary cost--capability frontier, we show that SWE-Router greatly improves the cost efficiency of SWE tasks, while maintaining the majority of the performances of the stronger model. We additionally release a multi-LLM trajectory dataset which allows reproduction of our trajectory-level routing.",
+    "fetched": true,
+    "n_chars": 44585,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2607.08665",
+    "title": "Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models",
+    "year": 2026,
+    "abstract": "Routing among large language models (LLMs) trades response quality against serving cost, motivated by the reported gap between deployed routers and a per-instance oracle. Recent analysis shows that test-time resampling can recover per-instance selection headroom that no single-commit router captures; however, that guarantee holds only under an idealized oracle equipped with correctness labels and an unconstrained budget, neither of which a deployed system has. To the best of our knowledge, no previous work treats resampling the committed model and rerouting to an alternative model as competing uses of a single per-query cost budget. Therefore, this work formulates budget-aware test-time model selection: given a per-query budget and an imperfect verifier, allocate each unit of budget between resampling and rerouting so that expected correctness is maximized. An online resample-or-reroute (RoR) allocation policy driven by estimated marginal correctness per unit cost is proposed, and its behavior is grounded in the recoverability asymmetry between selection and sampling. Replay experiments on newly regenerated multi-draw correctness tensors from an eleven-model open-weight pool over four benchmarks of differing difficulty show that the proposed RoR policy attains a favorable cost-quality Pareto front relative to single-route, one-commit-router, budget-aware best-of-K, cascade, and random-allocation baselines for the tested pools, with the largest gains on the most heterogeneous benchmark; an ablation further shows the gains are verifier-gated, shrinking as verifier quality degrades, and robustness replays under a provider price vector and a label-free agreement verifier delineate where the conclusions carry over.",
+    "fetched": true,
+    "n_chars": 49657,
+    "label_evidence": [
+      "ground-truth",
+      "We evaluate on newly regenerated multi-draw correctness",
+      "ground truth"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2607.18240",
+    "title": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+    "year": 2026,
+    "abstract": "Large language models (LLMs) can achieve strong fact-checking accuracy, yet forced binary decisions conceal a critical reliability problem: systems may issue confident verdicts even when supporting evidence is weak, sparse, or internally inconsistent. We address this issue through Evidence Chain Evaluation (ECE), a selective fact-checking framework that permits abstention via an uncertain verdict instead of requiring a true/false decision for every claim. The evaluated system is a tool-using verification agent that gathers evidence through web search, scholarly search, and executable checks, and then returns a structured verdict with confidence and source-level metadata. On ECE-Bench, ECE achieves 91.6% standard accuracy, 93.7% coverage, and 97.8% selective accuracy on answered claims. Although ECE does not outperform the strongest retrieval baseline on aggregate calibration metrics such as Expected Calibration Error, Brier score, or AURC, it delivers a clear selective-prediction trade-off: the system maintains very high accuracy on answered claims while deferring 6 of 95 cases. These deferred cases are concentrated in lower-reliability evidence settings (5/6 at source level L4), supporting the view that abstention functions as a safety-oriented mechanism for handling epistemically weak evidence. Code is available at https://github.com/ cheshireyang/ECE.git",
+    "fetched": true,
+    "n_chars": 27043,
+    "label_evidence": [
+      "gold label",
+      "labels are assigned during inference rather than coming from benchmark annotation, so they should be treated as analysis metadata",
+      "ground truth"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2607.23765",
+    "title": "WISERouter: LLM Routing with Workload Budget Constraint",
+    "year": 2026,
+    "abstract": "Large language models (LLMs) achieve impressive performance across multiple domains, but using the most capable model for every query is prohibitive at scale. LLM routing exploits diversity in model capability and cost by assigning each query to a suitable model to balance utility and budget. Current methods have two limitations: (i) they either use heuristics that do not always enforce the budget constraint or impose a fixed per-query budget that cannot adapt across the workload and leads to suboptimal performance; (ii) they require supervised learning on a dense dataset with statistics for every query-model pair, which is expensive to collect. To address these challenges, we formulate LLM routing as a constrained contextual multi-armed bandit problem and introduce WISERouter (WR for short), a framework that supports offline learning from historical interactions as well as online learning with exploration. We further prove that WR-Online achieves a sublinear regret bound of $O(\\sqrt{T})$ over a time horizon $T$. Empirical results on RouterBench and SWE-Bench demonstrate that (i) WR-Offline surpasses existing baselines in performance under a fixed budget and adheres more closely to budget constraints, and (ii) WR-Online achieves comparable performance to the baselines, while using substantially less exploration data.",
+    "fetched": true,
+    "n_chars": 105508,
+    "label_evidence": [
+      "ground-truth",
+      "ground truth",
+      "we use the per-query performance score"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2607.24875",
+    "title": "FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting",
+    "year": 2026,
+    "abstract": "Large language models (LLMs) can synthesize financial narratives but may express high confidence when evidence is sparse, stale, or contradictory. This failure is especially consequential in forecasting, where filings, news, prices, volume, and technical signals can disagree. We present FinAbstain, a research framework for uncertainty-calibrated multimodal retrieval-augmented generation (RAG) with selective prediction. A point-in-time retriever admits only information public at the forecast timestamp and supplies modality-specific evidence to fundamental, news, technical, risk, and verification agents. Their probabilistic assessments are aggregated with retrieval relevance, evidence contradiction, repeated-sample consistency, and historical calibration statistics. Temperature scaling, isotonic regression, conformal prediction, and a proposed hybrid uncertainty score are evaluated under a common chronological protocol. A controller predicts bullish, bearish, or neutral outcomes only when uncertainty is below a validated threshold; otherwise it abstains, requests evidence, reduces exposure, or routes the case to human review. The evaluation covers one- and five-day abnormal-return direction, twenty-day volatility intervals, and abstention decisions, using accuracy, calibration, risk--coverage, citation, trading, latency, and cost metrics. To make the design auditable before a full data collection is complete, we report explicitly labeled simulated results rather than empirical claims. These results illustrate the intended hypothesis: calibrated abstention may trade coverage for lower selective error and drawdown. The contribution is a time-safe architecture, a composite uncertainty formulation, and a reproducible evaluation blueprint for evidence-grounded selective financial forecasting.",
+    "fetched": true,
+    "n_chars": 27929,
+    "label_evidence": [
+      "labels are the sign of market-model abnormal return with a neutral band estimated from training volatility"
+    ],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2607.25018",
+    "title": "Conformal Cascade: Distribution-Free Accuracy Guarantees for Multi-Tier LLM Inference",
+    "year": 2026,
+    "abstract": "Large language model (LLM) cascades reduce inference cost by routing easy queries to a small model and deferring hard queries to a larger one. Production cascades govern this deferral through a confidence threshold, but LLM confidence scores are miscalibrated, the threshold must be tuned per model pair and per domain, and no setting yields a formal bound on cascade accuracy. We introduce \\textbf{Conformal Cascade} (CC), a multi-tier inference framework that uses conformal prediction set size as the deferral rule: accept when the calibrated set collapses to a single answer, defer otherwise. The procedure delivers a distribution-free, finite-sample accuracy guarantee. By a per-tier union bound, the prediction set at the accepting tier covers the correct answer with probability at least $1 - K\u03b1$ for any user-specified $\u03b1$; under a selection-preservation condition (consistent with, but not strictly implied by, our marginal coverage results), the bound tightens to $1 - \u03b1$. We further characterise expected cascade cost as an explicit function of $\u03b1$ and the calibration-set acceptance rate. Across 18 multiple-choice benchmarks spanning science, medicine, commonsense, and standardized exams, evaluated on two-tier cascades drawn from four open-weight model families, CC strictly improves over the strongest calibration-tuned heuristic cascade on the majority of family--benchmark pairs, with the largest gains on reasoning-heavy benchmarks where majority vote is unreliable; on easier benchmarks the cascade commits the vast majority of queries to the small model at no accuracy cost. Extension to open-ended generation requires an answer-clustering step that we leave for future work. The method requires no model training and only black-box API access.",
+    "fetched": true,
+    "n_chars": 104625,
+    "label_evidence": [],
+    "validation_evidence": []
+  },
+  {
+    "arxiv": "2608.16203",
+    "title": "INSPIRE: A Benchmark for Instruction-Aware Speech Retrieval",
+    "year": 2026,
+    "abstract": "Existing speech retrieval systems rely on fixed similarity matching and cannot adapt to diverse user intents. We introduce INSPIRE, the first benchmark for instruction-aware speech retrieval, in which natural-language instructions dynamically specify relevance criteria, including semantic content, speaker identity, speaking style, environmental sounds, and their combinations. We evaluate four retrieval paradigms: large audio-language models, cascaded pipelines, self-supervised speech models, and contrastive audio-language models. Our results reveal that no current method robustly handles all retrieval intents. Text-based approaches perform relatively better at semantic retrieval but struggle with paralinguistic attributes, while speech-based models are moderately better at capturing acoustic properties but falter at following instructions. These findings highlight the need for unified architectures capable of instruction-aware speech retrieval.",
+    "fetched": true,
+    "n_chars": 67523,
+    "label_evidence": [
+      "ground-truth"
+    ],
+    "validation_evidence": []
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "note": "Token-matched 512-token XSTest prefix-50 cross-pair audit from cached traces and cached Haiku refusal labels.",
+  "rows": [
+    {
+      "pair": "Qwen/Gemma",
+      "role": "baseline token-matched 512 setting",
+      "models": [
+        "Qwen3.5-2B",
+        "Gemma-4-E2B-it"
+      ],
+      "phases": [
+        "phase7_xstest450_512tok",
+        "phase7_xstest450_512tok"
+      ],
+      "token_setting": "XSTest 450 cached 512-token setting; identical prompt ids and prompt text",
+      "n": 450,
+      "surface_prefix_keyword": {
+        "n_pos": 15,
+        "auc": 0.9908045977011495,
+        "ap": 0.6521739130434783
+      },
+      "semantic_judge": {
+        "n_pos": 44,
+        "auc": 0.5667543663233319,
+        "ap": 0.1157993346386384
+      },
+      "auc_gap_surface_minus_semantic": 0.4240502313778176,
+      "keyword_vs_semantic_kappa": -0.01664684898929858,
+      "side_rates": {
+        "a_prefix_keyword": 0.0,
+        "b_prefix_keyword": 0.03333333333333333,
+        "a_judge_refusal": 0.36666666666666664,
+        "b_judge_refusal": 0.42444444444444446
+      },
+      "top10pct": {
+        "budget": 45,
+        "semantic_disagreement_n": 4,
+        "both_refuse_n": 29,
+        "both_comply_n": 12
+      }
+    },
+    {
+      "pair": "Qwen/Llama",
+      "role": "Qwen + non-Gemma cross-pair",
+      "models": [
+        "Qwen3.5-2B",
+        "Llama-3.2-3B"
+      ],
+      "phases": [
+        "phase7_xstest450_512tok",
+        "phase9_xstest450_512tok"
+      ],
+      "token_setting": "XSTest 450 cached 512-token setting; identical prompt ids and prompt text",
+      "n": 450,
+      "surface_prefix_keyword": {
+        "n_pos": 167,
+        "auc": 0.5888364613529126,
+        "ap": 0.4440473283700208
+      },
+      "semantic_judge": {
+        "n_pos": 58,
+        "auc": 0.474731703026038,
+        "ap": 0.12286229561811338
+      },
+      "auc_gap_surface_minus_semantic": 0.11410475832687456,
+      "keyword_vs_semantic_kappa": 0.13713085322064533,
+      "side_rates": {
+        "a_prefix_keyword": 0.0,
+        "b_prefix_keyword": 0.3711111111111111,
+        "a_judge_refusal": 0.36666666666666664,
+        "b_judge_refusal": 0.42
+      },
+      "top10pct": {
+        "budget": 45,
+        "semantic_disagreement_n": 2,
+        "both_refuse_n": 20,
+        "both_comply_n": 23
+      }
+    },
+    {
+      "pair": "Gemma/Llama",
+      "role": "cross-pair scope check",
+      "models": [
+        "Gemma-4-E2B-it",
+        "Llama-3.2-3B"
+      ],
+      "phases": [
+        "phase7_xstest450_512tok",
+        "phase9_xstest450_512tok"
+      ],
+      "token_setting": "XSTest 450 cached 512-token setting; identical prompt ids and prompt text",
+      "n": 450,
+      "surface_prefix_keyword": {
+        "n_pos": 154,
+        "auc": 0.6551640926640927,
+        "ap": 0.43591138746312136
+      },
+      "semantic_judge": {
+        "n_pos": 52,
+        "auc": 0.48630170081175106,
+        "ap": 0.11327801784801275
+      },
+      "auc_gap_surface_minus_semantic": 0.16886239185234164,
+      "keyword_vs_semantic_kappa": 0.04934536539564971,
+      "side_rates": {
+        "a_prefix_keyword": 0.03333333333333333,
+        "b_prefix_keyword": 0.3711111111111111,
+        "a_judge_refusal": 0.42444444444444446,
+        "b_judge_refusal": 0.42
+      },
+      "top10pct": {
+        "budget": 45,
+        "semantic_disagreement_n": 7,
+        "both_refuse_n": 16,
+        "both_comply_n": 22
+      }
+    }
+  ]
+}

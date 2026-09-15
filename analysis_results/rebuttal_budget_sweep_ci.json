@@ -1,0 +1,353 @@
+{
+ "n_boot": 2000,
+ "seed": 42,
+ "budgets": [
+  25,
+  55,
+  90,
+  135,
+  225
+ ],
+ "primary_prefix_sweep": {
+  "contract": "primary prefix contract (XSTest 450, raw prefix-50 TF-IDF, Haiku labels)",
+  "n": 450,
+  "semantic_disagreement_total": 46,
+  "sweep": [
+   {
+    "budget": 25,
+    "semantic_disagreement_n": 3,
+    "both_refuse_n": 19,
+    "both_comply_n": 3,
+    "semantic_precision": 0.12,
+    "semantic_recall": 0.06521739130434782,
+    "keyword_disagreement_n": 13
+   },
+   {
+    "budget": 55,
+    "semantic_disagreement_n": 6,
+    "both_refuse_n": 37,
+    "both_comply_n": 12,
+    "semantic_precision": 0.10909090909090909,
+    "semantic_recall": 0.13043478260869565,
+    "keyword_disagreement_n": 13
+   },
+   {
+    "budget": 90,
+    "semantic_disagreement_n": 10,
+    "both_refuse_n": 50,
+    "both_comply_n": 30,
+    "semantic_precision": 0.1111111111111111,
+    "semantic_recall": 0.21739130434782608,
+    "keyword_disagreement_n": 13
+   },
+   {
+    "budget": 135,
+    "semantic_disagreement_n": 15,
+    "both_refuse_n": 70,
+    "both_comply_n": 50,
+    "semantic_precision": 0.1111111111111111,
+    "semantic_recall": 0.32608695652173914,
+    "keyword_disagreement_n": 13
+   },
+   {
+    "budget": 225,
+    "semantic_disagreement_n": 30,
+    "both_refuse_n": 101,
+    "both_comply_n": 94,
+    "semantic_precision": 0.13333333333333333,
+    "semantic_recall": 0.6521739130434783,
+    "keyword_disagreement_n": 13
+   }
+  ]
+ },
+ "clean_revision_sweep": {
+  "contract": "phase13-clean revision contracts (XSTest450+AdvBench100, Haiku final labels)",
+  "n": 548,
+  "semantic_disagreement_total": 79,
+  "scores": {
+   "raw_prefix50_tfidf": [
+    {
+     "budget": 25,
+     "semantic_disagreement_n": 6,
+     "both_refuse_n": 10,
+     "both_comply_n": 9,
+     "semantic_precision": 0.24,
+     "semantic_recall": 0.0759493670886076
+    },
+    {
+     "budget": 55,
+     "semantic_disagreement_n": 11,
+     "both_refuse_n": 17,
+     "both_comply_n": 27,
+     "semantic_precision": 0.2,
+     "semantic_recall": 0.13924050632911392
+    },
+    {
+     "budget": 90,
+     "semantic_disagreement_n": 22,
+     "both_refuse_n": 25,
+     "both_comply_n": 43,
+     "semantic_precision": 0.24444444444444444,
+     "semantic_recall": 0.27848101265822783
+    },
+    {
+     "budget": 135,
+     "semantic_disagreement_n": 30,
+     "both_refuse_n": 46,
+     "both_comply_n": 59,
+     "semantic_precision": 0.2222222222222222,
+     "semantic_recall": 0.379746835443038
+    },
+    {
+     "budget": 225,
+     "semantic_disagreement_n": 48,
+     "both_refuse_n": 79,
+     "both_comply_n": 98,
+     "semantic_precision": 0.21333333333333335,
+     "semantic_recall": 0.6075949367088608
+    }
+   ],
+   "final_tfidf": [
+    {
+     "budget": 25,
+     "semantic_disagreement_n": 11,
+     "both_refuse_n": 12,
+     "both_comply_n": 2,
+     "semantic_precision": 0.44,
+     "semantic_recall": 0.13924050632911392
+    },
+    {
+     "budget": 55,
+     "semantic_disagreement_n": 20,
+     "both_refuse_n": 33,
+     "both_comply_n": 2,
+     "semantic_precision": 0.36363636363636365,
+     "semantic_recall": 0.25316455696202533
+    },
+    {
+     "budget": 90,
+     "semantic_disagreement_n": 28,
+     "both_refuse_n": 60,
+     "both_comply_n": 2,
+     "semantic_precision": 0.3111111111111111,
+     "semantic_recall": 0.35443037974683544
+    },
+    {
+     "budget": 135,
+     "semantic_disagreement_n": 35,
+     "both_refuse_n": 92,
+     "both_comply_n": 8,
+     "semantic_precision": 0.25925925925925924,
+     "semantic_recall": 0.4430379746835443
+    },
+    {
+     "budget": 225,
+     "semantic_disagreement_n": 52,
+     "both_refuse_n": 154,
+     "both_comply_n": 19,
+     "semantic_precision": 0.2311111111111111,
+     "semantic_recall": 0.6582278481012658
+    }
+   ],
+   "final_tfidf_marker_70_30": [
+    {
+     "budget": 25,
+     "semantic_disagreement_n": 17,
+     "both_refuse_n": 8,
+     "both_comply_n": 0,
+     "semantic_precision": 0.68,
+     "semantic_recall": 0.21518987341772153
+    },
+    {
+     "budget": 55,
+     "semantic_disagreement_n": 28,
+     "both_refuse_n": 25,
+     "both_comply_n": 2,
+     "semantic_precision": 0.509090909090909,
+     "semantic_recall": 0.35443037974683544
+    },
+    {
+     "budget": 90,
+     "semantic_disagreement_n": 33,
+     "both_refuse_n": 55,
+     "both_comply_n": 2,
+     "semantic_precision": 0.36666666666666664,
+     "semantic_recall": 0.4177215189873418
+    },
+    {
+     "budget": 135,
+     "semantic_disagreement_n": 41,
+     "both_refuse_n": 86,
+     "both_comply_n": 8,
+     "semantic_precision": 0.3037037037037037,
+     "semantic_recall": 0.5189873417721519
+    },
+    {
+     "budget": 225,
+     "semantic_disagreement_n": 53,
+     "both_refuse_n": 151,
+     "both_comply_n": 21,
+     "semantic_precision": 0.23555555555555555,
+     "semantic_recall": 0.6708860759493671
+    }
+   ]
+  }
+ },
+ "clean_revision_ci": {
+  "semantic_auc_ci": {
+   "raw_prefix50_tfidf": {
+    "point": 0.6220749777333945,
+    "n_boot_valid": 2000,
+    "ci_lo": 0.5560410663893297,
+    "ci_hi": 0.6871877460574565
+   },
+   "final_tfidf": {
+    "point": 0.6746106717767402,
+    "n_boot_valid": 2000,
+    "ci_lo": 0.6052499732125293,
+    "ci_hi": 0.742298340054838
+   },
+   "final_tfidf_marker_70_30": {
+    "point": 0.7149874497314512,
+    "n_boot_valid": 2000,
+    "ci_lo": 0.6419617574055313,
+    "ci_hi": 0.7833174431662346
+   }
+  },
+  "delta_ci_vs_raw_prefix": {
+   "final_tfidf": {
+    "point": 0.05253569404334568,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.05316381405480554,
+    "ci_hi": 0.15503572114482078,
+    "frac_boot_gt_0": 0.843
+   },
+   "final_tfidf_marker_70_30": {
+    "point": 0.09291247199805674,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.011304516733535384,
+    "ci_hi": 0.1940152171698461,
+    "frac_boot_gt_0": 0.9595
+   }
+  }
+ },
+ "panel_gap_ci": {
+  "Qwen/Gemma": {
+   "n": 450,
+   "gap_ci": {
+    "point": -0.014708235302066885,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.09224821796877249,
+    "ci_hi": 0.06204759638770239,
+    "frac_boot_gt_0": 0.3635
+   }
+  },
+  "Qwen/Mistral": {
+   "n": 450,
+   "gap_ci": {
+    "point": 0.01798333333333324,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.059752755759790534,
+    "ci_hi": 0.09684879916494875,
+    "frac_boot_gt_0": 0.689
+   }
+  },
+  "Qwen/Phi": {
+   "n": 450,
+   "gap_ci": {
+    "point": 0.12785999291507244,
+    "n_boot_valid": 2000,
+    "ci_lo": 0.027412164301549857,
+    "ci_hi": 0.23204293822776012,
+    "frac_boot_gt_0": 0.994
+   }
+  },
+  "Qwen3-8B/Phi": {
+   "n": 450,
+   "gap_ci": {
+    "point": 0.11761409401685152,
+    "n_boot_valid": 2000,
+    "ci_lo": 0.0293639321621978,
+    "ci_hi": 0.20681431250047974,
+    "frac_boot_gt_0": 0.997
+   }
+  },
+  "Gemma/Mistral": {
+   "n": 450,
+   "gap_ci": {
+    "point": -0.006093085293085165,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.06816797671690333,
+    "ci_hi": 0.05986263384289918,
+    "frac_boot_gt_0": 0.426
+   }
+  },
+  "Gemma/Qwen3-8B": {
+   "n": 450,
+   "gap_ci": {
+    "point": 0.042248954983066134,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.02997678249663581,
+    "ci_hi": 0.11502803644298366,
+    "frac_boot_gt_0": 0.879
+   }
+  },
+  "Gemma/Phi": {
+   "n": 450,
+   "gap_ci": {
+    "point": 0.015358332055778634,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.058811093789377954,
+    "ci_hi": 0.08557148761817991,
+    "frac_boot_gt_0": 0.6575
+   }
+  },
+  "Mistral/Qwen3-8B": {
+   "n": 450,
+   "gap_ci": {
+    "point": 0.06819858867729411,
+    "n_boot_valid": 2000,
+    "ci_lo": 0.0017937274092729826,
+    "ci_hi": 0.13550998597101926,
+    "frac_boot_gt_0": 0.978
+   }
+  },
+  "Mistral/Phi": {
+   "n": 450,
+   "gap_ci": {
+    "point": 0.054008126376547505,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.023622329848545204,
+    "ci_hi": 0.13051593004400036,
+    "frac_boot_gt_0": 0.9135
+   }
+  },
+  "Qwen/Qwen": {
+   "n": 450,
+   "gap_ci": {
+    "point": -0.0936768197411999,
+    "n_boot_valid": 2000,
+    "ci_lo": -0.18851690750104053,
+    "ci_hi": 0.0032038890128690493,
+    "frac_boot_gt_0": 0.028
+   }
+  }
+ },
+ "primary_gap_ci_existing": {
+  "name": "XSTest 450 (Phase 3)",
+  "n": 450,
+  "n_dis_kw": 13,
+  "n_dis_jd": 46,
+  "auc_kw_obs": 0.9851258581235698,
+  "auc_jd_obs": 0.5920953508394318,
+  "D_obs": 0.393030507284138,
+  "D_ci_95": [
+   0.32447222018411426,
+   0.4641344356474171
+  ],
+  "p_boot": 0.0,
+  "p_perm": 0.0,
+  "boot_n": 10000,
+  "perm_n": 10000
+ }
+}

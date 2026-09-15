@@ -1,0 +1,302 @@
+{
+  "XSTest 450 (primary run)": {
+    "reason": null,
+    "auc_y": 0.5920953508394318,
+    "auc_y_ci": [
+      0.5016331629242431,
+      0.6825575387546204
+    ],
+    "oriented": true,
+    "auc_zc": 0.6933980213089802,
+    "delta_dis": 0.10130267046954844,
+    "kappa_zc_y": -0.00816130580892983,
+    "beats_null": true,
+    "verdict_old": "CAUTION",
+    "verdict_new": "CAUTION"
+  },
+  "AdvBench 520": {
+    "reason": "precondition",
+    "auc_y": 0.2901353965183752,
+    "auc_y_ci": [
+      0.04492201738923793,
+      0.5353487756475125
+    ],
+    "oriented": false,
+    "auc_zc": 0.7493735382559306,
+    "delta_dis": 0.03950893477430578,
+    "kappa_zc_y": 0.03633202159787651,
+    "beats_null": false,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "SimpleSafety 100": {
+    "reason": "precondition",
+    "auc_y": 0.5006793478260869,
+    "auc_y_ci": [
+      0.2910026037453557,
+      0.7103560919068181
+    ],
+    "oriented": false,
+    "auc_zc": 0.4432624113475177,
+    "delta_dis": 0.05605824082639538,
+    "kappa_zc_y": -0.07361963190184091,
+    "beats_null": false,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "XSTest 100 / 512tok": {
+    "reason": "precondition",
+    "auc_y": 0.6166056166056166,
+    "auc_y_ci": [
+      0.4125651502348857,
+      0.8206460829763476
+    ],
+    "oriented": false,
+    "auc_zc": 0.5590277777777778,
+    "delta_dis": -0.057577838827838845,
+    "kappa_zc_y": 0.1551939924906132,
+    "beats_null": false,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "AdvBench 100 / 512tok": {
+    "reason": "precondition",
+    "auc_y": 0.29553264604811,
+    "auc_y_ci": [
+      0.04017237330279022,
+      0.5508929187934298
+    ],
+    "oriented": false,
+    "auc_zc": 0.718989898989899,
+    "delta_dis": 0.014522545038008983,
+    "kappa_zc_y": 0.07284768211920535,
+    "beats_null": false,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "OR-Bench hard 1k": {
+    "reason": "at chance, proxy ranked",
+    "auc_y": 0.5172044542405749,
+    "auc_y_ci": [
+      0.48462633783149595,
+      0.549782570649654
+    ],
+    "oriented": false,
+    "auc_zc": 0.7649281198579717,
+    "delta_dis": 0.24772366561739678,
+    "kappa_zc_y": 0.00037344170465111997,
+    "beats_null": true,
+    "verdict_old": "MISMATCH",
+    "verdict_new": "SCORE NOT EVIDENCE"
+  },
+  "JailbreakBench": {
+    "reason": "interval too wide to decide",
+    "auc_y": 0.5079212160137015,
+    "auc_y_ci": [
+      0.390119461962404,
+      0.6257229700649991
+    ],
+    "oriented": false,
+    "auc_zc": 0.7525709584533113,
+    "delta_dis": 0.2446497424396098,
+    "kappa_zc_y": 0.013428336530556055,
+    "beats_null": true,
+    "verdict_old": "MISMATCH",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "GSM8K, 50-char span": {
+    "reason": "ranks the construct backwards",
+    "auc_y": 0.30736830580580576,
+    "auc_y_ci": [
+      0.27676130871978555,
+      0.337975302891826
+    ],
+    "oriented": true,
+    "auc_zc": 0.34067245373078453,
+    "delta_dis": -0.033304147924978766,
+    "kappa_zc_y": 0.6674236667735844,
+    "beats_null": false,
+    "verdict_old": "ALIGNED",
+    "verdict_new": "SCORE NOT EVIDENCE"
+  },
+  "GSM8K, 120-char span": {
+    "reason": "ranks the construct backwards",
+    "auc_y": 0.3735641891891891,
+    "auc_y_ci": [
+      0.34022335567885376,
+      0.40690502269952444
+    ],
+    "oriented": true,
+    "auc_zc": 0.3744940218535764,
+    "delta_dis": -0.0009298326643872867,
+    "kappa_zc_y": 0.6674236667735844,
+    "beats_null": true,
+    "verdict_old": "ALIGNED",
+    "verdict_new": "SCORE NOT EVIDENCE"
+  },
+  "GSM8K, 160-char span": {
+    "reason": "ranks the construct backwards",
+    "auc_y": 0.34719094094094094,
+    "auc_y_ci": [
+      0.3148426594883028,
+      0.37953922239357907
+    ],
+    "oriented": true,
+    "auc_zc": 0.36651926031649473,
+    "delta_dis": -0.019328319375553793,
+    "kappa_zc_y": 0.6674236667735844,
+    "beats_null": false,
+    "verdict_old": "ALIGNED",
+    "verdict_new": "SCORE NOT EVIDENCE"
+  },
+  "GSM8K, 200-char span": {
+    "reason": "ranks the construct backwards",
+    "auc_y": 0.3577296046046046,
+    "auc_y_ci": [
+      0.3249694909007047,
+      0.39048971830850454
+    ],
+    "oriented": true,
+    "auc_zc": 0.3849879501158193,
+    "delta_dis": -0.0272583455112147,
+    "kappa_zc_y": 0.6674236667735844,
+    "beats_null": false,
+    "verdict_old": "ALIGNED",
+    "verdict_new": "SCORE NOT EVIDENCE"
+  },
+  "GSM8K, 300-char span": {
+    "reason": null,
+    "auc_y": 0.6494306806806807,
+    "auc_y_ci": [
+      0.6133150463897625,
+      0.6855463149715988
+    ],
+    "oriented": true,
+    "auc_zc": 0.6044512161941558,
+    "delta_dis": -0.0449794644865249,
+    "kappa_zc_y": 0.6655507622301182,
+    "beats_null": false,
+    "verdict_old": "ALIGNED",
+    "verdict_new": "ALIGNED"
+  },
+  "GSM8K, 600-char span": {
+    "reason": null,
+    "auc_y": 0.6154623373373374,
+    "auc_y_ci": [
+      0.5789084540688499,
+      0.6520162206058248
+    ],
+    "oriented": true,
+    "auc_zc": 0.5325318645623698,
+    "delta_dis": -0.08293047277496757,
+    "kappa_zc_y": 0.6209081448935432,
+    "beats_null": false,
+    "verdict_old": "ALIGNED",
+    "verdict_new": "ALIGNED"
+  },
+  "HotpotQA, 50-char span": {
+    "reason": "at chance, proxy ranked",
+    "auc_y": 0.5130986179872827,
+    "auc_y_ci": [
+      0.4823112106482858,
+      0.5438860253262797
+    ],
+    "oriented": false,
+    "auc_zc": 0.6336561209677332,
+    "delta_dis": 0.12055750298045043,
+    "kappa_zc_y": 0.14558962634103198,
+    "beats_null": true,
+    "verdict_old": "CAUTION",
+    "verdict_new": "SCORE NOT EVIDENCE"
+  },
+  "HotpotQA, 80-char span": {
+    "reason": "interval too wide to decide",
+    "auc_y": 0.5276681175062765,
+    "auc_y_ci": [
+      0.49675891586420307,
+      0.55857731914835
+    ],
+    "oriented": false,
+    "auc_zc": 0.6007303743911838,
+    "delta_dis": 0.0730622568849073,
+    "kappa_zc_y": 0.10527885475693396,
+    "beats_null": true,
+    "verdict_old": "ALIGNED",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "HotpotQA, 120-char span": {
+    "reason": "precondition",
+    "auc_y": 0.5381974588798423,
+    "auc_y_ci": [
+      0.507220905639758,
+      0.5691740121199266
+    ],
+    "oriented": true,
+    "auc_zc": 0.5469012110899809,
+    "delta_dis": 0.008703752210138638,
+    "kappa_zc_y": 0.04417259961452235,
+    "beats_null": true,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "HotpotQA, 160-char span": {
+    "reason": "precondition",
+    "auc_y": 0.5278162321969075,
+    "auc_y_ci": [
+      0.4969059624896895,
+      0.5587265019041255
+    ],
+    "oriented": false,
+    "auc_zc": 0.5376827804591536,
+    "delta_dis": 0.009866548262246089,
+    "kappa_zc_y": 0.030301909815304333,
+    "beats_null": true,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "HotpotQA, 200-char span": {
+    "reason": "precondition",
+    "auc_y": 0.5282591097867149,
+    "auc_y_ci": [
+      0.4973456669486607,
+      0.559172552624769
+    ],
+    "oriented": false,
+    "auc_zc": 0.5545353479996868,
+    "delta_dis": 0.02627623821297198,
+    "kappa_zc_y": 0.03641024721679434,
+    "beats_null": true,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "HotpotQA, 300-char span": {
+    "reason": "precondition",
+    "auc_y": 0.5367427086510712,
+    "auc_y_ci": [
+      0.5057744229125604,
+      0.5677109943895821
+    ],
+    "oriented": true,
+    "auc_zc": 0.5805922852427319,
+    "delta_dis": 0.043849576591660666,
+    "kappa_zc_y": 0.04291183360950794,
+    "beats_null": true,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  },
+  "HotpotQA, 600-char span": {
+    "reason": "precondition",
+    "auc_y": 0.5355233287970154,
+    "auc_y_ci": [
+      0.5045622297662014,
+      0.5664844278278294
+    ],
+    "oriented": true,
+    "auc_zc": 0.5739325969146598,
+    "delta_dis": 0.038409268117644446,
+    "kappa_zc_y": 0.04149167667335138,
+    "beats_null": true,
+    "verdict_old": "UNDECIDABLE",
+    "verdict_new": "UNDECIDABLE"
+  }
+}

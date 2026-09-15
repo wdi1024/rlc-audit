@@ -1,0 +1,182 @@
+{
+ "reps": 60,
+ "n_boot": 200,
+ "n_perm": 150,
+ "results": {
+  "valid@450": {
+   "expected": "ALIGNED",
+   "rule": {
+    "ALIGNED": 1.0
+   },
+   "baseline": {
+    "NO FLAG": 1.0
+   },
+   "rule_with_kappa_exit": null
+  },
+  "containment@450": {
+   "expected": "CONTAINMENT",
+   "rule": {
+    "UNDECIDABLE": 0.43333333333333335,
+    "CONTAINMENT": 0.5166666666666667,
+    "ALIGNED": 0.05
+   },
+   "baseline": {
+    "UNDECIDABLE": 0.48333333333333334,
+    "FLAG: label": 0.5166666666666667
+   },
+   "rule_with_kappa_exit": null
+  },
+  "mismatch@450": {
+   "expected": "DIVERGENCE",
+   "rule": {
+    "UNDECIDABLE": 0.15,
+    "DIVERGENCE": 0.6166666666666667,
+    "CAUTION": 0.18333333333333332,
+    "SCORE FAILURE": 0.016666666666666666,
+    "ALIGNED": 0.03333333333333333
+   },
+   "baseline": {
+    "UNDECIDABLE": 0.13333333333333333,
+    "FLAG: not evidence": 0.03333333333333333,
+    "FLAG: label": 0.8333333333333334
+   },
+   "rule_with_kappa_exit": null
+  },
+  "spillover@450": {
+   "expected": "DIVERGENCE (not separable from mismatch)",
+   "rule": {
+    "UNDECIDABLE": 0.55,
+    "DIVERGENCE": 0.36666666666666664,
+    "CAUTION": 0.06666666666666667,
+    "SCORE FAILURE": 0.016666666666666666
+   },
+   "baseline": {
+    "UNDECIDABLE": 0.48333333333333334,
+    "FLAG: label": 0.4666666666666667,
+    "FLAG: not evidence": 0.05
+   },
+   "rule_with_kappa_exit": null
+  },
+  "score_failure@450": {
+   "expected": "SCORE FAILURE",
+   "rule": {
+    "UNDECIDABLE": 0.8666666666666667,
+    "SCORE FAILURE": 0.06666666666666667,
+    "CAUTION": 0.05,
+    "DIVERGENCE": 0.016666666666666666
+   },
+   "baseline": {
+    "UNDECIDABLE": 0.8666666666666667,
+    "FLAG: not evidence": 0.016666666666666666,
+    "FLAG: label": 0.11666666666666667
+   },
+   "rule_with_kappa_exit": null
+  },
+  "high_kappa@450": {
+   "expected": "DIVERGENCE",
+   "rule": {
+    "DIVERGENCE": 0.9833333333333333,
+    "CAUTION": 0.016666666666666666
+   },
+   "baseline": {
+    "NO FLAG": 1.0
+   },
+   "rule_with_kappa_exit": {
+    "ALIGNED": 1.0
+   }
+  },
+  "mixed@450": {
+   "expected": "DIVERGENCE or CONTAINMENT",
+   "rule": {
+    "UNDECIDABLE": 0.38333333333333336,
+    "ALIGNED": 0.4666666666666667,
+    "CAUTION": 0.13333333333333333,
+    "SCORE FAILURE": 0.016666666666666666
+   },
+   "baseline": {
+    "UNDECIDABLE": 0.4,
+    "FLAG: label": 0.5666666666666667,
+    "FLAG: not evidence": 0.03333333333333333
+   },
+   "rule_with_kappa_exit": null
+  },
+  "valid@2000": {
+   "expected": "ALIGNED",
+   "rule": {
+    "ALIGNED": 1.0
+   },
+   "baseline": {
+    "NO FLAG": 1.0
+   },
+   "rule_with_kappa_exit": null
+  },
+  "containment@2000": {
+   "expected": "CONTAINMENT",
+   "rule": {
+    "CONTAINMENT": 0.9333333333333333,
+    "ALIGNED": 0.06666666666666667
+   },
+   "baseline": {
+    "FLAG: label": 0.9833333333333333,
+    "FLAG: not evidence": 0.016666666666666666
+   },
+   "rule_with_kappa_exit": null
+  },
+  "mismatch@2000": {
+   "expected": "DIVERGENCE",
+   "rule": {
+    "DIVERGENCE": 0.9,
+    "CAUTION": 0.1
+   },
+   "baseline": {
+    "FLAG: label": 1.0
+   },
+   "rule_with_kappa_exit": null
+  },
+  "spillover@2000": {
+   "expected": "DIVERGENCE (not separable from mismatch)",
+   "rule": {
+    "DIVERGENCE": 1.0
+   },
+   "baseline": {
+    "FLAG: label": 1.0
+   },
+   "rule_with_kappa_exit": null
+  },
+  "score_failure@2000": {
+   "expected": "SCORE FAILURE",
+   "rule": {
+    "SCORE FAILURE": 0.9666666666666667,
+    "DIVERGENCE": 0.03333333333333333
+   },
+   "baseline": {
+    "FLAG: not evidence": 0.9833333333333333,
+    "FLAG: label": 0.016666666666666666
+   },
+   "rule_with_kappa_exit": null
+  },
+  "high_kappa@2000": {
+   "expected": "DIVERGENCE",
+   "rule": {
+    "DIVERGENCE": 1.0
+   },
+   "baseline": {
+    "NO FLAG": 1.0
+   },
+   "rule_with_kappa_exit": {
+    "ALIGNED": 1.0
+   }
+  },
+  "mixed@2000": {
+   "expected": "DIVERGENCE or CONTAINMENT",
+   "rule": {
+    "CAUTION": 0.21666666666666667,
+    "ALIGNED": 0.7833333333333333
+   },
+   "baseline": {
+    "FLAG: label": 1.0
+   },
+   "rule_with_kappa_exit": null
+  }
+ }
+}

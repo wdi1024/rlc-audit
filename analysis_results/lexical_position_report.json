@@ -1,0 +1,50 @@
+{
+  "n_common": 450,
+  "per_model_keyword_vs_judge": {
+    "qwen3.5-2b": {
+      "tn": 249,
+      "fp": 9,
+      "fn": 187,
+      "tp": 5,
+      "precision": 0.35714285714285715,
+      "recall": 0.026041666666666668,
+      "kappa": -0.010031606431221585,
+      "mcc": -0.02518873635109388,
+      "mi_nats": 0.00032266782172612335
+    },
+    "gemma-4-e2b": {
+      "tn": 218,
+      "fp": 8,
+      "fn": 211,
+      "tp": 13,
+      "precision": 0.6190476190476191,
+      "recall": 0.05803571428571429,
+      "kappa": 0.022728624977687795,
+      "mcc": 0.05366215327787451,
+      "mi_nats": 0.0014525804722179264
+    }
+  },
+  "disagreement_label_mi_nats": 9.678488222503862e-05,
+  "disagreement_confusion": {
+    "tn": 382,
+    "fp": 22,
+    "fn": 43,
+    "tp": 3
+  },
+  "position_quantiles": {
+    "qwen": {
+      "n_with_keyword": 14,
+      "median_char": 197,
+      "p25": 119,
+      "p75": 265,
+      "frac_under_50": 0.0
+    },
+    "gemma": {
+      "n_with_keyword": 21,
+      "median_char": 2,
+      "p25": 2,
+      "p75": 125,
+      "frac_under_50": 0.6190476190476191
+    }
+  }
+}

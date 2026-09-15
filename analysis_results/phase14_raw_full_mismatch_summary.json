@@ -1,0 +1,35 @@
+{
+  "phase": "phase14_clean_xstest450_advbench100_8b",
+  "model_pair": [
+    "qwen3.5-9b",
+    "llama-3.1-8b-instruct"
+  ],
+  "score": "raw_full_tfidf",
+  "surface_proxy": "raw full-trace refusal-keyword disagreement",
+  "semantic_construct": "raw LLM-judge refusal-disagreement",
+  "n": 550,
+  "surface_positive": 270,
+  "semantic_positive": 50,
+  "auc_surface": 0.7766402116402116,
+  "auc_semantic": 0.38332,
+  "ap_surface": 0.7840070471010336,
+  "ap_semantic": 0.06937555982512442,
+  "delta_auc": 0.39332021164021163,
+  "delta_ap": 0.7146314872759092,
+  "kappa_surface_semantic": -0.04832214765100651,
+  "status": "MISMATCH",
+  "routed_composition": {
+    "top_50": {
+      "budget": 50,
+      "surface_routed": 41,
+      "semantic_routed": 0,
+      "semantic_share": 0.0
+    },
+    "top_55": {
+      "budget": 55,
+      "surface_routed": 46,
+      "semantic_routed": 0,
+      "semantic_share": 0.0
+    }
+  }
+}

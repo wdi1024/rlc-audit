@@ -1,0 +1,190 @@
+{
+  "Full (n=450)": {
+    "n": 449,
+    "qwen_kw_refuse": 0.031180400890868598,
+    "gemma_kw_refuse": 0.0467706013363029,
+    "qwen_judge_refuse": 0.42538975501113585,
+    "gemma_judge_refuse": 0.49665924276169265,
+    "kw_disagree": 25,
+    "judge_disagree": 46,
+    "cells": {
+      "TF-IDF_x_keyword": {
+        "auc": 0.7883962264150943,
+        "ci": [
+          0.6659458501268846,
+          0.8985549418226675
+        ],
+        "n_disagree": 25,
+        "disagree_rate": 0.0556792873051225
+      },
+      "TF-IDF_x_judge": {
+        "auc": 0.4669327867083828,
+        "ci": [
+          0.37614305658345615,
+          0.5666208248517322
+        ],
+        "n_disagree": 46,
+        "disagree_rate": 0.10244988864142539
+      },
+      "Sentence-L12_x_keyword": {
+        "auc": 0.8207547169811322,
+        "ci": [
+          0.727729193190818,
+          0.9069344163353695
+        ],
+        "n_disagree": 25,
+        "disagree_rate": 0.0556792873051225
+      },
+      "Sentence-L12_x_judge": {
+        "auc": 0.6515265940230878,
+        "ci": [
+          0.577412855554509,
+          0.7213415698477414
+        ],
+        "n_disagree": 46,
+        "disagree_rate": 0.10244988864142539
+      }
+    }
+  },
+  "Safe-only (n=250)": {
+    "n": 250,
+    "qwen_kw_refuse": 0.04,
+    "gemma_kw_refuse": 0.036,
+    "qwen_judge_refuse": 0.068,
+    "gemma_judge_refuse": 0.124,
+    "kw_disagree": 9,
+    "judge_disagree": 22,
+    "cells": {
+      "TF-IDF_x_keyword": {
+        "auc": 0.5869064084831719,
+        "ci": [
+          0.3369638958426208,
+          0.8305812453539725
+        ],
+        "n_disagree": 9,
+        "disagree_rate": 0.036
+      },
+      "TF-IDF_x_judge": {
+        "auc": 0.4479665071770335,
+        "ci": [
+          0.31373222438414394,
+          0.5799998625089369
+        ],
+        "n_disagree": 22,
+        "disagree_rate": 0.088
+      },
+      "Sentence-L12_x_keyword": {
+        "auc": 0.6546795758414016,
+        "ci": [
+          0.43854663725653964,
+          0.852016387724087
+        ],
+        "n_disagree": 9,
+        "disagree_rate": 0.036
+      },
+      "Sentence-L12_x_judge": {
+        "auc": 0.6570972886762361,
+        "ci": [
+          0.5352424456337349,
+          0.7692375662711436
+        ],
+        "n_disagree": 22,
+        "disagree_rate": 0.088
+      }
+    }
+  },
+  "Contrast-only (n=200)": {
+    "n": 199,
+    "qwen_kw_refuse": 0.020100502512562814,
+    "gemma_kw_refuse": 0.06030150753768844,
+    "qwen_judge_refuse": 0.8743718592964824,
+    "gemma_judge_refuse": 0.964824120603015,
+    "kw_disagree": 16,
+    "judge_disagree": 24,
+    "cells": {
+      "TF-IDF_x_keyword": {
+        "auc": 0.9023224043715846,
+        "ci": [
+          0.8293380686587207,
+          0.9590231264637001
+        ],
+        "n_disagree": 16,
+        "disagree_rate": 0.08040201005025126
+      },
+      "TF-IDF_x_judge": {
+        "auc": 0.5076190476190476,
+        "ci": [
+          0.38044174473067915,
+          0.6366219190795461
+        ],
+        "n_disagree": 24,
+        "disagree_rate": 0.12060301507537688
+      },
+      "Sentence-L12_x_keyword": {
+        "auc": 0.8852459016393442,
+        "ci": [
+          0.8068768406572114,
+          0.9489359527594822
+        ],
+        "n_disagree": 16,
+        "disagree_rate": 0.08040201005025126
+      },
+      "Sentence-L12_x_judge": {
+        "auc": 0.6414285714285715,
+        "ci": [
+          0.5529348991708734,
+          0.7317274883715851
+        ],
+        "n_disagree": 24,
+        "disagree_rate": 0.12060301507537688
+      }
+    }
+  },
+  "Pair-matched (n=400)": {
+    "n": 449,
+    "qwen_kw_refuse": 0.031180400890868598,
+    "gemma_kw_refuse": 0.0467706013363029,
+    "qwen_judge_refuse": 0.42538975501113585,
+    "gemma_judge_refuse": 0.49665924276169265,
+    "kw_disagree": 25,
+    "judge_disagree": 46,
+    "cells": {
+      "TF-IDF_x_keyword": {
+        "auc": 0.7883962264150943,
+        "ci": [
+          0.6659458501268846,
+          0.8985549418226675
+        ],
+        "n_disagree": 25,
+        "disagree_rate": 0.0556792873051225
+      },
+      "TF-IDF_x_judge": {
+        "auc": 0.4669327867083828,
+        "ci": [
+          0.37614305658345615,
+          0.5666208248517322
+        ],
+        "n_disagree": 46,
+        "disagree_rate": 0.10244988864142539
+      },
+      "Sentence-L12_x_keyword": {
+        "auc": 0.8207547169811322,
+        "ci": [
+          0.727729193190818,
+          0.9069344163353695
+        ],
+        "n_disagree": 25,
+        "disagree_rate": 0.0556792873051225
+      },
+      "Sentence-L12_x_judge": {
+        "auc": 0.6515265940230878,
+        "ci": [
+          0.577412855554509,
+          0.7213415698477414
+        ],
+        "n_disagree": 46,
+        "disagree_rate": 0.10244988864142539
+      }
+    }
+  }
+}

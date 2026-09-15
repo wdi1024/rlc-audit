@@ -1,0 +1,243 @@
+{
+ "stability": {
+  "n_draws": 1000,
+  "mean": 0.10636052790993074,
+  "frac_ge_0.10": 0.566,
+  "frac_ge_null_p95_0.061": 0.813,
+  "frac_ge_0": 0.981,
+  "frac_ge_0.15": 0.217
+ },
+ "ties": {
+  "XSTest 450 (primary run)": {
+   "n": 450,
+   "modal_value": 0.872875,
+   "modal_share": 0.43555555555555553,
+   "min": 0.218579968041678,
+   "max": 1.0,
+   "B": 45,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 1,
+   "auc_y": 0.5920953508394318
+  },
+  "AdvBench 520": {
+   "n": 520,
+   "modal_value": 0.849952,
+   "modal_share": 0.23076923076923078,
+   "min": 0.494352650737376,
+   "max": 1.0,
+   "B": 52,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 75,
+   "auc_y": 0.2901353965183752
+  },
+  "SimpleSafety 100": {
+   "n": 100,
+   "modal_value": 0.872024,
+   "modal_share": 0.5,
+   "min": 0.48764677497181097,
+   "max": 1.0,
+   "B": 10,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 2,
+   "auc_y": 0.5006793478260869
+  },
+  "XSTest 100 / 512tok": {
+   "n": 100,
+   "modal_value": 0.863491,
+   "modal_share": 0.53,
+   "min": 0.45059751831456696,
+   "max": 1.0,
+   "B": 10,
+   "topB_on_modal": 0.1,
+   "tied_at_boundary": 53,
+   "auc_y": 0.6166056166056166
+  },
+  "AdvBench 100 / 512tok": {
+   "n": 100,
+   "modal_value": 0.849543,
+   "modal_share": 0.19,
+   "min": 0.4834097440346321,
+   "max": 1.0,
+   "B": 10,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 14,
+   "auc_y": 0.29553264604811
+  },
+  "OR-Bench hard 1k": {
+   "n": 1319,
+   "modal_value": 0.855149,
+   "modal_share": 0.6444275966641395,
+   "min": 0.47296476625391004,
+   "max": 1.0,
+   "B": 132,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 135,
+   "auc_y": 0.5172044542405749
+  },
+  "JailbreakBench": {
+   "n": 200,
+   "modal_value": 0.858841,
+   "modal_share": 0.42,
+   "min": 0.47246268489682797,
+   "max": 1.0,
+   "B": 20,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 1,
+   "auc_y": 0.5079212160137015
+  },
+  "GSM8K, 50-char span": {
+   "n": 1319,
+   "modal_value": 0.942063,
+   "modal_share": 0.6338134950720242,
+   "min": 0.7951862102194988,
+   "max": 0.9846350557533442,
+   "B": 132,
+   "topB_on_modal": 0.9545454545454546,
+   "tied_at_boundary": 836,
+   "auc_y": 0.30736830580580576
+  },
+  "GSM8K, 80-char span": {
+   "n": 1319,
+   "modal_value": 0.949413,
+   "modal_share": 0.06520090978013647,
+   "min": 0.772983861298886,
+   "max": 0.9884462352765634,
+   "B": 132,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 18,
+   "auc_y": 0.29479792292292295
+  },
+  "GSM8K, 120-char span": {
+   "n": 1319,
+   "modal_value": 0.895563,
+   "modal_share": 0.001516300227445034,
+   "min": 0.5111056256781678,
+   "max": 0.9844713379642919,
+   "B": 132,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 1,
+   "auc_y": 0.3735641891891891
+  },
+  "GSM8K, 160-char span": {
+   "n": 1319,
+   "modal_value": 0.969443,
+   "modal_share": 0.002274450341167551,
+   "min": 0.4430111500230217,
+   "max": 0.9864716097065996,
+   "B": 132,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 1,
+   "auc_y": 0.34719094094094094
+  },
+  "GSM8K, 200-char span": {
+   "n": 1319,
+   "modal_value": 0.924914,
+   "modal_share": 0.001516300227445034,
+   "min": 0.3280920992762184,
+   "max": 0.9837350475611041,
+   "B": 132,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 1,
+   "auc_y": 0.3577296046046046
+  },
+  "GSM8K, 300-char span": {
+   "n": 1319,
+   "modal_value": 0.636996,
+   "modal_share": 0.001516300227445034,
+   "min": 0.12174359818128333,
+   "max": 0.9762147228342314,
+   "B": 132,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 1,
+   "auc_y": 0.6494306806806807
+  },
+  "GSM8K, 600-char span": {
+   "n": 1319,
+   "modal_value": 0.220308,
+   "modal_share": 0.001516300227445034,
+   "min": 0.07554616041100881,
+   "max": 0.861174619426124,
+   "B": 132,
+   "topB_on_modal": 0.0,
+   "tied_at_boundary": 1,
+   "auc_y": 0.6154623373373374
+  },
+  "HotpotQA, 50-char span": {
+   "n": 2000,
+   "modal_value": 1.0,
+   "modal_share": 0.1115,
+   "min": 0.14223387825095035,
+   "max": 1.0,
+   "B": 200,
+   "topB_on_modal": 1.0,
+   "tied_at_boundary": 223,
+   "auc_y": 0.5130986179872827
+  },
+  "HotpotQA, 80-char span": {
+   "n": 2000,
+   "modal_value": 1.0,
+   "modal_share": 0.0755,
+   "min": 0.06190105687434311,
+   "max": 1.0,
+   "B": 200,
+   "topB_on_modal": 0.755,
+   "tied_at_boundary": 1,
+   "auc_y": 0.5276681175062765
+  },
+  "HotpotQA, 120-char span": {
+   "n": 2000,
+   "modal_value": 1.0,
+   "modal_share": 0.0595,
+   "min": 0.07238688706253482,
+   "max": 1.0,
+   "B": 200,
+   "topB_on_modal": 0.595,
+   "tied_at_boundary": 1,
+   "auc_y": 0.5381974588798423
+  },
+  "HotpotQA, 160-char span": {
+   "n": 2000,
+   "modal_value": 1.0,
+   "modal_share": 0.0545,
+   "min": 0.045255172927617715,
+   "max": 1.0,
+   "B": 200,
+   "topB_on_modal": 0.545,
+   "tied_at_boundary": 1,
+   "auc_y": 0.5278162321969075
+  },
+  "HotpotQA, 200-char span": {
+   "n": 2000,
+   "modal_value": 1.0,
+   "modal_share": 0.0505,
+   "min": 0.0844049639931812,
+   "max": 1.0,
+   "B": 200,
+   "topB_on_modal": 0.505,
+   "tied_at_boundary": 1,
+   "auc_y": 0.5282591097867149
+  },
+  "HotpotQA, 300-char span": {
+   "n": 2000,
+   "modal_value": 1.0,
+   "modal_share": 0.0375,
+   "min": 0.10013043014754397,
+   "max": 1.0,
+   "B": 200,
+   "topB_on_modal": 0.375,
+   "tied_at_boundary": 1,
+   "auc_y": 0.5367427086510712
+  },
+  "HotpotQA, 600-char span": {
+   "n": 2000,
+   "modal_value": 1.0,
+   "modal_share": 0.016,
+   "min": 0.09233415732367056,
+   "max": 1.0,
+   "B": 200,
+   "topB_on_modal": 0.16,
+   "tied_at_boundary": 1,
+   "auc_y": 0.5355233287970154
+  }
+ }
+}

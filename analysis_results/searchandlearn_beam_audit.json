@@ -1,0 +1,1314 @@
+{
+  "arms": [
+    {
+      "kind": "beam",
+      "n": 16,
+      "seed": 0,
+      "problems": 500,
+      "acc_naive": 47.8,
+      "acc_weighted": 50.4,
+      "acc_maj": 50.2,
+      "base_rate": 0.44675,
+      "auc": {
+        "first": {
+          "pooled": 0.6923882405210499,
+          "within": 0.47684891806253105,
+          "within_n": 146
+        },
+        "0.25": {
+          "pooled": 0.6582149826368122,
+          "within": 0.47725030748361225,
+          "within_n": 146
+        },
+        "0.5": {
+          "pooled": 0.696189480131016,
+          "within": 0.49775432068882414,
+          "within_n": 146
+        },
+        "0.75": {
+          "pooled": 0.7598295833416568,
+          "within": 0.5405276895859087,
+          "within_n": 146
+        },
+        "1.0": {
+          "pooled": 0.7737104612288732,
+          "within": 0.5836186834474506,
+          "within_n": 146
+        }
+      },
+      "selection": {
+        "solvable": 280,
+        "naive_wrong_in_solvable": 45,
+        "harm_rate": 0.16071428571428573,
+        "harm_ci95": [
+          0.11785714285714285,
+          0.20714285714285716
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.46111228018448824,
+        "r_len_construct": -0.36215914368417135,
+        "auc_len_construct_within": 0.4850365708777524,
+        "auc_len_proxytop_within": 0.4927588974654523
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 16,
+      "seed": 1,
+      "problems": 500,
+      "acc_naive": 45.800000000000004,
+      "acc_weighted": 46.400000000000006,
+      "acc_maj": 46.400000000000006,
+      "base_rate": 0.413875,
+      "auc": {
+        "first": {
+          "pooled": 0.7265900020218636,
+          "within": 0.49422032339398103,
+          "within_n": 149
+        },
+        "0.25": {
+          "pooled": 0.6846919465988341,
+          "within": 0.4896470862284621,
+          "within_n": 149
+        },
+        "0.5": {
+          "pooled": 0.7095492132540742,
+          "within": 0.5010728319033688,
+          "within_n": 149
+        },
+        "0.75": {
+          "pooled": 0.7599361338369507,
+          "within": 0.5208745742512522,
+          "within_n": 149
+        },
+        "1.0": {
+          "pooled": 0.7845847730015031,
+          "within": 0.5497831412156077,
+          "within_n": 149
+        }
+      },
+      "selection": {
+        "solvable": 267,
+        "naive_wrong_in_solvable": 42,
+        "harm_rate": 0.15730337078651685,
+        "harm_ci95": [
+          0.11610486891385768,
+          0.19850187265917604
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5257541988976582,
+        "r_len_construct": -0.3754953590193132,
+        "auc_len_construct_within": 0.49982277347000503,
+        "auc_len_proxytop_within": 0.5150675293346425
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 16,
+      "seed": 2,
+      "problems": 500,
+      "acc_naive": 45.800000000000004,
+      "acc_weighted": 47.8,
+      "acc_maj": 47.8,
+      "base_rate": 0.425875,
+      "auc": {
+        "first": {
+          "pooled": 0.6990282234850177,
+          "within": 0.47954045530381406,
+          "within_n": 131
+        },
+        "0.25": {
+          "pooled": 0.6935543240306918,
+          "within": 0.5279865649617559,
+          "within_n": 131
+        },
+        "0.5": {
+          "pooled": 0.7216918894521218,
+          "within": 0.5431451711986063,
+          "within_n": 131
+        },
+        "0.75": {
+          "pooled": 0.7544192356114712,
+          "within": 0.5202834167528824,
+          "within_n": 131
+        },
+        "1.0": {
+          "pooled": 0.7727947181143879,
+          "within": 0.5369938638545508,
+          "within_n": 131
+        }
+      },
+      "selection": {
+        "solvable": 262,
+        "naive_wrong_in_solvable": 40,
+        "harm_rate": 0.15267175572519084,
+        "harm_ci95": [
+          0.11068702290076336,
+          0.1946564885496183
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5145054082046943,
+        "r_len_construct": -0.35379733151624,
+        "auc_len_construct_within": 0.5144517854918618,
+        "auc_len_proxytop_within": 0.5060953932000619
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 16,
+      "seed": 3,
+      "problems": 500,
+      "acc_naive": 45.6,
+      "acc_weighted": 48.199999999999996,
+      "acc_maj": 48.199999999999996,
+      "base_rate": 0.41675,
+      "auc": {
+        "first": {
+          "pooled": 0.7278978087794358,
+          "within": 0.4963355990644723,
+          "within_n": 142
+        },
+        "0.25": {
+          "pooled": 0.714143026516857,
+          "within": 0.5298963946851271,
+          "within_n": 142
+        },
+        "0.5": {
+          "pooled": 0.7425853877659959,
+          "within": 0.520414824563152,
+          "within_n": 142
+        },
+        "0.75": {
+          "pooled": 0.7731398640974763,
+          "within": 0.5126543644149277,
+          "within_n": 142
+        },
+        "1.0": {
+          "pooled": 0.7855751610072328,
+          "within": 0.6036994451166987,
+          "within_n": 142
+        }
+      },
+      "selection": {
+        "solvable": 259,
+        "naive_wrong_in_solvable": 39,
+        "harm_rate": 0.15057915057915058,
+        "harm_ci95": [
+          0.10810810810810811,
+          0.19305019305019305
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5337044215107396,
+        "r_len_construct": -0.3661723170041711,
+        "auc_len_construct_within": 0.49600183291864625,
+        "auc_len_proxytop_within": 0.5311438500464379
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 16,
+      "seed": 4,
+      "problems": 500,
+      "acc_naive": 47.0,
+      "acc_weighted": 48.8,
+      "acc_maj": 48.6,
+      "base_rate": 0.43825,
+      "auc": {
+        "first": {
+          "pooled": 0.7243635806733246,
+          "within": 0.5110832812271661,
+          "within_n": 139
+        },
+        "0.25": {
+          "pooled": 0.7002813982057841,
+          "within": 0.48975890216897416,
+          "within_n": 139
+        },
+        "0.5": {
+          "pooled": 0.7424438453908628,
+          "within": 0.5375859651938789,
+          "within_n": 139
+        },
+        "0.75": {
+          "pooled": 0.7900244948516003,
+          "within": 0.5410362581563122,
+          "within_n": 139
+        },
+        "1.0": {
+          "pooled": 0.7969607889431584,
+          "within": 0.5581310176633919,
+          "within_n": 139
+        }
+      },
+      "selection": {
+        "solvable": 273,
+        "naive_wrong_in_solvable": 40,
+        "harm_rate": 0.14652014652014653,
+        "harm_ci95": [
+          0.10622710622710622,
+          0.19047619047619047
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5081795020996871,
+        "r_len_construct": -0.3579082210346364,
+        "auc_len_construct_within": 0.529837050689119,
+        "auc_len_proxytop_within": 0.5250995296370295
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 64,
+      "seed": 0,
+      "problems": 500,
+      "acc_naive": 48.4,
+      "acc_weighted": 51.2,
+      "acc_maj": 51.0,
+      "base_rate": 0.4343125,
+      "auc": {
+        "first": {
+          "pooled": 0.6823178413257225,
+          "within": 0.46124960066950604,
+          "within_n": 255
+        },
+        "0.25": {
+          "pooled": 0.6414629411127513,
+          "within": 0.47887695816039444,
+          "within_n": 255
+        },
+        "0.5": {
+          "pooled": 0.6907547998860775,
+          "within": 0.5101288160535098,
+          "within_n": 255
+        },
+        "0.75": {
+          "pooled": 0.7586233593175868,
+          "within": 0.5184283117451108,
+          "within_n": 255
+        },
+        "1.0": {
+          "pooled": 0.7608800625463876,
+          "within": 0.5353146501086186,
+          "within_n": 255
+        }
+      },
+      "selection": {
+        "solvable": 328,
+        "naive_wrong_in_solvable": 88,
+        "harm_rate": 0.2682926829268293,
+        "harm_ci95": [
+          0.2225609756097561,
+          0.3170731707317073
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5149822251979358,
+        "r_len_construct": -0.39246224122608425,
+        "auc_len_construct_within": 0.47510549355105386,
+        "auc_len_proxytop_within": 0.5580261773947602
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 64,
+      "seed": 1,
+      "problems": 500,
+      "acc_naive": 49.8,
+      "acc_weighted": 52.0,
+      "acc_maj": 51.800000000000004,
+      "base_rate": 0.44290625,
+      "auc": {
+        "first": {
+          "pooled": 0.6967373488361852,
+          "within": 0.4471606997485886,
+          "within_n": 237
+        },
+        "0.25": {
+          "pooled": 0.6425649024304878,
+          "within": 0.45716070826799676,
+          "within_n": 237
+        },
+        "0.5": {
+          "pooled": 0.7053992108692879,
+          "within": 0.4846578031211266,
+          "within_n": 237
+        },
+        "0.75": {
+          "pooled": 0.7656074187724046,
+          "within": 0.5002178915734402,
+          "within_n": 237
+        },
+        "1.0": {
+          "pooled": 0.7675341424712694,
+          "within": 0.5352815134586432,
+          "within_n": 237
+        }
+      },
+      "selection": {
+        "solvable": 327,
+        "naive_wrong_in_solvable": 79,
+        "harm_rate": 0.2415902140672783,
+        "harm_ci95": [
+          0.19571865443425077,
+          0.290519877675841
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.51937832398368,
+        "r_len_construct": -0.38541876120196966,
+        "auc_len_construct_within": 0.48228059381680893,
+        "auc_len_proxytop_within": 0.5377186372988791
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 64,
+      "seed": 2,
+      "problems": 500,
+      "acc_naive": 47.0,
+      "acc_weighted": 50.4,
+      "acc_maj": 50.2,
+      "base_rate": 0.43121875,
+      "auc": {
+        "first": {
+          "pooled": 0.6764256189247846,
+          "within": 0.47586902423608657,
+          "within_n": 258
+        },
+        "0.25": {
+          "pooled": 0.6279104870761811,
+          "within": 0.4506714887324105,
+          "within_n": 258
+        },
+        "0.5": {
+          "pooled": 0.7010271349753984,
+          "within": 0.5024457605633431,
+          "within_n": 258
+        },
+        "0.75": {
+          "pooled": 0.7707643977309859,
+          "within": 0.4981541413665115,
+          "within_n": 258
+        },
+        "1.0": {
+          "pooled": 0.7726043407855702,
+          "within": 0.5447034621486613,
+          "within_n": 258
+        }
+      },
+      "selection": {
+        "solvable": 333,
+        "naive_wrong_in_solvable": 99,
+        "harm_rate": 0.2972972972972973,
+        "harm_ci95": [
+          0.24924924924924924,
+          0.34534534534534533
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5378480953231695,
+        "r_len_construct": -0.38584687946407303,
+        "auc_len_construct_within": 0.48736228045395574,
+        "auc_len_proxytop_within": 0.5675373820789945
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 64,
+      "seed": 3,
+      "problems": 500,
+      "acc_naive": 49.2,
+      "acc_weighted": 51.4,
+      "acc_maj": 51.4,
+      "base_rate": 0.4378125,
+      "auc": {
+        "first": {
+          "pooled": 0.7116382882234124,
+          "within": 0.48956011396997023,
+          "within_n": 240
+        },
+        "0.25": {
+          "pooled": 0.6541179710037974,
+          "within": 0.4789581148368757,
+          "within_n": 240
+        },
+        "0.5": {
+          "pooled": 0.7151119902047256,
+          "within": 0.5142749001595182,
+          "within_n": 240
+        },
+        "0.75": {
+          "pooled": 0.7631090057566283,
+          "within": 0.5122625949555936,
+          "within_n": 240
+        },
+        "1.0": {
+          "pooled": 0.7563167260421861,
+          "within": 0.5032694598475896,
+          "within_n": 240
+        }
+      },
+      "selection": {
+        "solvable": 316,
+        "naive_wrong_in_solvable": 73,
+        "harm_rate": 0.2310126582278481,
+        "harm_ci95": [
+          0.18354430379746836,
+          0.27848101265822783
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5258234046448773,
+        "r_len_construct": -0.38437511566277893,
+        "auc_len_construct_within": 0.5339042653634166,
+        "auc_len_proxytop_within": 0.5737394356585588
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 64,
+      "seed": 4,
+      "problems": 500,
+      "acc_naive": 47.199999999999996,
+      "acc_weighted": 50.4,
+      "acc_maj": 50.2,
+      "base_rate": 0.4230625,
+      "auc": {
+        "first": {
+          "pooled": 0.6897931986131823,
+          "within": 0.4296676978587393,
+          "within_n": 246
+        },
+        "0.25": {
+          "pooled": 0.6420151559169606,
+          "within": 0.4588285001728178,
+          "within_n": 246
+        },
+        "0.5": {
+          "pooled": 0.6900493095591061,
+          "within": 0.5172728519059975,
+          "within_n": 246
+        },
+        "0.75": {
+          "pooled": 0.7644973090906391,
+          "within": 0.5343608436104323,
+          "within_n": 246
+        },
+        "1.0": {
+          "pooled": 0.7463062921752657,
+          "within": 0.5436740566544693,
+          "within_n": 246
+        }
+      },
+      "selection": {
+        "solvable": 318,
+        "naive_wrong_in_solvable": 83,
+        "harm_rate": 0.2610062893081761,
+        "harm_ci95": [
+          0.2138364779874214,
+          0.30825471698113166
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5405424109567601,
+        "r_len_construct": -0.36423665123237414,
+        "auc_len_construct_within": 0.5047716588180645,
+        "auc_len_proxytop_within": 0.5580445717409287
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 256,
+      "seed": 0,
+      "problems": 500,
+      "acc_naive": 48.199999999999996,
+      "acc_weighted": 52.2,
+      "acc_maj": 52.0,
+      "base_rate": 0.4358671875,
+      "auc": {
+        "first": {
+          "pooled": 0.6650524258350707,
+          "within": 0.44859315850411574,
+          "within_n": 330
+        },
+        "0.25": {
+          "pooled": 0.5921621984445906,
+          "within": 0.470549652449936,
+          "within_n": 330
+        },
+        "0.5": {
+          "pooled": 0.6655906297694066,
+          "within": 0.5107339517765578,
+          "within_n": 330
+        },
+        "0.75": {
+          "pooled": 0.739750832301419,
+          "within": 0.5175549596329367,
+          "within_n": 330
+        },
+        "1.0": {
+          "pooled": 0.732014335083008,
+          "within": 0.5169220813783596,
+          "within_n": 330
+        }
+      },
+      "selection": {
+        "solvable": 357,
+        "naive_wrong_in_solvable": 116,
+        "harm_rate": 0.32492997198879553,
+        "harm_ci95": [
+          0.2773109243697479,
+          0.3754201680672265
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5257364258063161,
+        "r_len_construct": -0.3759383581156964,
+        "auc_len_construct_within": 0.5256734047554618,
+        "auc_len_proxytop_within": 0.5638806341824415
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 256,
+      "seed": 1,
+      "problems": 500,
+      "acc_naive": 49.2,
+      "acc_weighted": 52.6,
+      "acc_maj": 52.0,
+      "base_rate": 0.43365625,
+      "auc": {
+        "first": {
+          "pooled": 0.6786680225122564,
+          "within": 0.42994796953152337,
+          "within_n": 334
+        },
+        "0.25": {
+          "pooled": 0.6183806678609589,
+          "within": 0.4619801697893325,
+          "within_n": 334
+        },
+        "0.5": {
+          "pooled": 0.6817118910996885,
+          "within": 0.5032043736935788,
+          "within_n": 334
+        },
+        "0.75": {
+          "pooled": 0.7467693313859383,
+          "within": 0.5044644688540159,
+          "within_n": 334
+        },
+        "1.0": {
+          "pooled": 0.7341130210903672,
+          "within": 0.5257964843227887,
+          "within_n": 334
+        }
+      },
+      "selection": {
+        "solvable": 360,
+        "naive_wrong_in_solvable": 114,
+        "harm_rate": 0.31666666666666665,
+        "harm_ci95": [
+          0.2722222222222222,
+          0.3638888888888889
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5208387966970397,
+        "r_len_construct": -0.36962290322425795,
+        "auc_len_construct_within": 0.5232482431945488,
+        "auc_len_proxytop_within": 0.5761648955841766
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 256,
+      "seed": 2,
+      "problems": 500,
+      "acc_naive": 48.199999999999996,
+      "acc_weighted": 51.4,
+      "acc_maj": 51.2,
+      "base_rate": 0.4210390625,
+      "auc": {
+        "first": {
+          "pooled": 0.6594486837365305,
+          "within": 0.43017141981727425,
+          "within_n": 331
+        },
+        "0.25": {
+          "pooled": 0.6049817407059709,
+          "within": 0.4752128992315723,
+          "within_n": 331
+        },
+        "0.5": {
+          "pooled": 0.662949446427319,
+          "within": 0.5205335081393455,
+          "within_n": 331
+        },
+        "0.75": {
+          "pooled": 0.7344609806913031,
+          "within": 0.4993033075932234,
+          "within_n": 331
+        },
+        "1.0": {
+          "pooled": 0.7329930828916902,
+          "within": 0.5330778796707796,
+          "within_n": 331
+        }
+      },
+      "selection": {
+        "solvable": 359,
+        "naive_wrong_in_solvable": 118,
+        "harm_rate": 0.3286908077994429,
+        "harm_ci95": [
+          0.28133704735376047,
+          0.3788300835654596
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5074992379429494,
+        "r_len_construct": -0.36495052465867717,
+        "auc_len_construct_within": 0.5213785116955639,
+        "auc_len_proxytop_within": 0.5627673039905969
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 256,
+      "seed": 3,
+      "problems": 500,
+      "acc_naive": 47.199999999999996,
+      "acc_weighted": 52.400000000000006,
+      "acc_maj": 52.2,
+      "base_rate": 0.42,
+      "auc": {
+        "first": {
+          "pooled": 0.6876733105288351,
+          "within": 0.4586479962845824,
+          "within_n": 334
+        },
+        "0.25": {
+          "pooled": 0.6051352681628198,
+          "within": 0.4646728413529869,
+          "within_n": 334
+        },
+        "0.5": {
+          "pooled": 0.6795899270594805,
+          "within": 0.5003220689744255,
+          "within_n": 334
+        },
+        "0.75": {
+          "pooled": 0.7379903887919409,
+          "within": 0.5101740285492762,
+          "within_n": 334
+        },
+        "1.0": {
+          "pooled": 0.7374136441486026,
+          "within": 0.530631260232545,
+          "within_n": 334
+        }
+      },
+      "selection": {
+        "solvable": 362,
+        "naive_wrong_in_solvable": 126,
+        "harm_rate": 0.34806629834254144,
+        "harm_ci95": [
+          0.3011049723756906,
+          0.39502762430939226
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5314340060091822,
+        "r_len_construct": -0.37689293234838295,
+        "auc_len_construct_within": 0.5230248074794991,
+        "auc_len_proxytop_within": 0.5620025195043229
+      }
+    },
+    {
+      "kind": "beam",
+      "n": 256,
+      "seed": 4,
+      "problems": 500,
+      "acc_naive": 50.6,
+      "acc_weighted": 52.400000000000006,
+      "acc_maj": 52.0,
+      "base_rate": 0.4238359375,
+      "auc": {
+        "first": {
+          "pooled": 0.6626798610089236,
+          "within": 0.45782019046354694,
+          "within_n": 334
+        },
+        "0.25": {
+          "pooled": 0.6011600242394907,
+          "within": 0.473545201079014,
+          "within_n": 334
+        },
+        "0.5": {
+          "pooled": 0.6580424236396548,
+          "within": 0.4874472614639737,
+          "within_n": 334
+        },
+        "0.75": {
+          "pooled": 0.7231285704203092,
+          "within": 0.5093847056319236,
+          "within_n": 334
+        },
+        "1.0": {
+          "pooled": 0.7376438281485265,
+          "within": 0.5375415726996677,
+          "within_n": 334
+        }
+      },
+      "selection": {
+        "solvable": 364,
+        "naive_wrong_in_solvable": 111,
+        "harm_rate": 0.30494505494505497,
+        "harm_ci95": [
+          0.25824175824175827,
+          0.3516483516483517
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.5116709132368934,
+        "r_len_construct": -0.36365488771511667,
+        "auc_len_construct_within": 0.5201754191173348,
+        "auc_len_proxytop_within": 0.5566075264360255
+      }
+    },
+    {
+      "kind": "dvts",
+      "n": 256,
+      "seed": 0,
+      "problems": 500,
+      "len_unit": "chars",
+      "acc_naive": 49.8,
+      "acc_weighted": 55.00000000000001,
+      "acc_maj": 54.0,
+      "base_rate": 0.3226953125,
+      "auc": {
+        "first": {
+          "pooled": 0.7231981580742566,
+          "within": 0.48650419188092964,
+          "within_n": 422
+        },
+        "0.25": {
+          "pooled": 0.7223821816914273,
+          "within": 0.4879230457314033,
+          "within_n": 422
+        },
+        "0.5": {
+          "pooled": 0.7613678089098455,
+          "within": 0.5374306642007548,
+          "within_n": 422
+        },
+        "0.75": {
+          "pooled": 0.811530643596429,
+          "within": 0.6011947835603345,
+          "within_n": 422
+        },
+        "1.0": {
+          "pooled": 0.8637940304715919,
+          "within": 0.7662024501682884,
+          "within_n": 422
+        }
+      },
+      "selection": {
+        "solvable": 422,
+        "naive_wrong_in_solvable": 173,
+        "harm_rate": 0.4099526066350711,
+        "harm_ci95": [
+          0.36492890995260663,
+          0.46208530805687204
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.3405748920539152,
+        "r_len_construct": -0.29621182458456913,
+        "auc_len_construct_within": 0.46700344214163264,
+        "auc_len_proxytop_within": 0.454684689100895
+      }
+    },
+    {
+      "kind": "dvts",
+      "n": 256,
+      "seed": 1,
+      "problems": 500,
+      "len_unit": "chars",
+      "acc_naive": 48.4,
+      "acc_weighted": 54.800000000000004,
+      "acc_maj": 53.6,
+      "base_rate": 0.3224921875,
+      "auc": {
+        "first": {
+          "pooled": 0.7197265806841231,
+          "within": 0.4709194569491001,
+          "within_n": 430
+        },
+        "0.25": {
+          "pooled": 0.7211307828914053,
+          "within": 0.49070247311296494,
+          "within_n": 430
+        },
+        "0.5": {
+          "pooled": 0.7577834110795365,
+          "within": 0.5362527355630478,
+          "within_n": 430
+        },
+        "0.75": {
+          "pooled": 0.8061173167465455,
+          "within": 0.607328968305925,
+          "within_n": 430
+        },
+        "1.0": {
+          "pooled": 0.8593567591931616,
+          "within": 0.7621412072870779,
+          "within_n": 430
+        }
+      },
+      "selection": {
+        "solvable": 430,
+        "naive_wrong_in_solvable": 188,
+        "harm_rate": 0.4372093023255814,
+        "harm_ci95": [
+          0.39069767441860465,
+          0.48377906976744156
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.3405619830275004,
+        "r_len_construct": -0.2967427746016007,
+        "auc_len_construct_within": 0.46976850531300557,
+        "auc_len_proxytop_within": 0.45456510971384356
+      }
+    },
+    {
+      "kind": "dvts",
+      "n": 256,
+      "seed": 2,
+      "problems": 500,
+      "len_unit": "chars",
+      "acc_naive": 51.4,
+      "acc_weighted": 54.2,
+      "acc_maj": 54.0,
+      "base_rate": 0.3215625,
+      "auc": {
+        "first": {
+          "pooled": 0.7264388951688461,
+          "within": 0.4894115249595411,
+          "within_n": 415
+        },
+        "0.25": {
+          "pooled": 0.726224666472169,
+          "within": 0.49600950050521236,
+          "within_n": 415
+        },
+        "0.5": {
+          "pooled": 0.7605393860182752,
+          "within": 0.5353040656514941,
+          "within_n": 415
+        },
+        "0.75": {
+          "pooled": 0.8097728935210987,
+          "within": 0.6070182220482605,
+          "within_n": 415
+        },
+        "1.0": {
+          "pooled": 0.860610899332754,
+          "within": 0.7633384231597865,
+          "within_n": 415
+        }
+      },
+      "selection": {
+        "solvable": 415,
+        "naive_wrong_in_solvable": 159,
+        "harm_rate": 0.38313253012048193,
+        "harm_ci95": [
+          0.3349397590361446,
+          0.43132530120481927
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.3368082596832381,
+        "r_len_construct": -0.297559069456431,
+        "auc_len_construct_within": 0.4586736819512563,
+        "auc_len_proxytop_within": 0.45202585849140514
+      }
+    },
+    {
+      "kind": "dvts",
+      "n": 256,
+      "seed": 3,
+      "problems": 500,
+      "len_unit": "chars",
+      "acc_naive": 49.8,
+      "acc_weighted": 53.800000000000004,
+      "acc_maj": 52.400000000000006,
+      "base_rate": 0.321015625,
+      "auc": {
+        "first": {
+          "pooled": 0.7275654287650366,
+          "within": 0.4760496924232568,
+          "within_n": 420
+        },
+        "0.25": {
+          "pooled": 0.7296909178851669,
+          "within": 0.48648262365345485,
+          "within_n": 420
+        },
+        "0.5": {
+          "pooled": 0.7649983949066681,
+          "within": 0.5367551085722204,
+          "within_n": 420
+        },
+        "0.75": {
+          "pooled": 0.8090812116180867,
+          "within": 0.6001579514949843,
+          "within_n": 420
+        },
+        "1.0": {
+          "pooled": 0.8624128172078999,
+          "within": 0.7659737486538967,
+          "within_n": 420
+        }
+      },
+      "selection": {
+        "solvable": 420,
+        "naive_wrong_in_solvable": 171,
+        "harm_rate": 0.40714285714285714,
+        "harm_ci95": [
+          0.3595238095238095,
+          0.45714285714285713
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.3384249772446257,
+        "r_len_construct": -0.2970205529338716,
+        "auc_len_construct_within": 0.46214006886270087,
+        "auc_len_proxytop_within": 0.4531858084418899
+      }
+    },
+    {
+      "kind": "dvts",
+      "n": 256,
+      "seed": 4,
+      "problems": 500,
+      "len_unit": "chars",
+      "acc_naive": 49.0,
+      "acc_weighted": 54.0,
+      "acc_maj": 52.6,
+      "base_rate": 0.3182890625,
+      "auc": {
+        "first": {
+          "pooled": 0.7247362764316135,
+          "within": 0.4730393722004701,
+          "within_n": 425
+        },
+        "0.25": {
+          "pooled": 0.7296667004038523,
+          "within": 0.5001855102738351,
+          "within_n": 425
+        },
+        "0.5": {
+          "pooled": 0.7650913469020557,
+          "within": 0.5422711490292706,
+          "within_n": 425
+        },
+        "0.75": {
+          "pooled": 0.812362157502206,
+          "within": 0.608236487791438,
+          "within_n": 425
+        },
+        "1.0": {
+          "pooled": 0.8647368498012766,
+          "within": 0.7646100018250217,
+          "within_n": 425
+        }
+      },
+      "selection": {
+        "solvable": 425,
+        "naive_wrong_in_solvable": 180,
+        "harm_rate": 0.4235294117647059,
+        "harm_ci95": [
+          0.3764705882352941,
+          0.4682352941176471
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.34147097470108967,
+        "r_len_construct": -0.2993293982089245,
+        "auc_len_construct_within": 0.4684349204468004,
+        "auc_len_proxytop_within": 0.4574629979294731
+      }
+    },
+    {
+      "kind": "bon",
+      "n": 256,
+      "seed": 0,
+      "problems": 500,
+      "len_unit": "tokens",
+      "acc_naive": 43.2,
+      "acc_weighted": 46.400000000000006,
+      "acc_maj": 43.4,
+      "base_rate": 0.2333671875,
+      "auc": {
+        "first": {
+          "pooled": 0.7638671007551865,
+          "within": 0.5405133843197968,
+          "within_n": 439
+        },
+        "0.25": {
+          "pooled": 0.7909655004513102,
+          "within": 0.5672012873595145,
+          "within_n": 439
+        },
+        "0.5": {
+          "pooled": 0.8221805316427884,
+          "within": 0.6152091134528349,
+          "within_n": 439
+        },
+        "0.75": {
+          "pooled": 0.8617078840953004,
+          "within": 0.6954384311571566,
+          "within_n": 439
+        },
+        "1.0": {
+          "pooled": 0.8815536292072618,
+          "within": 0.7705993506325308,
+          "within_n": 439
+        }
+      },
+      "selection": {
+        "solvable": 439,
+        "naive_wrong_in_solvable": 223,
+        "harm_rate": 0.5079726651480638,
+        "harm_ci95": [
+          0.4624145785876993,
+          0.5558086560364465
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.2596573622797552,
+        "r_len_construct": -0.296210590138453,
+        "auc_len_construct_within": 0.44559814194023906,
+        "auc_len_proxytop_within": 0.4634420924224265
+      }
+    },
+    {
+      "kind": "bon",
+      "n": 256,
+      "seed": 1,
+      "problems": 500,
+      "len_unit": "tokens",
+      "acc_naive": 42.6,
+      "acc_weighted": 47.599999999999994,
+      "acc_maj": 43.0,
+      "base_rate": 0.22865625,
+      "auc": {
+        "first": {
+          "pooled": 0.7594700214463556,
+          "within": 0.5302115337089441,
+          "within_n": 438
+        },
+        "0.25": {
+          "pooled": 0.7888649477589863,
+          "within": 0.5617185677271438,
+          "within_n": 438
+        },
+        "0.5": {
+          "pooled": 0.8216846553619286,
+          "within": 0.6191090902380237,
+          "within_n": 438
+        },
+        "0.75": {
+          "pooled": 0.8614299607391271,
+          "within": 0.7007505026533257,
+          "within_n": 438
+        },
+        "1.0": {
+          "pooled": 0.8792181027009193,
+          "within": 0.7717165226858038,
+          "within_n": 438
+        }
+      },
+      "selection": {
+        "solvable": 438,
+        "naive_wrong_in_solvable": 225,
+        "harm_rate": 0.5136986301369864,
+        "harm_ci95": [
+          0.4703196347031963,
+          0.5593607305936074
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.258954174442791,
+        "r_len_construct": -0.2891932829935439,
+        "auc_len_construct_within": 0.4420307779291632,
+        "auc_len_proxytop_within": 0.4659089041110372
+      }
+    },
+    {
+      "kind": "bon",
+      "n": 256,
+      "seed": 2,
+      "problems": 500,
+      "len_unit": "tokens",
+      "acc_naive": 42.6,
+      "acc_weighted": 47.599999999999994,
+      "acc_maj": 42.8,
+      "base_rate": 0.227265625,
+      "auc": {
+        "first": {
+          "pooled": 0.7579119011178531,
+          "within": 0.5340269348356527,
+          "within_n": 436
+        },
+        "0.25": {
+          "pooled": 0.7877494791195847,
+          "within": 0.5737163767925921,
+          "within_n": 436
+        },
+        "0.5": {
+          "pooled": 0.8191662328385938,
+          "within": 0.6219752474063398,
+          "within_n": 436
+        },
+        "0.75": {
+          "pooled": 0.857701439155339,
+          "within": 0.6934370947885954,
+          "within_n": 436
+        },
+        "1.0": {
+          "pooled": 0.8793863064432219,
+          "within": 0.7664662837223825,
+          "within_n": 436
+        }
+      },
+      "selection": {
+        "solvable": 436,
+        "naive_wrong_in_solvable": 223,
+        "harm_rate": 0.5114678899082569,
+        "harm_ci95": [
+          0.46559633027522934,
+          0.5573394495412844
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.25836847897835896,
+        "r_len_construct": -0.2884789084651163,
+        "auc_len_construct_within": 0.44323281960380023,
+        "auc_len_proxytop_within": 0.461592346700008
+      }
+    },
+    {
+      "kind": "bon",
+      "n": 256,
+      "seed": 3,
+      "problems": 500,
+      "len_unit": "tokens",
+      "acc_naive": 41.6,
+      "acc_weighted": 47.599999999999994,
+      "acc_maj": 44.6,
+      "base_rate": 0.228484375,
+      "auc": {
+        "first": {
+          "pooled": 0.758424307637715,
+          "within": 0.535874813445245,
+          "within_n": 439
+        },
+        "0.25": {
+          "pooled": 0.7870943166724377,
+          "within": 0.5768156678577623,
+          "within_n": 439
+        },
+        "0.5": {
+          "pooled": 0.8186644181523323,
+          "within": 0.6144010359053081,
+          "within_n": 439
+        },
+        "0.75": {
+          "pooled": 0.857879702878624,
+          "within": 0.6948235708020611,
+          "within_n": 439
+        },
+        "1.0": {
+          "pooled": 0.8800407990211943,
+          "within": 0.7685019886586695,
+          "within_n": 439
+        }
+      },
+      "selection": {
+        "solvable": 439,
+        "naive_wrong_in_solvable": 231,
+        "harm_rate": 0.5261958997722096,
+        "harm_ci95": [
+          0.48291571753986334,
+          0.5740318906605922
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.26091498326816576,
+        "r_len_construct": -0.2870626404350287,
+        "auc_len_construct_within": 0.44676233574746493,
+        "auc_len_proxytop_within": 0.46506061796806636
+      }
+    },
+    {
+      "kind": "bon",
+      "n": 256,
+      "seed": 4,
+      "problems": 500,
+      "len_unit": "tokens",
+      "acc_naive": 42.4,
+      "acc_weighted": 48.4,
+      "acc_maj": 44.6,
+      "base_rate": 0.2256953125,
+      "auc": {
+        "first": {
+          "pooled": 0.7600002034284729,
+          "within": 0.5388360021497671,
+          "within_n": 439
+        },
+        "0.25": {
+          "pooled": 0.7886499537082524,
+          "within": 0.5708026951096086,
+          "within_n": 439
+        },
+        "0.5": {
+          "pooled": 0.8208665199429986,
+          "within": 0.6213424129813019,
+          "within_n": 439
+        },
+        "0.75": {
+          "pooled": 0.8585945885394906,
+          "within": 0.6988247471105232,
+          "within_n": 439
+        },
+        "1.0": {
+          "pooled": 0.8787238268515875,
+          "within": 0.7638925867911307,
+          "within_n": 439
+        }
+      },
+      "selection": {
+        "solvable": 439,
+        "naive_wrong_in_solvable": 227,
+        "harm_rate": 0.5170842824601367,
+        "harm_ci95": [
+          0.4715261958997722,
+          0.5626423690205011
+        ]
+      },
+      "surface": {
+        "r_len_proxy": -0.26214966765612147,
+        "r_len_construct": -0.2865035553700808,
+        "auc_len_construct_within": 0.4465006569856579,
+        "auc_len_proxytop_within": 0.46314742615216103
+      }
+    }
+  ]
+}

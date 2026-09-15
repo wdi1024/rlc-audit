@@ -1,0 +1,417 @@
+{
+  "n": 38,
+  "counts": {
+    "QUERY": 19,
+    "OUTPUT": 13,
+    "BOTH": 0,
+    "UNCLEAR": 6
+  },
+  "n_exposed": 13,
+  "rate_exposed": 0.34210526315789475,
+  "ci_exposed": [
+    0.21212415096187742,
+    0.5010789657352738
+  ],
+  "rows": [
+    {
+      "arxiv": "2404.10136",
+      "title": "Language Model Cascades: Token-level uncertainty and beyond",
+      "locus": "OUTPUT",
+      "why": "deferral score over generated output tokens",
+      "query_evidence": [],
+      "output_evidence": [
+        "Self-consistency improves chain of thought reasoning in language models."
+      ]
+    },
+    {
+      "arxiv": "2404.14618",
+      "title": "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+      "locus": "QUERY",
+      "why": "routes on predicted query difficulty",
+      "query_evidence": [
+        "easy queries to small models hosted on their edge devices (laptops/smartphones) and only call the API for the more complex queries (illustrated in Figure 2 ) and b) platform owners can automatically route queries to lower cost models at the backend without affecting the user experience, as long as the response quality levels are maintained.",
+        "Thus, we expect that using the router to route queries to the small model will not detract significantly from the realizable cost advantage."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2502.12464",
+      "title": "SafeRoute: Adaptive Model Selection for Efficient and Accurate Safety Guardrails in Large Language Models",
+      "locus": "UNCLEAR",
+      "why": "no statement of what the router consumes",
+      "query_evidence": [
+        "Method Prompt-only Prompt-Response Average WildGuardMix-p ToxicChat OAI WildGuardMix XSTest HarmBench Entropy 0.",
+        "Method Prompt-only Prompt-Response Average WildGuardMix-p ToxicChat OAI WildGuardMix XSTest HarmBench Entropy 0."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2504.07113",
+      "title": "How Robust Are Router-LLMs? Analysis of the Fragility of LLM Routing Capabilities",
+      "locus": "QUERY",
+      "why": "R(q, M) takes a query and picks a model",
+      "query_evidence": [
+        "The routing strategies include a similarity-weighted ranking model using query embeddings and the Bradley-Terry framework Bradley and Terry 1952 , a matrix factorization approach capturing low-rank structures in preference data Koren et al."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2506.11887",
+      "title": "Cascaded Language Models for Cost-effective Human-AI Decision-Making",
+      "locus": "OUTPUT",
+      "why": "confidence over the base model's candidate answer",
+      "query_evidence": [],
+      "output_evidence": [
+        "This approach is inspired by self-consistency as in ( Aggarwal et al."
+      ]
+    },
+    {
+      "arxiv": "2509.02718",
+      "title": "Efficient Training-Free Online Routing for High-Volume Multi-LLM Serving",
+      "locus": "QUERY",
+      "why": "directs queries on model and query features",
+      "query_evidence": [
+        "LLM routing offers a cost-efficient solution by directing queries to the optimal LLM based on model and query features.",
+        "Our algorithm leverages approximate nearest neighbor search to efficiently estimate query features and performs a one-time optimization over a small set of initial queries to learn a routing strategy that guides future routing.",
+        ", KNN, similarity-weighted ranking) ong2025routellmlearningroutellms ; hu2024routerbench to predict the optimal LLM to route queries to."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2509.09782",
+      "title": "One Head, Many Models: Cross-Attention Routing for Cost-Aware LLM Selection",
+      "locus": "QUERY",
+      "why": "cross-attention over query and model embeddings",
+      "query_evidence": [
+        "Classification-based methods predict the best model from static query features [ 3 , 4 , 5 ] , but assume fixed model sets and rely on pre-computed metrics, limiting adaptability.",
+        "A common limitation of prior approaches is treating queries and models as independent, with routing based on query-only features or model-agnostic heuristics.",
+        "These methods, such as RouteLLM [ 3 ] and OptLLM [ 4 ] , demonstrated that static query features could be used to reduce reliance on expensive models."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2509.19996",
+      "title": "Choosing to Be Green: Advancing Green AI via Dynamic Model Selection",
+      "locus": "UNCLEAR",
+      "why": "no statement of what the router consumes",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2509.25535",
+      "title": "Meta-Router: Bridging Gold-standard and Preference-based Evaluations in Large Language Model Routing",
+      "locus": "QUERY",
+      "why": "selects a model for each query",
+      "query_evidence": [
+        "Query embeddings are reduced to dimension 50 50 via PCA, and all regressions are implemented using random forests.",
+        "The query embedding dimension is reduced to 50 50 via PCA and all regressions are implemented via XGBoost.",
+        "The query embedding dimension is reduced to 100 100 via PCA and all regressions are implemented via random forest."
+      ],
+      "output_evidence": [
+        "Limitations of the llm-as-a-judge approach for evaluating llm outputs in expert knowledge tasks."
+      ]
+    },
+    {
+      "arxiv": "2510.07429",
+      "title": "Learning to Route LLMs from Bandit Feedback: One Policy, Many Trade-offs",
+      "locus": "QUERY",
+      "why": "contextual bandit over prompt features",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2510.19208",
+      "title": "DiSRouter: Distributed Self-Routing for LLM Selections",
+      "locus": "QUERY",
+      "why": "each agent judges its competence on the query",
+      "query_evidence": [
+        "Each smaller agent first attempts to assess and solve the query; if it determines that it cannot provide a reliable answer, it autonomously routes the query to the next larger agent in the cascade.",
+        "If it selects another agent ( j \u2260 i j\\neq i ), it routes the query to m j m_{j} .",
+        "We first introduce three intuitive Naive Baselines: (1) Largest / (2) Smallest LLM : Always routes queries to the largest / smallest available LLM."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2511.07396",
+      "title": "C3PO: Optimized Large Language Model Cascades with Probabilistic Cost Constraints for Reasoning",
+      "locus": "OUTPUT",
+      "why": "sampled responses and their confidence scores",
+      "query_evidence": [
+        ", \u2133 m } \\mathcal{M}=\\{\\mathcal{M}_{1},\\mathcal{M}_{2},\\dots,\\mathcal{M}_{m}\\} , each parameterized by a neural conditional generative model f j : \ud835\udcb3 \u21a6 \ud835\udc9c f_{j}:\\mathcal{X}\\mapsto\\mathcal{A} which maps from the prompt space \ud835\udcb3 \\mathcal{X} to the answer space \ud835\udc9c \\mathcal{A} ."
+      ],
+      "output_evidence": [
+        "2024 ) leverages self-consistency sampling to decide whether to defer to stronger LLMs, learning thresholds over sampled predictions to optimize for quality and cost.",
+        "2025a ) employ self-consistency as a decision criterion to escalate queries.",
+        "How does C3PO compare to Self-Consistency for a comparable maximum allowable budget? From Fig."
+      ]
+    },
+    {
+      "arxiv": "2511.16883",
+      "title": "PersonalizedRouter: Personalized LLM Routing via Graph-based User Preference Modeling",
+      "locus": "QUERY",
+      "why": "personalised selection from query and user preferences",
+      "query_evidence": [
+        "2024 ) encodes the input query using a pre-trained encoder and selects the LLM whose embedding is most similar to the query embedding."
+      ],
+      "output_evidence": [
+        "2023 ) uses a pre-trained model to score the responses to select the best LLM under a given cost constraint.",
+        "For the LLM-as-a-Judge strategy , we first collect responses for each query from candidate LLMs and then utilize an additional LLM as a judge to generate a binary label called best-answer based on distinct user profiles.",
+        "4 \u2022 Best Answer is selected by the LLM judge, which represents the response that best aligns with the predefined user profiles."
+      ]
+    },
+    {
+      "arxiv": "2601.05903",
+      "title": "HAPS: Hierarchical LLM Routing with Joint Architecture and Parameter Search",
+      "locus": "QUERY",
+      "why": "classifier maps each input query to an architecture",
+      "query_evidence": [
+        "Since HAPS routes queries to different LLMs and generates text, the outputs may inherit biases, toxic associations, or factual errors from the underlying models and training data."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2601.06220",
+      "title": "Breaking Model Lock-in: Cost-Efficient Zero-Shot LLM Routing via a Universal Latent Space",
+      "locus": "QUERY",
+      "why": "capability mappings predict performance per query",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2601.17814",
+      "title": "MMR-Bench: A Comprehensive Benchmark for Multimodal LLM Routing",
+      "locus": "QUERY",
+      "why": "query-level model selection",
+      "query_evidence": [
+        "The router recognizes the complexity cues\u2014likely triggered by the length of the reasoning chain required and the diagrammatic nature of the image\u2014and correctly routes the query to GPT-5 ."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2602.02386",
+      "title": "Trust by Design: Skill Profiles for Transparent, Cost-Aware LLM Routing",
+      "locus": "UNCLEAR",
+      "why": "no statement of what the router consumes",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2602.02711",
+      "title": "Dynamic Mixed-Precision Routing for Efficient Multi-step LLM Interaction",
+      "locus": "OUTPUT",
+      "why": "step-level selection on interaction trajectory",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2602.11931",
+      "title": "AdaptEvolve: Improving Efficiency of Evolutionary AI Agents through Adaptive Model Selection",
+      "locus": "OUTPUT",
+      "why": "conditions on intrinsic generation uncertainty",
+      "query_evidence": [],
+      "output_evidence": [
+        "2024 and self-consistency mechanisms Wang et al.",
+        "Self-consistency improves chain of thought reasoning in language models."
+      ]
+    },
+    {
+      "arxiv": "2603.11957",
+      "title": "CHiL(L)Grader: Calibrated Human-in-the-Loop Short-Answer Grading",
+      "locus": "OUTPUT",
+      "why": "grade predicted from question and student answer",
+      "query_evidence": [
+        "1-8B using the basic template and k = 5 k=5 achieving the strongest prompt-only result."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2603.24704",
+      "title": "Conformal Selective Prediction with General Risk Control",
+      "locus": "OUTPUT",
+      "why": "risk score over model outputs",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2603.28972",
+      "title": "Privacy Guard &amp; Token Parsimony by Prompt and Context Handling and LLM Routing",
+      "locus": "QUERY",
+      "why": "routing decided solely on prompt task complexity",
+      "query_evidence": [
+        "[ 4 ] with FrugalGPT introduced a pioneering framework that learns to route queries to a cascade of LLMs, balancing the inference budget and accuracy."
+      ],
+      "output_evidence": [
+        "\u2022 Evaluation Method: LLM-as-a-Judge comparing the semantic quality of responses generated from raw prompts versus sanitised, compressed prompts, alongside an explicit extraction attack on the cloud model\u2019s conversational memory.",
+        "Figure 5: LLM-as-a-Judge comparison of final response quality between raw Context (Baseline) and compressed/sanitised Context (Dual-Vault APO)."
+      ]
+    },
+    {
+      "arxiv": "2604.00660",
+      "title": "Streaming Model Cascades for Semantic SQL",
+      "locus": "UNCLEAR",
+      "why": "no statement of what the router consumes",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2604.09377",
+      "title": "Task-Aware LLM Routing with Multi-Level Task-Profile-Guided Data Synthesis for Cold-Start Scenarios",
+      "locus": "QUERY",
+      "why": "assigns models to each query under preferences",
+      "query_evidence": [
+        "The resulting representations are then passed through two-layer multilayer perceptrons (MLPs) to produce a query embedding e q e_{q} and task-type embeddings { e t i } \\{e_{t}^{i}\\} where i \u2208 [ 1 , K ] i\\in[1,K] ."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2604.15728",
+      "title": "Privacy-Preserving LLMs Routing",
+      "locus": "QUERY",
+      "why": "selects among models to serve a given query",
+      "query_evidence": [
+        "CSCR ( 27 ) focuses on direct model embeddings and selecting the closest model based on cost-aware cosine similarity between the live query embedding and the pre-generated model representations.",
+        "Generate the user query embedding.",
+        "Throughout the entire inference process, the LLM routing provider cannot know the user query or the generated query embedding."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2604.23530",
+      "title": "MTRouter: Cost-Aware Multi-Turn LLM Routing with History-Model Joint Embeddings",
+      "locus": "OUTPUT",
+      "why": "multi-turn routing conditioned on history",
+      "query_evidence": [],
+      "output_evidence": [
+        "We report the judge prompt used to compare a model response against the provided reference answer.",
+        "HLE Judge Prompt Judge whether the following [response] to [question] is correct or not based on the precise and unambiguous [correct_answer] below."
+      ]
+    },
+    {
+      "arxiv": "2604.25855",
+      "title": "SIEVES: Selective Prediction Generalizes through Visual Evidence Scoring",
+      "locus": "OUTPUT",
+      "why": "confidence assigned to each answer, then abstain",
+      "query_evidence": [],
+      "output_evidence": [
+        "The selector scores the answer along three axes: correctness (is the final answer accurate?), localization (did the model look at the right part of the image?), and coherence (does the visual evidence support the answer?).",
+        ": Verbalized confidence triggers self-verification : Emergent behavior without explicit reasoning supervision.",
+        ": On verbalized confidence scores for LLMs."
+      ]
+    },
+    {
+      "arxiv": "2605.05007",
+      "title": "Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation",
+      "locus": "QUERY",
+      "why": "given a task, emits a plan and routing decision",
+      "query_evidence": [
+        "0 Within the blind pool, SFT already shifts the router from prompt-only orchestration to a usable policy, but the largest jump comes from RL."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2605.12001",
+      "title": "CR^2: Cost-Aware Risk-Controlled Routing for Wireless Device-Edge LLM Inference",
+      "locus": "QUERY",
+      "why": "query-level routing assigns each request",
+      "query_evidence": [
+        "The margin gate operates on frozen query embeddings and a user-specified cost weight to predict whether local execution is utility-optimal relative to the best edge alternative under the target operating point.",
+        "The proposed CR 2 keeps the query encoder frozen and learns a continuous utility-margin surrogate for UE execution relative to the best edge alternative, conditioned jointly on the query embedding and the operator cost weight \u03bb \\lambda .",
+        "The UE can access only local information, including the query representation and an operator-specified accuracy-cost preference."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2605.18015",
+      "title": "LogRouter: Adaptive Two-Level LLM Routing for Log Question Answering in Big Data Systems",
+      "locus": "QUERY",
+      "why": "routes queries between lookup and generative paths",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2606.02581",
+      "title": "Cost-Aware Query Routing in RAG: Empirical Analysis of Retrieval Depth Tradeoffs",
+      "locus": "QUERY",
+      "why": "routing separated from retrieval and generation",
+      "query_evidence": [
+        "Retrieval-based bundles show progressively tighter interquartile ranges because the retrieval step imposes a structured, predictable overhead before generation begins.",
+        "Appendix E Benchmark Corpus RAG improves LLM accuracy by retrieving relevant documents before generation."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2606.31163",
+      "title": "ComplianceGate: Classifier-Gated Multi-Tier LLM Routing for Inference in Regulated Industries",
+      "locus": "UNCLEAR",
+      "why": "no statement of what the router consumes",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2607.00053",
+      "title": "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks",
+      "locus": "OUTPUT",
+      "why": "conditions on the partial agent trajectory",
+      "query_evidence": [
+        "3 Results Does conditioning on the partial trajectory improve over prompt-only baselines? 6 Related Work 7 Conclusion References A Additional Experimental Settings A.",
+        "The intermediate observations \u2014 failed tests, retrieved file contents, stack traces \u2014 supply structural signal that no prompt-only router can access.",
+        "Conditioning on the partial trajectory \u2014 rather than on q q alone \u2014 breaks the information-theoretic ceiling that prompt-only routers face ( Theorem 4."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2607.08665",
+      "title": "Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models",
+      "locus": "OUTPUT",
+      "why": "verifier scores draws before rerouting",
+      "query_evidence": [],
+      "output_evidence": [
+        "Best-of- N N , self-consistency [ 17 ] , and test-time compute scaling [ 18 ] improve quality by drawing multiple samples and selecting among them; Farr et al.",
+        "TABLE VIII: Agreement-verified replay (consensus threshold A = 2 A{=}2 ; label-free self-consistency verifier): accuracy (mean spent cost) at two per-query budgets, mean over 20 draw orderings.",
+        "Zhou, \u201cSelf-consistency improves chain of thought reasoning in language models,\u201d in Proc."
+      ]
+    },
+    {
+      "arxiv": "2607.18240",
+      "title": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+      "locus": "OUTPUT",
+      "why": "selective prediction over produced verdicts",
+      "query_evidence": [],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2607.23765",
+      "title": "WISERouter: LLM Routing with Workload Budget Constraint",
+      "locus": "QUERY",
+      "why": "LP over routing actions at each step",
+      "query_evidence": [
+        "formed S equential E fficient Router , WR for short), a unified framework that addresses both limitations by formulating LLM routing as a Constrained Contextual Bandit (CCB) [ 3 ] problem, where each query embedding is the context, the selected LLM is the action, and the observed response quality is the reward.",
+        "Concretely, WISERouter operates in two stages: query embedding discretization followed by ALP-based model selection, with WR-Offline for data-rich settings (e.",
+        "Each incoming query provides a context, represented by its query embedding (detailed in Section 4."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2607.24875",
+      "title": "FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting",
+      "locus": "UNCLEAR",
+      "why": "no statement of what the router consumes",
+      "query_evidence": [
+        "II-B Retrieval and Agentic Reasoning RAG retrieves passages before generation [ 12 ] ; dense passage retrieval provides a standard semantic retrieval mechanism [ 11 ] ."
+      ],
+      "output_evidence": []
+    },
+    {
+      "arxiv": "2607.25018",
+      "title": "Conformal Cascade: Distribution-Free Accuracy Guarantees for Multi-Tier LLM Inference",
+      "locus": "OUTPUT",
+      "why": "per-tier prediction sets from self-consistency",
+      "query_evidence": [],
+      "output_evidence": [
+        "Production cascades implement this decision as a threshold on a confidence signal such as softmax probability ( 42 ) , self-consistency agreement ( 60 ; 57 ) , or a learned router score ( 52 ) : accept if the signal exceeds a cutoff \u03b8 \\theta , defer otherwise.",
+        "The method imposes no architectural constraints beyond self-consistency-style sampling, requires neither training nor logprob access, and exposes one interpretable hyperparameter.",
+        "For tier k k , we draw N N independent responses from m k m_{k} at temperature \u03c4 0 \\tau 0 (the self-consistency regime of 60 ), giving extracted answers y ^ 1 ( k ) , \u2026 , y ^ N ( k ) \\hat{y}_{1}^{(k)},\\ldots,\\hat{y}_{N}^{(k)} ."
+      ]
+    }
+  ]
+}

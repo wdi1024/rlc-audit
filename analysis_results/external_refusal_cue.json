@@ -1,0 +1,30 @@
+{
+  "model": "protectai/distilroberta-base-rejection-v1",
+  "n": 548,
+  "budget": 55,
+  "auc_side_a": 0.8713263050043141,
+  "auc_side_b": 0.9675887079570504,
+  "rows": {
+    "final TF-IDF only": {
+      "auc_semantic": 0.6746106717767402,
+      "ap_semantic": 0.2992241186363638,
+      "routed_semantic": 20
+    },
+    "composite with marker cue": {
+      "auc_semantic": 0.7149874497314512,
+      "ap_semantic": 0.4018238673648159,
+      "routed_semantic": 28
+    },
+    "composite with external classifier cue": {
+      "auc_semantic": 0.7475641683085477,
+      "ap_semantic": 0.4276547138281093,
+      "routed_semantic": 29
+    },
+    "external classifier cue alone": {
+      "auc_semantic": 0.7541766753933767,
+      "ap_semantic": 0.3795276671650913,
+      "routed_semantic": 23
+    }
+  },
+  "corr_external_marker": 0.25917590221605485
+}

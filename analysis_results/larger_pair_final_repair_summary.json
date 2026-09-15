@@ -1,0 +1,1905 @@
+{
+  "note": "Tagged larger-pair final-span repair audits. Cross-pairs are formed by joining matched single-model outputs on identical prompts under the same cached prompt set.",
+  "pairs": [
+    {
+      "pair": "Qwen/Gemma",
+      "role": "heterogeneous repair",
+      "models": [
+        "qwen3.5-9b",
+        "gemma-2-9b-it"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "qwen3.5-9b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 208,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 385,
+            "fallback_truncated_final": 65
+          },
+          "keyword_final_n": 194
+        },
+        "gemma-2-9b-it": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 261,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 449,
+            "final_only": 1
+          },
+          "keyword_final_n": 218
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 71,
+          "final_keyword_disagreement_n": 110,
+          "keyword_semantic_kappa": 0.2959137171502355,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 71,
+            "prevalence": 0.15777777777777777,
+            "auc": 0.513527072726597,
+            "ap": 0.1729457066941332
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 71,
+            "prevalence": 0.15777777777777777,
+            "auc": 0.6170426251440039,
+            "ap": 0.23427698928688595
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 71,
+            "prevalence": 0.15777777777777777,
+            "auc": 0.6643873796870936,
+            "ap": 0.31626881892241887
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 110,
+            "prevalence": 0.24444444444444444,
+            "auc": 0.6496791443850267,
+            "ap": 0.40354037325970404
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 17,
+            "keyword_disagreement_n": 23,
+            "both_refuse_n": 23,
+            "both_comply_n": 5
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 385,
+          "semantic_disagreement_n": 70,
+          "final_keyword_disagreement_n": 96,
+          "keyword_semantic_kappa": 0.32871012482662965,
+          "raw_prefix50_vs_semantic": {
+            "n": 385,
+            "n_pos": 70,
+            "prevalence": 0.18181818181818182,
+            "auc": 0.5154875283446713,
+            "ap": 0.19678287417440166
+          },
+          "raw_full_vs_semantic": {
+            "n": 385,
+            "n_pos": 70,
+            "prevalence": 0.18181818181818182,
+            "auc": 0.6462585034013605,
+            "ap": 0.2831627181091985
+          },
+          "final_full_vs_semantic": {
+            "n": 385,
+            "n_pos": 70,
+            "prevalence": 0.18181818181818182,
+            "auc": 0.6839909297052155,
+            "ap": 0.3739052706955631
+          },
+          "final_full_vs_keyword": {
+            "n": 385,
+            "n_pos": 96,
+            "prevalence": 0.24935064935064935,
+            "auc": 0.6563581314878892,
+            "ap": 0.40104703873989234
+          },
+          "final_top10pct": {
+            "budget": 38,
+            "semantic_disagreement_n": 16,
+            "keyword_disagreement_n": 18,
+            "both_refuse_n": 17,
+            "both_comply_n": 5
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Qwen/Mistral",
+      "role": "heterogeneous repair",
+      "models": [
+        "qwen3.5-9b",
+        "mistral-7b-instruct-v0.3"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "qwen3.5-9b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 205,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 361,
+            "fallback_truncated_final": 89
+          },
+          "keyword_final_n": 200
+        },
+        "mistral-7b-instruct-v0.3": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 179,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 224,
+            "exact": 226
+          },
+          "keyword_final_n": 106
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 66,
+          "final_keyword_disagreement_n": 150,
+          "keyword_semantic_kappa": 0.2674418604651163,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 66,
+            "prevalence": 0.14666666666666667,
+            "auc": 0.44038036616161613,
+            "ap": 0.12922885856886857
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 66,
+            "prevalence": 0.14666666666666667,
+            "auc": 0.6536063762626263,
+            "ap": 0.25069882331674176
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 66,
+            "prevalence": 0.14666666666666667,
+            "auc": 0.6493055555555556,
+            "ap": 0.2339381935337363
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 150,
+            "prevalence": 0.3333333333333333,
+            "auc": 0.6672888888888888,
+            "ap": 0.45251588518045643
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 13,
+            "keyword_disagreement_n": 20,
+            "both_refuse_n": 32,
+            "both_comply_n": 0
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 192,
+          "semantic_disagreement_n": 27,
+          "final_keyword_disagreement_n": 46,
+          "keyword_semantic_kappa": 0.25078043704474506,
+          "raw_prefix50_vs_semantic": {
+            "n": 192,
+            "n_pos": 27,
+            "prevalence": 0.140625,
+            "auc": 0.5564534231200897,
+            "ap": 0.1626722538159216
+          },
+          "raw_full_vs_semantic": {
+            "n": 192,
+            "n_pos": 27,
+            "prevalence": 0.140625,
+            "auc": 0.6139169472502806,
+            "ap": 0.21749867616989532
+          },
+          "final_full_vs_semantic": {
+            "n": 192,
+            "n_pos": 27,
+            "prevalence": 0.140625,
+            "auc": 0.621324354657688,
+            "ap": 0.22415676693197503
+          },
+          "final_full_vs_keyword": {
+            "n": 192,
+            "n_pos": 46,
+            "prevalence": 0.23958333333333334,
+            "auc": 0.6520250148898155,
+            "ap": 0.35119544453604656
+          },
+          "final_top10pct": {
+            "budget": 19,
+            "semantic_disagreement_n": 7,
+            "keyword_disagreement_n": 8,
+            "both_refuse_n": 11,
+            "both_comply_n": 1
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Qwen/Phi",
+      "role": "cross-family panel",
+      "models": [
+        "qwen3.5-9b",
+        "phi-3.5-mini-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_phi_xstest450_tagged768_thinkingoff_greedy_builtin"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "qwen3.5-9b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 208,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 385,
+            "fallback_truncated_final": 65
+          },
+          "keyword_final_n": 194
+        },
+        "phi-3.5-mini-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 215,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 336,
+            "fallback_truncated_final": 96,
+            "final_only": 18
+          },
+          "keyword_final_n": 156
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 43,
+          "final_keyword_disagreement_n": 114,
+          "keyword_semantic_kappa": 0.09032639779114493,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 43,
+            "prevalence": 0.09555555555555556,
+            "auc": 0.35906519627449857,
+            "ap": 0.07216909845603073
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 43,
+            "prevalence": 0.09555555555555556,
+            "auc": 0.5276269927432717,
+            "ap": 0.10595402453476224
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 43,
+            "prevalence": 0.09555555555555556,
+            "auc": 0.5264842009028056,
+            "ap": 0.13443633436689698
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 114,
+            "prevalence": 0.25333333333333335,
+            "auc": 0.654344193817878,
+            "ap": 0.37023185415008664
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 6,
+            "keyword_disagreement_n": 19,
+            "both_refuse_n": 38,
+            "both_comply_n": 1
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 298,
+          "semantic_disagreement_n": 39,
+          "final_keyword_disagreement_n": 78,
+          "keyword_semantic_kappa": 0.09922868459453826,
+          "raw_prefix50_vs_semantic": {
+            "n": 298,
+            "n_pos": 39,
+            "prevalence": 0.13087248322147652,
+            "auc": 0.36159786159786156,
+            "ap": 0.10103300731637109
+          },
+          "raw_full_vs_semantic": {
+            "n": 298,
+            "n_pos": 39,
+            "prevalence": 0.13087248322147652,
+            "auc": 0.526878526878527,
+            "ap": 0.13977244281788814
+          },
+          "final_full_vs_semantic": {
+            "n": 298,
+            "n_pos": 39,
+            "prevalence": 0.13087248322147652,
+            "auc": 0.5146025146025146,
+            "ap": 0.15672836334098728
+          },
+          "final_full_vs_keyword": {
+            "n": 298,
+            "n_pos": 78,
+            "prevalence": 0.26174496644295303,
+            "auc": 0.6255827505827506,
+            "ap": 0.37775972953718784
+          },
+          "final_top10pct": {
+            "budget": 30,
+            "semantic_disagreement_n": 5,
+            "keyword_disagreement_n": 14,
+            "both_refuse_n": 24,
+            "both_comply_n": 1
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Qwen3-8B/Phi",
+      "role": "size-control panel",
+      "models": [
+        "qwen3-8b",
+        "phi-3.5-mini-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_same_family_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_phi_xstest450_tagged768_thinkingoff_greedy_builtin"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "qwen3-8b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 227,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 421,
+            "fallback_truncated_final": 29
+          },
+          "keyword_final_n": 215
+        },
+        "phi-3.5-mini-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 215,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 336,
+            "fallback_truncated_final": 96,
+            "final_only": 18
+          },
+          "keyword_final_n": 156
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 50,
+          "final_keyword_disagreement_n": 101,
+          "keyword_semantic_kappa": 0.16767502160760583,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 50,
+            "prevalence": 0.1111111111111111,
+            "auc": 0.4699000000000001,
+            "ap": 0.09923754661738869
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 50,
+            "prevalence": 0.1111111111111111,
+            "auc": 0.54215,
+            "ap": 0.1658365807353333
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 50,
+            "prevalence": 0.1111111111111111,
+            "auc": 0.5792,
+            "ap": 0.18082806351983166
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 101,
+            "prevalence": 0.22444444444444445,
+            "auc": 0.6968140940168516,
+            "ap": 0.3843819400504766
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 9,
+            "keyword_disagreement_n": 22,
+            "both_refuse_n": 35,
+            "both_comply_n": 1
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 330,
+          "semantic_disagreement_n": 41,
+          "final_keyword_disagreement_n": 74,
+          "keyword_semantic_kappa": 0.1615958848252934,
+          "raw_prefix50_vs_semantic": {
+            "n": 330,
+            "n_pos": 41,
+            "prevalence": 0.12424242424242424,
+            "auc": 0.4457338171997638,
+            "ap": 0.10679101305150127
+          },
+          "raw_full_vs_semantic": {
+            "n": 330,
+            "n_pos": 41,
+            "prevalence": 0.12424242424242424,
+            "auc": 0.5020676850367118,
+            "ap": 0.16454338390910517
+          },
+          "final_full_vs_semantic": {
+            "n": 330,
+            "n_pos": 41,
+            "prevalence": 0.12424242424242424,
+            "auc": 0.5377669001603511,
+            "ap": 0.179051745803367
+          },
+          "final_full_vs_keyword": {
+            "n": 330,
+            "n_pos": 74,
+            "prevalence": 0.22424242424242424,
+            "auc": 0.7260874155405406,
+            "ap": 0.41504301113393605
+          },
+          "final_top10pct": {
+            "budget": 33,
+            "semantic_disagreement_n": 6,
+            "keyword_disagreement_n": 15,
+            "both_refuse_n": 26,
+            "both_comply_n": 1
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Gemma/Mistral",
+      "role": "cross-pair repair check",
+      "models": [
+        "gemma-2-9b-it",
+        "mistral-7b-instruct-v0.3"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "gemma-2-9b-it": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 261,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 449,
+            "final_only": 1
+          },
+          "keyword_final_n": 218
+        },
+        "mistral-7b-instruct-v0.3": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 179,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 224,
+            "exact": 226
+          },
+          "keyword_final_n": 106
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 100,
+          "final_keyword_disagreement_n": 154,
+          "keyword_semantic_kappa": 0.3425149700598802,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 100,
+            "prevalence": 0.2222222222222222,
+            "auc": 0.5335428571428572,
+            "ap": 0.2281626871301337
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 100,
+            "prevalence": 0.2222222222222222,
+            "auc": 0.6925142857142857,
+            "ap": 0.3586362807835658
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 100,
+            "prevalence": 0.2222222222222222,
+            "auc": 0.7065142857142857,
+            "ap": 0.3760049831392772
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 154,
+            "prevalence": 0.3422222222222222,
+            "auc": 0.7004212004212005,
+            "ap": 0.5129299911200584
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 18,
+            "keyword_disagreement_n": 24,
+            "both_refuse_n": 26,
+            "both_comply_n": 1
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 226,
+          "semantic_disagreement_n": 50,
+          "final_keyword_disagreement_n": 75,
+          "keyword_semantic_kappa": 0.33561445783132526,
+          "raw_prefix50_vs_semantic": {
+            "n": 226,
+            "n_pos": 50,
+            "prevalence": 0.22123893805309736,
+            "auc": 0.5700000000000001,
+            "ap": 0.24354834175559553
+          },
+          "raw_full_vs_semantic": {
+            "n": 226,
+            "n_pos": 50,
+            "prevalence": 0.22123893805309736,
+            "auc": 0.6788636363636363,
+            "ap": 0.3462187504891914
+          },
+          "final_full_vs_semantic": {
+            "n": 226,
+            "n_pos": 50,
+            "prevalence": 0.22123893805309736,
+            "auc": 0.7368181818181818,
+            "ap": 0.4447188153367153
+          },
+          "final_full_vs_keyword": {
+            "n": 226,
+            "n_pos": 75,
+            "prevalence": 0.33185840707964603,
+            "auc": 0.738719646799117,
+            "ap": 0.5815216752619723
+          },
+          "final_top10pct": {
+            "budget": 23,
+            "semantic_disagreement_n": 11,
+            "keyword_disagreement_n": 15,
+            "both_refuse_n": 11,
+            "both_comply_n": 1
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Gemma/Qwen3-8B",
+      "role": "size-control panel",
+      "models": [
+        "gemma-2-9b-it",
+        "qwen3-8b"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_qwen_same_family_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "gemma-2-9b-it": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 261,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 449,
+            "final_only": 1
+          },
+          "keyword_final_n": 218
+        },
+        "qwen3-8b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 227,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 421,
+            "fallback_truncated_final": 29
+          },
+          "keyword_final_n": 215
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 74,
+          "final_keyword_disagreement_n": 85,
+          "keyword_semantic_kappa": 0.3818890961505851,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 74,
+            "prevalence": 0.16444444444444445,
+            "auc": 0.4628917481311099,
+            "ap": 0.15911509740890256
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 74,
+            "prevalence": 0.16444444444444445,
+            "auc": 0.5076193214491087,
+            "ap": 0.16217955236011866
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 74,
+            "prevalence": 0.16444444444444445,
+            "auc": 0.5573964922369178,
+            "ap": 0.2310848174039447
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 85,
+            "prevalence": 0.18888888888888888,
+            "auc": 0.5996454472199839,
+            "ap": 0.23777342275257163
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 8,
+            "keyword_disagreement_n": 7,
+            "both_refuse_n": 36,
+            "both_comply_n": 1
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 421,
+          "semantic_disagreement_n": 74,
+          "final_keyword_disagreement_n": 82,
+          "keyword_semantic_kappa": 0.3866641763167725,
+          "raw_prefix50_vs_semantic": {
+            "n": 421,
+            "n_pos": 74,
+            "prevalence": 0.17577197149643706,
+            "auc": 0.4610951008645533,
+            "ap": 0.16775229169196942
+          },
+          "raw_full_vs_semantic": {
+            "n": 421,
+            "n_pos": 74,
+            "prevalence": 0.17577197149643706,
+            "auc": 0.5265207570683076,
+            "ap": 0.18092399371607817
+          },
+          "final_full_vs_semantic": {
+            "n": 421,
+            "n_pos": 74,
+            "prevalence": 0.17577197149643706,
+            "auc": 0.5769530337253681,
+            "ap": 0.2568496024129302
+          },
+          "final_full_vs_keyword": {
+            "n": 421,
+            "n_pos": 82,
+            "prevalence": 0.19477434679334918,
+            "auc": 0.6117706309806461,
+            "ap": 0.2509293176860989
+          },
+          "final_top10pct": {
+            "budget": 42,
+            "semantic_disagreement_n": 10,
+            "keyword_disagreement_n": 8,
+            "both_refuse_n": 31,
+            "both_comply_n": 1
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Gemma/Phi",
+      "role": "cross-family panel",
+      "models": [
+        "gemma-2-9b-it",
+        "phi-3.5-mini-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_phi_xstest450_tagged768_thinkingoff_greedy_builtin"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "gemma-2-9b-it": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 261,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 449,
+            "final_only": 1
+          },
+          "keyword_final_n": 218
+        },
+        "phi-3.5-mini-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 215,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 336,
+            "fallback_truncated_final": 96,
+            "final_only": 18
+          },
+          "keyword_final_n": 156
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 64,
+          "final_keyword_disagreement_n": 122,
+          "keyword_semantic_kappa": 0.299394865166559,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 64,
+            "prevalence": 0.14222222222222222,
+            "auc": 0.4303149287564767,
+            "ap": 0.12000147306631168
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 64,
+            "prevalence": 0.14222222222222222,
+            "auc": 0.6036674222797926,
+            "ap": 0.1745980351918868
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 64,
+            "prevalence": 0.14222222222222222,
+            "auc": 0.647101683937824,
+            "ap": 0.24741095042973776
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 122,
+            "prevalence": 0.27111111111111114,
+            "auc": 0.6624600159936026,
+            "ap": 0.4056445574327419
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 11,
+            "keyword_disagreement_n": 19,
+            "both_refuse_n": 33,
+            "both_comply_n": 1
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 354,
+          "semantic_disagreement_n": 51,
+          "final_keyword_disagreement_n": 97,
+          "keyword_semantic_kappa": 0.3336156995623324,
+          "raw_prefix50_vs_semantic": {
+            "n": 354,
+            "n_pos": 51,
+            "prevalence": 0.1440677966101695,
+            "auc": 0.4222804633404517,
+            "ap": 0.12034439605761732
+          },
+          "raw_full_vs_semantic": {
+            "n": 354,
+            "n_pos": 51,
+            "prevalence": 0.1440677966101695,
+            "auc": 0.5497314437326086,
+            "ap": 0.15413893970671355
+          },
+          "final_full_vs_semantic": {
+            "n": 354,
+            "n_pos": 51,
+            "prevalence": 0.1440677966101695,
+            "auc": 0.5919238982721803,
+            "ap": 0.22462876758561373
+          },
+          "final_full_vs_keyword": {
+            "n": 354,
+            "n_pos": 97,
+            "prevalence": 0.2740112994350282,
+            "auc": 0.6337999919772154,
+            "ap": 0.39018471403145405
+          },
+          "final_top10pct": {
+            "budget": 35,
+            "semantic_disagreement_n": 9,
+            "keyword_disagreement_n": 16,
+            "both_refuse_n": 25,
+            "both_comply_n": 1
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Mistral/Qwen3-8B",
+      "role": "size-control panel",
+      "models": [
+        "mistral-7b-instruct-v0.3",
+        "qwen3-8b"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_qwen_same_family_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "mistral-7b-instruct-v0.3": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 179,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 224,
+            "exact": 226
+          },
+          "keyword_final_n": 106
+        },
+        "qwen3-8b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 227,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 421,
+            "fallback_truncated_final": 29
+          },
+          "keyword_final_n": 215
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 82,
+          "final_keyword_disagreement_n": 137,
+          "keyword_semantic_kappa": 0.35530085959885394,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 82,
+            "prevalence": 0.18222222222222223,
+            "auc": 0.49212950689289503,
+            "ap": 0.16619542929125122
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 82,
+            "prevalence": 0.18222222222222223,
+            "auc": 0.7011200954400848,
+            "ap": 0.4424988556877556
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 82,
+            "prevalence": 0.18222222222222223,
+            "auc": 0.6961492576882291,
+            "ap": 0.33477034200113265
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 137,
+            "prevalence": 0.30444444444444446,
+            "auc": 0.7643478463655232,
+            "ap": 0.5835336290718025
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 22,
+            "keyword_disagreement_n": 33,
+            "both_refuse_n": 23,
+            "both_comply_n": 0
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 214,
+          "semantic_disagreement_n": 34,
+          "final_keyword_disagreement_n": 50,
+          "keyword_semantic_kappa": 0.23655323819978047,
+          "raw_prefix50_vs_semantic": {
+            "n": 214,
+            "n_pos": 34,
+            "prevalence": 0.1588785046728972,
+            "auc": 0.45833333333333337,
+            "ap": 0.1437528777769665
+          },
+          "raw_full_vs_semantic": {
+            "n": 214,
+            "n_pos": 34,
+            "prevalence": 0.1588785046728972,
+            "auc": 0.6294117647058823,
+            "ap": 0.31655601275619283
+          },
+          "final_full_vs_semantic": {
+            "n": 214,
+            "n_pos": 34,
+            "prevalence": 0.1588785046728972,
+            "auc": 0.6473856209150327,
+            "ap": 0.24122831891718582
+          },
+          "final_full_vs_keyword": {
+            "n": 214,
+            "n_pos": 50,
+            "prevalence": 0.2336448598130841,
+            "auc": 0.6934146341463415,
+            "ap": 0.4843677583138997
+          },
+          "final_top10pct": {
+            "budget": 21,
+            "semantic_disagreement_n": 5,
+            "keyword_disagreement_n": 12,
+            "both_refuse_n": 15,
+            "both_comply_n": 1
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Mistral/Phi",
+      "role": "cross-family panel",
+      "models": [
+        "mistral-7b-instruct-v0.3",
+        "phi-3.5-mini-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_phi_xstest450_tagged768_thinkingoff_greedy_builtin"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "mistral-7b-instruct-v0.3": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 179,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 224,
+            "exact": 226
+          },
+          "keyword_final_n": 106
+        },
+        "phi-3.5-mini-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 215,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 336,
+            "fallback_truncated_final": 96,
+            "final_only": 18
+          },
+          "keyword_final_n": 156
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 70,
+          "final_keyword_disagreement_n": 120,
+          "keyword_semantic_kappa": 0.22707423580786024,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 70,
+            "prevalence": 0.15555555555555556,
+            "auc": 0.4258270676691729,
+            "ap": 0.13462313399099748
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 70,
+            "prevalence": 0.15555555555555556,
+            "auc": 0.6724812030075188,
+            "ap": 0.23825634702498555
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 70,
+            "prevalence": 0.15555555555555556,
+            "auc": 0.667406015037594,
+            "ap": 0.243594692308845
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 120,
+            "prevalence": 0.26666666666666666,
+            "auc": 0.7214141414141415,
+            "ap": 0.46276950721636073
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 11,
+            "keyword_disagreement_n": 22,
+            "both_refuse_n": 31,
+            "both_comply_n": 3
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 172,
+          "semantic_disagreement_n": 27,
+          "final_keyword_disagreement_n": 34,
+          "keyword_semantic_kappa": 0.18530499075785578,
+          "raw_prefix50_vs_semantic": {
+            "n": 172,
+            "n_pos": 27,
+            "prevalence": 0.1569767441860465,
+            "auc": 0.42733077905491695,
+            "ap": 0.14236995367096422
+          },
+          "raw_full_vs_semantic": {
+            "n": 172,
+            "n_pos": 27,
+            "prevalence": 0.1569767441860465,
+            "auc": 0.644955300127714,
+            "ap": 0.2918990479968578
+          },
+          "final_full_vs_semantic": {
+            "n": 172,
+            "n_pos": 27,
+            "prevalence": 0.1569767441860465,
+            "auc": 0.6436781609195402,
+            "ap": 0.2829473996399271
+          },
+          "final_full_vs_keyword": {
+            "n": 172,
+            "n_pos": 34,
+            "prevalence": 0.19767441860465115,
+            "auc": 0.6353367433930094,
+            "ap": 0.3276251427719996
+          },
+          "final_top10pct": {
+            "budget": 17,
+            "semantic_disagreement_n": 7,
+            "keyword_disagreement_n": 8,
+            "both_refuse_n": 9,
+            "both_comply_n": 1
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Qwen/Llama",
+      "role": "cross-family panel",
+      "models": [
+        "qwen3.5-9b",
+        "llama-3.1-8b-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_llama_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "qwen3.5-9b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 208,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 385,
+            "fallback_truncated_final": 65
+          },
+          "keyword_final_n": 194
+        },
+        "llama-3.1-8b-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 193,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 362,
+            "fallback_raw_as_final": 80,
+            "exact": 8
+          },
+          "keyword_final_n": 154
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 47,
+          "final_keyword_disagreement_n": 116,
+          "keyword_semantic_kappa": 0.18569644172565092,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 47,
+            "prevalence": 0.10444444444444445,
+            "auc": 0.46145926825405204,
+            "ap": 0.09960425069079137
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 47,
+            "prevalence": 0.10444444444444445,
+            "auc": 0.5461696848107279,
+            "ap": 0.11304587824385032
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 47,
+            "prevalence": 0.10444444444444445,
+            "auc": 0.5590517924080038,
+            "ap": 0.12064554742804365
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 116,
+            "prevalence": 0.2577777777777778,
+            "auc": 0.6231674581870742,
+            "ap": 0.3521525968775521
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 4,
+            "keyword_disagreement_n": 16,
+            "both_refuse_n": 41,
+            "both_comply_n": 0
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 63,
+          "semantic_disagreement_n": 1,
+          "final_keyword_disagreement_n": 16,
+          "keyword_semantic_kappa": 0.09047160731472559,
+          "raw_prefix50_vs_semantic": {
+            "n": 63,
+            "n_pos": 1,
+            "prevalence": 0.015873015873015872,
+            "auc": 0.8145161290322581,
+            "ap": 0.041666666666666664
+          },
+          "raw_full_vs_semantic": {
+            "n": 63,
+            "n_pos": 1,
+            "prevalence": 0.015873015873015872,
+            "auc": 0.8225806451612903,
+            "ap": 0.08333333333333333
+          },
+          "final_full_vs_semantic": {
+            "n": 63,
+            "n_pos": 1,
+            "prevalence": 0.015873015873015872,
+            "auc": 0.967741935483871,
+            "ap": 0.3333333333333333
+          },
+          "final_full_vs_keyword": {
+            "n": 63,
+            "n_pos": 16,
+            "prevalence": 0.25396825396825395,
+            "auc": 0.6409574468085106,
+            "ap": 0.5254607237539886
+          },
+          "final_top10pct": {
+            "budget": 6,
+            "semantic_disagreement_n": 1,
+            "keyword_disagreement_n": 5,
+            "both_refuse_n": 5,
+            "both_comply_n": 0
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Gemma/Llama",
+      "role": "cross-family panel",
+      "models": [
+        "gemma-2-9b-it",
+        "llama-3.1-8b-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_llama_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "gemma-2-9b-it": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 261,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 449,
+            "final_only": 1
+          },
+          "keyword_final_n": 218
+        },
+        "llama-3.1-8b-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 193,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 362,
+            "fallback_raw_as_final": 80,
+            "exact": 8
+          },
+          "keyword_final_n": 154
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 94,
+          "final_keyword_disagreement_n": 126,
+          "keyword_semantic_kappa": 0.3666347992351817,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 94,
+            "prevalence": 0.2088888888888889,
+            "auc": 0.47370308391106863,
+            "ap": 0.18720742339263963
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 94,
+            "prevalence": 0.2088888888888889,
+            "auc": 0.60479918718623,
+            "ap": 0.2362996379506019
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 94,
+            "prevalence": 0.2088888888888889,
+            "auc": 0.6329488405450634,
+            "ap": 0.28334013404758956
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 126,
+            "prevalence": 0.28,
+            "auc": 0.6416078777189888,
+            "ap": 0.37720744837531606
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 13,
+            "keyword_disagreement_n": 18,
+            "both_refuse_n": 32,
+            "both_comply_n": 0
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 88,
+          "semantic_disagreement_n": 7,
+          "final_keyword_disagreement_n": 26,
+          "keyword_semantic_kappa": 0.20314960629921264,
+          "raw_prefix50_vs_semantic": {
+            "n": 88,
+            "n_pos": 7,
+            "prevalence": 0.07954545454545454,
+            "auc": 0.4814814814814815,
+            "ap": 0.07823142000428357
+          },
+          "raw_full_vs_semantic": {
+            "n": 88,
+            "n_pos": 7,
+            "prevalence": 0.07954545454545454,
+            "auc": 0.35802469135802467,
+            "ap": 0.06781731428384408
+          },
+          "final_full_vs_semantic": {
+            "n": 88,
+            "n_pos": 7,
+            "prevalence": 0.07954545454545454,
+            "auc": 0.35449735449735453,
+            "ap": 0.07592579334312619
+          },
+          "final_full_vs_keyword": {
+            "n": 88,
+            "n_pos": 26,
+            "prevalence": 0.29545454545454547,
+            "auc": 0.43207196029776673,
+            "ap": 0.2941503776592615
+          },
+          "final_top10pct": {
+            "budget": 9,
+            "semantic_disagreement_n": 1,
+            "keyword_disagreement_n": 3,
+            "both_refuse_n": 8,
+            "both_comply_n": 0
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Mistral/Llama",
+      "role": "cross-family panel",
+      "models": [
+        "mistral-7b-instruct-v0.3",
+        "llama-3.1-8b-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_llama_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "mistral-7b-instruct-v0.3": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 179,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 224,
+            "exact": 226
+          },
+          "keyword_final_n": 106
+        },
+        "llama-3.1-8b-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 193,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 362,
+            "fallback_raw_as_final": 80,
+            "exact": 8
+          },
+          "keyword_final_n": 154
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 76,
+          "final_keyword_disagreement_n": 130,
+          "keyword_semantic_kappa": 0.309021113243762,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 76,
+            "prevalence": 0.1688888888888889,
+            "auc": 0.6151843512524627,
+            "ap": 0.2283328200789811
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 76,
+            "prevalence": 0.1688888888888889,
+            "auc": 0.6988108640585421,
+            "ap": 0.3151004367735966
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 76,
+            "prevalence": 0.1688888888888889,
+            "auc": 0.7012383900928792,
+            "ap": 0.32034866766081993
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 130,
+            "prevalence": 0.28888888888888886,
+            "auc": 0.7640865384615384,
+            "ap": 0.5660266574388361
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 18,
+            "keyword_disagreement_n": 33,
+            "both_refuse_n": 27,
+            "both_comply_n": 0
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 35,
+          "semantic_disagreement_n": 7,
+          "final_keyword_disagreement_n": 21,
+          "keyword_semantic_kappa": 0.08163265306122458,
+          "raw_prefix50_vs_semantic": {
+            "n": 35,
+            "n_pos": 7,
+            "prevalence": 0.2,
+            "auc": 0.4897959183673469,
+            "ap": 0.20809073966968705
+          },
+          "raw_full_vs_semantic": {
+            "n": 35,
+            "n_pos": 7,
+            "prevalence": 0.2,
+            "auc": 0.6071428571428572,
+            "ap": 0.43736010533245556
+          },
+          "final_full_vs_semantic": {
+            "n": 35,
+            "n_pos": 7,
+            "prevalence": 0.2,
+            "auc": 0.7091836734693877,
+            "ap": 0.441808765946697
+          },
+          "final_full_vs_keyword": {
+            "n": 35,
+            "n_pos": 21,
+            "prevalence": 0.6,
+            "auc": 0.7448979591836734,
+            "ap": 0.811169084223353
+          },
+          "final_top10pct": {
+            "budget": 4,
+            "semantic_disagreement_n": 1,
+            "keyword_disagreement_n": 3,
+            "both_refuse_n": 3,
+            "both_comply_n": 0
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Qwen3-8B/Llama",
+      "role": "size-control panel",
+      "models": [
+        "qwen3-8b",
+        "llama-3.1-8b-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_same_family_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_llama_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "qwen3-8b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 227,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 421,
+            "fallback_truncated_final": 29
+          },
+          "keyword_final_n": 215
+        },
+        "llama-3.1-8b-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 193,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 362,
+            "fallback_raw_as_final": 80,
+            "exact": 8
+          },
+          "keyword_final_n": 154
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 66,
+          "final_keyword_disagreement_n": 105,
+          "keyword_semantic_kappa": 0.33666191155492153,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 66,
+            "prevalence": 0.14666666666666667,
+            "auc": 0.5127840909090908,
+            "ap": 0.13783200479661015
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 66,
+            "prevalence": 0.14666666666666667,
+            "auc": 0.6276041666666666,
+            "ap": 0.1982800712625745
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 66,
+            "prevalence": 0.14666666666666667,
+            "auc": 0.6641414141414141,
+            "ap": 0.2264827085958504
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 105,
+            "prevalence": 0.23333333333333334,
+            "auc": 0.7159282263630089,
+            "ap": 0.42595322149815373
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 11,
+            "keyword_disagreement_n": 24,
+            "both_refuse_n": 34,
+            "both_comply_n": 0
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 77,
+          "semantic_disagreement_n": 2,
+          "final_keyword_disagreement_n": 15,
+          "keyword_semantic_kappa": 0.07526020816653323,
+          "raw_prefix50_vs_semantic": {
+            "n": 77,
+            "n_pos": 2,
+            "prevalence": 0.025974025974025976,
+            "auc": 0.6733333333333333,
+            "ap": 0.0392156862745098
+          },
+          "raw_full_vs_semantic": {
+            "n": 77,
+            "n_pos": 2,
+            "prevalence": 0.025974025974025976,
+            "auc": 0.7466666666666666,
+            "ap": 0.525
+          },
+          "final_full_vs_semantic": {
+            "n": 77,
+            "n_pos": 2,
+            "prevalence": 0.025974025974025976,
+            "auc": 0.76,
+            "ap": 0.19444444444444442
+          },
+          "final_full_vs_keyword": {
+            "n": 77,
+            "n_pos": 15,
+            "prevalence": 0.19480519480519481,
+            "auc": 0.6021505376344086,
+            "ap": 0.2904820734562477
+          },
+          "final_top10pct": {
+            "budget": 8,
+            "semantic_disagreement_n": 1,
+            "keyword_disagreement_n": 2,
+            "both_refuse_n": 7,
+            "both_comply_n": 0
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Llama/Phi",
+      "role": "cross-family panel",
+      "models": [
+        "llama-3.1-8b-instruct",
+        "phi-3.5-mini-instruct"
+      ],
+      "source_phases": [
+        "phase_colab_llama_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_phi_xstest450_tagged768_thinkingoff_greedy_builtin"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "llama-3.1-8b-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 193,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "fallback_truncated_final": 362,
+            "fallback_raw_as_final": 80,
+            "exact": 8
+          },
+          "keyword_final_n": 154
+        },
+        "phi-3.5-mini-instruct": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 215,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 336,
+            "fallback_truncated_final": 96,
+            "final_only": 18
+          },
+          "keyword_final_n": 156
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 60,
+          "final_keyword_disagreement_n": 114,
+          "keyword_semantic_kappa": 0.1643454038997214,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 60,
+            "prevalence": 0.13333333333333333,
+            "auc": 0.4569871794871795,
+            "ap": 0.11472911942074412
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 60,
+            "prevalence": 0.13333333333333333,
+            "auc": 0.5752564102564103,
+            "ap": 0.1485136072452712
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 60,
+            "prevalence": 0.13333333333333333,
+            "auc": 0.5982264957264958,
+            "ap": 0.16406305301933888
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 114,
+            "prevalence": 0.25333333333333335,
+            "auc": 0.685594193817878,
+            "ap": 0.3782009048506318
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 7,
+            "keyword_disagreement_n": 19,
+            "both_refuse_n": 37,
+            "both_comply_n": 1
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 78,
+          "semantic_disagreement_n": 1,
+          "final_keyword_disagreement_n": 26,
+          "keyword_semantic_kappa": -0.025316455696202445,
+          "raw_prefix50_vs_semantic": {
+            "n": 78,
+            "n_pos": 1,
+            "prevalence": 0.01282051282051282,
+            "auc": 0.0,
+            "ap": 0.01282051282051282
+          },
+          "raw_full_vs_semantic": {
+            "n": 78,
+            "n_pos": 1,
+            "prevalence": 0.01282051282051282,
+            "auc": 0.012987012987012991,
+            "ap": 0.012987012987012988
+          },
+          "final_full_vs_semantic": {
+            "n": 78,
+            "n_pos": 1,
+            "prevalence": 0.01282051282051282,
+            "auc": 0.06493506493506496,
+            "ap": 0.0136986301369863
+          },
+          "final_full_vs_keyword": {
+            "n": 78,
+            "n_pos": 26,
+            "prevalence": 0.3333333333333333,
+            "auc": 0.5129437869822485,
+            "ap": 0.34614174081901566
+          },
+          "final_top10pct": {
+            "budget": 8,
+            "semantic_disagreement_n": 0,
+            "keyword_disagreement_n": 3,
+            "both_refuse_n": 8,
+            "both_comply_n": 0
+          }
+        }
+      ]
+    },
+    {
+      "pair": "Qwen/Qwen",
+      "role": "same-family control",
+      "models": [
+        "qwen3-8b",
+        "qwen3.5-9b"
+      ],
+      "source_phases": [
+        "phase_colab_qwen_same_family_xstest450_tagged768_thinkingoff_greedy",
+        "phase_colab_qwen_same_family_xstest450_tagged768_thinkingoff_greedy"
+      ],
+      "common_prompt_n": 450,
+      "identical_prompt_text_n": 450,
+      "model_summaries": {
+        "qwen3-8b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 227,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 421,
+            "fallback_truncated_final": 29
+          },
+          "keyword_final_n": 215
+        },
+        "qwen3.5-9b": {
+          "n": 450,
+          "judge_n": 450,
+          "judge_refusal_n": 205,
+          "errors": 0,
+          "final_nonempty": 450,
+          "parse_status": {
+            "exact": 361,
+            "fallback_truncated_final": 89
+          },
+          "keyword_final_n": 200
+        }
+      },
+      "subsets": [
+        {
+          "subset": "all_final_nonempty",
+          "n": 450,
+          "semantic_disagreement_n": 40,
+          "final_keyword_disagreement_n": 73,
+          "keyword_semantic_kappa": 0.23017107309486773,
+          "raw_prefix50_vs_semantic": {
+            "n": 450,
+            "n_pos": 40,
+            "prevalence": 0.08888888888888889,
+            "auc": 0.37926829268292683,
+            "ap": 0.06787764218681533
+          },
+          "raw_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 40,
+            "prevalence": 0.08888888888888889,
+            "auc": 0.6164634146341463,
+            "ap": 0.21427321889414785
+          },
+          "final_full_vs_semantic": {
+            "n": 450,
+            "n_pos": 40,
+            "prevalence": 0.08888888888888889,
+            "auc": 0.6309756097560976,
+            "ap": 0.1811216722939185
+          },
+          "final_full_vs_keyword": {
+            "n": 450,
+            "n_pos": 73,
+            "prevalence": 0.1622222222222222,
+            "auc": 0.5372987900148977,
+            "ap": 0.19048457050165835
+          },
+          "final_top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 8,
+            "keyword_disagreement_n": 6,
+            "both_refuse_n": 37,
+            "both_comply_n": 0
+          }
+        },
+        {
+          "subset": "exclude_any_truncated_final",
+          "n": 337,
+          "semantic_disagreement_n": 39,
+          "final_keyword_disagreement_n": 58,
+          "keyword_semantic_kappa": 0.24619208237173795,
+          "raw_prefix50_vs_semantic": {
+            "n": 337,
+            "n_pos": 39,
+            "prevalence": 0.11572700296735905,
+            "auc": 0.3665031836172776,
+            "ap": 0.08662098817462376
+          },
+          "raw_full_vs_semantic": {
+            "n": 337,
+            "n_pos": 39,
+            "prevalence": 0.11572700296735905,
+            "auc": 0.6867148511443815,
+            "ap": 0.2903083266191031
+          },
+          "final_full_vs_semantic": {
+            "n": 337,
+            "n_pos": 39,
+            "prevalence": 0.11572700296735905,
+            "auc": 0.6880055067974532,
+            "ap": 0.2583369388237779
+          },
+          "final_full_vs_keyword": {
+            "n": 337,
+            "n_pos": 58,
+            "prevalence": 0.17210682492581603,
+            "auc": 0.6192065257693734,
+            "ap": 0.25006299422815903
+          },
+          "final_top10pct": {
+            "budget": 34,
+            "semantic_disagreement_n": 8,
+            "keyword_disagreement_n": 7,
+            "both_refuse_n": 26,
+            "both_comply_n": 0
+          }
+        }
+      ]
+    }
+  ]
+}

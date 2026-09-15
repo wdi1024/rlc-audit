@@ -1,0 +1,110 @@
+{
+  "n_common": 1319,
+  "encoders": [
+    {
+      "encoder_label": "Random projection (TF-IDF→384d)",
+      "encoder_key": "random_projection_384d",
+      "auc_keyword": 0.7667706708268331,
+      "auc_judge": 0.5477561363261512,
+      "auc_judge_ci": [
+        0.5159357181392858,
+        0.5797428973044123
+      ],
+      "sep_d": 0.13493360355082057,
+      "sim_mean": 0.42652352661127274,
+      "sim_std": 0.16269356663413093,
+      "sim_disagree_mean": 0.4124618618797306,
+      "sim_agree_mean": 0.43438542663257235
+    },
+    {
+      "encoder_label": "MiniLM-L6-v2 (384d)",
+      "encoder_key": "MiniLM-L6-v2",
+      "auc_keyword": 0.7561875447990892,
+      "auc_judge": 0.5275965993432594,
+      "auc_judge_ci": [
+        0.4950459223599256,
+        0.5582879005238388
+      ],
+      "sep_d": 0.012912890836412632,
+      "sim_mean": 0.7846322655677795,
+      "sim_std": 0.09805905073881149,
+      "sim_disagree_mean": 0.7838194966316223,
+      "sim_agree_mean": 0.7850866913795471
+    },
+    {
+      "encoder_label": "MiniLM-L12-v2 (384d)",
+      "encoder_key": "MiniLM-L12-v2",
+      "auc_keyword": 0.8056668212674453,
+      "auc_judge": 0.5305754227080304,
+      "auc_judge_ci": [
+        0.4981256229390579,
+        0.5617560334978922
+      ],
+      "sep_d": 0.028592444631141318,
+      "sim_mean": 0.8096957802772522,
+      "sim_std": 0.09184601157903671,
+      "sim_disagree_mean": 0.8080102801322937,
+      "sim_agree_mean": 0.8106381893157959
+    },
+    {
+      "encoder_label": "MPNet-base-v2 (768d)",
+      "encoder_key": "MPNet-base-v2",
+      "auc_keyword": 0.7946409748281824,
+      "auc_judge": 0.536238185916563,
+      "auc_judge_ci": [
+        0.5042083275053765,
+        0.5688658692912986
+      ],
+      "sep_d": 0.06401858214409131,
+      "sim_mean": 0.8275978565216064,
+      "sim_std": 0.09963253885507584,
+      "sim_disagree_mean": 0.8235055804252625,
+      "sim_agree_mean": 0.8298857808113098
+    },
+    {
+      "encoder_label": "MultiQA-MPNet (768d)",
+      "encoder_key": "MultiQA-MPNet-base-dot-v1",
+      "auc_keyword": 0.815448834169583,
+      "auc_judge": 0.5261146846995437,
+      "auc_judge_ci": [
+        0.49181300962457897,
+        0.5578780286814771
+      ],
+      "sep_d": 0.03512277530707676,
+      "sim_mean": 0.8128994107246399,
+      "sim_std": 0.08871757239103317,
+      "sim_disagree_mean": 0.8108996152877808,
+      "sim_agree_mean": 0.8140175938606262
+    },
+    {
+      "encoder_label": "BGE-large-en-v1.5 (1024d)",
+      "encoder_key": "BAAI_bge-large-en-v1.5",
+      "auc_keyword": 0.8317662436227179,
+      "auc_judge": 0.5428505740232609,
+      "auc_judge_ci": [
+        0.5112574775579493,
+        0.5740931407988082
+      ],
+      "sep_d": 0.04768464325102828,
+      "sim_mean": 0.8799950480461121,
+      "sim_std": 0.05015876144170761,
+      "sim_disagree_mean": 0.878460168838501,
+      "sim_agree_mean": 0.8808531761169434
+    },
+    {
+      "encoder_label": "E5-large-v2 + 'query:' prefix (1024d)",
+      "encoder_key": "intfloat_e5-large-v2_prefixed",
+      "auc_keyword": 0.8723489480119746,
+      "auc_judge": 0.5512322632560138,
+      "auc_judge_ci": [
+        0.5195736460267861,
+        0.5832169287879985
+      ],
+      "sep_d": 0.05109076290780208,
+      "sim_mean": 0.9403866529464722,
+      "sim_std": 0.03038005344569683,
+      "sim_disagree_mean": 0.9393906593322754,
+      "sim_agree_mean": 0.9409434795379639
+    }
+  ]
+}

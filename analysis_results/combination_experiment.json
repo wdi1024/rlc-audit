@@ -1,0 +1,20 @@
+{
+  "n": 450,
+  "disagreement_n": 46,
+  "unsafe_n": 200,
+  "individual_aucs_vs_safety": {
+    "ours_sentence_judge": 0.48206,
+    "fjd_qwen": 0.5231,
+    "fjd_gemma": 0.91348,
+    "fjd_avg": 0.77386
+  },
+  "linear_combination_best": {
+    "alpha": 0.0,
+    "auc": 0.91348
+  },
+  "lr_combination_auc": 0.9051399999999998,
+  "lr_coefs": {
+    "ours": 0.4557372881941568,
+    "fjd_gemma": 2.1712966784975616
+  }
+}

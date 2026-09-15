@@ -1,0 +1,159 @@
+{
+  "ok": [
+    "cronbach1955construct",
+    "bowman2021benchmarking",
+    "jacobs2021measurement",
+    "gururangan2018annotation",
+    "poliak2018hypothesis",
+    "mccoy2019right",
+    "geirhos2020shortcut",
+    "raji2021benchmark",
+    "schaeffer2023mirage",
+    "tajik2026disagreement",
+    "gorbett2026cross",
+    "chegini2025razor",
+    "chen2025jailbreak",
+    "geifman2017selective",
+    "kamath2020selective",
+    "vidgen2023simplesafetytests",
+    "zou2023advbench",
+    "cui2025orbench",
+    "han2024wildguard",
+    "chao2024jailbreakbench",
+    "xie2025sorrybench",
+    "liu2024autodan",
+    "qi2024finetuning",
+    "yu2025refat",
+    "zheng2023judging",
+    "wang2023large",
+    "yang2025qwen3",
+    "gemmateam2024gemma",
+    "jiang2023mistral",
+    "abdin2024phi3",
+    "yang2018hotpotqa",
+    "reimers2019sentence",
+    "wang2022textembeddings",
+    "schick2023toolformer",
+    "wei2022chain",
+    "chen2023frugalgpt",
+    "lu2024zooter",
+    "aggarwal2024automix",
+    "hu2024routerbench",
+    "inan2023llamaguard",
+    "souly2024strongreject",
+    "li2026proxy",
+    "jiang2023llmblender",
+    "zhang2025lessons",
+    "agrawal2026prism",
+    "zheng2025cold",
+    "skalse2022defining",
+    "ribeiro2020checklist",
+    "liang2023helm",
+    "mitchell2019modelcards",
+    "nutfullin2026defense",
+    "chen2026routinggap",
+    "pita2026grain",
+    "ma2026buildingtotest",
+    "campbell1959convergent",
+    "prentice1989surrogate",
+    "kriegeskorte2009circular",
+    "wang2024mathshepherd"
+  ],
+  "check": [
+    [
+      "rottger2024xstest",
+      "author R\\\"ottger",
+      "Paul R\u00f6ttger"
+    ],
+    [
+      "dubey2024llama",
+      "author Dubey",
+      "Aaron Grattafiori"
+    ],
+    [
+      "hendrycks2021mmlu",
+      "author Hendrycks",
+      "Saman Sarker Joy"
+    ]
+  ],
+  "not_found": [
+    [
+      "cobbe2021training",
+      "Training Verifiers to Solve Math Word Problems"
+    ],
+    [
+      "pedregosa2011scikit",
+      "Scikit-learn: Machine Learning in Python"
+    ],
+    [
+      "lewis2020retrieval",
+      "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    ],
+    [
+      "wang2023selfconsistency",
+      "Self-Consistency Improves Chain of Thought Reasoning in Language Models"
+    ],
+    [
+      "ding2024hybrid",
+      "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing"
+    ],
+    [
+      "yue2024mot",
+      "Large Language Model Cascades with Mixture of Thought Representations for Cost-Efficient Reasoning"
+    ],
+    [
+      "gupta2024language",
+      "Language Model Cascades: Token-Level Uncertainty and Beyond"
+    ],
+    [
+      "ong2025routellm",
+      "RouteLLM: Learning to Route LLMs with Preference Data"
+    ],
+    [
+      "mazeika2024harmbench",
+      "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal"
+    ],
+    [
+      "cui2024ultrafeedback",
+      "UltraFeedback: Boosting Language Models with Scaled AI Feedback"
+    ],
+    [
+      "lightman2024verify",
+      "Let's Verify Step by Step"
+    ],
+    [
+      "hendrycks2021math",
+      "Measuring Mathematical Problem Solving With the MATH Dataset"
+    ],
+    [
+      "gao2023scaling",
+      "Scaling Laws for Reward Model Overoptimization"
+    ],
+    [
+      "pan2022effects",
+      "The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models"
+    ],
+    [
+      "gebru2021datasheets",
+      "Datasheets for Datasets"
+    ]
+  ],
+  "no_registry_expected": [
+    [
+      "beeching2024scaling",
+      "Scaling Test-Time Compute with Open Models"
+    ],
+    [
+      "qwenteam2026qwen35",
+      "Qwen3.5-2B Model Release"
+    ],
+    [
+      "gemmateam2026gemma4",
+      "Gemma 4 E2B Model Release"
+    ],
+    [
+      "rlhflow2024prm",
+      "Llama3.1-8B-PRM-Deepseek-Data Model Release"
+    ]
+  ]
+}

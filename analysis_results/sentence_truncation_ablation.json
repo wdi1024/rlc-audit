@@ -1,0 +1,37 @@
+{
+  "method": "all-MiniLM-L12-v2 sentence embedding",
+  "n": 450,
+  "truncation": [
+    {
+      "char_limit": 50,
+      "auc_keyword": 0.8529411764705882,
+      "auc_judge": 0.6237085665088248
+    },
+    {
+      "char_limit": 100,
+      "auc_keyword": 0.762070588235294,
+      "auc_judge": 0.48105897546276366
+    },
+    {
+      "char_limit": 200,
+      "auc_keyword": 0.7759058823529412,
+      "auc_judge": 0.5618811881188118
+    },
+    {
+      "char_limit": 500,
+      "auc_keyword": 0.8204235294117648,
+      "auc_judge": 0.651097718467499
+    },
+    {
+      "char_limit": 1000,
+      "auc_keyword": 0.8204235294117648,
+      "auc_judge": 0.651097718467499
+    },
+    {
+      "char_limit": 99999,
+      "auc_keyword": 0.8204235294117648,
+      "auc_judge": 0.651097718467499
+    }
+  ],
+  "note": "compare with TF-IDF truncation in phase3_xstest_full_bootstrap_ci.json:ablations.trace_truncation"
+}

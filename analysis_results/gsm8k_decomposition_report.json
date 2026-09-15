@@ -1,0 +1,60 @@
+{
+  "n_common": 250,
+  "qwen_kw_acc": 0.404,
+  "gemma_kw_acc": 0.572,
+  "qwen_judge_acc": 0.452,
+  "gemma_judge_acc": 0.788,
+  "kw_disagree": 76,
+  "judge_disagree": 92,
+  "kappa_surface_semantic": 0.3039691604797258,
+  "tfidf_rlc_audit": {
+    "status": "ALIGNED",
+    "surface_proxy": "gold-number-in-trace disagreement",
+    "semantic_construct": "LLM-judge numeric-correctness disagreement",
+    "score_span": "full trace",
+    "auc_surface": 0.5704022988505747,
+    "auc_semantic": 0.595074298293891,
+    "ap_surface": 0.39595477422694014,
+    "ap_semantic": 0.47800018260595256,
+    "top50_surface_disagreements": 21,
+    "top50_semantic_disagreements": 24
+  },
+  "cells": {
+    "TF-IDF_x_keyword": {
+      "auc": 0.5704022988505747,
+      "ci": [
+        0.48712424518697894,
+        0.6508967064718613
+      ],
+      "sep_d": 0.30108106897806153,
+      "n_disagree": 76
+    },
+    "TF-IDF_x_judge": {
+      "auc": 0.595074298293891,
+      "ci": [
+        0.5186929709668427,
+        0.6676544612794613
+      ],
+      "sep_d": 0.3311023923683105,
+      "n_disagree": 92
+    },
+    "Sentence-L12_x_keyword": {
+      "auc": 0.5168632788868723,
+      "ci": [
+        0.4351521428571429,
+        0.5951236335189988
+      ],
+      "sep_d": 0.05671149988858682,
+      "n_disagree": 76
+    },
+    "Sentence-L12_x_judge": {
+      "auc": 0.5476059438635114,
+      "ci": [
+        0.47681606060606063,
+        0.6201155751238304
+      ],
+      "sep_d": 0.08342595679921111,
+      "n_disagree": 92
+    }
+  }
+}

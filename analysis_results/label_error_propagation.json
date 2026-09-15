@@ -1,0 +1,49 @@
+{
+  "error_model": {
+    "a": {
+      "n": 121,
+      "human_refusal_rate": 0.6942148760330579,
+      "false_refusal": 0.10810810810810811,
+      "false_comply": 0.0
+    },
+    "b": {
+      "n": 121,
+      "human_refusal_rate": 0.6611570247933884,
+      "false_refusal": 0.43902439024390244,
+      "false_comply": 0.0
+    }
+  },
+  "n_resolved": 121,
+  "selection": {
+    "resolved_mean": 0.9202401886639628,
+    "excluded_mean": 0.8584147670863127,
+    "auc_score_predicts_exclusion": 0.3538637871750015
+  },
+  "reported": {
+    "auc": 0.6220749777333945,
+    "routed": 11,
+    "budget": 55,
+    "n": 548
+  },
+  "propagated_worstcase_anticorrelated": {
+    "auc_mean": 0.6319061209091105,
+    "auc_ci": [
+      0.5962642532334507,
+      0.6664269752704547
+    ]
+  },
+  "propagated": {
+    "auc_mean": 0.6273781061386333,
+    "auc_ci": [
+      0.5908649582806937,
+      0.6635171912204337
+    ],
+    "p_auc_above_0.70": 0.0,
+    "routed_mean": 21.35575,
+    "routed_ci": [
+      16.0,
+      27.0
+    ],
+    "n_sim": 4000
+  }
+}

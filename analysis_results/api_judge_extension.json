@@ -1,0 +1,218 @@
+{
+  "judges": [
+    [
+      "anthropic_claude-haiku-4-5-20251001",
+      "Haiku 4.5"
+    ],
+    [
+      "anthropic_claude-sonnet-4-6",
+      "Sonnet 4.6"
+    ]
+  ],
+  "rows": [
+    {
+      "setting": "AdvBench 520 (P4)",
+      "short": "advbench_p4",
+      "phase": "phase4_advbench",
+      "available": true,
+      "n": 517,
+      "judges": [
+        {
+          "judge": "anthropic_claude-haiku-4-5-20251001",
+          "label": "Haiku 4.5",
+          "semantic_positive_n": 3,
+          "auc_semantic": 0.29118028534370943,
+          "ap_semantic": 0.0054584826762246125,
+          "model_a_refusal_rate": 0.9961315280464217,
+          "model_b_refusal_rate": 0.9980657640232108
+        },
+        {
+          "judge": "anthropic_claude-sonnet-4-6",
+          "label": "Sonnet 4.6",
+          "semantic_positive_n": 16,
+          "auc_semantic": 0.44199101796407186,
+          "ap_semantic": 0.03009229101844766,
+          "model_a_refusal_rate": 0.9593810444874274,
+          "model_b_refusal_rate": 0.9864603481624759
+        }
+      ],
+      "agreement": [
+        {
+          "model": "qwen3.5-2b",
+          "judge_pair": [
+            "Haiku 4.5",
+            "Sonnet 4.6"
+          ],
+          "exact_agreement": 0.9632495164410058,
+          "kappa": 0.16803591090031333,
+          "keyword_vs_haiku_kappa": 0.0014419097293303373,
+          "keyword_vs_sonnet_kappa": 0.015608583344421278
+        },
+        {
+          "model": "gemma-4-e2b",
+          "judge_pair": [
+            "Haiku 4.5",
+            "Sonnet 4.6"
+          ],
+          "exact_agreement": 0.988394584139265,
+          "kappa": 0.24745269286754001,
+          "keyword_vs_haiku_kappa": -0.003871787844685448,
+          "keyword_vs_sonnet_kappa": 0.0030595199718665977
+        }
+      ]
+    },
+    {
+      "setting": "SimpleSafety 100 (P4)",
+      "short": "simplesafety_p4",
+      "phase": "phase4_simplesafety",
+      "available": true,
+      "n": 100,
+      "judges": [
+        {
+          "judge": "anthropic_claude-haiku-4-5-20251001",
+          "label": "Haiku 4.5",
+          "semantic_positive_n": 8,
+          "auc_semantic": 0.5006793478260869,
+          "ap_semantic": 0.09770408163265307,
+          "model_a_refusal_rate": 0.9,
+          "model_b_refusal_rate": 0.96
+        },
+        {
+          "judge": "anthropic_claude-sonnet-4-6",
+          "label": "Sonnet 4.6",
+          "semantic_positive_n": 17,
+          "auc_semantic": 0.5343727852586818,
+          "ap_semantic": 0.20864345738295315,
+          "model_a_refusal_rate": 0.72,
+          "model_b_refusal_rate": 0.89
+        }
+      ],
+      "agreement": [
+        {
+          "model": "qwen3.5-2b",
+          "judge_pair": [
+            "Haiku 4.5",
+            "Sonnet 4.6"
+          ],
+          "exact_agreement": 0.76,
+          "kappa": 0.2592592592592592,
+          "keyword_vs_haiku_kappa": 0.011627906976744207,
+          "keyword_vs_sonnet_kappa": 0.0401146131805159
+        },
+        {
+          "model": "gemma-4-e2b",
+          "judge_pair": [
+            "Haiku 4.5",
+            "Sonnet 4.6"
+          ],
+          "exact_agreement": 0.93,
+          "kappa": 0.5042492917847026,
+          "keyword_vs_haiku_kappa": 0.01812688821752262,
+          "keyword_vs_sonnet_kappa": 0.052828175026681023
+        }
+      ]
+    },
+    {
+      "setting": "XSTest 100 / 512tok (P5)",
+      "short": "xstest100_p5",
+      "phase": "phase5_xstest100_512tok",
+      "available": true,
+      "n": 100,
+      "judges": [
+        {
+          "judge": "anthropic_claude-haiku-4-5-20251001",
+          "label": "Haiku 4.5",
+          "semantic_positive_n": 9,
+          "auc_semantic": 0.6166056166056166,
+          "ap_semantic": 0.12735356834989336,
+          "model_a_refusal_rate": 0.42,
+          "model_b_refusal_rate": 0.51
+        },
+        {
+          "judge": "anthropic_claude-sonnet-4-6",
+          "label": "Sonnet 4.6",
+          "semantic_positive_n": 12,
+          "auc_semantic": 0.6410984848484848,
+          "ap_semantic": 0.1697542242703533,
+          "model_a_refusal_rate": 0.38,
+          "model_b_refusal_rate": 0.48
+        }
+      ],
+      "agreement": [
+        {
+          "model": "qwen3.5-2b",
+          "judge_pair": [
+            "Haiku 4.5",
+            "Sonnet 4.6"
+          ],
+          "exact_agreement": 0.96,
+          "kappa": 0.9168053244592346,
+          "keyword_vs_haiku_kappa": 0.684044233807267,
+          "keyword_vs_sonnet_kappa": 0.6467817896389325
+        },
+        {
+          "model": "gemma-4-e2b",
+          "judge_pair": [
+            "Haiku 4.5",
+            "Sonnet 4.6"
+          ],
+          "exact_agreement": 0.97,
+          "kappa": 0.9400479616306955,
+          "keyword_vs_haiku_kappa": 0.7593261131167268,
+          "keyword_vs_sonnet_kappa": 0.7016706443914081
+        }
+      ]
+    },
+    {
+      "setting": "AdvBench 100 / 512tok (P5)",
+      "short": "advbench100_p5",
+      "phase": "phase5_advbench100_512tok",
+      "available": true,
+      "n": 99,
+      "judges": [
+        {
+          "judge": "anthropic_claude-haiku-4-5-20251001",
+          "label": "Haiku 4.5",
+          "semantic_positive_n": 3,
+          "auc_semantic": 0.29861111111111116,
+          "ap_semantic": 0.03110209601081812,
+          "model_a_refusal_rate": 0.9797979797979798,
+          "model_b_refusal_rate": 0.9696969696969697
+        },
+        {
+          "judge": "anthropic_claude-sonnet-4-6",
+          "label": "Sonnet 4.6",
+          "semantic_positive_n": 2,
+          "auc_semantic": 0.34536082474226804,
+          "ap_semantic": 0.029411764705882353,
+          "model_a_refusal_rate": 0.9797979797979798,
+          "model_b_refusal_rate": 0.9595959595959596
+        }
+      ],
+      "agreement": [
+        {
+          "model": "qwen3.5-2b",
+          "judge_pair": [
+            "Haiku 4.5",
+            "Sonnet 4.6"
+          ],
+          "exact_agreement": 1.0,
+          "kappa": 1.0,
+          "keyword_vs_haiku_kappa": -0.013651877133105783,
+          "keyword_vs_sonnet_kappa": -0.013651877133105783
+        },
+        {
+          "model": "gemma-4-e2b",
+          "judge_pair": [
+            "Haiku 4.5",
+            "Sonnet 4.6"
+          ],
+          "exact_agreement": 0.98989898989899,
+          "kappa": 0.852017937219731,
+          "keyword_vs_haiku_kappa": 0.65625,
+          "keyword_vs_sonnet_kappa": 0.852017937219731
+        }
+      ]
+    }
+  ]
+}

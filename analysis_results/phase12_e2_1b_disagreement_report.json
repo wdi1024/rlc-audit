@@ -1,0 +1,25 @@
+{
+  "phase": "phase12_xstest450_1b",
+  "pair": [
+    "llama-3.2-1b",
+    "qwen3-1.7b"
+  ],
+  "n": 450,
+  "auc_keyword": 0.6285220358770571,
+  "auc_keyword_ci": [
+    0.5738563894454999,
+    0.684732216768835
+  ],
+  "auc_keyword_first50": 0.529871354482387,
+  "n_disagree_keyword": 147,
+  "auc_judge": 0.6927683576477142,
+  "auc_judge_ci": [
+    0.6276084850566035,
+    0.7540860767195767
+  ],
+  "auc_judge_first50": 0.5710455764075066,
+  "n_disagree_judge": 77,
+  "sim_mean_disagree_judge": 0.17961754132039037,
+  "sim_mean_agree_judge": 0.27440875490365657,
+  "delta_vs_phase7": -0.10123164235228588
+}

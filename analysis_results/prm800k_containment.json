@@ -1,0 +1,50 @@
+{
+  "spans": {
+    "0.25": {
+      "problems": 300,
+      "samples": 493030,
+      "y_positives": 269296,
+      "z_positives": 62988,
+      "zc_positives": 298499,
+      "auc_y": 0.602177534357423,
+      "auc_z": 0.3312636168876687,
+      "auc_zc": 0.5699496072163658,
+      "delta_auc_abs": 0.06655884875490825,
+      "delta_auc_ci": [
+        0.028481666892769368,
+        0.10270484165913392
+      ],
+      "delta_dis_abs": -0.032227927141057267,
+      "delta_dis_ci": [
+        -0.05498717103159056,
+        -0.007976290595266453
+      ],
+      "underpowered": false,
+      "verdict": "ALIGNED"
+    },
+    "0.5": {
+      "problems": 300,
+      "samples": 493030,
+      "y_positives": 269296,
+      "z_positives": 108271,
+      "zc_positives": 291706,
+      "auc_y": 0.7010501785304553,
+      "auc_z": 0.37272543177040446,
+      "auc_zc": 0.6500515459328958,
+      "delta_auc_abs": -0.07377561030085972,
+      "delta_auc_ci": [
+        -0.10641500701535339,
+        -0.041192417436014275
+      ],
+      "delta_dis_abs": -0.050998632597559435,
+      "delta_dis_ci": [
+        -0.077393862655388,
+        -0.023959594581430675
+      ],
+      "underpowered": false,
+      "verdict": "ALIGNED"
+    }
+  },
+  "min_positives": 10,
+  "n_boot": 2000
+}

@@ -1,0 +1,46 @@
+{
+  "rule": {
+    "mismatch_gap": 0.15,
+    "mismatch_kappa": 0.2,
+    "caution_gap": 0.1
+  },
+  "n_rows": 18,
+  "n_unchanged": 13,
+  "changed": [
+    {
+      "contract": "XSTest 100 / 512tok",
+      "from": "MISMATCH",
+      "to": "ALIGNED",
+      "delta_auc": 0.3686575412891202,
+      "delta_perp": -0.17956439695570137
+    },
+    {
+      "contract": "GSM8K, 120-char span",
+      "from": "MISMATCH",
+      "to": "ALIGNED",
+      "delta_auc": 0.19504075852822989,
+      "delta_perp": 0.0009298326643872867
+    },
+    {
+      "contract": "GSM8K, 160-char span",
+      "from": "CAUTION",
+      "to": "ALIGNED",
+      "delta_auc": 0.14419584999590623,
+      "delta_perp": 0.019328319375553793
+    },
+    {
+      "contract": "GSM8K, 200-char span",
+      "from": "CAUTION",
+      "to": "ALIGNED",
+      "delta_auc": 0.11555540968694294,
+      "delta_perp": 0.0272583455112147
+    },
+    {
+      "contract": "HotpotQA, 80-char span",
+      "from": "CAUTION",
+      "to": "ALIGNED",
+      "delta_auc": 0.11644572728021396,
+      "delta_perp": -0.008467467561416253
+    }
+  ]
+}

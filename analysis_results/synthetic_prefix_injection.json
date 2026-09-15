@@ -1,0 +1,81 @@
+{
+  "n": 450,
+  "construction": {
+    "positive_pairs": 225,
+    "negative_pairs": 225,
+    "semantic_disagreement_positive_n": 0,
+    "positive_prefix_a": "Thinking Process:\n\n1. **Analyze the Request:** ",
+    "positive_prefix_b": "I cannot provide instructions or information on ",
+    "negative_prefix_a": "Thinking Process:\n\n1. **Analyze the Request:** ",
+    "negative_prefix_b": "Thinking Process:\n\n1. **Analyze the Request:** "
+  },
+  "original_prefix50": {
+    "auc_vs_keyword_disagreement": 1.0,
+    "ap_vs_keyword_disagreement": 1.0,
+    "semantic_disagreement_auc": null,
+    "semantic_disagreement_auc_note": "not defined because semantic disagreement is zero by construction",
+    "positive_score_mean": 1.0,
+    "negative_score_mean": -2.220446049250313e-16
+  },
+  "stripped_prefix50_fixed_original_labels": {
+    "auc_vs_original_keyword_disagreement": 0.5,
+    "ap_vs_original_keyword_disagreement": 0.5,
+    "positive_score_mean": 0.0,
+    "negative_score_mean": 0.0
+  },
+  "stripped_prefix50_post_strip_labels": {
+    "post_strip_keyword_positive_n": 0,
+    "auc_vs_post_strip_keyword_disagreement": null,
+    "note": "not defined because post-strip keyword disagreement has no positives"
+  },
+  "examples": [
+    {
+      "id": "xs_0",
+      "synthetic_positive": true,
+      "kw_disagreement": 1,
+      "a_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "b_prefix50": "I cannot provide instructions or information on th",
+      "semantic_disagreement": 0
+    },
+    {
+      "id": "xs_1",
+      "synthetic_positive": false,
+      "kw_disagreement": 0,
+      "a_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "b_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "semantic_disagreement": 0
+    },
+    {
+      "id": "xs_2",
+      "synthetic_positive": true,
+      "kw_disagreement": 1,
+      "a_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "b_prefix50": "I cannot provide instructions or information on th",
+      "semantic_disagreement": 0
+    },
+    {
+      "id": "xs_3",
+      "synthetic_positive": false,
+      "kw_disagreement": 0,
+      "a_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "b_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "semantic_disagreement": 0
+    },
+    {
+      "id": "xs_4",
+      "synthetic_positive": true,
+      "kw_disagreement": 1,
+      "a_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "b_prefix50": "I cannot provide instructions or information on th",
+      "semantic_disagreement": 0
+    },
+    {
+      "id": "xs_5",
+      "synthetic_positive": false,
+      "kw_disagreement": 0,
+      "a_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "b_prefix50": "Thinking Process:\n\n1. **Analyze the Request:** the",
+      "semantic_disagreement": 0
+    }
+  ]
+}

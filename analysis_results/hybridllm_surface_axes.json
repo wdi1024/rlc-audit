@@ -1,0 +1,742 @@
+{
+  "n": 253519,
+  "n_features": 11,
+  "features": [
+    "chars",
+    "words",
+    "mean_word_len",
+    "ttr",
+    "sentences",
+    "mean_sent_len",
+    "list_markers",
+    "digit_share",
+    "upper_share",
+    "ends_punct",
+    "repetition"
+  ],
+  "pooled": {
+    "auc_surface_vs_proxy": 0.7042906695459425,
+    "auc_surface_vs_construct": 0.6813629941074032,
+    "asymmetry": 0.022927675438539352,
+    "asymmetry_ci": [
+      0.02060799342198829,
+      0.025210945396622445
+    ],
+    "n_folds": 5
+  },
+  "per_feature": {
+    "chars": {
+      "auc_proxy": 0.60895984854703,
+      "auc_construct": 0.5415661005191421
+    },
+    "words": {
+      "auc_proxy": 0.5980303356784485,
+      "auc_construct": 0.524149362862168
+    },
+    "mean_word_len": {
+      "auc_proxy": 0.6066417855888474,
+      "auc_construct": 0.6291254054450992
+    },
+    "ttr": {
+      "auc_proxy": 0.46783907069072844,
+      "auc_construct": 0.5238966483056571
+    },
+    "sentences": {
+      "auc_proxy": 0.5456621692723378,
+      "auc_construct": 0.4843558956025199
+    },
+    "mean_sent_len": {
+      "auc_proxy": 0.6221502355092468,
+      "auc_construct": 0.5970595511906689
+    },
+    "list_markers": {
+      "auc_proxy": 0.5334413947883055,
+      "auc_construct": 0.5280076962685419
+    },
+    "digit_share": {
+      "auc_proxy": 0.5014685067788909,
+      "auc_construct": 0.5108824298142111
+    },
+    "upper_share": {
+      "auc_proxy": 0.4581611057411608,
+      "auc_construct": 0.4646760574733533
+    },
+    "ends_punct": {
+      "auc_proxy": 0.545823992793287,
+      "auc_construct": 0.5491510499356558
+    },
+    "repetition": {
+      "auc_proxy": 0.49986644050024764,
+      "auc_construct": 0.44334487191530725
+    }
+  },
+  "per_pair": {
+    "n_pairs": 132,
+    "n_positive_gap": 88,
+    "median_gap": 0.012377843338363392,
+    "min_gap": -0.07969193315097889,
+    "max_gap": 0.1514508100311659,
+    "pairs": {
+      "alpaca-native vs chatglm-6b": {
+        "n": 1838,
+        "auc_proxy": 0.6422370657239465,
+        "auc_construct": 0.6387248657209751
+      },
+      "alpaca-native vs dolly-v2-12b": {
+        "n": 1916,
+        "auc_proxy": 0.645520240039816,
+        "auc_construct": 0.5891857448454781
+      },
+      "alpaca-native vs flan-t5-xxl": {
+        "n": 1929,
+        "auc_proxy": 0.7929745955697514,
+        "auc_construct": 0.7051607232019603
+      },
+      "alpaca-native vs koala-7B-HF": {
+        "n": 1883,
+        "auc_proxy": 0.6993116923046406,
+        "auc_construct": 0.6764015597020461
+      },
+      "alpaca-native vs llama-7b-hf-baize-lora-bf16": {
+        "n": 1646,
+        "auc_proxy": 0.6211343679698109,
+        "auc_construct": 0.6395241371059401
+      },
+      "alpaca-native vs moss-moon-003-sft": {
+        "n": 1771,
+        "auc_proxy": 0.5845415628394351,
+        "auc_construct": 0.6036189380870232
+      },
+      "alpaca-native vs mpt-7b": {
+        "n": 2023,
+        "auc_proxy": 0.6723574818204383,
+        "auc_construct": 0.6628467402230626
+      },
+      "alpaca-native vs mpt-7b-instruct": {
+        "n": 2007,
+        "auc_proxy": 0.6296744623339993,
+        "auc_construct": 0.6258659205271114
+      },
+      "alpaca-native vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 1537,
+        "auc_proxy": 0.649593282365303,
+        "auc_construct": 0.6729368164150773
+      },
+      "alpaca-native vs stablelm-tuned-alpha-7b": {
+        "n": 1993,
+        "auc_proxy": 0.7174720986562024,
+        "auc_construct": 0.6672894815751037
+      },
+      "alpaca-native vs vicuna-13b-1.1": {
+        "n": 1678,
+        "auc_proxy": 0.6335866141321443,
+        "auc_construct": 0.6527484214024594
+      },
+      "chatglm-6b vs alpaca-native": {
+        "n": 1945,
+        "auc_proxy": 0.6517263588042819,
+        "auc_construct": 0.6369817229506995
+      },
+      "chatglm-6b vs dolly-v2-12b": {
+        "n": 2003,
+        "auc_proxy": 0.6701646598052187,
+        "auc_construct": 0.5828793191223806
+      },
+      "chatglm-6b vs flan-t5-xxl": {
+        "n": 2043,
+        "auc_proxy": 0.8193624926939241,
+        "auc_construct": 0.6679116826627582
+      },
+      "chatglm-6b vs koala-7B-HF": {
+        "n": 1919,
+        "auc_proxy": 0.6899417242619541,
+        "auc_construct": 0.6887838358841937
+      },
+      "chatglm-6b vs llama-7b-hf-baize-lora-bf16": {
+        "n": 1944,
+        "auc_proxy": 0.5926648906608804,
+        "auc_construct": 0.5933621066433566
+      },
+      "chatglm-6b vs moss-moon-003-sft": {
+        "n": 1891,
+        "auc_proxy": 0.5819008612766263,
+        "auc_construct": 0.5812560253408621
+      },
+      "chatglm-6b vs mpt-7b": {
+        "n": 1991,
+        "auc_proxy": 0.6295199509700233,
+        "auc_construct": 0.6032407267526765
+      },
+      "chatglm-6b vs mpt-7b-instruct": {
+        "n": 2051,
+        "auc_proxy": 0.5918626749265741,
+        "auc_construct": 0.5941466826538769
+      },
+      "chatglm-6b vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 1774,
+        "auc_proxy": 0.6143820269809314,
+        "auc_construct": 0.6275506242431352
+      },
+      "chatglm-6b vs stablelm-tuned-alpha-7b": {
+        "n": 1988,
+        "auc_proxy": 0.6972529091176903,
+        "auc_construct": 0.623022993971322
+      },
+      "chatglm-6b vs vicuna-13b-1.1": {
+        "n": 1911,
+        "auc_proxy": 0.6094370918538967,
+        "auc_construct": 0.6032759004147206
+      },
+      "dolly-v2-12b vs alpaca-native": {
+        "n": 2008,
+        "auc_proxy": 0.6524247662861524,
+        "auc_construct": 0.5946952087500225
+      },
+      "dolly-v2-12b vs chatglm-6b": {
+        "n": 1969,
+        "auc_proxy": 0.6652260803742381,
+        "auc_construct": 0.5882863568954779
+      },
+      "dolly-v2-12b vs flan-t5-xxl": {
+        "n": 1847,
+        "auc_proxy": 0.7493612250941242,
+        "auc_construct": 0.6336047207493076
+      },
+      "dolly-v2-12b vs koala-7B-HF": {
+        "n": 1772,
+        "auc_proxy": 0.667801563862833,
+        "auc_construct": 0.6555816844926599
+      },
+      "dolly-v2-12b vs llama-7b-hf-baize-lora-bf16": {
+        "n": 1961,
+        "auc_proxy": 0.6143577659266609,
+        "auc_construct": 0.581036707908297
+      },
+      "dolly-v2-12b vs moss-moon-003-sft": {
+        "n": 1931,
+        "auc_proxy": 0.5594571615434925,
+        "auc_construct": 0.5535457373383882
+      },
+      "dolly-v2-12b vs mpt-7b": {
+        "n": 1941,
+        "auc_proxy": 0.615352765992775,
+        "auc_construct": 0.5775114278930492
+      },
+      "dolly-v2-12b vs mpt-7b-instruct": {
+        "n": 1988,
+        "auc_proxy": 0.5619909198408926,
+        "auc_construct": 0.5533988007831621
+      },
+      "dolly-v2-12b vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 2059,
+        "auc_proxy": 0.6469590643274854,
+        "auc_construct": 0.5904178622924607
+      },
+      "dolly-v2-12b vs stablelm-tuned-alpha-7b": {
+        "n": 1831,
+        "auc_proxy": 0.6807828952576993,
+        "auc_construct": 0.6230436391127412
+      },
+      "dolly-v2-12b vs vicuna-13b-1.1": {
+        "n": 1980,
+        "auc_proxy": 0.6103486700423209,
+        "auc_construct": 0.5887115467172497
+      },
+      "flan-t5-xxl vs alpaca-native": {
+        "n": 2043,
+        "auc_proxy": 0.7514454661164478,
+        "auc_construct": 0.6781141653788563
+      },
+      "flan-t5-xxl vs chatglm-6b": {
+        "n": 2010,
+        "auc_proxy": 0.803708924767386,
+        "auc_construct": 0.6808312374944419
+      },
+      "flan-t5-xxl vs dolly-v2-12b": {
+        "n": 1767,
+        "auc_proxy": 0.6828694425888814,
+        "auc_construct": 0.5684403012948207
+      },
+      "flan-t5-xxl vs koala-7B-HF": {
+        "n": 1783,
+        "auc_proxy": 0.7271184535850753,
+        "auc_construct": 0.6681852431461195
+      },
+      "flan-t5-xxl vs llama-7b-hf-baize-lora-bf16": {
+        "n": 1962,
+        "auc_proxy": 0.7018015170670038,
+        "auc_construct": 0.6635421786605757
+      },
+      "flan-t5-xxl vs moss-moon-003-sft": {
+        "n": 1889,
+        "auc_proxy": 0.7001882857308384,
+        "auc_construct": 0.6034193022176597
+      },
+      "flan-t5-xxl vs mpt-7b": {
+        "n": 1859,
+        "auc_proxy": 0.6909606505097221,
+        "auc_construct": 0.624280385239856
+      },
+      "flan-t5-xxl vs mpt-7b-instruct": {
+        "n": 1962,
+        "auc_proxy": 0.6942141314214536,
+        "auc_construct": 0.5905698642484333
+      },
+      "flan-t5-xxl vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 2067,
+        "auc_proxy": 0.7968049046026978,
+        "auc_construct": 0.7032544045195643
+      },
+      "flan-t5-xxl vs stablelm-tuned-alpha-7b": {
+        "n": 1727,
+        "auc_proxy": 0.7516111991547807,
+        "auc_construct": 0.617725343790288
+      },
+      "flan-t5-xxl vs vicuna-13b-1.1": {
+        "n": 2008,
+        "auc_proxy": 0.7251997965707644,
+        "auc_construct": 0.659639303482587
+      },
+      "koala-7B-HF vs alpaca-native": {
+        "n": 1879,
+        "auc_proxy": 0.6858809652024516,
+        "auc_construct": 0.6628206025630057
+      },
+      "koala-7B-HF vs chatglm-6b": {
+        "n": 2000,
+        "auc_proxy": 0.7010124707485411,
+        "auc_construct": 0.6701223414266892
+      },
+      "koala-7B-HF vs dolly-v2-12b": {
+        "n": 1965,
+        "auc_proxy": 0.6466977925692797,
+        "auc_construct": 0.630552124788436
+      },
+      "koala-7B-HF vs flan-t5-xxl": {
+        "n": 1846,
+        "auc_proxy": 0.7153097837120919,
+        "auc_construct": 0.6677555534539646
+      },
+      "koala-7B-HF vs llama-7b-hf-baize-lora-bf16": {
+        "n": 1895,
+        "auc_proxy": 0.6653549206141641,
+        "auc_construct": 0.6743843880817534
+      },
+      "koala-7B-HF vs moss-moon-003-sft": {
+        "n": 1918,
+        "auc_proxy": 0.6321621556423987,
+        "auc_construct": 0.6298962128930872
+      },
+      "koala-7B-HF vs mpt-7b": {
+        "n": 1957,
+        "auc_proxy": 0.6543862881637356,
+        "auc_construct": 0.6470790236867985
+      },
+      "koala-7B-HF vs mpt-7b-instruct": {
+        "n": 2058,
+        "auc_proxy": 0.6529244020587055,
+        "auc_construct": 0.6304271868258743
+      },
+      "koala-7B-HF vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 1898,
+        "auc_proxy": 0.6972217453505006,
+        "auc_construct": 0.6927122131597385
+      },
+      "koala-7B-HF vs stablelm-tuned-alpha-7b": {
+        "n": 1793,
+        "auc_proxy": 0.7273048222739308,
+        "auc_construct": 0.6841693438994788
+      },
+      "koala-7B-HF vs vicuna-13b-1.1": {
+        "n": 1869,
+        "auc_proxy": 0.677212459633209,
+        "auc_construct": 0.6746606776681965
+      },
+      "llama-7b-hf-baize-lora-bf16 vs alpaca-native": {
+        "n": 1803,
+        "auc_proxy": 0.6342740049446511,
+        "auc_construct": 0.6451108374384237
+      },
+      "llama-7b-hf-baize-lora-bf16 vs chatglm-6b": {
+        "n": 1919,
+        "auc_proxy": 0.6195566577476126,
+        "auc_construct": 0.626669731250911
+      },
+      "llama-7b-hf-baize-lora-bf16 vs dolly-v2-12b": {
+        "n": 1967,
+        "auc_proxy": 0.6070291267284467,
+        "auc_construct": 0.5947128984429162
+      },
+      "llama-7b-hf-baize-lora-bf16 vs flan-t5-xxl": {
+        "n": 1975,
+        "auc_proxy": 0.7232040469965336,
+        "auc_construct": 0.6613696741171247
+      },
+      "llama-7b-hf-baize-lora-bf16 vs koala-7B-HF": {
+        "n": 1881,
+        "auc_proxy": 0.6501942155403548,
+        "auc_construct": 0.6858421584484053
+      },
+      "llama-7b-hf-baize-lora-bf16 vs moss-moon-003-sft": {
+        "n": 1764,
+        "auc_proxy": 0.5255008697062826,
+        "auc_construct": 0.6051928028572615
+      },
+      "llama-7b-hf-baize-lora-bf16 vs mpt-7b": {
+        "n": 2015,
+        "auc_proxy": 0.6148091709772123,
+        "auc_construct": 0.6354639673193944
+      },
+      "llama-7b-hf-baize-lora-bf16 vs mpt-7b-instruct": {
+        "n": 2030,
+        "auc_proxy": 0.5658690463974684,
+        "auc_construct": 0.5771181258434548
+      },
+      "llama-7b-hf-baize-lora-bf16 vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 1716,
+        "auc_proxy": 0.6102463819370766,
+        "auc_construct": 0.6289878425153888
+      },
+      "llama-7b-hf-baize-lora-bf16 vs stablelm-tuned-alpha-7b": {
+        "n": 1879,
+        "auc_proxy": 0.6996608922214046,
+        "auc_construct": 0.6847446716675596
+      },
+      "llama-7b-hf-baize-lora-bf16 vs vicuna-13b-1.1": {
+        "n": 1771,
+        "auc_proxy": 0.6171694620194912,
+        "auc_construct": 0.6462061541692922
+      },
+      "moss-moon-003-sft vs alpaca-native": {
+        "n": 1810,
+        "auc_proxy": 0.5566667196893036,
+        "auc_construct": 0.5941921664626683
+      },
+      "moss-moon-003-sft vs chatglm-6b": {
+        "n": 1825,
+        "auc_proxy": 0.5501295075349839,
+        "auc_construct": 0.5701453506051207
+      },
+      "moss-moon-003-sft vs dolly-v2-12b": {
+        "n": 1898,
+        "auc_proxy": 0.538737259044777,
+        "auc_construct": 0.5713069145904968
+      },
+      "moss-moon-003-sft vs flan-t5-xxl": {
+        "n": 1947,
+        "auc_proxy": 0.6959631295463379,
+        "auc_construct": 0.6207498479420316
+      },
+      "moss-moon-003-sft vs koala-7B-HF": {
+        "n": 1780,
+        "auc_proxy": 0.6260319525161058,
+        "auc_construct": 0.6747420421201203
+      },
+      "moss-moon-003-sft vs llama-7b-hf-baize-lora-bf16": {
+        "n": 1857,
+        "auc_proxy": 0.5482131320980834,
+        "auc_construct": 0.6040690695599781
+      },
+      "moss-moon-003-sft vs mpt-7b": {
+        "n": 1909,
+        "auc_proxy": 0.5776318975490328,
+        "auc_construct": 0.5948426110006627
+      },
+      "moss-moon-003-sft vs mpt-7b-instruct": {
+        "n": 1981,
+        "auc_proxy": 0.5301514546773273,
+        "auc_construct": 0.5789035022327376
+      },
+      "moss-moon-003-sft vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 1738,
+        "auc_proxy": 0.5562510939569474,
+        "auc_construct": 0.5894646668713103
+      },
+      "moss-moon-003-sft vs stablelm-tuned-alpha-7b": {
+        "n": 1840,
+        "auc_proxy": 0.6782538451284867,
+        "auc_construct": 0.6174244800020071
+      },
+      "moss-moon-003-sft vs vicuna-13b-1.1": {
+        "n": 1779,
+        "auc_proxy": 0.5777378572586309,
+        "auc_construct": 0.6250363782710948
+      },
+      "mpt-7b vs alpaca-native": {
+        "n": 2126,
+        "auc_proxy": 0.6630090785187923,
+        "auc_construct": 0.6708382954699984
+      },
+      "mpt-7b vs chatglm-6b": {
+        "n": 2207,
+        "auc_proxy": 0.6311970979443773,
+        "auc_construct": 0.6328808695373134
+      },
+      "mpt-7b vs dolly-v2-12b": {
+        "n": 1999,
+        "auc_proxy": 0.5942383332629882,
+        "auc_construct": 0.5363180957556467
+      },
+      "mpt-7b vs flan-t5-xxl": {
+        "n": 1929,
+        "auc_proxy": 0.701229550450813,
+        "auc_construct": 0.618704682985335
+      },
+      "mpt-7b vs koala-7B-HF": {
+        "n": 1923,
+        "auc_proxy": 0.6752070077573433,
+        "auc_construct": 0.6668502607035324
+      },
+      "mpt-7b vs llama-7b-hf-baize-lora-bf16": {
+        "n": 2036,
+        "auc_proxy": 0.5783927969322383,
+        "auc_construct": 0.6234259938588624
+      },
+      "mpt-7b vs moss-moon-003-sft": {
+        "n": 2037,
+        "auc_proxy": 0.5634757373807414,
+        "auc_construct": 0.6096210626715068
+      },
+      "mpt-7b vs mpt-7b-instruct": {
+        "n": 2010,
+        "auc_proxy": 0.5669053649476584,
+        "auc_construct": 0.5893589060039821
+      },
+      "mpt-7b vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 2116,
+        "auc_proxy": 0.6548606125253851,
+        "auc_construct": 0.6484706564986737
+      },
+      "mpt-7b vs stablelm-tuned-alpha-7b": {
+        "n": 1857,
+        "auc_proxy": 0.65490851513019,
+        "auc_construct": 0.6267324517504091
+      },
+      "mpt-7b vs vicuna-13b-1.1": {
+        "n": 2065,
+        "auc_proxy": 0.6643194161121454,
+        "auc_construct": 0.6724470414946605
+      },
+      "mpt-7b-instruct vs alpaca-native": {
+        "n": 2060,
+        "auc_proxy": 0.6328942820462177,
+        "auc_construct": 0.6400499713097368
+      },
+      "mpt-7b-instruct vs chatglm-6b": {
+        "n": 2188,
+        "auc_proxy": 0.598089770169936,
+        "auc_construct": 0.5949065372903827
+      },
+      "mpt-7b-instruct vs dolly-v2-12b": {
+        "n": 2037,
+        "auc_proxy": 0.5861980705641455,
+        "auc_construct": 0.5432459906870518
+      },
+      "mpt-7b-instruct vs flan-t5-xxl": {
+        "n": 2027,
+        "auc_proxy": 0.6830706324605949,
+        "auc_construct": 0.6032582913552789
+      },
+      "mpt-7b-instruct vs koala-7B-HF": {
+        "n": 1987,
+        "auc_proxy": 0.6313305509457641,
+        "auc_construct": 0.6552547915894156
+      },
+      "mpt-7b-instruct vs llama-7b-hf-baize-lora-bf16": {
+        "n": 2038,
+        "auc_proxy": 0.5755873079314326,
+        "auc_construct": 0.5904414298018948
+      },
+      "mpt-7b-instruct vs moss-moon-003-sft": {
+        "n": 2036,
+        "auc_proxy": 0.5527617227927712,
+        "auc_construct": 0.5721908423117347
+      },
+      "mpt-7b-instruct vs mpt-7b": {
+        "n": 2017,
+        "auc_proxy": 0.5802412814274128,
+        "auc_construct": 0.5749855165754748
+      },
+      "mpt-7b-instruct vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 2039,
+        "auc_proxy": 0.6610964154292902,
+        "auc_construct": 0.6375607972788251
+      },
+      "mpt-7b-instruct vs stablelm-tuned-alpha-7b": {
+        "n": 2007,
+        "auc_proxy": 0.6519520396138085,
+        "auc_construct": 0.6307529198736352
+      },
+      "mpt-7b-instruct vs vicuna-13b-1.1": {
+        "n": 2065,
+        "auc_proxy": 0.640410400477069,
+        "auc_construct": 0.6593952430704936
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs alpaca-native": {
+        "n": 1540,
+        "auc_proxy": 0.6574405733845481,
+        "auc_construct": 0.6805323124570437
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs chatglm-6b": {
+        "n": 1784,
+        "auc_proxy": 0.619930820610687,
+        "auc_construct": 0.5929394159259931
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs dolly-v2-12b": {
+        "n": 1948,
+        "auc_proxy": 0.7040283722927385,
+        "auc_construct": 0.6065854600544133
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs flan-t5-xxl": {
+        "n": 1992,
+        "auc_proxy": 0.7580603564009439,
+        "auc_construct": 0.6825226186210211
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs koala-7B-HF": {
+        "n": 1779,
+        "auc_proxy": 0.703508163344702,
+        "auc_construct": 0.6815560230194376
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs llama-7b-hf-baize-lora-bf16": {
+        "n": 1601,
+        "auc_proxy": 0.6207553162767799,
+        "auc_construct": 0.6488936885049197
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs moss-moon-003-sft": {
+        "n": 1606,
+        "auc_proxy": 0.5599677943457264,
+        "auc_construct": 0.5757643737191002
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs mpt-7b": {
+        "n": 2023,
+        "auc_proxy": 0.6585229764262925,
+        "auc_construct": 0.6435962518368671
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs mpt-7b-instruct": {
+        "n": 2031,
+        "auc_proxy": 0.6286400214971645,
+        "auc_construct": 0.6125131552939039
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs stablelm-tuned-alpha-7b": {
+        "n": 1965,
+        "auc_proxy": 0.7198209158931975,
+        "auc_construct": 0.6452824098977945
+      },
+      "oasst-sft-4-pythia-12b-epoch-3.5 vs vicuna-13b-1.1": {
+        "n": 1636,
+        "auc_proxy": 0.6325583484960802,
+        "auc_construct": 0.650328941909809
+      },
+      "stablelm-tuned-alpha-7b vs alpaca-native": {
+        "n": 2054,
+        "auc_proxy": 0.705654703934554,
+        "auc_construct": 0.7029374328006229
+      },
+      "stablelm-tuned-alpha-7b vs chatglm-6b": {
+        "n": 2071,
+        "auc_proxy": 0.7327346570925285,
+        "auc_construct": 0.6743551611567149
+      },
+      "stablelm-tuned-alpha-7b vs dolly-v2-12b": {
+        "n": 1948,
+        "auc_proxy": 0.674674173986416,
+        "auc_construct": 0.5996791936931932
+      },
+      "stablelm-tuned-alpha-7b vs flan-t5-xxl": {
+        "n": 1851,
+        "auc_proxy": 0.7481241831590739,
+        "auc_construct": 0.6498713434293166
+      },
+      "stablelm-tuned-alpha-7b vs koala-7B-HF": {
+        "n": 1898,
+        "auc_proxy": 0.709159303459751,
+        "auc_construct": 0.6852170005136107
+      },
+      "stablelm-tuned-alpha-7b vs llama-7b-hf-baize-lora-bf16": {
+        "n": 2123,
+        "auc_proxy": 0.6691231160696809,
+        "auc_construct": 0.6566836576784846
+      },
+      "stablelm-tuned-alpha-7b vs moss-moon-003-sft": {
+        "n": 1974,
+        "auc_proxy": 0.6581324275547383,
+        "auc_construct": 0.6069563342040419
+      },
+      "stablelm-tuned-alpha-7b vs mpt-7b": {
+        "n": 1902,
+        "auc_proxy": 0.6905933390171165,
+        "auc_construct": 0.6406387949152675
+      },
+      "stablelm-tuned-alpha-7b vs mpt-7b-instruct": {
+        "n": 2051,
+        "auc_proxy": 0.6600313338292644,
+        "auc_construct": 0.6092397348636505
+      },
+      "stablelm-tuned-alpha-7b vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 2090,
+        "auc_proxy": 0.7119491169317357,
+        "auc_construct": 0.6340007091659702
+      },
+      "stablelm-tuned-alpha-7b vs vicuna-13b-1.1": {
+        "n": 2113,
+        "auc_proxy": 0.6908477173504496,
+        "auc_construct": 0.6687899543378995
+      },
+      "vicuna-13b-1.1 vs alpaca-native": {
+        "n": 1744,
+        "auc_proxy": 0.6342470370548704,
+        "auc_construct": 0.6637310315617286
+      },
+      "vicuna-13b-1.1 vs chatglm-6b": {
+        "n": 1907,
+        "auc_proxy": 0.6293766340868824,
+        "auc_construct": 0.6322102824177512
+      },
+      "vicuna-13b-1.1 vs dolly-v2-12b": {
+        "n": 1945,
+        "auc_proxy": 0.6439651291286375,
+        "auc_construct": 0.596111111111111
+      },
+      "vicuna-13b-1.1 vs flan-t5-xxl": {
+        "n": 1956,
+        "auc_proxy": 0.7526368152158134,
+        "auc_construct": 0.6853729174404279
+      },
+      "vicuna-13b-1.1 vs koala-7B-HF": {
+        "n": 1844,
+        "auc_proxy": 0.6928465921080397,
+        "auc_construct": 0.6910261149471448
+      },
+      "vicuna-13b-1.1 vs llama-7b-hf-baize-lora-bf16": {
+        "n": 1757,
+        "auc_proxy": 0.6256529870515184,
+        "auc_construct": 0.6241650783127538
+      },
+      "vicuna-13b-1.1 vs moss-moon-003-sft": {
+        "n": 1724,
+        "auc_proxy": 0.6155491822339354,
+        "auc_construct": 0.6288301137515643
+      },
+      "vicuna-13b-1.1 vs mpt-7b": {
+        "n": 2064,
+        "auc_proxy": 0.6428809337214509,
+        "auc_construct": 0.6387921022067364
+      },
+      "vicuna-13b-1.1 vs mpt-7b-instruct": {
+        "n": 2051,
+        "auc_proxy": 0.6439491922212178,
+        "auc_construct": 0.6231420087052028
+      },
+      "vicuna-13b-1.1 vs oasst-sft-4-pythia-12b-epoch-3.5": {
+        "n": 1621,
+        "auc_proxy": 0.6352624536313122,
+        "auc_construct": 0.6453443875606402
+      },
+      "vicuna-13b-1.1 vs stablelm-tuned-alpha-7b": {
+        "n": 1913,
+        "auc_proxy": 0.6964080689593886,
+        "auc_construct": 0.660622935150747
+      }
+    }
+  }
+}

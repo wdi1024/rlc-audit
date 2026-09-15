@@ -1,0 +1,35 @@
+{
+  "model": "protectai/distilroberta-base-rejection-v1",
+  "n": 548,
+  "prefix": 50,
+  "budget": 55,
+  "rows": {
+    "A  keyword list on the prefix (paper's proxy)": {
+      "proxy_positives": 6,
+      "auc_proxy": 0.9563345633456335,
+      "auc_semantic": 0.6220749777333945,
+      "gap": 0.334259585612239,
+      "kappa_z_y": 0.003243338008415142,
+      "routed_semantic": 11,
+      "verdict": "MISMATCH"
+    },
+    "B  validated classifier on the SAME prefix span": {
+      "proxy_positives": 0,
+      "verdict": "not instantiable"
+    },
+    "C  validated classifier on the FULL response": {
+      "proxy_positives": 1,
+      "auc_proxy": 0.9707495429616089,
+      "auc_semantic": 0.6220749777333945,
+      "gap": 0.3486745652282144,
+      "kappa_z_y": -0.0036170505013508603,
+      "routed_semantic": 11,
+      "verdict": "MISMATCH"
+    },
+    "side_validity": {
+      "keyword, prefix span": 0.5049342105263158,
+      "classifier, prefix span": 0.36567083692838653,
+      "classifier, full response": 0.7255716134598792
+    }
+  }
+}

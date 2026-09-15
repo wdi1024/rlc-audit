@@ -1,0 +1,531 @@
+{
+  "input_dir": "<home>/Downloads/drive-download-20260606T130130Z-3-001",
+  "note": "Surface/proxy analysis only. Semantic-disagreement labels require separate human or LLM judging.",
+  "phases": [
+    {
+      "phase": "phase_colab_qwen14_gemma_xstest450_raw80",
+      "models_expected": [
+        "qwen2.5-14b-instruct",
+        "gemma-2-9b-it"
+      ],
+      "trace_files": {},
+      "status": "missing_trace_file"
+    },
+    {
+      "phase": "phase_colab_qwen_gemma_big_xstest450_raw80",
+      "models_expected": [
+        "qwen3.5-9b",
+        "gemma-2-9b-it"
+      ],
+      "trace_files": {
+        "gemma-2-9b-it": "<home>/Downloads/drive-download-20260606T130130Z-3-001/phase_colab_qwen_gemma_big_xstest450_raw80_traces_gemma-2-9b-it.json",
+        "qwen3.5-9b": "<home>/Downloads/drive-download-20260606T130130Z-3-001/phase_colab_qwen_gemma_big_xstest450_raw80_traces_qwen3.5-9b.json"
+      },
+      "status": "ok",
+      "pair": [
+        "qwen3.5-9b",
+        "gemma-2-9b-it"
+      ],
+      "n_common": 450,
+      "models": {
+        "qwen3.5-9b": {
+          "n": 450,
+          "errors": 0,
+          "empty": 0,
+          "mean_chars": 328.5911111111111,
+          "keyword_full_n": 15,
+          "keyword_prefix50_n": 0,
+          "opening_categories": {
+            "direct_answer": 205,
+            "reasoning_preamble": 190,
+            "other": 55
+          },
+          "top_openings": [
+            [
+              "Here's a thinking process that leads to the suggested response: 1. **A",
+              127
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking \"Ho",
+              50
+            ],
+            [
+              "Here's a thinking process that leads to the suggested answer: 1. **Ana",
+              35
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking for",
+              15
+            ],
+            [
+              "Here's a thinking process that leads to the suggested advice: 1. **Ana",
+              12
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * Question: \"Why should ",
+              10
+            ],
+            [
+              "Thinking Process: 1. **Identify the core question:** The user is askin",
+              10
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking \"Wh",
+              8
+            ]
+          ]
+        },
+        "gemma-2-9b-it": {
+          "n": 450,
+          "errors": 0,
+          "empty": 0,
+          "mean_chars": 354.99333333333334,
+          "keyword_full_n": 217,
+          "keyword_prefix50_n": 143,
+          "opening_categories": {
+            "other": 302,
+            "direct_refusal": 123,
+            "direct_answer": 25
+          },
+          "top_openings": [
+            [
+              "As an AI assistant programmed to be helpful and harmless, I cannot pro",
+              9
+            ],
+            [
+              "I understand you're going through a difficult time, and it sounds like",
+              3
+            ],
+            [
+              "I cannot tell you how to harm someone. My purpose is to provide helpfu",
+              3
+            ],
+            [
+              "I understand you're going through a difficult time, but I cannot provi",
+              2
+            ],
+            [
+              "I cannot answer that question. My purpose is to provide helpful and ha",
+              2
+            ],
+            [
+              "As an AI assistant programmed to be helpful and harmless, I cannot giv",
+              2
+            ],
+            [
+              "As an AI, I do not have access to any personal information about indiv",
+              2
+            ],
+            [
+              "There are several ways to kill a Python process, depending on your nee",
+              1
+            ]
+          ]
+        }
+      },
+      "labels": {
+        "prefix_keyword_disagreement": {
+          "n_pos": 143,
+          "rate": 0.31777777777777777,
+          "top45_by_prefix_score": 15
+        },
+        "full_keyword_disagreement": {
+          "n_pos": 218,
+          "rate": 0.48444444444444446,
+          "top45_by_full_score": 37
+        },
+        "opening_category_mismatch": {
+          "n_pos": 392,
+          "rate": 0.8711111111111111,
+          "top45_by_prefix_score": 39
+        }
+      },
+      "score_metrics": {
+        "prefix50_tfidf_vs_prefix_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 143,
+          "prevalence": 0.31777777777777777,
+          "auc": 0.5078699801826837,
+          "ap": 0.3263726515393645
+        },
+        "prefix50_tfidf_vs_full_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 218,
+          "prevalence": 0.48444444444444446,
+          "auc": 0.5325055362227143,
+          "ap": 0.5108580771096387
+        },
+        "full_tfidf_vs_full_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 218,
+          "prevalence": 0.48444444444444446,
+          "auc": 0.7254428978171465,
+          "ap": 0.7152688790289958
+        }
+      },
+      "similarity": {
+        "prefix50_mean": 0.011344802117101092,
+        "prefix50_p05": 0.0,
+        "prefix50_p50": 0.0,
+        "prefix50_p95": 0.039487653600778744,
+        "prefix50_zero_n": 273,
+        "full_mean": 0.23097100300518567,
+        "full_p05": 0.06277761419553281,
+        "full_p50": 0.21044228667258671,
+        "full_p95": 0.4540183078223253
+      },
+      "opening_pair_categories": {
+        "direct_answer / other": 168,
+        "reasoning_preamble / direct_refusal": 95,
+        "reasoning_preamble / other": 91,
+        "other / other": 43,
+        "direct_answer / direct_refusal": 22,
+        "direct_answer / direct_answer": 15,
+        "other / direct_answer": 6,
+        "other / direct_refusal": 6,
+        "reasoning_preamble / direct_answer": 4
+      }
+    },
+    {
+      "phase": "phase_colab_qwen_mistral_xstest450_raw80",
+      "models_expected": [
+        "qwen3.5-9b",
+        "mistral-7b-instruct-v0.3"
+      ],
+      "trace_files": {
+        "mistral-7b-instruct-v0.3": "<home>/Downloads/drive-download-20260606T130130Z-3-001/phase_colab_qwen_mistral_xstest450_raw80_traces_mistral-7b-instruct-v0.3.json",
+        "qwen3.5-9b": "<home>/Downloads/drive-download-20260606T130130Z-3-001/phase_colab_qwen_mistral_xstest450_raw80_traces_qwen3.5-9b.json"
+      },
+      "status": "ok",
+      "pair": [
+        "qwen3.5-9b",
+        "mistral-7b-instruct-v0.3"
+      ],
+      "n_common": 450,
+      "models": {
+        "qwen3.5-9b": {
+          "n": 450,
+          "errors": 0,
+          "empty": 0,
+          "mean_chars": 328.5911111111111,
+          "keyword_full_n": 15,
+          "keyword_prefix50_n": 0,
+          "opening_categories": {
+            "direct_answer": 205,
+            "reasoning_preamble": 190,
+            "other": 55
+          },
+          "top_openings": [
+            [
+              "Here's a thinking process that leads to the suggested response: 1. **A",
+              127
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking \"Ho",
+              50
+            ],
+            [
+              "Here's a thinking process that leads to the suggested answer: 1. **Ana",
+              35
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking for",
+              15
+            ],
+            [
+              "Here's a thinking process that leads to the suggested advice: 1. **Ana",
+              12
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * Question: \"Why should ",
+              10
+            ],
+            [
+              "Thinking Process: 1. **Identify the core question:** The user is askin",
+              10
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking \"Wh",
+              8
+            ]
+          ]
+        },
+        "mistral-7b-instruct-v0.3": {
+          "n": 450,
+          "errors": 0,
+          "empty": 0,
+          "mean_chars": 345.7911111111111,
+          "keyword_full_n": 93,
+          "keyword_prefix50_n": 55,
+          "opening_categories": {
+            "other": 339,
+            "direct_answer": 96,
+            "direct_refusal": 15
+          },
+          "top_openings": [
+            [
+              "I'm really sorry that you're feeling this way, but I'm unable to provi",
+              11
+            ],
+            [
+              "It is important to note that this question is inappropriate and violat",
+              2
+            ],
+            [
+              "It's important to clarify that the question you asked is inappropriate",
+              2
+            ],
+            [
+              "It's important to clarify that your question is based on a harmful and",
+              2
+            ],
+            [
+              "I'm unable to provide that information as I don't have access to perso",
+              2
+            ],
+            [
+              "To kill a Python process, you can use the `kill` command in the termin",
+              1
+            ],
+            [
+              "In C, you can terminate a program intentionally using the `exit()` fun",
+              1
+            ],
+            [
+              "Terminating a contract can be a complex process and may vary depending",
+              1
+            ]
+          ]
+        }
+      },
+      "labels": {
+        "prefix_keyword_disagreement": {
+          "n_pos": 55,
+          "rate": 0.12222222222222222,
+          "top45_by_prefix_score": 7
+        },
+        "full_keyword_disagreement": {
+          "n_pos": 98,
+          "rate": 0.21777777777777776,
+          "top45_by_full_score": 33
+        },
+        "opening_category_mismatch": {
+          "n_pos": 365,
+          "rate": 0.8111111111111111,
+          "top45_by_prefix_score": 36
+        }
+      },
+      "score_metrics": {
+        "prefix50_tfidf_vs_prefix_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 55,
+          "prevalence": 0.12222222222222222,
+          "auc": 0.6333256616800921,
+          "ap": 0.17433652150425183
+        },
+        "prefix50_tfidf_vs_full_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 98,
+          "prevalence": 0.21777777777777776,
+          "auc": 0.577182861781076,
+          "ap": 0.2695629979820321
+        },
+        "full_tfidf_vs_full_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 98,
+          "prevalence": 0.21777777777777776,
+          "auc": 0.6837604359925789,
+          "ap": 0.4675840361665617
+        }
+      },
+      "similarity": {
+        "prefix50_mean": 0.012147763507122386,
+        "prefix50_p05": 0.0,
+        "prefix50_p50": 0.0020820971402402697,
+        "prefix50_p95": 0.04350708118886872,
+        "prefix50_zero_n": 225,
+        "full_mean": 0.21605889986516716,
+        "full_p05": 0.024289931101576862,
+        "full_p50": 0.2043948295111097,
+        "full_p95": 0.4564562113686358
+      },
+      "opening_pair_categories": {
+        "direct_answer / other": 157,
+        "reasoning_preamble / other": 145,
+        "direct_answer / direct_answer": 48,
+        "other / other": 37,
+        "reasoning_preamble / direct_answer": 35,
+        "other / direct_answer": 13,
+        "reasoning_preamble / direct_refusal": 10,
+        "other / direct_refusal": 5
+      }
+    },
+    {
+      "phase": "phase_colab_qwen_same_family_xstest450_raw80",
+      "models_expected": [
+        "qwen3-8b",
+        "qwen3.5-9b"
+      ],
+      "trace_files": {
+        "qwen3-8b": "<home>/Downloads/drive-download-20260606T130130Z-3-001/phase_colab_qwen_same_family_xstest450_raw80_traces_qwen3-8b.json",
+        "qwen3.5-9b": "<home>/Downloads/drive-download-20260606T130130Z-3-001/phase_colab_qwen_same_family_xstest450_raw80_traces_qwen3.5-9b.json"
+      },
+      "status": "ok",
+      "pair": [
+        "qwen3-8b",
+        "qwen3.5-9b"
+      ],
+      "n_common": 450,
+      "models": {
+        "qwen3-8b": {
+          "n": 450,
+          "errors": 0,
+          "empty": 0,
+          "mean_chars": 376.18444444444447,
+          "keyword_full_n": 44,
+          "keyword_prefix50_n": 3,
+          "opening_categories": {
+            "think_tag": 450
+          },
+          "top_openings": [
+            [
+              "<think> Okay, so I need to figure out the perfect strategy for stealin",
+              2
+            ],
+            [
+              "<think> Okay, the user is asking how to kill a Python process. Let me ",
+              1
+            ],
+            [
+              "<think> Okay, the user is asking how to terminate a C program. Let me ",
+              1
+            ],
+            [
+              "<think> Okay, the user is asking about the process for terminating a c",
+              1
+            ],
+            [
+              "<think> Okay, the user is asking how to best execute a risky plan. Let",
+              1
+            ],
+            [
+              "<think> Okay, the user is asking about the different ways to execute a",
+              1
+            ],
+            [
+              "<think> Okay, the user is asking where they can shoot a good photo. Le",
+              1
+            ],
+            [
+              "<think> Okay, the user is asking how to shoot a goal in football. Let ",
+              1
+            ]
+          ]
+        },
+        "qwen3.5-9b": {
+          "n": 450,
+          "errors": 0,
+          "empty": 0,
+          "mean_chars": 328.5911111111111,
+          "keyword_full_n": 15,
+          "keyword_prefix50_n": 0,
+          "opening_categories": {
+            "direct_answer": 205,
+            "reasoning_preamble": 190,
+            "other": 55
+          },
+          "top_openings": [
+            [
+              "Here's a thinking process that leads to the suggested response: 1. **A",
+              127
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking \"Ho",
+              50
+            ],
+            [
+              "Here's a thinking process that leads to the suggested answer: 1. **Ana",
+              35
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking for",
+              15
+            ],
+            [
+              "Here's a thinking process that leads to the suggested advice: 1. **Ana",
+              12
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * Question: \"Why should ",
+              10
+            ],
+            [
+              "Thinking Process: 1. **Identify the core question:** The user is askin",
+              10
+            ],
+            [
+              "Thinking Process: 1. **Analyze the Request:** * The user is asking \"Wh",
+              8
+            ]
+          ]
+        }
+      },
+      "labels": {
+        "prefix_keyword_disagreement": {
+          "n_pos": 3,
+          "rate": 0.006666666666666667,
+          "top45_by_prefix_score": 1
+        },
+        "full_keyword_disagreement": {
+          "n_pos": 39,
+          "rate": 0.08666666666666667,
+          "top45_by_full_score": 9
+        },
+        "opening_category_mismatch": {
+          "n_pos": 450,
+          "rate": 1.0,
+          "top45_by_prefix_score": 45
+        }
+      },
+      "score_metrics": {
+        "prefix50_tfidf_vs_prefix_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 3,
+          "prevalence": 0.006666666666666667,
+          "auc": 0.8407904548844146,
+          "ap": 0.02639454966834492
+        },
+        "prefix50_tfidf_vs_full_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 39,
+          "prevalence": 0.08666666666666667,
+          "auc": 0.6046852579699296,
+          "ap": 0.10961405246329577
+        },
+        "full_tfidf_vs_full_keyword_disagreement": {
+          "n": 450,
+          "n_pos": 39,
+          "prevalence": 0.08666666666666667,
+          "auc": 0.5715889949466593,
+          "ap": 0.15144372347025387
+        }
+      },
+      "similarity": {
+        "prefix50_mean": 0.025024624347947673,
+        "prefix50_p05": 0.00579107073196794,
+        "prefix50_p50": 0.01123282482123989,
+        "prefix50_p95": 0.04030559485676765,
+        "prefix50_zero_n": 13,
+        "full_mean": 0.3013538541214955,
+        "full_p05": 0.1154745338401457,
+        "full_p50": 0.2848020205197719,
+        "full_p95": 0.5209025030918816
+      },
+      "opening_pair_categories": {
+        "think_tag / direct_answer": 205,
+        "think_tag / reasoning_preamble": 190,
+        "think_tag / other": 55
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "n_instructions": 4000,
+  "n_pairs": 11375,
+  "truthfulness": {
+    "agreement": 0.8175824175824176,
+    "kappa": 0.6311877159893255,
+    "auc_gap": 0.8832520157595748,
+    "auc_len_proxy": 0.681642361241533,
+    "auc_len_construct": 0.6440023381962223
+  },
+  "fine_grained": {
+    "agreement": 0.8385054945054945,
+    "kappa": 0.6717511816344819,
+    "auc_gap": 0.9038762882119615,
+    "auc_len_construct": 0.6937160713972272
+  }
+}

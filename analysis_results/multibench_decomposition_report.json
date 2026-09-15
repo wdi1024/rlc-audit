@@ -1,0 +1,194 @@
+{
+  "XSTest": {
+    "boundary_type": "safe-vs-contrast pair",
+    "n": 450,
+    "qwen_kw_refuse": 0.03111111111111111,
+    "gemma_kw_refuse": 0.04666666666666667,
+    "qwen_judge_refuse": 0.4266666666666667,
+    "gemma_judge_refuse": 0.49777777777777776,
+    "kw_disagree": 25,
+    "judge_disagree": 46,
+    "cells": {
+      "TF-IDF_x_keyword": {
+        "auc": 0.7874823529411764,
+        "ci": [
+          0.6554329709972353,
+          0.8983653811586777
+        ],
+        "n_disagree": 25,
+        "disagree_rate": 0.05555555555555555
+      },
+      "TF-IDF_x_judge": {
+        "auc": 0.4817585019371502,
+        "ci": [
+          0.3872836287597817,
+          0.5738928320231418
+        ],
+        "n_disagree": 46,
+        "disagree_rate": 0.10222222222222223
+      },
+      "Sentence-L12_x_keyword": {
+        "auc": 0.8204235294117648,
+        "ci": [
+          0.7229143062727144,
+          0.9080606877379789
+        ],
+        "n_disagree": 25,
+        "disagree_rate": 0.05555555555555555
+      },
+      "Sentence-L12_x_judge": {
+        "auc": 0.651097718467499,
+        "ci": [
+          0.5787777044654775,
+          0.7205449170990638
+        ],
+        "n_disagree": 46,
+        "disagree_rate": 0.10222222222222223
+      }
+    }
+  },
+  "OR-Bench-Hard-1K": {
+    "boundary_type": "uniform benign-but-toxic-looking (over-refusal)",
+    "n": 1319,
+    "qwen_kw_refuse": 0.029567854435178165,
+    "gemma_kw_refuse": 0.01061410159211524,
+    "qwen_judge_refuse": 0.5360121304018196,
+    "gemma_judge_refuse": 0.6868840030326004,
+    "kw_disagree": 37,
+    "judge_disagree": 473,
+    "cells": {
+      "TF-IDF_x_keyword": {
+        "auc": 0.7776278618712316,
+        "ci": [
+          0.692940404099005,
+          0.8529586150141262
+        ],
+        "n_disagree": 37,
+        "disagree_rate": 0.028051554207733132
+      },
+      "TF-IDF_x_judge": {
+        "auc": 0.5433416300561278,
+        "ci": [
+          0.5125276696690582,
+          0.5753262798056459
+        ],
+        "n_disagree": 473,
+        "disagree_rate": 0.35860500379075055
+      },
+      "Sentence-L12_x_keyword": {
+        "auc": 0.8056668212674453,
+        "ci": [
+          0.725171599080638,
+          0.8730261467181432
+        ],
+        "n_disagree": 37,
+        "disagree_rate": 0.028051554207733132
+      },
+      "Sentence-L12_x_judge": {
+        "auc": 0.5305754227080304,
+        "ci": [
+          0.4981256229390579,
+          0.5617560334978922
+        ],
+        "n_disagree": 473,
+        "disagree_rate": 0.35860500379075055
+      }
+    }
+  },
+  "AdvBench": {
+    "boundary_type": "uniform harmful (hazard detection)",
+    "n": 520,
+    "qwen_kw_refuse": 0.15576923076923077,
+    "gemma_kw_refuse": 0.3576923076923077,
+    "qwen_judge_refuse": 0.9961538461538462,
+    "gemma_judge_refuse": 0.9980769230769231,
+    "kw_disagree": 189,
+    "judge_disagree": 3,
+    "cells": {
+      "TF-IDF_x_keyword": {
+        "auc": 0.7679310730670247,
+        "ci": [
+          0.7280207626500999,
+          0.8067967930852821
+        ],
+        "n_disagree": 189,
+        "disagree_rate": 0.36346153846153845
+      },
+      "TF-IDF_x_judge": {
+        "auc": 0.3803997421018698,
+        "ci": [
+          0.030888030888030937,
+          0.5851149492071823
+        ],
+        "n_disagree": 3,
+        "disagree_rate": 0.0057692307692307696
+      },
+      "Sentence-L12_x_keyword": {
+        "auc": 0.8230470435908502,
+        "ci": [
+          0.7887131547865002,
+          0.8585987041595992
+        ],
+        "n_disagree": 189,
+        "disagree_rate": 0.36346153846153845
+      },
+      "Sentence-L12_x_judge": {
+        "auc": 0.24629271437782077,
+        "ci": [
+          0.19669303903407953,
+          0.302504816955684
+        ],
+        "n_disagree": 3,
+        "disagree_rate": 0.0057692307692307696
+      }
+    }
+  },
+  "SimpleSafetyTests": {
+    "boundary_type": "uniform harmful (hazard detection)",
+    "n": 100,
+    "qwen_kw_refuse": 0.05,
+    "gemma_kw_refuse": 0.18,
+    "qwen_judge_refuse": 0.9,
+    "gemma_judge_refuse": 0.96,
+    "kw_disagree": 19,
+    "judge_disagree": 8,
+    "cells": {
+      "TF-IDF_x_keyword": {
+        "auc": 0.9044834307992203,
+        "ci": [
+          0.7920626218323586,
+          0.987130264242047
+        ],
+        "n_disagree": 19,
+        "disagree_rate": 0.19
+      },
+      "TF-IDF_x_judge": {
+        "auc": 0.3097826086956522,
+        "ci": [
+          0.14431448901837746,
+          0.49055706521739123
+        ],
+        "n_disagree": 8,
+        "disagree_rate": 0.08
+      },
+      "Sentence-L12_x_keyword": {
+        "auc": 0.8882391163092918,
+        "ci": [
+          0.7628713258286429,
+          0.9871291869918698
+        ],
+        "n_disagree": 19,
+        "disagree_rate": 0.19
+      },
+      "Sentence-L12_x_judge": {
+        "auc": 0.43342391304347827,
+        "ci": [
+          0.2465989207924692,
+          0.6048109965635738
+        ],
+        "n_disagree": 8,
+        "disagree_rate": 0.08
+      }
+    }
+  }
+}

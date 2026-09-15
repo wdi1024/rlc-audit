@@ -1,0 +1,431 @@
+{
+  "alpha": 0.05,
+  "n_tests": 42,
+  "bh_cutoff": 0.02244924119869105,
+  "tests": [
+    {
+      "family": "refusal setting",
+      "name": "XSTest 450 (Phase 3)",
+      "effect": 0.393030507284138,
+      "p": 9.999000099990002e-05,
+      "source": "permutation",
+      "floored": true,
+      "p_bh": 0.0003819327616466758,
+      "survives": true
+    },
+    {
+      "family": "refusal setting",
+      "name": "AdvBench 520 (Phase 4)",
+      "effect": 0.4665406825457635,
+      "p": 9.999000099990002e-05,
+      "source": "permutation",
+      "floored": true,
+      "p_bh": 0.0003819327616466758,
+      "survives": true
+    },
+    {
+      "family": "refusal setting",
+      "name": "SimpleSafety (Phase 4)",
+      "effect": 0.43340995054386344,
+      "p": 9.999000099990002e-05,
+      "source": "permutation",
+      "floored": true,
+      "p_bh": 0.0003819327616466758,
+      "survives": true
+    },
+    {
+      "family": "refusal setting",
+      "name": "XSTest 100 / 512tok (Phase 5)",
+      "effect": 0.3686575412891202,
+      "p": 0.00010003000900270081,
+      "source": "permutation",
+      "floored": false,
+      "p_bh": 0.0003819327616466758,
+      "survives": true
+    },
+    {
+      "family": "refusal setting",
+      "name": "AdvBench 100 / 512tok (Phase 5)",
+      "effect": 0.45405068728522324,
+      "p": 9.999000099990002e-05,
+      "source": "permutation",
+      "floored": true,
+      "p_bh": 0.0003819327616466758,
+      "survives": true
+    },
+    {
+      "family": "refusal setting",
+      "name": "OR-Bench hard 1k (Phase 8)",
+      "effect": 0.34829706551626394,
+      "p": 9.999000099990002e-05,
+      "source": "permutation",
+      "floored": true,
+      "p_bh": 0.0003819327616466758,
+      "survives": true
+    },
+    {
+      "family": "pair panel",
+      "name": "Qwen9B/Gemma9B",
+      "effect": -0.015,
+      "p": 0.7026014337575801,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.7197380540931309,
+      "survives": false
+    },
+    {
+      "family": "pair panel",
+      "name": "Qwen9B/Mistral7B",
+      "effect": 0.018,
+      "p": 0.651053319213341,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.7011343437682134,
+      "survives": false
+    },
+    {
+      "family": "pair panel",
+      "name": "Qwen9B/Phi3.5",
+      "effect": 0.128,
+      "p": 0.003103036021410292,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.008688500859948817,
+      "survives": true
+    },
+    {
+      "family": "pair panel",
+      "name": "Qwen8B/Phi3.5",
+      "effect": 0.118,
+      "p": 0.007161213643291789,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.018798185813640948,
+      "survives": true
+    },
+    {
+      "family": "pair panel",
+      "name": "Gemma9B/Mistral7B",
+      "effect": -0.006,
+      "p": 0.8677376029332386,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.8677376029332386,
+      "survives": false
+    },
+    {
+      "family": "pair panel",
+      "name": "Gemma9B/Qwen8B",
+      "effect": 0.042,
+      "p": 0.28863218611926694,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.3788297442815379,
+      "survives": false
+    },
+    {
+      "family": "pair panel",
+      "name": "Gemma9B/Phi3.5",
+      "effect": 0.015,
+      "p": 0.6950635337265644,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.7197380540931309,
+      "survives": false
+    },
+    {
+      "family": "pair panel",
+      "name": "Mistral7B/Qwen8B",
+      "effect": 0.068,
+      "p": 0.08721280393184466,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.1592581637016294,
+      "survives": false
+    },
+    {
+      "family": "pair panel",
+      "name": "Mistral7B/Phi3.5",
+      "effect": 0.054,
+      "p": 0.11127897027941941,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.1869486700694246,
+      "survives": false
+    },
+    {
+      "family": "pair panel",
+      "name": "Qwen8B/Qwen9B",
+      "effect": -0.094,
+      "p": 0.015343590089983377,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.035801710209961216,
+      "survives": true
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 120",
+      "effect": 0.19504075852822989,
+      "p": 0.012415160222128116,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.03067274878408123,
+      "survives": true
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 160",
+      "effect": 0.14419584999590623,
+      "p": 0.0007161468036234879,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.0025065138126822077,
+      "survives": true
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 200",
+      "effect": 0.11555540968694294,
+      "p": 0.00227218572440787,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.007340907725010041,
+      "survives": true
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 250",
+      "effect": -0.059219262507129056,
+      "p": 0.08698092171567351,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.1592581637016294,
+      "survives": false
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 300",
+      "effect": -0.055054041683894495,
+      "p": 0.12856510570221522,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.20768209382665534,
+      "survives": false
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 400",
+      "effect": -0.04712885704733538,
+      "p": 0.19382472772314746,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.2713546188124064,
+      "survives": false
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 500",
+      "effect": -0.03148576508710943,
+      "p": 0.3973040344879644,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.4767648413855573,
+      "survives": false
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 600",
+      "effect": -0.1020659471507197,
+      "p": 0.0028542398332655856,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.008562719499796758,
+      "survives": true
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 800",
+      "effect": -0.18546370041875682,
+      "p": 1.6745886856575814e-11,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 3.516636239880921e-10,
+      "survives": true
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 1000",
+      "effect": -0.17851498642361124,
+      "p": 3.327726607295245e-11,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 4.658817250213343e-10,
+      "survives": true
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K 1400",
+      "effect": -0.10849631902423162,
+      "p": 3.034739945759172e-06,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 2.549181554437704e-05,
+      "survives": true
+    },
+    {
+      "family": "span sweep (GSM8K)",
+      "name": "GSM8K full",
+      "effect": -0.03596538084447243,
+      "p": 0.046304868912797795,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.09260973782559559,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 50",
+      "effect": 0.18363865640818422,
+      "p": 1.58054439264273e-13,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 6.6382864490994664e-12,
+      "survives": true
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 80",
+      "effect": 0.11644572728021396,
+      "p": 4.7576001392139435e-07,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 4.995480146174641e-06,
+      "survives": true
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 120",
+      "effect": 0.014747541950125065,
+      "p": 0.5425520632416111,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.599662806740728,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 160",
+      "effect": 0.013353949767056061,
+      "p": 0.5108889237009269,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.5799279674442953,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 200",
+      "effect": 0.02313456837420469,
+      "p": 0.30165671501432595,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.3839267282000512,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 250",
+      "effect": 0.02133068370578628,
+      "p": 0.35403456172816933,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.4373368115465621,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 300",
+      "effect": 0.017180813809575035,
+      "p": 0.48403530648366755,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.5647078575642789,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 400",
+      "effect": 0.030729336445167177,
+      "p": 0.14567186409657745,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.21850779614486618,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 500",
+      "effect": 0.035515593942766155,
+      "p": 0.09268329239706924,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.16219576169487118,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 600",
+      "effect": 0.030039029738100576,
+      "p": 0.1577513004652931,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.22846740067387275,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 800",
+      "effect": 0.04501212351161976,
+      "p": 0.02244924119869105,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.0496246384392118,
+      "survives": true
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 1000",
+      "effect": 0.04447287032571956,
+      "p": 0.034126605762731334,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.0716658721017358,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA 1400",
+      "effect": 0.025808434456905727,
+      "p": 0.14449842348431155,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.21850779614486618,
+      "survives": false
+    },
+    {
+      "family": "span sweep (HotpotQA)",
+      "name": "HotpotQA full",
+      "effect": 0.023588364344541257,
+      "p": 0.23898096789979878,
+      "source": "CI (normal approx)",
+      "floored": false,
+      "p_bh": 0.32378066618682416,
+      "survives": false
+    }
+  ],
+  "lost_to_correction": [
+    "GSM8K full",
+    "HotpotQA 1000"
+  ]
+}

@@ -1,0 +1,450 @@
+{
+  "phase": "phase_colab_gemma_mistral_crosspair_xstest450_tagged768_thinkingoff_greedy",
+  "note": "Cross-pair analysis reusing Gemma traces/judges from qwen_gemma_big and Mistral traces/judges from qwen_mistral. No new generation was required because prompts and tagged generation settings match.",
+  "source_phases": {
+    "gemma": "phase_colab_qwen_gemma_big_xstest450_tagged768_thinkingoff_greedy",
+    "mistral": "phase_colab_qwen_mistral_xstest450_tagged768_thinkingoff_greedy"
+  },
+  "models": [
+    "gemma-2-9b-it",
+    "mistral-7b-instruct-v0.3"
+  ],
+  "compatibility": {
+    "prompt_common_n": 450,
+    "prompt_text_identical_n": 450,
+    "prompt_mode": [
+      "tagged",
+      "tagged"
+    ],
+    "max_new_tokens": [
+      768,
+      768
+    ],
+    "max_n": [
+      450,
+      450
+    ]
+  },
+  "models_summary": {
+    "gemma-2-9b-it": {
+      "n": 450,
+      "judge_n": 450,
+      "judge_refusal_true_n": 261,
+      "errors": 0,
+      "final_nonempty": 450,
+      "reasoning_nonempty": 449,
+      "parse_status": {
+        "exact": 449,
+        "final_only": 1
+      },
+      "keyword_final_n": 218,
+      "keyword_raw_n": 230,
+      "final_len_mean": 256.43555555555554,
+      "final_len_p05_p50_p95": [
+        57.35000000000001,
+        219.0,
+        680.7499999999989
+      ]
+    },
+    "mistral-7b-instruct-v0.3": {
+      "n": 450,
+      "judge_n": 450,
+      "judge_refusal_true_n": 179,
+      "errors": 0,
+      "final_nonempty": 450,
+      "reasoning_nonempty": 450,
+      "parse_status": {
+        "fallback_truncated_final": 224,
+        "exact": 226
+      },
+      "keyword_final_n": 106,
+      "keyword_raw_n": 135,
+      "final_len_mean": 252.7422222222222,
+      "final_len_p05_p50_p95": [
+        64.45,
+        213.0,
+        559.2999999999997
+      ]
+    }
+  },
+  "subsets": [
+    {
+      "name": "all_final_nonempty",
+      "n": 450,
+      "semantic_disagreement_n": 100,
+      "semantic_disagreement_rate": 0.2222222222222222,
+      "final_keyword_disagreement_n": 154,
+      "final_keyword_disagreement_rate": 0.3422222222222222,
+      "raw_keyword_disagreement_n": 141,
+      "prefix50_keyword_disagreement_n": 26,
+      "pair_kappa_final_keyword_vs_semantic": 0.3425149700598802,
+      "side_a_kappa_keyword_vs_judge": 0.6683177074119937,
+      "side_b_kappa_keyword_vs_judge": 0.5066554450621248,
+      "score_rows": {
+        "final_full_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 450,
+            "n_pos": 100,
+            "rate": 0.2222222222222222,
+            "auc": 0.7065142857142857,
+            "ap": 0.3760049831392772
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 154,
+            "rate": 0.3422222222222222,
+            "auc": 0.7004212004212005,
+            "ap": 0.5129299911200584
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 141,
+            "rate": 0.31333333333333335,
+            "auc": 0.6695815832357869,
+            "ap": 0.4743080702898394
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 26,
+            "rate": 0.057777777777777775,
+            "auc": 0.6435957910014514,
+            "ap": 0.11604707046760455
+          },
+          "top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 18,
+            "final_keyword_disagreement_n": 24,
+            "both_refuse_n": 26,
+            "both_comply_n": 1
+          }
+        },
+        "raw_full_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 450,
+            "n_pos": 100,
+            "rate": 0.2222222222222222,
+            "auc": 0.6925142857142857,
+            "ap": 0.3586362807835658
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 154,
+            "rate": 0.3422222222222222,
+            "auc": 0.7066514566514568,
+            "ap": 0.5073350363908988
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 141,
+            "rate": 0.31333333333333335,
+            "auc": 0.6647845945511717,
+            "ap": 0.4462135801132113
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 26,
+            "rate": 0.057777777777777775,
+            "auc": 0.6480406386066764,
+            "ap": 0.15415411729423317
+          },
+          "top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 15,
+            "final_keyword_disagreement_n": 25,
+            "both_refuse_n": 29,
+            "both_comply_n": 1
+          }
+        },
+        "raw_prefix50_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 450,
+            "n_pos": 100,
+            "rate": 0.2222222222222222,
+            "auc": 0.5335428571428572,
+            "ap": 0.2281626871301337
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 154,
+            "rate": 0.3422222222222222,
+            "auc": 0.5563684626184626,
+            "ap": 0.362512615924409
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 141,
+            "rate": 0.31333333333333335,
+            "auc": 0.5680759255433909,
+            "ap": 0.35160696088461096
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 450,
+            "n_pos": 26,
+            "rate": 0.057777777777777775,
+            "auc": 0.6247278664731495,
+            "ap": 0.09343256572631532
+          },
+          "top10pct": {
+            "budget": 45,
+            "semantic_disagreement_n": 9,
+            "final_keyword_disagreement_n": 14,
+            "both_refuse_n": 19,
+            "both_comply_n": 17
+          }
+        }
+      }
+    },
+    {
+      "name": "exclude_any_fallback",
+      "n": 226,
+      "semantic_disagreement_n": 50,
+      "semantic_disagreement_rate": 0.22123893805309736,
+      "final_keyword_disagreement_n": 75,
+      "final_keyword_disagreement_rate": 0.33185840707964603,
+      "raw_keyword_disagreement_n": 71,
+      "prefix50_keyword_disagreement_n": 10,
+      "pair_kappa_final_keyword_vs_semantic": 0.33561445783132526,
+      "side_a_kappa_keyword_vs_judge": 0.5929203539823009,
+      "side_b_kappa_keyword_vs_judge": 0.36485553692929695,
+      "score_rows": {
+        "final_full_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 226,
+            "n_pos": 50,
+            "rate": 0.22123893805309736,
+            "auc": 0.7368181818181818,
+            "ap": 0.4447188153367153
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 75,
+            "rate": 0.33185840707964603,
+            "auc": 0.738719646799117,
+            "ap": 0.5815216752619723
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 71,
+            "rate": 0.3141592920353982,
+            "auc": 0.7184915947296684,
+            "ap": 0.5590825155074829
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 10,
+            "rate": 0.04424778761061947,
+            "auc": 0.4861111111111111,
+            "ap": 0.05298775583648423
+          },
+          "top10pct": {
+            "budget": 23,
+            "semantic_disagreement_n": 11,
+            "final_keyword_disagreement_n": 15,
+            "both_refuse_n": 11,
+            "both_comply_n": 1
+          }
+        },
+        "raw_full_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 226,
+            "n_pos": 50,
+            "rate": 0.22123893805309736,
+            "auc": 0.6788636363636363,
+            "ap": 0.3462187504891914
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 75,
+            "rate": 0.33185840707964603,
+            "auc": 0.7264459161147903,
+            "ap": 0.5355534997628195
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 71,
+            "rate": 0.3141592920353982,
+            "auc": 0.6900499772830532,
+            "ap": 0.4669559319642651
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 10,
+            "rate": 0.04424778761061947,
+            "auc": 0.48888888888888893,
+            "ap": 0.07395434207567106
+          },
+          "top10pct": {
+            "budget": 23,
+            "semantic_disagreement_n": 6,
+            "final_keyword_disagreement_n": 13,
+            "both_refuse_n": 16,
+            "both_comply_n": 1
+          }
+        },
+        "raw_prefix50_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 226,
+            "n_pos": 50,
+            "rate": 0.22123893805309736,
+            "auc": 0.5700000000000001,
+            "ap": 0.24354834175559553
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 75,
+            "rate": 0.33185840707964603,
+            "auc": 0.600971302428256,
+            "ap": 0.40394070141324345
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 71,
+            "rate": 0.3141592920353982,
+            "auc": 0.6526124488868695,
+            "ap": 0.4322905099535119
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 10,
+            "rate": 0.04424778761061947,
+            "auc": 0.7013888888888888,
+            "ap": 0.09857156831722808
+          },
+          "top10pct": {
+            "budget": 23,
+            "semantic_disagreement_n": 4,
+            "final_keyword_disagreement_n": 9,
+            "both_refuse_n": 11,
+            "both_comply_n": 8
+          }
+        }
+      }
+    },
+    {
+      "name": "mistral_exact_only",
+      "n": 226,
+      "semantic_disagreement_n": 50,
+      "semantic_disagreement_rate": 0.22123893805309736,
+      "final_keyword_disagreement_n": 75,
+      "final_keyword_disagreement_rate": 0.33185840707964603,
+      "raw_keyword_disagreement_n": 71,
+      "prefix50_keyword_disagreement_n": 10,
+      "pair_kappa_final_keyword_vs_semantic": 0.33561445783132526,
+      "side_a_kappa_keyword_vs_judge": 0.5929203539823009,
+      "side_b_kappa_keyword_vs_judge": 0.36485553692929695,
+      "score_rows": {
+        "final_full_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 226,
+            "n_pos": 50,
+            "rate": 0.22123893805309736,
+            "auc": 0.7368181818181818,
+            "ap": 0.4447188153367153
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 75,
+            "rate": 0.33185840707964603,
+            "auc": 0.738719646799117,
+            "ap": 0.5815216752619723
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 71,
+            "rate": 0.3141592920353982,
+            "auc": 0.7184915947296684,
+            "ap": 0.5590825155074829
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 10,
+            "rate": 0.04424778761061947,
+            "auc": 0.4861111111111111,
+            "ap": 0.05298775583648423
+          },
+          "top10pct": {
+            "budget": 23,
+            "semantic_disagreement_n": 11,
+            "final_keyword_disagreement_n": 15,
+            "both_refuse_n": 11,
+            "both_comply_n": 1
+          }
+        },
+        "raw_full_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 226,
+            "n_pos": 50,
+            "rate": 0.22123893805309736,
+            "auc": 0.6788636363636363,
+            "ap": 0.3462187504891914
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 75,
+            "rate": 0.33185840707964603,
+            "auc": 0.7264459161147903,
+            "ap": 0.5355534997628195
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 71,
+            "rate": 0.3141592920353982,
+            "auc": 0.6900499772830532,
+            "ap": 0.4669559319642651
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 10,
+            "rate": 0.04424778761061947,
+            "auc": 0.48888888888888893,
+            "ap": 0.07395434207567106
+          },
+          "top10pct": {
+            "budget": 23,
+            "semantic_disagreement_n": 6,
+            "final_keyword_disagreement_n": 13,
+            "both_refuse_n": 16,
+            "both_comply_n": 1
+          }
+        },
+        "raw_prefix50_tfidf": {
+          "vs_semantic_disagreement": {
+            "n": 226,
+            "n_pos": 50,
+            "rate": 0.22123893805309736,
+            "auc": 0.5700000000000001,
+            "ap": 0.24354834175559553
+          },
+          "vs_final_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 75,
+            "rate": 0.33185840707964603,
+            "auc": 0.600971302428256,
+            "ap": 0.40394070141324345
+          },
+          "vs_raw_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 71,
+            "rate": 0.3141592920353982,
+            "auc": 0.6526124488868695,
+            "ap": 0.4322905099535119
+          },
+          "vs_prefix50_keyword_disagreement": {
+            "n": 226,
+            "n_pos": 10,
+            "rate": 0.04424778761061947,
+            "auc": 0.7013888888888888,
+            "ap": 0.09857156831722808
+          },
+          "top10pct": {
+            "budget": 23,
+            "semantic_disagreement_n": 4,
+            "final_keyword_disagreement_n": 9,
+            "both_refuse_n": 11,
+            "both_comply_n": 8
+          }
+        }
+      }
+    }
+  ]
+}

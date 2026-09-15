@@ -1,0 +1,38 @@
+{
+  "sentence-transformers/all-MiniLM-L6-v2": {
+    "dim": 384,
+    "auc_keyword": 0.7821176470588236,
+    "auc_judge": 0.6494296168747309,
+    "ci_lo": 0.5705520857186432,
+    "ci_hi": 0.7249468178503936,
+    "mean_sim_disagree": 0.7639753818511963,
+    "mean_sim_agree": 0.7999871373176575
+  },
+  "sentence-transformers/all-MiniLM-L12-v2": {
+    "dim": 384,
+    "auc_keyword": 0.8204235294117648,
+    "auc_judge": 0.651097718467499,
+    "ci_lo": 0.580450490923842,
+    "ci_hi": 0.7227026184740662,
+    "mean_sim_disagree": 0.7823514342308044,
+    "mean_sim_agree": 0.8136383891105652
+  },
+  "sentence-transformers/all-mpnet-base-v2": {
+    "dim": 768,
+    "auc_keyword": 0.8108235294117647,
+    "auc_judge": 0.6330714593198451,
+    "ci_lo": 0.5575568906911563,
+    "ci_hi": 0.7049721736824409,
+    "mean_sim_disagree": 0.7674555778503418,
+    "mean_sim_agree": 0.8001234531402588
+  },
+  "sentence-transformers/multi-qa-mpnet-base-dot-v1": {
+    "dim": 768,
+    "auc_keyword": 0.8132705882352942,
+    "auc_judge": 0.636192423590185,
+    "ci_lo": 0.5574978782799218,
+    "ci_hi": 0.7103661596385543,
+    "mean_sim_disagree": 0.7947307229042053,
+    "mean_sim_agree": 0.8172678351402283
+  }
+}
