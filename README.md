@@ -1,7 +1,7 @@
 # RLC-Audit
 
 Code and analysis outputs for **Auditing Proxy–Construct Agreement Across Text Spans**
-(Daein Weon, Dongho Kang). Paper: arXiv (link to be added on posting). Under review at TMLR.
+(Daein Weon, Dongho Kang). Paper: arXiv (link to be added on posting).
 
 A score is often validated by its agreement with a cheap proxy label. When the score and the proxy are
 computed from the same span of text, that agreement can come from surface evidence the two share
@@ -47,10 +47,10 @@ provider.
 
 ## Naming
 
-The released JSON uses the earlier exit name `ALIGNED` for what the paper calls `NO COUPLING FLAG`.
-The paper's other exit names (`CONTAINMENT`, `DIVERGENCE`, `CAUTION`, `SCORE FAILURE`, `UNDECIDABLE`)
-appear in the outputs unchanged. `SCORE FAILURE` means the score was not shown to rank the declared
-construct *at the tested span*, not that the score is uninformative everywhere.
+The released JSON predates two renamings in the paper: `ALIGNED` is what the paper calls `NO FLAG`,
+and `SCORE_FAILURE` is what it calls `NO CONSTRUCT RANKING`. The latter means the score was not shown
+to rank the declared construct *at the tested span*, not that the score is uninformative everywhere.
+The other exit names (`CONTAINMENT`, `DIVERGENCE`, `CAUTION`, `UNDECIDABLE`) appear unchanged.
 
 ## Citation
 
@@ -59,7 +59,7 @@ construct *at the tested span*, not that the score is uninformative everywhere.
   title  = {Auditing Proxy--Construct Agreement Across Text Spans},
   author = {Weon, Daein and Kang, Dongho},
   year   = {2026},
-  note   = {Under review at TMLR}
+  note   = {Preprint}
 }
 ```
 
