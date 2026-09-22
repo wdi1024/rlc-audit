@@ -76,8 +76,11 @@ def ci_to_p(lo: float, hi: float) -> float:
 def main() -> None:
     tests: list[dict] = []
 
-    # ---- family 1: the six audited refusal settings ------------------------
+    # ---- family 1: the seven audited refusal settings ----------------------
     gs = json.loads((AR / "gap_significance.json").read_text())
+    jb_path = AR / "jailbreakbench_gap_significance.json"
+    if jb_path.exists():  # JailbreakBench (phase 15) joined after the first six
+        gs = gs + [json.loads(jb_path.read_text())]
     for e in gs:
         n_perm = e.get("perm_n", 10000)
         p = max(e["p_perm"], 1.0 / (n_perm + 1))

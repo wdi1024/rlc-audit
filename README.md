@@ -1,7 +1,7 @@
 # RLC-Audit
 
-Code and analysis outputs for **Auditing Proxy–Construct Agreement Across Text Spans**
-(Daein Weon, Dongho Kang). Paper: arXiv (link to be added on posting).
+Code and analysis outputs for **Auditing Proxy-Based Validation Across Text Spans**
+(Daein Weon, Dong Ho Kang). Paper: arXiv (link to be added on posting).
 
 A score is often validated by its agreement with a cheap proxy label. When the score and the proxy are
 computed from the same span of text, that agreement can come from surface evidence the two share
@@ -13,8 +13,8 @@ estimated on the contract itself.
 ## Layout
 
 ```
-scripts/           182 analysis scripts; the 51 the paper cites by name are listed in RESULTS_INDEX.md
-analysis_results/  173 JSON and log outputs those scripts write — the numbers in the paper come from here
+scripts/           184 analysis scripts; the 51 the paper cites by name are listed in RESULTS_INDEX.md
+analysis_results/  181 JSON and log outputs those scripts write — the numbers in the paper come from here
 RESULTS_INDEX.md   which script produces which part of the paper
 requirements.txt   dependencies (the re-derivation path needs only the first block)
 ```
@@ -48,7 +48,7 @@ provider.
 ## Naming
 
 The released JSON predates two renamings in the paper: `ALIGNED` is what the paper calls `NO FLAG`,
-and `SCORE_FAILURE` is what it calls `NO CONSTRUCT RANKING`. The latter means the score was not shown
+and `SCORE_FAILURE` is what it calls `NO DEMONSTRATED CONSTRUCT RANKING`. The latter means the score was not shown
 to rank the declared construct *at the tested span*, not that the score is uninformative everywhere.
 The other exit names (`CONTAINMENT`, `DIVERGENCE`, `CAUTION`, `UNDECIDABLE`) appear unchanged.
 
@@ -56,8 +56,8 @@ The other exit names (`CONTAINMENT`, `DIVERGENCE`, `CAUTION`, `UNDECIDABLE`) app
 
 ```bibtex
 @article{weon2026rlc,
-  title  = {Auditing Proxy--Construct Agreement Across Text Spans},
-  author = {Weon, Daein and Kang, Dongho},
+  title  = {Auditing Proxy-Based Validation Across Text Spans},
+  author = {Weon, Daein and Kang, Dong Ho},
   year   = {2026},
   note   = {Preprint}
 }

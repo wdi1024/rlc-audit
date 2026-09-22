@@ -1,6 +1,6 @@
 {
   "alpha": 0.05,
-  "n_tests": 42,
+  "n_tests": 43,
   "bh_cutoff": 0.02244924119869105,
   "tests": [
     {
@@ -10,7 +10,7 @@
       "p": 9.999000099990002e-05,
       "source": "permutation",
       "floored": true,
-      "p_bh": 0.0003819327616466758,
+      "p_bh": 0.0003910263988287395,
       "survives": true
     },
     {
@@ -20,7 +20,7 @@
       "p": 9.999000099990002e-05,
       "source": "permutation",
       "floored": true,
-      "p_bh": 0.0003819327616466758,
+      "p_bh": 0.0003910263988287395,
       "survives": true
     },
     {
@@ -30,7 +30,7 @@
       "p": 9.999000099990002e-05,
       "source": "permutation",
       "floored": true,
-      "p_bh": 0.0003819327616466758,
+      "p_bh": 0.0003910263988287395,
       "survives": true
     },
     {
@@ -40,7 +40,7 @@
       "p": 0.00010003000900270081,
       "source": "permutation",
       "floored": false,
-      "p_bh": 0.0003819327616466758,
+      "p_bh": 0.0003910263988287395,
       "survives": true
     },
     {
@@ -50,7 +50,7 @@
       "p": 9.999000099990002e-05,
       "source": "permutation",
       "floored": true,
-      "p_bh": 0.0003819327616466758,
+      "p_bh": 0.0003910263988287395,
       "survives": true
     },
     {
@@ -60,7 +60,17 @@
       "p": 9.999000099990002e-05,
       "source": "permutation",
       "floored": true,
-      "p_bh": 0.0003819327616466758,
+      "p_bh": 0.0003910263988287395,
+      "survives": true
+    },
+    {
+      "family": "refusal setting",
+      "name": "JailbreakBench (Phase 15)",
+      "effect": 0.31009680200431644,
+      "p": 0.0003,
+      "source": "permutation",
+      "floored": false,
+      "p_bh": 0.0010749999999999998,
       "survives": true
     },
     {
@@ -70,7 +80,7 @@
       "p": 0.7026014337575801,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.7197380540931309,
+      "p_bh": 0.7193300393232368,
       "survives": false
     },
     {
@@ -80,7 +90,7 @@
       "p": 0.651053319213341,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.7011343437682134,
+      "p_bh": 0.6998823181543415,
       "survives": false
     },
     {
@@ -90,7 +100,7 @@
       "p": 0.003103036021410292,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.008688500859948817,
+      "p_bh": 0.008339409307540159,
       "survives": true
     },
     {
@@ -100,7 +110,7 @@
       "p": 0.007161213643291789,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.018798185813640948,
+      "p_bh": 0.018113658038914526,
       "survives": true
     },
     {
@@ -120,7 +130,7 @@
       "p": 0.28863218611926694,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.3788297442815379,
+      "p_bh": 0.37609648494328723,
       "survives": false
     },
     {
@@ -130,7 +140,7 @@
       "p": 0.6950635337265644,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.7197380540931309,
+      "p_bh": 0.7193300393232368,
       "survives": false
     },
     {
@@ -140,7 +150,7 @@
       "p": 0.08721280393184466,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.1592581637016294,
+      "p_bh": 0.1562562737112217,
       "survives": false
     },
     {
@@ -150,7 +160,7 @@
       "p": 0.11127897027941941,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.1869486700694246,
+      "p_bh": 0.18403829700057825,
       "survives": false
     },
     {
@@ -160,7 +170,7 @@
       "p": 0.015343590089983377,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.035801710209961216,
+      "p_bh": 0.034724967045751856,
       "survives": true
     },
     {
@@ -170,7 +180,7 @@
       "p": 0.012415160222128116,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.03067274878408123,
+      "p_bh": 0.029658438308417166,
       "survives": true
     },
     {
@@ -180,7 +190,7 @@
       "p": 0.0007161468036234879,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.0025065138126822077,
+      "p_bh": 0.0023687932735238447,
       "survives": true
     },
     {
@@ -190,7 +200,7 @@
       "p": 0.00227218572440787,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.007340907725010041,
+      "p_bh": 0.006978856153538457,
       "survives": true
     },
     {
@@ -200,7 +210,7 @@
       "p": 0.08698092171567351,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.1592581637016294,
+      "p_bh": 0.1562562737112217,
       "survives": false
     },
     {
@@ -210,7 +220,7 @@
       "p": 0.12856510570221522,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.20768209382665534,
+      "p_bh": 0.20475183500723163,
       "survives": false
     },
     {
@@ -220,7 +230,7 @@
       "p": 0.19382472772314746,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.2713546188124064,
+      "p_bh": 0.2688536545837207,
       "survives": false
     },
     {
@@ -230,7 +240,7 @@
       "p": 0.3973040344879644,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.4767648413855573,
+      "p_bh": 0.47455759674951303,
       "survives": false
     },
     {
@@ -240,7 +250,7 @@
       "p": 0.0028542398332655856,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.008562719499796758,
+      "p_bh": 0.008182154188694678,
       "survives": true
     },
     {
@@ -250,7 +260,7 @@
       "p": 1.6745886856575814e-11,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 3.516636239880921e-10,
+      "p_bh": 3.6003656741638e-10,
       "survives": true
     },
     {
@@ -260,7 +270,7 @@
       "p": 3.327726607295245e-11,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 4.658817250213343e-10,
+      "p_bh": 4.769741470456518e-10,
       "survives": true
     },
     {
@@ -270,7 +280,7 @@
       "p": 3.034739945759172e-06,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 2.549181554437704e-05,
+      "p_bh": 2.609876353352888e-05,
       "survives": true
     },
     {
@@ -280,7 +290,7 @@
       "p": 0.046304868912797795,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.09260973782559559,
+      "p_bh": 0.09050497105683206,
       "survives": false
     },
     {
@@ -290,7 +300,7 @@
       "p": 1.58054439264273e-13,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 6.6382864490994664e-12,
+      "p_bh": 6.7963408883637395e-12,
       "survives": true
     },
     {
@@ -300,7 +310,7 @@
       "p": 4.7576001392139435e-07,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 4.995480146174641e-06,
+      "p_bh": 5.114420149654989e-06,
       "survives": true
     },
     {
@@ -310,7 +320,7 @@
       "p": 0.5425520632416111,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.599662806740728,
+      "p_bh": 0.5981984287022891,
       "survives": false
     },
     {
@@ -320,7 +330,7 @@
       "p": 0.5108889237009269,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.5799279674442953,
+      "p_bh": 0.5781111505036804,
       "survives": false
     },
     {
@@ -330,7 +340,7 @@
       "p": 0.30165671501432595,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.3839267282000512,
+      "p_bh": 0.38150702192988284,
       "survives": false
     },
     {
@@ -340,7 +350,7 @@
       "p": 0.35403456172816933,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.4373368115465621,
+      "p_bh": 0.4349567472660366,
       "survives": false
     },
     {
@@ -350,7 +360,7 @@
       "p": 0.48403530648366755,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.5647078575642789,
+      "p_bh": 0.5625275183458839,
       "survives": false
     },
     {
@@ -360,7 +370,7 @@
       "p": 0.14567186409657745,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.21850779614486618,
+      "p_bh": 0.21599621228113208,
       "survives": false
     },
     {
@@ -370,7 +380,7 @@
       "p": 0.09268329239706924,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.16219576169487118,
+      "p_bh": 0.1594152629229591,
       "survives": false
     },
     {
@@ -380,7 +390,7 @@
       "p": 0.1577513004652931,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.22846740067387275,
+      "p_bh": 0.22611019733358675,
       "survives": false
     },
     {
@@ -390,7 +400,7 @@
       "p": 0.02244924119869105,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.0496246384392118,
+      "p_bh": 0.04826586857718576,
       "survives": true
     },
     {
@@ -400,7 +410,7 @@
       "p": 0.034126605762731334,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.0716658721017358,
+      "p_bh": 0.06987828799035463,
       "survives": false
     },
     {
@@ -410,7 +420,7 @@
       "p": 0.14449842348431155,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.21850779614486618,
+      "p_bh": 0.21599621228113208,
       "survives": false
     },
     {
@@ -420,7 +430,7 @@
       "p": 0.23898096789979878,
       "source": "CI (normal approx)",
       "floored": false,
-      "p_bh": 0.32378066618682416,
+      "p_bh": 0.32113067561535463,
       "survives": false
     }
   ],

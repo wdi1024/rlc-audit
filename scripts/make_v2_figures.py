@@ -221,7 +221,7 @@ def fig_tree():
 
     # stage 2: is the score evidence about the construct?  (matches Algorithm 1
     # step 2: "at chance" must be SHOWN by equivalence -- 90% CI inside
-    # [0.45, 0.55] -> SCORE FAILURE (with the off-span proxy still ranked);
+    # [0.45, 0.55] -> NO DEMONSTRATED CONSTRUCT RANKING (off-span proxy still ranked);
     # an interval wholly below 1/2 is a reversed score -> re-orient with the
     # |.|-gap and continue; covering 1/2 without fitting the band -> UNDECIDABLE.)
     qy2, vy2 = 34.0, 22.0
@@ -240,13 +240,13 @@ def fig_tree():
     hw2 = VW / 2 - 0.6
     ax.add_patch(plt.Rectangle((xs2[1] + W / 2 - VW / 2, vy2 - 3.8), hw2, 7.6, fill=True,
                                fc=SLATE, ec="none"))
-    ax.text(xs2[1] + W / 2 - VW / 2 + hw2 / 2, vy2, "SCORE\nFAILURE", ha="center", va="center",
-            fontsize=6.8, color="white", fontweight="bold")
+    ax.text(xs2[1] + W / 2 - VW / 2 + hw2 / 2, vy2, "NO\nDEMONSTRATED\nCONSTRUCT\nRANKING", ha="center", va="center",
+            fontsize=4.6, color="white", fontweight="bold")
     ax.add_patch(plt.Rectangle((xs2[1] + W / 2 + 0.6, vy2 - 3.8), hw2, 7.6, fill=True,
                                fc="#7b5aa6", ec="none"))
     ax.text(xs2[1] + W / 2 + 0.6 + hw2 / 2, vy2, "CONTAIN-\nMENT", ha="center", va="center",
             fontsize=6.8, color="white", fontweight="bold")
-    ax.text(xs2[1] + W / 2, vy2 - 5.6, "certificate gap $\\geq 0.15$ / else UNDECIDABLE",
+    ax.text(xs2[1] + W / 2, vy2 - 5.6, "reported gap $\\geq 0.15$ / else UNDECIDABLE",
             ha="center", va="center", fontsize=6.2, color="#555555")
     # not at chance: route the 'no' of box 1 over the top into box 3, so the line
     # never crosses the reversed-score box below
@@ -298,9 +298,9 @@ def fig_tree():
             ha="center", va="center", fontsize=6.8, color="white", fontweight="bold")
     ax.add_patch(plt.Rectangle((xs[0] + W / 2 + 0.6, VY3 - 3.8), hw, 7.6,
                                fill=True, fc=GREEN, ec="none"))
-    ax.text(xs[0] + W / 2 + 0.6 + hw / 2, VY3, "NO COUPLING\nFLAG",
+    ax.text(xs[0] + W / 2 + 0.6 + hw / 2, VY3, "NO FLAG",
             ha="center", va="center", fontsize=6.3, color="white", fontweight="bold")
-    ax.text(xs[0] + W / 2, VY3 - 5.6, "certificate gap $\\geq 0.15$ / else",
+    ax.text(xs[0] + W / 2, VY3 - 5.6, "reported gap $\\geq 0.15$ / else",
             ha="center", va="center", fontsize=6.6, color="#555555")
     # boxes 3-4: magnitude bands
     for x, q, verdict, colour in [(xs[1], "$\\Delta_{\\mathrm{dis}} \\geq 0.15$?", "DIVERGENCE", RED2),
@@ -318,7 +318,7 @@ def fig_tree():
     arrow(xe, QY3, xe + 14.0, QY3)
     arrow(xe + 14.0, QY3, xe + 14.0, VY3 + 3.8)
     ax.text(xe + 7.0, QY3 + 1.6, "no", fontsize=8.7, color="#555555", ha="center", va="bottom")
-    vbox(xe + 14.0, VY3, "NO COUPLING FLAG", GREEN, w=VW * 0.95)
+    vbox(xe + 14.0, VY3, "NO FLAG", GREEN, w=VW * 0.95)
 
     fig.tight_layout()
     fig.savefig(OUT / "fig_verdict_tree.pdf")
