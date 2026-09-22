@@ -44,7 +44,7 @@ spec = importlib.util.spec_from_file_location(
     "agcr", HERE / "analyze_rlc_composite_router.py")
 agcr = importlib.util.module_from_spec(spec)
 import sys
-sys.modules["agcr"] = agcr        # dataclass 정의가 sys.modules 조회를 하므로 먼저 등록
+sys.modules["agcr"] = agcr        # register first: the dataclass definitions look themselves up in sys.modules
 spec.loader.exec_module(agcr)
 
 

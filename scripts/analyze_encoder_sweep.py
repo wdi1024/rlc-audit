@@ -146,14 +146,14 @@ def main():
     sims = encoder_sims("sentence-transformers/multi-qa-mpnet-base-dot-v1", qwen_traces, gemma_traces)
     encoders.append(("MultiQA-MPNet (768d)", "MultiQA-MPNet-base-dot-v1", sims))
 
-    # BGE-large (Review 1.4 권장)
+    # BGE-large (added on reviewer request 1.4)
     try:
         sims = encoder_sims("BAAI/bge-large-en-v1.5", qwen_traces, gemma_traces)
         encoders.append(("BGE-large-en-v1.5 (1024d)", "BAAI_bge-large-en-v1.5", sims))
     except Exception as e:
         print(f"  [WARN] BGE-large failed: {e}")
 
-    # E5-large (Review 1.4 권장)
+    # E5-large (added on reviewer request 1.4)
     try:
         sims = encoder_sims("intfloat/e5-large-v2", qwen_traces, gemma_traces)
         encoders.append(("E5-large-v2 (1024d)", "intfloat_e5-large-v2", sims))
