@@ -1,7 +1,7 @@
 # RLC-Audit
 
 Code and analysis outputs for **Auditing Proxy-Based Validation Across Text Spans**
-(Daein Weon, Dong Ho Kang). Paper: arXiv (link to be added on posting).
+(Daein Weon, Dong Ho Kang). Paper: [arXiv:2609.25808](https://arxiv.org/abs/2609.25808).
 
 A score is often validated by its agreement with a cheap proxy label. When the score and the proxy are
 computed from the same span of text, that agreement can come from surface evidence the two share
@@ -39,7 +39,7 @@ provider.
 
 ## What is not here
 
-- **The paper.** It is on arXiv.
+- **The paper.** It is at [arXiv:2609.25808](https://arxiv.org/abs/2609.25808).
 - **Raw per-example generations (~2 GB).** These are what the off-span control consumes; they do not
   fit a git repository. Open an issue if you want to re-run the audit end to end rather than
   re-derive the reported numbers, and we will point you at an archive.
@@ -59,7 +59,7 @@ The other exit names (`CONTAINMENT`, `DIVERGENCE`, `CAUTION`, `UNDECIDABLE`) app
   title  = {Auditing Proxy-Based Validation Across Text Spans},
   author = {Weon, Daein and Kang, Dong Ho},
   year   = {2026},
-  note   = {Preprint}
+  note   = {arXiv:2609.25808}
 }
 ```
 
