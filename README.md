@@ -37,13 +37,9 @@ need your own credentials; they are recognisable by their `openai` / `anthropic`
 Runs were made at temperature 0 through provider APIs and are therefore deterministic only up to the
 provider.
 
-## What is not here
-
-- **The paper.** It is at [arXiv:2609.25808](https://arxiv.org/abs/2609.25808).
-- **Raw per-example generations (~2 GB).** These are what the off-span control consumes; they do not
-  fit a git repository. Open an issue if you want to re-run the audit end to end rather than
-  re-derive the reported numbers, and we will point you at an archive.
-- **Human annotation sheets** belonging to a different paper in the same line of work.
+The raw per-example generations the off-span control consumes are about 2 GB and do not fit a git
+repository, so the analyses here start from the stored outputs. Open an issue if you want to re-run
+the audit end to end rather than re-derive the reported numbers.
 
 ## Naming
 
